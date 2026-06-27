@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "name": "igareck",
+      "url": "https://github.com/igareck/vpn-configs-for-russia",
+      "enabled": true
+    },
+    {
+      "name": "goida",
+      "url": "https://github.com/AvenCores/goida-vpn-configs",
+      "enabled": true
+    },
+    {
+      "name": "vless-checker",
+      "url": "https://github.com/tiagorrg/vless-checker",
+      "enabled": true
+    }
+  ]
+}
