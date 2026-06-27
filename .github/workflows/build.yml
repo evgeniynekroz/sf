@@ -1,0 +1,39 @@
+name: NekrozVPN Builder
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: nekrozvpn-builder
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run builder
+        run: python main.py
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: nekrozvpn-output
+          path: output/
+          if-no-files-found: error
