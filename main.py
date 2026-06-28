@@ -161,22 +161,57 @@ def init_db(conn) -> None:
 
 
 def save_configs_to_db(conn, configs: list[ConfigItem]) -> None:
-    now = datetime.now(timezone.utc).isoformat()
+    now        = datetime.now(timezone.utc).isoformat()
+    http_url   = TURSO_URL.replace("libsql://", "https://")
+    batch_size = 200
+
+    # Помечаем всё неактивным одним запросом через conn
     conn.execute("UPDATE configs SET is_active = 0")
-    for i, item in enumerate(configs, start=1):
-        clean = transform_config_name(item.value, i)
-        conn.execute("""
-            INSERT INTO configs
-                (protocol, raw_value, clean_value, source_name, source_url, is_active, last_seen)
-            VALUES (?, ?, ?, ?, ?, 1, ?)
-            ON CONFLICT(raw_value) DO UPDATE SET
-                clean_value = excluded.clean_value,
-                source_name = excluded.source_name,
-                source_url  = excluded.source_url,
-                is_active   = 1,
-                last_seen   = excluded.last_seen
-        """, (item.protocol, item.value, clean, item.source_name, item.source_url, now))
     conn.commit()
+
+    insert_sql = (
+        "INSERT INTO configs "
+        "(protocol, raw_value, clean_value, source_name, source_url, is_active, last_seen) "
+        "VALUES (?, ?, ?, ?, ?, 1, ?) "
+        "ON CONFLICT(raw_value) DO UPDATE SET "
+        "clean_value = excluded.clean_value, "
+        "source_name = excluded.source_name, "
+        "source_url  = excluded.source_url, "
+        "is_active   = 1, "
+        "last_seen   = excluded.last_seen"
+    )
+
+    def to_arg(v):
+        return {"type": "null"} if v is None else {"type": "text", "value": str(v)}
+
+    for batch_start in range(0, len(configs), batch_size):
+        batch      = configs[batch_start : batch_start + batch_size]
+        statements = []
+        for i, item in enumerate(batch, start=batch_start + 1):
+            clean = transform_config_name(item.value, i)
+            args  = [item.protocol, item.value, clean,
+                     item.source_name, item.source_url, now]
+            statements.append({
+                "type": "execute",
+                "stmt": {"sql": insert_sql, "args": [to_arg(v) for v in args]},
+            })
+        statements.append({"type": "close"})
+
+        payload = json.dumps({"requests": statements}).encode()
+        req = Request(
+            f"{http_url}/v2/pipeline",
+            data    = payload,
+            headers = {
+                "Authorization":  f"Bearer {TURSO_TOKEN}",
+                "Content-Type":   "application/json",
+            },
+        )
+        with urlopen(req, timeout=60) as resp:
+            resp.read()
+
+        done = min(batch_start + batch_size, len(configs))
+        logger.info("Сохранено %d / %d", done, len(configs))
+
     active = conn.execute("SELECT COUNT(*) FROM configs WHERE is_active = 1").fetchone()[0]
     total  = conn.execute("SELECT COUNT(*) FROM configs").fetchone()[0]
     logger.info("БД: %d активных из %d всего", active, total)
