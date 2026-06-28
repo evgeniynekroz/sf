@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Install dependencies
+        run: pip install libsql-experimental
+
       - name: Run builder
         run: python main.py
 
