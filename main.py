@@ -175,7 +175,7 @@ def save_configs_to_db(conn, configs: list[ConfigItem]) -> None:
                 source_url  = excluded.source_url,
                 is_active   = 1,
                 last_seen   = excluded.last_seen
-        """, [item.protocol, item.value, clean, item.source_name, item.source_url, now])
+        """, (item.protocol, item.value, clean, item.source_name, item.source_url, now))
     conn.commit()
     active = conn.execute("SELECT COUNT(*) FROM configs WHERE is_active = 1").fetchone()[0]
     total  = conn.execute("SELECT COUNT(*) FROM configs").fetchone()[0]
@@ -276,7 +276,7 @@ def enrich_with_geo(conn) -> None:
             info = geo_by_host[host]
             conn.execute(
                 "UPDATE configs SET country_code = ?, country = ? WHERE id = ?",
-                [info["country_code"], info["country"], row_id],
+                (info["country_code"], info["country"], row_id),
             )
             updated += 1
     conn.commit()
