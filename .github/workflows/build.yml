@@ -31,6 +31,15 @@ jobs:
       - name: Install dependencies
         run: pip install libsql-experimental
 
+      - name: Install sing-box (для реальной проверки конфигов)
+        run: |
+          SINGBOX_VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | grep -Po '"tag_name": "v\K[^"]*')
+          curl -sL "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_VERSION}/sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz" -o singbox.tar.gz
+          tar -xzf singbox.tar.gz
+          sudo mv "sing-box-${SINGBOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
+          sudo chmod +x /usr/local/bin/sing-box
+          sing-box version
+
       - name: Run builder
         run: python main.py
 
