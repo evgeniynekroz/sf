@@ -1,18 +1,111 @@
 {
   "sources": [
     {
-      "name": "igareck",
-      "url": "https://github.com/igareck/vpn-configs-for-russia",
+      "name": "igareck-black-vless",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "igareck-black-ss-all",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_SS+All_RUS.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "igareck-black-mobile-lte",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt",
+      "kind": "lte",
+      "enabled": true
+    },
+    {
+      "name": "igareck-white-cidr-all",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "igareck-white-cidr-checked",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-checked.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "igareck-white-sni",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-SNI-RU-all.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "igareck-white-mobile",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
+      "kind": "whitelist",
       "enabled": true
     },
     {
       "name": "goida",
       "url": "https://github.com/AvenCores/goida-vpn-configs",
+      "kind": "auto",
       "enabled": true
     },
     {
       "name": "vless-checker",
       "url": "https://github.com/tiagorrg/vless-checker",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-vless",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-vmess",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/vmess.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-trojan",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/trojan.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-ss",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/ss.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "matinghanbari-vless",
+      "url": "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "matinghanbari-trojan",
+      "url": "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/trojan.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "matinghanbari-ss",
+      "url": "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/ss.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "epodonios-all",
+      "url": "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "delta-kronecker-all",
+      "url": "https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/refs/heads/main/config/all_configs.txt",
+      "kind": "auto",
       "enabled": true
     }
   ]
