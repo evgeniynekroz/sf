@@ -35,6 +35,9 @@ MAX_TREE_DEPTH   = 2
 MAX_GITHUB_PAGES = 40
 MAX_GITHUB_FILES = 120
 GEO_HOST_LIMIT   = 8000   # максимум хостов на геолукап (см. пояснение у ip-api ниже)
+GEO_BATCH_SLEEP  = 4.3    # ip-api free tier: лимит 15 запросов/мин = 1 запрос в 4с, берём с запасом
+GEO_BATCH_RETRIES = 2      # повторных попыток на батч при 429/обрыве соединения
+MAX_PER_SOURCE   = 6000   # страховка: один источник не должен задавить остальные
 TCP_TIMEOUT      = 3      # секунд на попытку TCP-подключения
 TCP_MAX_WORKERS  = 50     # параллельных проверок
 
@@ -256,25 +259,34 @@ def lookup_geo(hosts: list[str]) -> dict[str, GeoInfo]:
     for i in range(0, len(hosts), 100):
         batch   = hosts[i : i + 100]
         payload = json.dumps([{"query": h} for h in batch]).encode()
-        try:
-            req = Request(
-                "http://ip-api.com/batch?fields=query,status,country,countryCode,lat,lon&lang=ru",
-                data    = payload,
-                headers = {"Content-Type": "application/json"},
-            )
-            with urlopen(req, timeout=15) as resp:
-                for item in json.loads(resp.read()):
-                    if item.get("status") == "success":
-                        result[item["query"]] = GeoInfo(
-                            cc=item["countryCode"],
-                            country_ru=item["country"],
-                            lat=float(item.get("lat", 0.0)),
-                            lon=float(item.get("lon", 0.0)),
-                        )
-        except Exception as exc:
-            logger.warning("GeoIP batch %d: %s", i, exc)
+
+        for attempt in range(GEO_BATCH_RETRIES + 1):
+            try:
+                req = Request(
+                    "http://ip-api.com/batch?fields=query,status,country,countryCode,lat,lon&lang=ru",
+                    data    = payload,
+                    headers = {"Content-Type": "application/json"},
+                )
+                with urlopen(req, timeout=15) as resp:
+                    for item in json.loads(resp.read()):
+                        if item.get("status") == "success":
+                            result[item["query"]] = GeoInfo(
+                                cc=item["countryCode"],
+                                country_ru=item["country"],
+                                lat=float(item.get("lat", 0.0)),
+                                lon=float(item.get("lon", 0.0)),
+                            )
+                break  # успех — выходим из retry-цикла
+            except Exception as exc:
+                if attempt < GEO_BATCH_RETRIES:
+                    backoff = GEO_BATCH_SLEEP * (attempt + 2)  # растущая пауза при повторе
+                    logger.warning("GeoIP batch %d: %s — retry через %.1fс", i, exc, backoff)
+                    time.sleep(backoff)
+                else:
+                    logger.warning("GeoIP batch %d: %s — сдаёмся после %d попыток", i, exc, GEO_BATCH_RETRIES + 1)
+
         if i + 100 < len(hosts):
-            time.sleep(1.5)
+            time.sleep(GEO_BATCH_SLEEP)
     return result
 
 
@@ -917,12 +929,25 @@ def crawl_github(source: Source) -> list[ConfigItem]:
 
 
 def dedupe(configs: list[ConfigItem]) -> list[ConfigItem]:
-    seen, out = set(), []
+    """
+    Дедупликация по сырой строке конфига. ВАЖНО: один и тот же сервер может
+    встречаться в разных источниках с разным kind (например, в общем списке
+    ("auto") и в отдельном "топ самых быстрых для мобильных" ("lte") —
+    буквально та же строка). При совпадении оставляем более специальный kind
+    (whitelist/lte), а не первый попавшийся — иначе такие категории будут
+    пустыми, хотя источник честно что-то нашёл.
+    """
+    KIND_PRIORITY = {"whitelist": 0, "lte": 0, "auto": 1}
+    best: dict[str, ConfigItem] = {}
+    order: list[str] = []
     for c in configs:
         k = c.key()
-        if k not in seen:
-            seen.add(k); out.append(c)
-    return out
+        if k not in best:
+            best[k] = c
+            order.append(k)
+        elif KIND_PRIORITY.get(c.kind, 1) < KIND_PRIORITY.get(best[k].kind, 1):
+            best[k] = c  # апгрейд на более специальный kind, позиция в порядке не меняется
+    return [best[k] for k in order]
 
 
 # ── Точка входа ───────────────────────────────────────────────────────────────
@@ -942,6 +967,10 @@ def build() -> None:
                 logger.warning("skip %s: %s", src.name, e)
                 continue
         logger.info("found %d in %s", len(items), src.name)
+        if len(items) > MAX_PER_SOURCE:
+            logger.warning("%s даёт %d конфигов — обрезаю до %d, чтобы не задавить мелкие источники",
+                            src.name, len(items), MAX_PER_SOURCE)
+            items = items[:MAX_PER_SOURCE]
         all_configs += items
 
     unique = dedupe(all_configs)
