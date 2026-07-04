@@ -32,8 +32,18 @@ jobs:
         run: pip install libsql-experimental
 
       - name: Install sing-box (для реальной проверки конфигов)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          SINGBOX_VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | grep -Po '"tag_name": "v\K[^"]*')
+          SINGBOX_FALLBACK="1.11.1"
+          SINGBOX_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}" \
+            https://api.github.com/repos/SagerNet/sing-box/releases/latest \
+            | grep -Po '"tag_name": "v\K[^"]*' || true)
+          if [ -z "$SINGBOX_VERSION" ]; then
+            echo "⚠️ Не удалось определить последнюю версию sing-box (rate limit или сбой API) — использую запасную ${SINGBOX_FALLBACK}"
+            SINGBOX_VERSION="$SINGBOX_FALLBACK"
+          fi
+          echo "Устанавливаю sing-box v${SINGBOX_VERSION}"
           curl -sL "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_VERSION}/sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz" -o singbox.tar.gz
           tar -xzf singbox.tar.gz
           sudo mv "sing-box-${SINGBOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
