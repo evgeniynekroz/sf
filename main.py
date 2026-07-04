@@ -28,6 +28,7 @@ OUTPUT_DIR        = ROOT / "output"
 MANIFEST_FILE     = OUTPUT_DIR / "manifest.json"
 SUBSCRIPTION_FILE = OUTPUT_DIR / "subscription.txt"
 SINGBOX_FILE      = OUTPUT_DIR / "singbox.json"
+XRAY_FILE         = OUTPUT_DIR / "xray.json"
 
 FETCH_TIMEOUT    = 30
 MAX_HTTP_BYTES   = 1_500_000
@@ -698,8 +699,157 @@ def real_check_batch(raws: list[str]) -> dict[str, bool]:
     return result
 
 
+def _xray_outbound(raw: str) -> tuple[str, dict, dict] | None:
+    """Возвращает (protocol, settings, streamSettings) для Xray-core outbound "proxy". None — не смогли распарсить."""
+    s = raw.strip()
+    try:
+        if s.lower().startswith("vless://"):
+            p  = urlparse(s)
+            qs = parse_qs(p.query)
+            g  = lambda k, d=None: qs.get(k, [d])[0]
+            host, port = p.hostname, p.port or 443
+            if not host or not p.username:
+                return None
+            user: dict = {"id": p.username, "encryption": "none"}
+            if g("flow"):
+                user["flow"] = g("flow")
+            settings = {"vnext": [{"address": host, "port": port, "users": [user]}]}
+            net = g("type", "tcp")
+            stream: dict = {"network": net}
+            security = g("security", "none")
+            stream["security"] = security if security in ("tls", "reality") else "none"
+            if security == "tls":
+                stream["tlsSettings"] = {"serverName": g("sni") or g("host") or host,
+                                          "fingerprint": g("fp", "chrome")}
+                if g("allowInsecure") == "1" or g("insecure") == "1":
+                    stream["tlsSettings"]["allowInsecure"] = True
+            elif security == "reality" and g("pbk"):
+                stream["realitySettings"] = {"serverName": g("sni", host), "publicKey": g("pbk"),
+                                              "shortId": g("sid", ""), "fingerprint": g("fp", "chrome")}
+            if net == "ws":
+                stream["wsSettings"] = {"path": g("path", "/")}
+                if g("host"):
+                    stream["wsSettings"]["headers"] = {"Host": g("host")}
+            elif net == "grpc":
+                stream["grpcSettings"] = {"serviceName": g("serviceName", "")}
+            return "vless", settings, stream
+
+        if s.lower().startswith("vmess://"):
+            data = _b64json(s[8:].split("#")[0])
+            host, port = str(data.get("add", "")), int(data.get("port", 443) or 443)
+            uuid = data.get("id")
+            if not host or not uuid:
+                return None
+            settings = {"vnext": [{"address": host, "port": port, "users": [
+                {"id": uuid, "alterId": int(data.get("aid", 0) or 0), "security": "auto"}]}]}
+            net = data.get("net", "tcp")
+            stream = {"network": net}
+            if str(data.get("tls", "")).lower() == "tls":
+                stream["security"] = "tls"
+                stream["tlsSettings"] = {"serverName": data.get("sni") or data.get("host") or host,
+                                          "fingerprint": "chrome"}
+            else:
+                stream["security"] = "none"
+            if net == "ws":
+                stream["wsSettings"] = {"path": data.get("path", "/")}
+                if data.get("host"):
+                    stream["wsSettings"]["headers"] = {"Host": data["host"]}
+            elif net == "grpc":
+                stream["grpcSettings"] = {"serviceName": data.get("path", "")}
+            return "vmess", settings, stream
+
+        if s.lower().startswith("trojan://"):
+            p  = urlparse(s)
+            qs = parse_qs(p.query)
+            g  = lambda k, d=None: qs.get(k, [d])[0]
+            host, port = p.hostname, p.port or 443
+            if not host or not p.username:
+                return None
+            settings = {"servers": [{"address": host, "port": port, "password": p.username}]}
+            net = g("type", "tcp")
+            stream = {"network": net, "security": "tls",
+                      "tlsSettings": {"serverName": g("sni", host), "fingerprint": g("fp", "chrome")}}
+            if net == "ws":
+                stream["wsSettings"] = {"path": g("path", "/")}
+            elif net == "grpc":
+                stream["grpcSettings"] = {"serviceName": g("serviceName", "")}
+            return "trojan", settings, stream
+
+        if s.lower().startswith("ss://"):
+            body = s[5:].split("#")[0]
+            if "@" in body:
+                cred_b64, hostport = body.split("@", 1)
+                hostport = hostport.split("?")[0]
+                try:
+                    cred = base64.urlsafe_b64decode(cred_b64 + "=" * (-len(cred_b64) % 4)).decode()
+                except Exception:
+                    cred = base64.b64decode(cred_b64 + "=" * (-len(cred_b64) % 4)).decode()
+                method, password = cred.split(":", 1)
+                host, port = hostport.rsplit(":", 1)
+            else:
+                decoded = base64.b64decode(body + "=" * (-len(body) % 4)).decode()
+                methodpass, hostport = decoded.split("@", 1)
+                method, password = methodpass.split(":", 1)
+                host, port = hostport.rsplit(":", 1)
+            settings = {"servers": [{"address": host, "port": int(port), "method": method, "password": password}]}
+            return "shadowsocks", settings, {"network": "tcp", "security": "none"}
+    except Exception:
+        return None
+    return None
+
+
+XRAY_INBOUNDS = [
+    {"tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks",
+     "settings": {"udp": True, "auth": "noauth"},
+     "sniffing": {"enabled": True, "routeOnly": False, "destOverride": ["http", "tls", "quic"]}},
+    {"tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http",
+     "settings": {"allowTransparent": False},
+     "sniffing": {"enabled": True, "routeOnly": False, "destOverride": ["http", "tls", "quic"]}},
+]
+XRAY_ROUTING = {
+    "rules": [
+        {"type": "field", "protocol": ["bittorrent"], "outboundTag": "direct"},
+    ],
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
+}
+
+
+def build_xray_profile(raw: str, remarks: str) -> dict | None:
+    """Полный Xray-core JSON-профиль (формат, который Happ реально понимает как ОДИН сервер в массиве подписки)."""
+    ob = _xray_outbound(raw)
+    if ob is None:
+        return None
+    protocol, settings, stream = ob
+    return {
+        "dns": {"servers": ["1.1.1.1", "8.8.8.8"], "queryStrategy": "UseIP"},
+        "routing": XRAY_ROUTING,
+        "inbounds": XRAY_INBOUNDS,
+        "outbounds": [
+            {"tag": "proxy", "protocol": protocol, "settings": settings, "streamSettings": stream},
+            {"tag": "direct", "protocol": "freedom"},
+            {"tag": "block", "protocol": "blackhole"},
+        ],
+        "remarks": remarks,
+    }
+
+
+def build_xray_array(categories: dict[str, list[tuple[str, str]]]) -> list[dict]:
+    """Массив Xray-профилей — по одному конфигу на сервер, ровно формат, который Happ показывает списком локаций."""
+    profiles: list[dict] = []
+    for key in CATEGORY_ORDER:
+        entries = categories.get(key, [])
+        if not entries:
+            continue
+        for label, raw in entries:
+            prof = build_xray_profile(raw, label)
+            if prof is not None:
+                profiles.append(prof)
+    return profiles
+
+
 def build_singbox_config(categories: dict[str, list[tuple[str, str]]]) -> dict:
-    """Полный sing-box конфиг: только 1.1.1.1 (основной) / 8.8.8.8 (резерв), без спец-роутинга."""
+    """Полный sing-box конфиг (для Hiddify/NekoBox — реально sing-box-ядро, в отличие от Happ)."""
     outbounds: list[dict] = []
     used_tags: set[str] = set()
     group_tags: list[str] = []
@@ -750,8 +900,6 @@ def build_singbox_config(categories: dict[str, list[tuple[str, str]]]) -> dict:
 
 # ── Генерация подписки ────────────────────────────────────────────────────────
 
-# ── Генерация подписки ────────────────────────────────────────────────────────
-
 CATEGORY_ORDER = ["auto", "lte", "gaming", "whitelist", "other"]
 
 
@@ -772,10 +920,11 @@ def flatten_subscription_text(data: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict) -> None:
+def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict, xray_array: list[dict]) -> None:
     # 'subscription_data'    — структурированный JSON для фильтрации по категориям в воркере.
     # 'subscription'         — плоский текст (обратная совместимость / TEST_TOKEN).
-    # 'subscription_singbox' — полный sing-box конфиг (для Happ/Hiddify/NekoBox).
+    # 'subscription_singbox' — sing-box конфиг (для реально sing-box-ядра: Hiddify/NekoBox).
+    # 'subscription_xray'    — массив Xray-core профилей (для Happ — он на Xray-core, не sing-box).
     turso_exec(
         "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_data', ?)",
         [json.dumps(data, ensure_ascii=False)],
@@ -788,7 +937,11 @@ def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict) -> Non
         "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_singbox', ?)",
         [json.dumps(singbox, ensure_ascii=False)],
     )
-    logger.info("Подписка сохранена в Turso (subscription_data + subscription + subscription_singbox)")
+    turso_exec(
+        "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_xray', ?)",
+        [json.dumps(xray_array, ensure_ascii=False)],
+    )
+    logger.info("Подписка сохранена в Turso (data + flat + singbox + xray)")
 
 
 # ── Скрапинг (без изменений) ──────────────────────────────────────────────────
@@ -998,15 +1151,17 @@ def build() -> None:
     sub_data     = build_subscription_data(categories, generated_at)
     sub_content  = flatten_subscription_text(sub_data)
     singbox      = build_singbox_config(categories)
+    xray_array   = build_xray_array(categories)
     ensure_output_dir()
     SUBSCRIPTION_FILE.write_text(sub_content, encoding="utf-8")
     MANIFEST_FILE.write_text(json.dumps(sub_data, ensure_ascii=False, indent=2), encoding="utf-8")
     SINGBOX_FILE.write_text(json.dumps(singbox, ensure_ascii=False, indent=2), encoding="utf-8")
-    logger.info("subscription.txt, manifest.json и singbox.json записаны")
+    XRAY_FILE.write_text(json.dumps(xray_array, ensure_ascii=False, indent=2), encoding="utf-8")
+    logger.info("subscription.txt, manifest.json, singbox.json и xray.json записаны")
 
     # Сохраняем в Turso (два запроса: init + insert)
     init_db()
-    save_subscription_to_turso(sub_data, sub_content, singbox)
+    save_subscription_to_turso(sub_data, sub_content, singbox, xray_array)
 
 
 def main() -> int:
