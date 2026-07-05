@@ -48,13 +48,17 @@ WHITELIST_MAX        = 60
 LTE_MAX              = 40
 OTHER_MAX            = 300
 
-# ── Реальная проверка через sing-box (не только TCP, а честное поднятие туннеля) ─
+# ── Реальная проверка через Xray-core (тот же движок, что у Happ — не sing-box!) ─
 REAL_CHECK_TOP_N     = 5    # сколько топ-кандидатов на слот реально проверяем
-REAL_CHECK_WORKERS   = 10   # параллельных sing-box процессов
-REAL_CHECK_TIMEOUT   = 5    # секунд на curl через прокси
+REAL_CHECK_WORKERS   = 10   # параллельных xray-процессов
+REAL_CHECK_TIMEOUT   = 5    # секунд на curl через прокси (проверка доступности)
+REAL_CHECK_SPEED_URL = "https://speed.cloudflare.com/__down?bytes=500000"  # ~500KB для проверки скорости
+REAL_CHECK_MIN_KBPS  = 50   # ниже этого — сервер перегружен/бесполезен, отбраковываем
+REAL_CHECK_IP_URL    = "https://api.ipify.org"
 REAL_CHECK_URL       = "https://www.gstatic.com/generate_204"
 REAL_CHECK_PORT_BASE = 21080
-SINGBOX_BIN          = shutil.which("sing-box")
+XRAY_BIN             = shutil.which("xray")
+MY_PUBLIC_IP: str | None = None  # определяется один раз в build(), см. detect_my_ip()
 
 MOSCOW_LAT, MOSCOW_LON = 55.7558, 37.6173
 
@@ -332,7 +336,9 @@ def categorize(configs: list[ConfigItem], geo: dict[str, GeoInfo]) -> dict[str, 
     alive.sort(key=lambda c: c[6])
 
     def fmt(country_ru: str, ms: float) -> str:
-        return f"{country_ru} ({int(round(ms))} мс)"
+        return country_ru  # ms используется только для выбора победителя, не для показа —
+        # это пинг с раннера GitHub Actions до сервера, а не реальный пинг пользователя,
+        # и показывать его как будто это "твоя" скорость было бы нечестно.
 
     # ── Реальная проверка: берём топ-N (по пингу) кандидатов на каждый слот
     # (страна+протокол для auto, буфер для whitelist/lte) и честно поднимаем
@@ -609,26 +615,43 @@ def uri_to_outbound(raw: str, tag: str) -> dict | None:
     return None  # неподдерживаемый протокол — пропускаем
 
 
+def detect_my_ip() -> str | None:
+    """IP самого раннера GitHub Actions — чтобы поймать случаи, когда трафик
+    по ошибке идёт мимо туннеля напрямую (тогда curl вернёт IP раннера, а не сервера)."""
+    try:
+        req = Request(REAL_CHECK_IP_URL)
+        with urlopen(req, timeout=10) as resp:
+            return resp.read().decode().strip()
+    except Exception as exc:
+        logger.warning("не удалось определить свой IP: %s", exc)
+        return None
+
+
 def real_check(raw: str, port: int) -> bool:
     """
-    Честная проверка: поднимает конфиг через sing-box локально (SOCKS5-инбаунд)
-    и пробует реально скачать через него страницу. TCP-порт может быть открыт,
-    а VPN за ним — не работать (протухший ключ, не тот протокол и т.п.) — вот
-    это отличие мы и ловим.
-    Возвращает True только если curl через прокси реально получил ответ.
+    Честная проверка через Xray-core (тот же движок, что использует Happ — НЕ sing-box,
+    у них есть нюансы совместимости, особенно на Reality/XTLS). Три уровня проверки:
+    1. Реально ли поднимается прокси и отвечает ли эталонный сайт через него
+    2. Действительно ли трафик идёт ЧЕРЕЗ туннель (сверяем исходящий IP с IP раннера —
+       если совпал, значит соединение случайно пошло напрямую, а не через сервер)
+    3. Не настолько ли сервер перегружен, что толку от него ноль (мини-проверка скорости)
     """
-    if not SINGBOX_BIN:
-        return True  # sing-box не установлен (например, локальный прогон) — не блокируем пайплайн
+    if not XRAY_BIN:
+        return True  # xray не установлен (например, локальный прогон) — не блокируем пайплайн
 
-    ob = uri_to_outbound(raw, "check")
+    ob = _xray_outbound(raw)
     if ob is None:
         return True  # протокол, который мы не умеем поднять (ssr и т.п.) — пропускаем честно, не браним
+    protocol, settings, stream = ob
 
     config = {
-        "outbounds": [ob, {"type": "direct", "tag": "direct"}],
-        "inbounds": [{"type": "socks", "tag": "in", "listen": "127.0.0.1", "listen_port": port}],
-        "route": {"final": "check"},
-        "log": {"level": "error"},
+        "log": {"loglevel": "none"},
+        "inbounds": [{"tag": "socks", "port": port, "listen": "127.0.0.1", "protocol": "socks",
+                       "settings": {"udp": False, "auth": "noauth"}}],
+        "outbounds": [
+            {"tag": "proxy", "protocol": protocol, "settings": settings, "streamSettings": stream},
+            {"tag": "direct", "protocol": "freedom"},
+        ],
     }
 
     proc = None
@@ -636,19 +659,43 @@ def real_check(raw: str, port: int) -> bool:
         json.dump(config, f)
         cfg_path = f.name
 
+    def _curl(url: str, extra: list[str], timeout: int) -> subprocess.CompletedProcess:
+        return subprocess.run(
+            ["curl", "--socks5-hostname", f"127.0.0.1:{port}", "--max-time", str(timeout),
+             "-s", *extra, url],
+            capture_output=True, text=True, timeout=timeout + 3,
+        )
+
     try:
         proc = subprocess.Popen(
-            [SINGBOX_BIN, "run", "-c", cfg_path],
+            [XRAY_BIN, "run", "-c", cfg_path],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
         )
-        time.sleep(0.6)  # дать инбаунду подняться
-        result = subprocess.run(
-            ["curl", "--socks5-hostname", f"127.0.0.1:{port}",
-             "--max-time", str(REAL_CHECK_TIMEOUT), "-s", "-o", "/dev/null",
-             "-w", "%{http_code}", REAL_CHECK_URL],
-            capture_output=True, text=True, timeout=REAL_CHECK_TIMEOUT + 3,
-        )
-        return result.returncode == 0 and result.stdout.strip() in ("200", "204", "301", "302")
+        time.sleep(0.7)  # дать инбаунду подняться
+
+        # 1. Базовая доступность
+        basic = _curl(REAL_CHECK_URL, ["-o", "/dev/null", "-w", "%{http_code}"], REAL_CHECK_TIMEOUT)
+        if basic.returncode != 0 or basic.stdout.strip() not in ("200", "204", "301", "302"):
+            return False
+
+        # 2. Действительно ли идёт через туннель, а не напрямую
+        if MY_PUBLIC_IP:
+            ip_result = _curl(REAL_CHECK_IP_URL, ["-o", "-"], REAL_CHECK_TIMEOUT)
+            exit_ip = ip_result.stdout.strip()
+            if ip_result.returncode != 0 or not exit_ip or exit_ip == MY_PUBLIC_IP:
+                return False  # либо не ответил, либо утечка мимо прокси на сам раннер
+
+        # 3. Скорость — сервер не должен быть настолько перегружен, что бесполезен
+        speed = _curl(REAL_CHECK_SPEED_URL, ["-o", "/dev/null", "-w", "%{speed_download}"], REAL_CHECK_TIMEOUT)
+        if speed.returncode == 0 and speed.stdout.strip():
+            try:
+                kbps = float(speed.stdout.strip()) / 1024
+                if kbps < REAL_CHECK_MIN_KBPS:
+                    return False
+            except ValueError:
+                pass  # не смогли распарсить скорость — не браним из-за этого одного пункта
+
+        return True
     except Exception:
         return False
     finally:
@@ -669,11 +716,11 @@ def real_check_batch(raws: list[str]) -> dict[str, bool]:
     unique = list(dict.fromkeys(raws))
     if not unique:
         return {}
-    if not SINGBOX_BIN:
-        logger.warning("sing-box не найден в PATH — реальная проверка пропущена, остаёмся на TCP+пинге")
+    if not XRAY_BIN:
+        logger.warning("xray не найден в PATH — реальная проверка пропущена, остаёмся на TCP+пинге")
         return {r: True for r in unique}
 
-    logger.info("реальная проверка (sing-box) для %d финалистов...", len(unique))
+    logger.info("реальная проверка (Xray-core) для %d финалистов...", len(unique))
     ports: Queue = Queue()
     for i in range(REAL_CHECK_WORKERS):
         ports.put(REAL_CHECK_PORT_BASE + i)
@@ -834,17 +881,41 @@ def build_xray_profile(raw: str, remarks: str) -> dict | None:
     }
 
 
-def build_xray_array(categories: dict[str, list[tuple[str, str]]]) -> list[dict]:
-    """Массив Xray-профилей — по одному конфигу на сервер, ровно формат, который Happ показывает списком локаций."""
-    profiles: list[dict] = []
+def build_xray_header(title: str) -> dict:
+    """Декоративная нерабочая 'локация' — разделитель категории (blackhole, никуда не подключается)."""
+    return {
+        "dns": {"servers": ["1.1.1.1", "8.8.8.8"], "queryStrategy": "UseIP"},
+        "inbounds": XRAY_INBOUNDS,
+        "outbounds": [
+            {"tag": "proxy", "protocol": "blackhole"},
+            {"tag": "direct", "protocol": "freedom"},
+        ],
+        "remarks": f"{title} ⬇️",
+    }
+
+
+def build_xray_by_category(categories: dict[str, list[tuple[str, str]]]) -> dict[str, list[dict]]:
+    """То же самое, но по категориям отдельно — чтобы воркер мог включать/выключать категории на пользователя."""
+    result: dict[str, list[dict]] = {}
     for key in CATEGORY_ORDER:
         entries = categories.get(key, [])
         if not entries:
             continue
+        items = [build_xray_header(CATEGORY_TITLES[key])]
         for label, raw in entries:
             prof = build_xray_profile(raw, label)
             if prof is not None:
-                profiles.append(prof)
+                items.append(prof)
+        result[key] = items
+    return result
+
+
+def build_xray_array(categories: dict[str, list[tuple[str, str]]]) -> list[dict]:
+    """Массив Xray-профилей — по одному конфигу на сервер, ровно формат, который Happ показывает списком локаций."""
+    by_cat = build_xray_by_category(categories)
+    profiles: list[dict] = []
+    for key in CATEGORY_ORDER:
+        profiles.extend(by_cat.get(key, []))
     return profiles
 
 
@@ -920,11 +991,12 @@ def flatten_subscription_text(data: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict, xray_array: list[dict]) -> None:
-    # 'subscription_data'    — структурированный JSON для фильтрации по категориям в воркере.
-    # 'subscription'         — плоский текст (обратная совместимость / TEST_TOKEN).
-    # 'subscription_singbox' — sing-box конфиг (для реально sing-box-ядра: Hiddify/NekoBox).
-    # 'subscription_xray'    — массив Xray-core профилей (для Happ — он на Xray-core, не sing-box).
+def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict, xray_array: list[dict], xray_by_cat: dict[str, list[dict]]) -> None:
+    # 'subscription_data'       — структурированный JSON для фильтрации по категориям в воркере (plain-текст).
+    # 'subscription'            — плоский текст (обратная совместимость / TEST_TOKEN, все категории).
+    # 'subscription_singbox'    — sing-box конфиг (для реально sing-box-ядра: Hiddify/NekoBox).
+    # 'subscription_xray'       — массив Xray-core профилей, все категории (для Happ, TEST_TOKEN).
+    # 'subscription_xray_bycat' — то же самое, но по категориям отдельно — для фильтрации на пользователя.
     turso_exec(
         "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_data', ?)",
         [json.dumps(data, ensure_ascii=False)],
@@ -941,7 +1013,11 @@ def save_subscription_to_turso(data: dict, flat_text: str, singbox: dict, xray_a
         "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_xray', ?)",
         [json.dumps(xray_array, ensure_ascii=False)],
     )
-    logger.info("Подписка сохранена в Turso (data + flat + singbox + xray)")
+    turso_exec(
+        "INSERT OR REPLACE INTO settings (key, value) VALUES ('subscription_xray_bycat', ?)",
+        [json.dumps(xray_by_cat, ensure_ascii=False)],
+    )
+    logger.info("Подписка сохранена в Turso (data + flat + singbox + xray + xray_bycat)")
 
 
 # ── Скрапинг (без изменений) ──────────────────────────────────────────────────
@@ -1106,6 +1182,10 @@ def dedupe(configs: list[ConfigItem]) -> list[ConfigItem]:
 # ── Точка входа ───────────────────────────────────────────────────────────────
 
 def build() -> None:
+    global MY_PUBLIC_IP
+    MY_PUBLIC_IP = detect_my_ip()
+    logger.info("свой IP (для проверки утечки мимо туннеля): %s", MY_PUBLIC_IP or "не определён")
+
     sources = load_sources()
     all_configs: list[ConfigItem] = []
 
@@ -1151,6 +1231,7 @@ def build() -> None:
     sub_data     = build_subscription_data(categories, generated_at)
     sub_content  = flatten_subscription_text(sub_data)
     singbox      = build_singbox_config(categories)
+    xray_by_cat  = build_xray_by_category(categories)
     xray_array   = build_xray_array(categories)
     ensure_output_dir()
     SUBSCRIPTION_FILE.write_text(sub_content, encoding="utf-8")
@@ -1161,7 +1242,7 @@ def build() -> None:
 
     # Сохраняем в Turso (два запроса: init + insert)
     init_db()
-    save_subscription_to_turso(sub_data, sub_content, singbox, xray_array)
+    save_subscription_to_turso(sub_data, sub_content, singbox, xray_array, xray_by_cat)
 
 
 def main() -> int:
