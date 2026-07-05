@@ -31,24 +31,24 @@ jobs:
       - name: Install dependencies
         run: pip install libsql-experimental
 
-      - name: Install sing-box (для реальной проверки конфигов)
+      - name: Install Xray-core (для реальной проверки конфигов — тот же движок, что у Happ)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          SINGBOX_FALLBACK="1.11.1"
-          SINGBOX_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}" \
-            https://api.github.com/repos/SagerNet/sing-box/releases/latest \
+          XRAY_FALLBACK="25.6.8"
+          XRAY_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}" \
+            https://api.github.com/repos/XTLS/Xray-core/releases/latest \
             | grep -Po '"tag_name": "v\K[^"]*' || true)
-          if [ -z "$SINGBOX_VERSION" ]; then
-            echo "⚠️ Не удалось определить последнюю версию sing-box (rate limit или сбой API) — использую запасную ${SINGBOX_FALLBACK}"
-            SINGBOX_VERSION="$SINGBOX_FALLBACK"
+          if [ -z "$XRAY_VERSION" ]; then
+            echo "⚠️ Не удалось определить последнюю версию Xray-core (rate limit или сбой API) — использую запасную ${XRAY_FALLBACK}"
+            XRAY_VERSION="$XRAY_FALLBACK"
           fi
-          echo "Устанавливаю sing-box v${SINGBOX_VERSION}"
-          curl -sL "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_VERSION}/sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz" -o singbox.tar.gz
-          tar -xzf singbox.tar.gz
-          sudo mv "sing-box-${SINGBOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
-          sudo chmod +x /usr/local/bin/sing-box
-          sing-box version
+          echo "Устанавливаю Xray-core v${XRAY_VERSION}"
+          curl -sL "https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip" -o xray.zip
+          unzip -q xray.zip -d xray-bin
+          sudo mv xray-bin/xray /usr/local/bin/xray
+          sudo chmod +x /usr/local/bin/xray
+          xray version
 
       - name: Run builder
         run: python main.py
