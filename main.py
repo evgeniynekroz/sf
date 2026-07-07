@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import base64
+import bisect
+import ipaddress
 import json
 import logging
 import os
@@ -43,10 +45,8 @@ TCP_TIMEOUT      = 3      # секунд на попытку TCP-подключ�
 TCP_MAX_WORKERS  = 50     # параллельных проверок
 
 AUTO_MAX_PER_COUNTRY = 3    # макс. "Авто N" на страну (по протоколам)
-GAMING_COUNTRIES     = 6    # сколько ближайших к Москве стран берём для "Для игр"
 WHITELIST_MAX        = 60
 LTE_MAX              = 40
-OTHER_MAX            = 300
 
 # ── Реальная проверка через Xray-core (тот же движок, что у Happ — не sing-box!) ─
 REAL_CHECK_TOP_N     = 5    # сколько топ-кандидатов на слот реально проверяем
@@ -60,14 +60,14 @@ REAL_CHECK_PORT_BASE = 21080
 XRAY_BIN             = shutil.which("xray")
 MY_PUBLIC_IP: str | None = None  # определяется один раз в build(), см. detect_my_ip()
 
-MOSCOW_LAT, MOSCOW_LON = 55.7558, 37.6173
+# ── RKN-блокировки: небольшой (899 подсетей) официальный+community список ────────
+RKN_BLOCKLIST_URL = "https://community.antifilter.download/list/community.lst"
+RKN_NETWORKS: list = []  # заполняется один раз в build(), см. load_rkn_blocklist()
 
 CATEGORY_TITLES = {
     "auto":      "🌐 Авто серверы",
     "lte":       "🏎️ LTE локации",
-    "gaming":    "🎮 Для игр",
     "whitelist": "🏳 Белые списки",
-    "other":     "🔥 Остальные локации",
 }
 
 TURSO_URL   = "libsql://nekrozvpn-evgen.aws-eu-west-1.turso.io"
@@ -295,33 +295,28 @@ def lookup_geo(hosts: list[str]) -> dict[str, GeoInfo]:
     return result
 
 
-def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    from math import radians, sin, cos, sqrt, atan2
-    r = 6371.0
-    p1, p2 = radians(lat1), radians(lat2)
-    dphi = radians(lat2 - lat1)
-    dlmb = radians(lon2 - lon1)
-    a = sin(dphi/2)**2 + cos(p1)*cos(p2)*sin(dlmb/2)**2
-    return 2 * r * atan2(sqrt(a), sqrt(1-a))
-
-
 def categorize(configs: list[ConfigItem], geo: dict[str, GeoInfo]) -> dict[str, list[tuple[str, str]]]:
     """
-    Возвращает {category: [(label, raw), ...]} по всем категориям.
-    Двухступенчатая проверка: (1) TCP+пинг по всем адресам — быстро, отсеивает
-    полностью мёртвые; (2) реальная проверка через sing-box у топ-кандидатов
-    auto/lte/whitelist — честно поднимает туннель и проверяет, что через него
-    правда качается трафик (открытый TCP-порт ещё не значит рабочий VPN).
-    Категория "Остальные" — только TCP+пинг (без реальной проверки, иначе долго).
+    Возвращает {category: [(label, raw), ...]} — только auto/lte/whitelist.
+    Три ступени фильтрации: (0) RKN-блоклист — заведомо заблокированные в РФ
+    адреса выкидываются, не тратя на них время; (1) TCP+пинг — отсеивает
+    полностью мёртвые; (2) реальная проверка через Xray-core у топ-кандидатов —
+    честно поднимает туннель и проверяет, что через него правда качается трафик.
     """
-    # ── кандидаты с известным хостом/портом/гео ────────────────────────────────
+    # ── кандидаты с известным хостом/портом/гео, за вычетом RKN-заблокированных ──
     candidates: list[tuple] = []  # (cc, country_ru, protocol, raw, (host, port), kind)
+    rkn_skipped = 0
     for item in configs:
         hp = extract_host_port(item.value)
         if not hp or hp[0] not in geo:
             continue
+        if is_rkn_blocked(hp[0]):
+            rkn_skipped += 1
+            continue
         g = geo[hp[0]]
         candidates.append((g.cc, g.country_ru, item.protocol, item.value, hp, item.kind))
+    if rkn_skipped:
+        logger.info("RKN-фильтр: пропущено %d адресов из заблокированных в России подсетей", rkn_skipped)
 
     unique_pairs = list({c[4] for c in candidates})
     logger.info("проверка задержки для %d уникальных адресов (все, без обрезки)...", len(unique_pairs))
@@ -342,7 +337,7 @@ def categorize(configs: list[ConfigItem], geo: dict[str, GeoInfo]) -> dict[str, 
 
     # ── Реальная проверка: берём топ-N (по пингу) кандидатов на каждый слот
     # (страна+протокол для auto, буфер для whitelist/lte) и честно поднимаем
-    # через sing-box + curl. TCP-порт мог ответить, а VPN за ним — не работать.
+    # через Xray-core + curl. TCP-порт мог ответить, а VPN за ним — не работать.
     finalist_raws: set[str] = set()
     auto_slot_count: dict[tuple[str, str], int] = defaultdict(int)
     for c in alive:
@@ -372,56 +367,34 @@ def categorize(configs: list[ConfigItem], geo: dict[str, GeoInfo]) -> dict[str, 
     check_result = real_check_batch(list(finalist_raws))
 
     def real_ok(raw: str) -> bool:
-        # Не финалист (например, кандидат для "Остальные") — реально не проверяли,
-        # честно и не притворяемся: пропускаем как есть (только TCP+пинг гарантирован).
-        return raw not in finalist_raws or check_result.get(raw, True)
+        # Все категории теперь обязаны реально пройти проверку — раньше
+        # "Остальные" были исключением, но эту категорию убрали целиком.
+        return check_result.get(raw, False)
 
     # ── AUTO: до AUTO_MAX_PER_COUNTRY конфигов на страну, по одному на протокол ─
     auto_by_country: dict[str, dict[str, tuple[str, str, float]]] = defaultdict(dict)  # cc -> {protocol: (country_ru, raw, ms)}
     for cc, country_ru, proto, raw, hp, kind, ms in alive:
-        if kind != "auto" or not real_ok(raw):
+        if kind != "auto" or raw not in finalist_raws or not real_ok(raw):
             continue
         slot = auto_by_country[cc]
         if proto not in slot and len(slot) < AUTO_MAX_PER_COUNTRY:
             slot[proto] = (country_ru, raw, ms)
 
-    auto_entries: list[tuple[str, str]] = []          # (label, raw)
-    auto_first_by_cc: dict[str, tuple[str, str]] = {}  # cc -> (label, raw) — для "Для игр"
-    cc_coords: dict[str, list[tuple[float, float]]] = defaultdict(list)
-    for c in alive:
-        cc_coords[c[0]].append((geo[c[4][0]].lat, geo[c[4][0]].lon))
-
+    auto_entries: list[tuple[str, str]] = []  # (label, raw)
     for cc, protos in sorted(auto_by_country.items(), key=lambda kv: next(iter(kv[1].values()))[0]):
         flag  = COUNTRY_FLAGS.get(cc, "🌐")
         items = list(protos.values())  # [(country_ru, raw, ms), ...] — уже отсортированы по ms (alive был отсортирован)
         for idx, (country_ru, raw, ms) in enumerate(items, start=1):
             suffix = f" {idx}" if len(items) > 1 else ""
             auto_entries.append((f"{flag} {fmt(country_ru, ms)}{suffix}", raw))
-        first_ru, first_raw, first_ms = items[0]
-        auto_first_by_cc[cc] = (fmt(first_ru, first_ms), first_raw)
 
-    # ── GAMING: ближайшие к Москве страны (по средним координатам живых хостов) ─
-    dist_by_cc: list[tuple[float, str]] = []
-    for cc, coords in cc_coords.items():
-        if cc not in auto_first_by_cc or not coords:
-            continue
-        avg_lat = sum(p[0] for p in coords) / len(coords)
-        avg_lon = sum(p[1] for p in coords) / len(coords)
-        dist_by_cc.append((haversine_km(MOSCOW_LAT, MOSCOW_LON, avg_lat, avg_lon), cc))
-    dist_by_cc.sort()
-
-    gaming_entries: list[tuple[str, str]] = []
-    for _, cc in dist_by_cc[:GAMING_COUNTRIES]:
-        flag = COUNTRY_FLAGS.get(cc, "🌐")
-        label, raw = auto_first_by_cc[cc]
-        gaming_entries.append((f"{flag} {label}", raw))
-
-    # ── WHITELIST / LTE: живые из источников этого kind, самые быстрые первыми ──
+    # ── WHITELIST / LTE: живые из источников этого kind, самые быстрые первыми,
+    #    и обязательно прошедшие реальную проверку ──────────────────────────────
     def collect(kind: str, limit: int, tag: str) -> list[tuple[str, str]]:
         seen_hosts: set[str] = set()
         out: list[tuple[str, str]] = []
         for cc, country_ru, proto, raw, hp, k, ms in alive:
-            if k != kind or hp[0] in seen_hosts or not real_ok(raw):
+            if k != kind or hp[0] in seen_hosts or raw not in finalist_raws or not real_ok(raw):
                 continue
             seen_hosts.add(hp[0])
             flag = COUNTRY_FLAGS.get(cc, "🌐")
@@ -433,25 +406,10 @@ def categorize(configs: list[ConfigItem], geo: dict[str, GeoInfo]) -> dict[str, 
     whitelist_entries = collect("whitelist", WHITELIST_MAX, "Whitelist")
     lte_entries        = collect("lte", LTE_MAX, "LTE")
 
-    # ── OTHER: живые auto-конфиги, не попавшие в "Авто" ─────────────────────────
-    used_raw = {raw for _, raw in auto_entries}
-    other_entries: list[tuple[str, str]] = []
-    seen_hosts: set[str] = set()
-    for cc, country_ru, proto, raw, hp, kind, ms in alive:
-        if kind != "auto" or raw in used_raw or hp[0] in seen_hosts:
-            continue
-        seen_hosts.add(hp[0])
-        flag = COUNTRY_FLAGS.get(cc, "🌐")
-        other_entries.append((f"{flag} {fmt(country_ru, ms)}", raw))
-        if len(other_entries) >= OTHER_MAX:
-            break
-
     return {
         "auto": auto_entries,
         "lte": lte_entries,
-        "gaming": gaming_entries,
         "whitelist": whitelist_entries,
-        "other": other_entries,
     }
 
 
@@ -613,6 +571,53 @@ def uri_to_outbound(raw: str, tag: str) -> dict | None:
     except Exception:
         return None
     return None  # неподдерживаемый протокол — пропускаем
+
+
+def load_rkn_blocklist() -> list[tuple[int, int]]:
+    """
+    Скачивает community.antifilter.download список (899 подсетей, заблокированных
+    РКН+community). Возвращает отсортированные (start_int, end_int) для быстрого
+    поиска через bisect — чтобы не тратить время на TCP/реальную проверку
+    заведомо заблокированных в России адресов.
+    """
+    try:
+        req = Request(RKN_BLOCKLIST_URL)
+        with urlopen(req, timeout=15) as resp:
+            lines = resp.read().decode().splitlines()
+    except Exception as exc:
+        logger.warning("не удалось скачать RKN-блоклист: %s — фильтр пропущен", exc)
+        return []
+
+    ranges: list[tuple[int, int]] = []
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        try:
+            net = ipaddress.ip_network(line, strict=False)
+            if net.version != 4:
+                continue  # у нас только IPv4-хосты в конфигах
+            ranges.append((int(net.network_address), int(net.broadcast_address)))
+        except ValueError:
+            continue
+    ranges.sort()
+    logger.info("RKN-блоклист: %d подсетей загружено", len(ranges))
+    return ranges
+
+
+def is_rkn_blocked(host: str) -> bool:
+    """True, если host (IPv4-литерал) попадает в один из заблокированных РКН диапазонов."""
+    if not RKN_NETWORKS:
+        return False
+    try:
+        ip_int = int(ipaddress.ip_address(host))
+    except ValueError:
+        return False  # это домен, не IP — пропускаем проверку (см. ограничение ниже)
+    idx = bisect.bisect_right(RKN_NETWORKS, (ip_int, float("inf"))) - 1
+    if idx < 0:
+        return False
+    start, end = RKN_NETWORKS[idx]
+    return start <= ip_int <= end
 
 
 def detect_my_ip() -> str | None:
@@ -971,7 +976,7 @@ def build_singbox_config(categories: dict[str, list[tuple[str, str]]]) -> dict:
 
 # ── Генерация подписки ────────────────────────────────────────────────────────
 
-CATEGORY_ORDER = ["auto", "lte", "gaming", "whitelist", "other"]
+CATEGORY_ORDER = ["auto", "lte", "whitelist"]
 
 
 def build_subscription_data(categories: dict[str, list[tuple[str, str]]], generated_at: str) -> dict:
@@ -1182,9 +1187,10 @@ def dedupe(configs: list[ConfigItem]) -> list[ConfigItem]:
 # ── Точка входа ───────────────────────────────────────────────────────────────
 
 def build() -> None:
-    global MY_PUBLIC_IP
+    global MY_PUBLIC_IP, RKN_NETWORKS
     MY_PUBLIC_IP = detect_my_ip()
     logger.info("свой IP (для проверки утечки мимо туннеля): %s", MY_PUBLIC_IP or "не определён")
+    RKN_NETWORKS = load_rkn_blocklist()
 
     sources = load_sources()
     all_configs: list[ConfigItem] = []
