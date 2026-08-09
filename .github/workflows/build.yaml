@@ -1,0 +1,56 @@
+name: build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+concurrency:
+  group: sf-build
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      PROJECT_NAME: sf
+      PROJECT_USER_AGENT: sf-builder/1.0
+      REQUIRE_XRAY: "1"
+      RU_CHECK_MODE: "soft"
+      GLOBALPING_LOCATION: "RU"
+      GLOBALPING_LIMIT: "50"
+      TURSO_URL: ${{ secrets.TURSO_URL }}
+      TURSO_TOKEN: ${{ secrets.TURSO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Xray-core
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y curl unzip
+          tag=$(curl -fsSL https://api.github.com/repos/XTLS/Xray-core/releases/latest | python3 -c 'import json,sys; print(json.load(sys.stdin)["tag_name"])')
+          curl -fsSL -o /tmp/xray.zip "https://github.com/XTLS/Xray-core/releases/download/${tag}/Xray-linux-64.zip"
+          unzip -o /tmp/xray.zip -d /tmp/xray
+          sudo install -m 0755 /tmp/xray/xray /usr/local/bin/xray
+          xray version
+
+      - name: Build subscription
+        run: python main.py
+
+      - name: Upload output artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sf-output
+          path: output/
+          if-no-files-found: ignore
