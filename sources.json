@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "name": "ru-igareck-vless",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-ss",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_SS+All_RUS.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-lte",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt",
+      "kind": "lte",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-white-cidr-all",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-all.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-white-cidr-checked",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-checked.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-white-sni",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-SNI-RU-all.txt",
+      "kind": "whitelist",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-vless",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-trojan",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/trojan.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "barry-far-ss",
+      "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/ss.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "epodonios-vless",
+      "url": "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "epodonios-trojan",
+      "url": "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "epodonios-ss",
+      "url": "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/ss.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "ebrasha-vless",
+      "url": "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "ebrasha-trojan",
+      "url": "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/trojan_configs.txt",
+      "kind": "auto",
+      "enabled": true
+    },
+    {
+      "name": "ebrasha-ss",
+      "url": "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/ss_configs.txt",
+      "kind": "auto",
+      "enabled": true
+    }
+  ]
+}

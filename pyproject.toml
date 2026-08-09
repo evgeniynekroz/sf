@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sf"
+version = "0.1.0"
+description = "Subscription builder for Xray-compatible clients"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "sf" }
+]
+
+[tool.setuptools]
+py-modules = ["main"]

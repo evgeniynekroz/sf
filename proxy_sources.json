@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "name": "databay-ru-socks5-fast-elite",
+      "url": "https://databay.com/api/v1/proxy-list?protocol=socks5&country=RU&speed=fast&anonymity=elite&format=txt&limit=50",
+      "protocol": "socks5",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "databay-ru-socks5-fast-anonymous",
+      "url": "https://databay.com/api/v1/proxy-list?protocol=socks5&country=RU&speed=fast&anonymity=anonymous&format=txt&limit=50",
+      "protocol": "socks5",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "proxyscrape-ru-socks5",
+      "url": "https://api.proxyscrape.com/v4/free-proxy-list/get?request=display_proxies&proxy_format=protocolipport&format=text&protocol=socks5&country=RU&timeout=5000",
+      "protocol": "socks5",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "proxifly-ru",
+      "url": "https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/countries/RU/data.txt",
+      "protocol": "mixed",
+      "country": "RU",
+      "enabled": true
+    }
+  ]
+}
