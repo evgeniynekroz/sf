@@ -32,5 +32,18 @@ CREATE TABLE IF NOT EXISTS payments (
   FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
+-- Broadcast queue for the bot (processed by the Worker cron in batches).
+CREATE TABLE IF NOT EXISTS broadcasts (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  text       TEXT NOT NULL,
+  status     TEXT NOT NULL DEFAULT 'draft', -- draft | queued | done | cancelled
+  cursor     INTEGER NOT NULL DEFAULT 0,
+  sent       INTEGER NOT NULL DEFAULT 0,
+  failed     INTEGER NOT NULL DEFAULT 0,
+  created_by INTEGER,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE INDEX IF NOT EXISTS idx_users_subscription_token ON users(subscription_token);
 CREATE INDEX IF NOT EXISTS idx_users_telegram_id ON users(telegram_id);
+CREATE INDEX IF NOT EXISTS idx_payments_status ON payments(status);

@@ -48,16 +48,38 @@ Workflow запускает builder каждый час. Секреты долж
 - `TURSO_URL`
 - `TURSO_TOKEN`
 
-## Cloudflare Worker
+## Cloudflare Worker (`worker.js`) — бот ViraVPN + подписки
 
-`worker.js` отдаёт подписки из Turso:
+Один воркер делает всё:
 
-- `/sub/:token` — автоформат по User-Agent
-- `/sub/:token/plain`
-- `/sub/:token/base64`
-- `/sub/:token/xray`
-- `/sub/:token/singbox`
-- `/sub/:token/manifest`
-- `/status`
+- Telegram-бот: меню, триал 7 дней, покупка подписки, админка, рассылки;
+- оплаты: **Telegram Stars**, **CryptoBot** (Crypto Pay API), **DonationAlerts** (донат с кодом);
+- отдача подписок из Turso:
+  - `/sub/:token` — автоформат по User-Agent
+  - `/sub/:token/plain` / `/base64` / `/xray` / `/singbox` / `/manifest`
+  - `/status`
 
-Бот, оплаты и админка должны жить в отдельном приватном репозитории.
+Токен подписки — персональный, выдаётся ботом; при истёкшей подписке отдаётся 403.
+
+### Деплой через дашборд Cloudflare
+
+1. **Workers & Pages → Create → Worker**, вставь содержимое `worker.js`, Deploy.
+2. **Settings → Variables and Secrets** — добавь переменные:
+
+   | Переменная | Тип | Что это |
+   |---|---|---|
+   | `BOT_TOKEN` | secret | токен бота от @BotFather |
+   | `TG_WEBHOOK_SECRET` | secret | любая случайная строка |
+   | `TURSO_URL` | secret | `libsql://…` (тот же, что у билдера) |
+   | `TURSO_TOKEN` | secret | токен Turso |
+   | `ADMIN_IDS` | text | твой Telegram id (через запятую, если несколько) |
+   | `CRYPTOBOT_TOKEN` | secret | опционально: @CryptoBot → Crypto Pay → Create App |
+   | `DA_CLIENT_ID` / `DA_CLIENT_SECRET` | text/secret | опционально: DonationAlerts OAuth-приложение |
+   | `DA_USERNAME` | text | опционально: ник DA для ссылки на страницу доната |
+
+3. Открой `https://<worker>/init?secret=<TG_WEBHOOK_SECRET>` — создаст таблицы и поставит webhook Telegram.
+4. **Settings → Triggers → Cron Triggers** — добавь `* * * * *` (нужен для DonationAlerts, рассылок и напоминаний).
+5. CryptoBot: в @CryptoBot → Crypto Pay → My Apps → Webhooks укажи `https://<worker>/cryptobot/webhook`.
+6. DonationAlerts: создай приложение на `donationalerts.com/application/clients` с redirect URI `https://<worker>/da/callback`, затем один раз открой `https://<worker>/da/login?secret=<TG_WEBHOOK_SECRET>` и авторизуйся.
+
+Тарифы и цены — константа `PLANS` в начале `worker.js` (₽ / ⭐ / USDT правятся в одном месте).
