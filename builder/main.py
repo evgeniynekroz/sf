@@ -353,7 +353,7 @@ def real_check_node(raw: str, port: int) -> CheckResult:
 
     ob = _xray_outbound(raw)
     if ob is None:
-        return CheckResult(ok=True, speed_mbps=25.0, latency_ms=180.0)
+        return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
     protocol, settings, stream = ob
 
     config = {
@@ -391,26 +391,35 @@ def real_check_node(raw: str, port: int) -> CheckResult:
         basic = _curl(REAL_CHECK_URL, ["-o", NULL_DEVICE, "-w", "%{http_code}"], REAL_CHECK_TIMEOUT)
         latency = (time.perf_counter() - t0) * 1000.0
 
+        is_ru_whitelist = False
         if basic.returncode != 0 or basic.stdout.strip() not in ("200", "204", "301", "302"):
-            return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
+            # Проверка для белых списков РФ (где зарубежный Cloudflare заблокирован)
+            t0 = time.perf_counter()
+            ru_check = _curl("http://ya.ru", ["-o", NULL_DEVICE, "-w", "%{http_code}"], REAL_CHECK_TIMEOUT)
+            if ru_check.returncode == 0 and ru_check.stdout.strip() in ("200", "301", "302"):
+                is_ru_whitelist = True
+                latency = (time.perf_counter() - t0) * 1000.0
+            else:
+                return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
 
-        # 2. IP Leak Check
+        # 2. IP Leak Check (только для зарубежных узлов)
         exit_ip = None
-        if MY_PUBLIC_IP:
+        if MY_PUBLIC_IP and not is_ru_whitelist:
             ip_result = _curl(REAL_CHECK_IP_URL, ["-o", "-"], REAL_CHECK_TIMEOUT)
             exit_ip = ip_result.stdout.strip()
             if ip_result.returncode != 0 or not exit_ip or exit_ip == MY_PUBLIC_IP:
                 return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
 
-        # 3. Скоростной тест (скачиваем до 5MB через CDN)
-        speed = _curl(REAL_CHECK_SPEED_URL, ["-o", NULL_DEVICE, "-w", "%{speed_download}"], REAL_CHECK_TIMEOUT)
-        speed_mbps = 0.0
-        if speed.returncode == 0 and speed.stdout.strip():
-            try:
-                bytes_per_sec = float(speed.stdout.strip())
-                speed_mbps = (bytes_per_sec * 8.0) / 1_000_000.0
-            except ValueError:
-                speed_mbps = 10.0
+        # 3. Скоростной тест
+        speed_mbps = 25.0 if is_ru_whitelist else 0.0
+        if not is_ru_whitelist:
+            speed = _curl(REAL_CHECK_SPEED_URL, ["-o", NULL_DEVICE, "-w", "%{speed_download}"], REAL_CHECK_TIMEOUT)
+            if speed.returncode == 0 and speed.stdout.strip():
+                try:
+                    bytes_per_sec = float(speed.stdout.strip())
+                    speed_mbps = (bytes_per_sec * 8.0) / 1_000_000.0
+                except ValueError:
+                    speed_mbps = 10.0
 
         return CheckResult(ok=True, speed_mbps=speed_mbps, latency_ms=latency, exit_ip=exit_ip)
     except Exception:
@@ -680,13 +689,13 @@ def build_pools(
         cc, kind = c[0], c[5]
         if kind in ("lte", "whitelist"):
             lte_candidates.append(c)
-        elif len(by_cc_candidates[cc]) < 25:
+        elif len(by_cc_candidates[cc]) < 40:
             by_cc_candidates[cc].append(c)
 
     ping_subset = []
     for c_list in by_cc_candidates.values():
         ping_subset.extend(c_list)
-    ping_subset.extend(lte_candidates[:50])
+    ping_subset.extend(lte_candidates[:60])
 
     unique_pairs = list({c[4] for c in ping_subset})
     logger.info("TCP-проверка для %d отобранных адресов целевых стран...", len(unique_pairs))
@@ -696,36 +705,35 @@ def build_pools(
     alive.sort(key=lambda c: c[6])
     logger.info("Живых узлов после TCP пинга: %d", len(alive))
 
-    # Финалисты для детального теста через Xray core + 60+ Мбит/с
+    # Финалисты для детального теста через Xray core + замер скорости
     finalists_set: set[str] = set()
     for cc in VIP_TARGET_COUNTRIES:
         cands = [c for c in alive if c[0] == cc and c[5] == "auto"]
-        for c in cands[:8]:
+        for c in cands[:15]:
             finalists_set.add(c[3])
 
-    for c in [c for c in alive if c[5] in ("lte", "whitelist")][:20]:
+    for c in [c for c in alive if c[5] in ("lte", "whitelist")][:30]:
         finalists_set.add(c[3])
 
-    logger.info("Финалистов на тест скорости: %d", len(finalists_set))
+    logger.info("Финалистов на тест скорости и доступности: %d", len(finalists_set))
     test_results = real_check_batch(list(finalists_set))
 
     def sort_key(c):
         res = test_results.get(c[3])
         if not res or not res.ok:
-            return (-1.0, 9999.0)
-        return (res.speed_mbps, -res.latency_ms)
+            return (9999.0, 0.0)
+        # Приоритет для игр: наименьший пинг (мс), затем максимальная скорость
+        return (res.latency_ms, -res.speed_mbps)
 
     alive_tested = [c for c in alive if c[3] in test_results and test_results[c[3]].ok]
-    alive_tested.sort(key=sort_key, reverse=True)
+    alive_tested.sort(key=sort_key)
 
-    # 1. Free Pool (5 EU + 1 LTE)
+    # 1. Free Pool (5 EU + 1 LTE) — только 100% рабочие узлы
     free_items: list[tuple[str, str]] = []
     free_nodes_map: dict[str, tuple[str, str]] = {}
 
     for cc in FREE_TARGET_COUNTRIES:
         matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto"]
-        if not matching:
-            matching = [c for c in alive if c[0] == cc and c[5] == "auto"]
         if matching:
             best = matching[0]
             flag = COUNTRY_FLAGS.get(cc, "🌐")
@@ -733,53 +741,37 @@ def build_pools(
             free_nodes_map[cc] = (lbl, best[3])
             free_items.append((lbl, best[3]))
 
-    # 1 LTE для Free
-    lte_cands = [c for c in alive_tested if c[5] in ("lte", "whitelist")]
-    if not lte_cands:
-        lte_cands = [c for c in alive if c[5] in ("lte", "whitelist")]
+    # 1 LTE для Free (строго с пингом < 250 мс)
+    lte_cands = [c for c in alive_tested if c[5] in ("lte", "whitelist") and test_results[c[3]].latency_ms < 250.0]
     if lte_cands:
         free_items.append(("🇷🇺 Россия LTE [Базовый]", lte_cands[0][3]))
 
     # 2. VIP Pool
     vip_items: list[tuple[str, str]] = []
 
-    # А) 11 VIP High-Speed локаций (с проверкой >= 60 Мбит/с)
+    # А) VIP High-Speed локации (строго проверенные через реальный HTTP 204)
     for cc in VIP_TARGET_COUNTRIES:
-        # Проверяем строго >= 60 Мбит/с
-        vip_matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto" and test_results[c[3]].speed_mbps >= REAL_CHECK_MIN_VIP_MBPS]
-        if not vip_matching:
-            vip_matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto"]
-        if not vip_matching:
-            vip_matching = [c for c in alive if c[0] == cc and c[5] == "auto"]
-
+        vip_matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto"]
         if vip_matching:
             best = vip_matching[0]
             flag = COUNTRY_FLAGS.get(cc, "🌐")
-            speed_val = test_results.get(best[3]).speed_mbps if best[3] in test_results else 0.0
-            tag = "VIP 60M+" if speed_val >= REAL_CHECK_MIN_VIP_MBPS else "VIP Fast"
+            res_info = test_results[best[3]]
+            speed_val = res_info.speed_mbps
+            lat_val = res_info.latency_ms
+            tag = f"VIP {lat_val:.0f}ms" if lat_val < 50 else (f"VIP {speed_val:.0f}M+" if speed_val >= REAL_CHECK_MIN_VIP_MBPS else "VIP Fast")
             vip_items.append((f"{flag} {best[1]} [{tag}]", best[3]))
 
-    # Б) 7 LTE / White-list локаций для VIP
+    # Б) До 7 LTE / White-list локаций для VIP (строго < 250 мс)
     vip_lte_seen = set()
     vip_lte_count = 0
     for c in alive_tested:
-        if c[5] in ("lte", "whitelist") and c[4][0] not in vip_lte_seen:
+        if c[5] in ("lte", "whitelist") and test_results[c[3]].latency_ms < 250.0 and c[4][0] not in vip_lte_seen:
             vip_lte_seen.add(c[4][0])
             vip_lte_count += 1
             kind_title = "LTE" if c[5] == "lte" else "Белый список"
             vip_items.append((f"🇷🇺 {kind_title} #{vip_lte_count} [VIP]", c[3]))
             if vip_lte_count >= 7:
                 break
-
-    if vip_lte_count < 7:
-        for c in alive:
-            if c[5] in ("lte", "whitelist") and c[4][0] not in vip_lte_seen:
-                vip_lte_seen.add(c[4][0])
-                vip_lte_count += 1
-                kind_title = "LTE" if c[5] == "lte" else "Белый список"
-                vip_items.append((f"🇷🇺 {kind_title} #{vip_lte_count} [VIP]", c[3]))
-                if vip_lte_count >= 7:
-                    break
 
     # В) 5 Free backup локаций (Германия, Нидерланды, Финляндия, Польша, Швеция в подписке дважды!)
     for cc in FREE_TARGET_COUNTRIES:
