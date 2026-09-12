@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hqray-sub",
+  "main": "src/index.js",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "BOT_TOKEN": "8933693835:AAF2hyPi6EPHTXljAQ5QylcU4UPcZPiRkuc",
+    "TURSO_URL": "https://nekrozvpn-evgen.aws-eu-west-1.turso.io",
+    "TURSO_TOKEN": "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3ODI1Nzk2MTAsImlkIjoiMDE5ZjBhMDYtMWUwMS03MTIwLTg3ZGMtYWEyMmYxMjk3OGJhIiwicmlkIjoiNGZjYmQwOTAtODA0OS00ZjAwLWExN2ItNjY1Y2E2MDE0ZDVkIn0.Hsq1HO-Y7kB5l_O9QspI33eomZUAvWHfdfEXAxXZ8EmJmiC37FmkAXanQqazPsFf3uvds8vcfK1Ak_KDtkYgCg",
+    "ADMIN_ID": "6168325401",
+    "CHANNEL_USERNAME": "@hqray",
+    "BOT_USERNAME": "hqraybot",
+    "CRYPTO_PAY_TOKEN": "619575:AAl7HTGB7RWQutSOiqNSdv9H0MTBfVv4FDk"
+  },
+  "triggers": {
+    "crons": [
+      "0 9 * * *"
+    ]
+  }
+}

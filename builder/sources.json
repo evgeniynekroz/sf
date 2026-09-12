@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "name": "4n0nymou3-tested",
+      "url": "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs_tested.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "solovyov-all-subs",
+      "url": "https://raw.githubusercontent.com/solovyov-jenya2004/all_subs/refs/heads/main/final_sorted",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-black",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-mobile-lte",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
+      "kind": "lte",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-white-mobile",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
+      "kind": "whitelist",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "ru-igareck-white-cidr",
+      "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt",
+      "kind": "whitelist",
+      "country": "RU",
+      "enabled": true
+    },
+    {
+      "name": "komoterdon-sub",
+      "url": "https://raw.githubusercontent.com/komoterdon/free-sub/main/sub.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "iboxz-vless",
+      "url": "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "radikal-de",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Germany.txt",
+      "kind": "auto",
+      "country": "DE",
+      "enabled": true
+    },
+    {
+      "name": "radikal-nl",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/The_Netherlands.txt",
+      "kind": "auto",
+      "country": "NL",
+      "enabled": true
+    },
+    {
+      "name": "radikal-fi",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Finland.txt",
+      "kind": "auto",
+      "country": "FI",
+      "enabled": true
+    },
+    {
+      "name": "radikal-ee",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Estonia.txt",
+      "kind": "auto",
+      "country": "EE",
+      "enabled": true
+    },
+    {
+      "name": "radikal-se",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Sweden.txt",
+      "kind": "auto",
+      "country": "SE",
+      "enabled": true
+    },
+    {
+      "name": "radikal-pl",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Poland.txt",
+      "kind": "auto",
+      "country": "PL",
+      "enabled": true
+    },
+    {
+      "name": "radikal-gb",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/United_Kingdom.txt",
+      "kind": "auto",
+      "country": "GB",
+      "enabled": true
+    },
+    {
+      "name": "radikal-us",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/United_States.txt",
+      "kind": "auto",
+      "country": "US",
+      "enabled": true
+    },
+    {
+      "name": "radikal-tr",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Turkey.txt",
+      "kind": "auto",
+      "country": "TR",
+      "enabled": true
+    },
+    {
+      "name": "radikal-kz",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Kazakhstan.txt",
+      "kind": "auto",
+      "country": "KZ",
+      "enabled": true
+    },
+    {
+      "name": "radikal-jp",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/Countries/Japan.txt",
+      "kind": "auto",
+      "country": "JP",
+      "enabled": true
+    }
+  ]
+}
