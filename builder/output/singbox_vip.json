@@ -25,35 +25,23 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
-      "flow": "xtls-rprx-vision",
+      "server": "89.124.251.65",
+      "server_port": 8446,
+      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
-        },
-        "server_name": "www.intel.com"
+        "server_name": "connect6.nyxserver.ir"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "94.241.174.157",
-      "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
-      "flow": "xtls-rprx-vision",
+      "server": "193.23.194.167",
+      "server_port": 8443,
+      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
-        },
-        "server_name": "www.google.com"
+        "server_name": "neth.lckdwn.ru"
       }
     },
     {
@@ -75,18 +63,18 @@
     {
       "type": "vless",
       "tag": "🇪🇪 ⚡️ Эстония — Premium",
-      "server": "150.241.101.80",
-      "server_port": 8443,
-      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
         },
-        "server_name": "yandex.net"
+        "server_name": "www.cloudflare.com"
       }
     },
     {
@@ -103,6 +91,40 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 ⚡️ Швеция — Premium",
+      "server": "143.246.193.215",
+      "server_port": 443,
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        },
+        "server_name": "www.blocket.se"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США — Premium",
+      "server": "47.253.226.114",
+      "server_port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
+        },
+        "server_name": "www.cloudflare.com"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇹 ⚡️ Австрия — Premium",
       "server": "150.241.72.76",
       "server_port": 443,
@@ -115,146 +137,126 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 США — Premium",
-      "server": "192.3.247.109",
-      "server_port": 32132,
-      "uuid": "23504a34-5216-4e10-86a0-b6a70976f996",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
-          "short_id": "24cbfb05123722"
-        },
-        "server_name": "apple.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 Турция — Premium",
-      "server": "107.161.174.96",
+      "tag": "🇫🇷 Франция — Premium",
+      "server": "104.21.58.93",
       "server_port": 443,
-      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
-      "flow": "xtls-rprx-vision",
+      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
       "tls": {
         "enabled": true,
-        "server_name": "partaa2.api3-max.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 Казахстан — Premium",
-      "server": "62.233.39.9",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
-          "short_id": ""
-        },
-        "server_name": "dl.dell.com"
+        "server_name": "4-M13.aYUTtHAya-XX.kDnS.fR"
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 Япония — Premium",
-      "server": "104.105.138.244",
-      "server_port": 443,
-      "uuid": "f5c4664b-67ab-4d92-801d-a60984e104d4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "rpROz1JNz8wRk2QT5o7jwE9CzJUWMvPNXoeWyS3c1WM",
-          "short_id": "09994e53af766acd"
-        },
-        "server_name": "www.cloudflare.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 Италия — Premium",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
-        },
-        "server_name": "www.intel.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 LTE — Premium",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
         "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "path": "/ED3ZQPu7lqyeDGD58KabZ",
         "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
+          "Host": "4-m13.aYUtThaYA-xx.KdnS.Fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 LTE #2 — Premium",
-      "server": "104.17.181.19",
-      "server_port": 8880,
-      "uuid": "70853635-5b3e-4561-bd3f-4354b56194de",
+      "tag": "🇷🇺 Россия — Premium",
+      "server": "45.144.28.39",
+      "server_port": 2053,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY",
+          "short_id": "1eb8ea8dae937ae0"
+        },
+        "server_name": "vk.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 Норвегия — Premium",
+      "server": "151.242.169.119",
+      "server_port": 443,
+      "uuid": "1859decf-1af7-4a75-a461-221f5d2df6f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "short_id": "fd55b698ee8c3629"
+        },
+        "server_name": "yidio.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция — Premium",
+      "server": "tr.iramssmoth.ir",
+      "server_port": 8443,
+      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs",
+          "short_id": "8dc4f3de3846efa9"
+        },
+        "server_name": "play-apps-features.googleusercontent.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 Казахстан — Premium",
+      "server": "83.222.23.81",
+      "server_port": 38065,
+      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
+          "short_id": "fa"
+        },
+        "server_name": "yahoo.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 Япония — Premium",
+      "server": "162.159.254.3",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top"
+      },
       "transport": {
         "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "broken-glitter-6d2f.408-51c.workers.dev"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — Базовый",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
-      "flow": "xtls-rprx-vision",
+      "server": "89.124.251.65",
+      "server_port": 8446,
+      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
-        },
-        "server_name": "www.intel.com"
+        "server_name": "connect6.nyxserver.ir"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — Базовый",
-      "server": "94.241.174.157",
-      "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
-      "flow": "xtls-rprx-vision",
+      "server": "193.23.194.167",
+      "server_port": 8443,
+      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
-        },
-        "server_name": "www.google.com"
+        "server_name": "neth.lckdwn.ru"
       }
     },
     {
@@ -287,16 +289,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Россия LTE — Базовый",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
+      "tag": "🇸🇪 Швеция — Базовый",
+      "server": "143.246.193.215",
+      "server_port": 443,
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        },
+        "server_name": "www.blocket.se"
       }
     },
     {
@@ -316,19 +321,20 @@
         "🇫🇮 ⚡️ Финляндия — Premium",
         "🇪🇪 ⚡️ Эстония — Premium",
         "🇵🇱 ⚡️ Польша — Premium",
-        "🇦🇹 ⚡️ Австрия — Premium",
+        "🇸🇪 ⚡️ Швеция — Premium",
         "🇺🇸 США — Premium",
+        "🇦🇹 ⚡️ Австрия — Premium",
+        "🇫🇷 Франция — Premium",
+        "🇷🇺 Россия — Premium",
+        "🇳🇴 Норвегия — Premium",
         "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
-        "🇮🇹 Италия — Premium",
-        "🇷🇺 LTE — Premium",
-        "🇷🇺 LTE #2 — Premium",
         "🇩🇪 Германия — Базовый",
         "🇳🇱 Нидерланды — Базовый",
         "🇫🇮 Финляндия — Базовый",
         "🇵🇱 Польша — Базовый",
-        "🇷🇺 Россия LTE — Базовый",
+        "🇸🇪 Швеция — Базовый",
         "direct"
       ],
       "default": "🇩🇪 ⚡️ Германия — Premium"

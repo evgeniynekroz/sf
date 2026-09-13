@@ -25,35 +25,23 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — Базовый",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
-      "flow": "xtls-rprx-vision",
+      "server": "89.124.251.65",
+      "server_port": 8446,
+      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
-        },
-        "server_name": "www.intel.com"
+        "server_name": "connect6.nyxserver.ir"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — Базовый",
-      "server": "94.241.174.157",
-      "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
-      "flow": "xtls-rprx-vision",
+      "server": "193.23.194.167",
+      "server_port": 8443,
+      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
-        },
-        "server_name": "www.google.com"
+        "server_name": "neth.lckdwn.ru"
       }
     },
     {
@@ -86,16 +74,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Россия LTE — Базовый",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
+      "tag": "🇸🇪 Швеция — Базовый",
+      "server": "143.246.193.215",
+      "server_port": 443,
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        },
+        "server_name": "www.blocket.se"
       }
     },
     {
@@ -114,7 +105,7 @@
         "🇳🇱 Нидерланды — Базовый",
         "🇫🇮 Финляндия — Базовый",
         "🇵🇱 Польша — Базовый",
-        "🇷🇺 Россия LTE — Базовый",
+        "🇸🇪 Швеция — Базовый",
         "direct"
       ],
       "default": "🇩🇪 Германия — Базовый"
