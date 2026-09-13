@@ -24,29 +24,41 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 Германия — Базовый",
-      "server": "89.124.251.65",
-      "server_port": 8446,
-      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
+      "tag": "🇩🇪 Германия — Фри",
+      "server": "172.238.232.239",
+      "server_port": 32833,
+      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "connect6.nyxserver.ir"
+        "reality": {
+          "enabled": true,
+          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+          "short_id": "a0a305ccc8e94aa8"
+        },
+        "server_name": "www.intel.com"
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 Нидерланды — Базовый",
-      "server": "193.23.194.167",
-      "server_port": 8443,
-      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
+      "tag": "🇳🇱 Нидерланды — Фри",
+      "server": "94.241.174.157",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "neth.lckdwn.ru"
+        "reality": {
+          "enabled": true,
+          "public_key": "mM33xyzf1GPaU2CQX",
+          "short_id": ""
+        },
+        "server_name": "www.google.com"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 Финляндия — Базовый",
+      "tag": "🇫🇮 Финляндия — Фри",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -62,19 +74,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 Польша — Базовый",
+      "tag": "🇵🇱 Польша — Фри",
       "server": "144.31.5.64",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net"
+        "server_name": "pl6.moritech.net",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Швеция — Базовый",
+      "tag": "🇸🇪 Швеция — Фри",
       "server": "143.246.193.215",
       "server_port": 443,
       "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
@@ -90,6 +103,20 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 Россия LTE — Фри",
+      "server": "104.16.100.66",
+      "server_port": 8880,
+      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -101,14 +128,15 @@
       "type": "selector",
       "tag": "💎 HQRay VPN - @hqraybot",
       "outbounds": [
-        "🇩🇪 Германия — Базовый",
-        "🇳🇱 Нидерланды — Базовый",
-        "🇫🇮 Финляндия — Базовый",
-        "🇵🇱 Польша — Базовый",
-        "🇸🇪 Швеция — Базовый",
+        "🇩🇪 Германия — Фри",
+        "🇳🇱 Нидерланды — Фри",
+        "🇫🇮 Финляндия — Фри",
+        "🇵🇱 Польша — Фри",
+        "🇸🇪 Швеция — Фри",
+        "🇷🇺 Россия LTE — Фри",
         "direct"
       ],
-      "default": "🇩🇪 Германия — Базовый"
+      "default": "🇩🇪 Германия — Фри"
     }
   ],
   "route": {

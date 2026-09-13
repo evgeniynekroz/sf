@@ -13,7 +13,7 @@ export function welcomeText(user, isNew = false) {
     `Добро пожаловать в <b>${BRAND_NAME}</b> — Народный VPN нового поколения!\n\n` +
     trialMsg +
     `🛡️ <b>У нас 2 уровня доступа:</b>\n` +
-    `• 🌐 <b>Free (Базовый)</b>: 6 серверов (DE, NL, FI, PL, SE + LTE). Бесплатно навсегда.\n` +
+    `• 🌐 <b>Free (Фри)</b>: 6 серверов (DE, NL, FI, PL, SE + LTE). Бесплатно навсегда.\n` +
     `• ⚡ <b>VIP (Премиум)</b>: 15+ быстрых серверов со скоростью <b>60+ Мбит/с</b> (DE, NL, FI, EE, PL, SE, GB, US, TR, KZ, JP, AT + LTE-обход блокировок). YouTube 4K, Discord, игры без лагов!\n\n` +
     `💳 <b>Народные цены:</b> от <b>59 ₽</b> за 14 дней или <b>99 ₽</b> за месяц!\n` +
     `Нажмите кнопку ниже, чтобы получить подписку или настроить приложение 👇`
@@ -24,7 +24,7 @@ export function cabinetText(user, subUrl) {
   const now = new Date();
   const exp = user.subscription_expires ? new Date(user.subscription_expires) : null;
   const isVip = exp && exp > now;
-  let statusBadge = "🌐 Базовый (Free)";
+  let statusBadge = "🌐 Фри (Free)";
   let expStr = "Бессрочно (6 серверов)";
   if (isVip) {
     statusBadge = "⚡ VIP Премиум (60+ Мбит/с)";
@@ -100,7 +100,7 @@ export function subLinksText(user, subUrl) {
   const isVip = exp && exp > new Date();
   const tierName = isVip
     ? "⚡ VIP (60+ Мбит/с, Premium серверы)"
-    : "🌐 Free (Базовый, 6 серверов)";
+    : "🌐 Free (Фри, 6 серверов)";
   return (
     `🔗 <b>Ваша подписка ${BRAND_NAME}</b>\n` +
     `Уровень: <b>${tierName}</b>\n\n` +

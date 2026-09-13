@@ -1,16 +1,17 @@
 [
   {
-    "tag": "🇩🇪 Германия — Базовый",
+    "tag": "🇩🇪 Германия — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "89.124.251.65",
-          "port": 8446,
+          "address": "172.238.232.239",
+          "port": 32833,
           "users": [
             {
-              "id": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
-              "encryption": "none"
+              "id": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -18,25 +19,28 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "connect6.nyxserver.ir",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.intel.com",
+        "publicKey": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+        "shortId": "a0a305ccc8e94aa8",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇳🇱 Нидерланды — Базовый",
+    "tag": "🇳🇱 Нидерланды — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "193.23.194.167",
-          "port": 8443,
+          "address": "94.241.174.157",
+          "port": 40443,
           "users": [
             {
-              "id": "32349ee8-8551-45fa-a265-8704cec72936",
-              "encryption": "none"
+              "id": "8ac637bf-554e-4902-94d7-baf01780a83c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -44,15 +48,17 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "neth.lckdwn.ru",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.google.com",
+        "publicKey": "mM33xyzf1GPaU2CQX",
+        "shortId": "",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — Базовый",
+    "tag": "🇫🇮 Финляндия — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -80,7 +86,7 @@
     }
   },
   {
-    "tag": "🇵🇱 Польша — Базовый",
+    "tag": "🇵🇱 Польша — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -102,12 +108,13 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "pl6.moritech.net",
-        "fingerprint": "firefox"
+        "fingerprint": "firefox",
+        "allowInsecure": true
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — Базовый",
+    "tag": "🇸🇪 Швеция — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -132,6 +139,34 @@
         "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
         "shortId": "",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия LTE — Фри",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "104.16.100.66",
+          "port": 8880,
+          "users": [
+            {
+              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
       }
     }
   }

@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.124.251.65",
-          "port": 8446,
+          "address": "172.238.232.239",
+          "port": 32833,
           "users": [
             {
-              "id": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
-              "encryption": "none"
+              "id": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -18,9 +19,11 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "connect6.nyxserver.ir",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.intel.com",
+        "publicKey": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+        "shortId": "a0a305ccc8e94aa8",
         "fingerprint": "chrome"
       }
     }
@@ -31,12 +34,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.23.194.167",
-          "port": 8443,
+          "address": "94.241.174.157",
+          "port": 40443,
           "users": [
             {
-              "id": "32349ee8-8551-45fa-a265-8704cec72936",
-              "encryption": "none"
+              "id": "8ac637bf-554e-4902-94d7-baf01780a83c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -44,9 +48,11 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "neth.lckdwn.ru",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.google.com",
+        "publicKey": "mM33xyzf1GPaU2CQX",
+        "shortId": "",
         "fingerprint": "chrome"
       }
     }
@@ -85,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.123.213.28",
-          "port": 443,
+          "address": "150.241.101.80",
+          "port": 8443,
           "users": [
             {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+              "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -98,12 +104,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
+        "serverName": "yandex.net",
+        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "shortId": "6ba85179e30d4fc2",
         "fingerprint": "chrome"
       }
     }
@@ -131,7 +137,8 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "pl6.moritech.net",
-        "fingerprint": "firefox"
+        "fingerprint": "firefox",
+        "allowInsecure": true
       }
     }
   },
@@ -165,35 +172,6 @@
     }
   },
   {
-    "tag": "🇺🇸 США — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "47.253.226.114",
-          "port": 443,
-          "users": [
-            {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
     "protocol": "vless",
     "settings": {
@@ -216,6 +194,35 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "austria-2.moritech.net",
+        "fingerprint": "firefox",
+        "allowInsecure": true
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 США — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "192.3.247.109",
+          "port": 32132,
+          "users": [
+            {
+              "id": "23504a34-5216-4e10-86a0-b6a70976f996",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "apple.com",
+        "publicKey": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
+        "shortId": "24cbfb05123722",
         "fingerprint": "firefox"
       }
     }
@@ -242,7 +249,8 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "4-M13.aYUTtHAya-XX.kDnS.fR",
-        "fingerprint": "chrome"
+        "fingerprint": "chrome",
+        "allowInsecure": true
       },
       "wsSettings": {
         "path": "/ED3ZQPu7lqyeDGD58KabZ",
@@ -278,35 +286,6 @@
         "publicKey": "dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY",
         "shortId": "1eb8ea8dae937ae0",
         "fingerprint": "random"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇴 Норвегия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "151.242.169.119",
-          "port": 443,
-          "users": [
-            {
-              "id": "1859decf-1af7-4a75-a461-221f5d2df6f5",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "yidio.com",
-        "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-        "shortId": "fd55b698ee8c3629",
-        "fingerprint": "firefox"
       }
     }
   },
@@ -388,7 +367,8 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "jp3.yohototo.top",
-        "fingerprint": "chrome"
+        "fingerprint": "chrome",
+        "allowInsecure": true
       },
       "wsSettings": {
         "path": "/tyxyws",
@@ -399,16 +379,16 @@
     }
   },
   {
-    "tag": "🇩🇪 Германия — Базовый",
+    "tag": "🇷🇺 LTE — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "89.124.251.65",
-          "port": 8446,
+          "address": "104.16.100.66",
+          "port": 8880,
           "users": [
             {
-              "id": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
+              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
               "encryption": "none"
             }
           ]
@@ -416,26 +396,29 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "connect6.nyxserver.ir",
-        "fingerprint": "chrome"
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
       }
     }
   },
   {
-    "tag": "🇳🇱 Нидерланды — Базовый",
+    "tag": "🇩🇪 Германия — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "193.23.194.167",
-          "port": 8443,
+          "address": "172.238.232.239",
+          "port": 32833,
           "users": [
             {
-              "id": "32349ee8-8551-45fa-a265-8704cec72936",
-              "encryption": "none"
+              "id": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -443,15 +426,46 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "neth.lckdwn.ru",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.intel.com",
+        "publicKey": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+        "shortId": "a0a305ccc8e94aa8",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — Базовый",
+    "tag": "🇳🇱 Нидерланды — Фри",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "94.241.174.157",
+          "port": 40443,
+          "users": [
+            {
+              "id": "8ac637bf-554e-4902-94d7-baf01780a83c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.google.com",
+        "publicKey": "mM33xyzf1GPaU2CQX",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -479,7 +493,7 @@
     }
   },
   {
-    "tag": "🇵🇱 Польша — Базовый",
+    "tag": "🇵🇱 Польша — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -501,12 +515,13 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "pl6.moritech.net",
-        "fingerprint": "firefox"
+        "fingerprint": "firefox",
+        "allowInsecure": true
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — Базовый",
+    "tag": "🇸🇪 Швеция — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -531,6 +546,34 @@
         "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
         "shortId": "",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия LTE — Фри",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "104.16.100.66",
+          "port": 8880,
+          "users": [
+            {
+              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
       }
     }
   }

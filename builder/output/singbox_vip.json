@@ -25,23 +25,35 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "89.124.251.65",
-      "server_port": 8446,
-      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
+      "server": "172.238.232.239",
+      "server_port": 32833,
+      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "connect6.nyxserver.ir"
+        "reality": {
+          "enabled": true,
+          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+          "short_id": "a0a305ccc8e94aa8"
+        },
+        "server_name": "www.intel.com"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "193.23.194.167",
-      "server_port": 8443,
-      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
+      "server": "94.241.174.157",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "neth.lckdwn.ru"
+        "reality": {
+          "enabled": true,
+          "public_key": "mM33xyzf1GPaU2CQX",
+          "short_id": ""
+        },
+        "server_name": "www.google.com"
       }
     },
     {
@@ -63,18 +75,18 @@
     {
       "type": "vless",
       "tag": "🇪🇪 ⚡️ Эстония — Premium",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "server": "150.241.101.80",
+      "server_port": 8443,
+      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         },
-        "server_name": "www.cloudflare.com"
+        "server_name": "yandex.net"
       }
     },
     {
@@ -86,7 +98,8 @@
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net"
+        "server_name": "pl6.moritech.net",
+        "insecure": true
       }
     },
     {
@@ -108,23 +121,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 США — Premium",
-      "server": "47.253.226.114",
-      "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "short_id": ""
-        },
-        "server_name": "www.cloudflare.com"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇦🇹 ⚡️ Австрия — Premium",
       "server": "150.241.72.76",
       "server_port": 443,
@@ -132,7 +128,24 @@
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "austria-2.moritech.net"
+        "server_name": "austria-2.moritech.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США — Premium",
+      "server": "192.3.247.109",
+      "server_port": 32132,
+      "uuid": "23504a34-5216-4e10-86a0-b6a70976f996",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
+          "short_id": "24cbfb05123722"
+        },
+        "server_name": "apple.com"
       }
     },
     {
@@ -143,7 +156,8 @@
       "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
       "tls": {
         "enabled": true,
-        "server_name": "4-M13.aYUTtHAya-XX.kDnS.fR"
+        "server_name": "4-M13.aYUTtHAya-XX.kDnS.fR",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -168,23 +182,6 @@
           "short_id": "1eb8ea8dae937ae0"
         },
         "server_name": "vk.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 Норвегия — Premium",
-      "server": "151.242.169.119",
-      "server_port": 443,
-      "uuid": "1859decf-1af7-4a75-a461-221f5d2df6f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-          "short_id": "fd55b698ee8c3629"
-        },
-        "server_name": "yidio.com"
       }
     },
     {
@@ -227,7 +224,8 @@
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top"
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -239,29 +237,55 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 Германия — Базовый",
-      "server": "89.124.251.65",
-      "server_port": 8446,
-      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect6.nyxserver.ir"
+      "tag": "🇷🇺 LTE — Premium",
+      "server": "104.16.100.66",
+      "server_port": 8880,
+      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 Нидерланды — Базовый",
-      "server": "193.23.194.167",
-      "server_port": 8443,
-      "uuid": "32349ee8-8551-45fa-a265-8704cec72936",
+      "tag": "🇩🇪 Германия — Фри",
+      "server": "172.238.232.239",
+      "server_port": 32833,
+      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "neth.lckdwn.ru"
+        "reality": {
+          "enabled": true,
+          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+          "short_id": "a0a305ccc8e94aa8"
+        },
+        "server_name": "www.intel.com"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 Финляндия — Базовый",
+      "tag": "🇳🇱 Нидерланды — Фри",
+      "server": "94.241.174.157",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "mM33xyzf1GPaU2CQX",
+          "short_id": ""
+        },
+        "server_name": "www.google.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — Фри",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -277,19 +301,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 Польша — Базовый",
+      "tag": "🇵🇱 Польша — Фри",
       "server": "144.31.5.64",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net"
+        "server_name": "pl6.moritech.net",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Швеция — Базовый",
+      "tag": "🇸🇪 Швеция — Фри",
       "server": "143.246.193.215",
       "server_port": 443,
       "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
@@ -302,6 +327,20 @@
           "short_id": ""
         },
         "server_name": "www.blocket.se"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия LTE — Фри",
+      "server": "104.16.100.66",
+      "server_port": 8880,
+      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
       }
     },
     {
@@ -322,19 +361,20 @@
         "🇪🇪 ⚡️ Эстония — Premium",
         "🇵🇱 ⚡️ Польша — Premium",
         "🇸🇪 ⚡️ Швеция — Premium",
-        "🇺🇸 США — Premium",
         "🇦🇹 ⚡️ Австрия — Premium",
+        "🇺🇸 США — Premium",
         "🇫🇷 Франция — Premium",
         "🇷🇺 Россия — Premium",
-        "🇳🇴 Норвегия — Premium",
         "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
-        "🇩🇪 Германия — Базовый",
-        "🇳🇱 Нидерланды — Базовый",
-        "🇫🇮 Финляндия — Базовый",
-        "🇵🇱 Польша — Базовый",
-        "🇸🇪 Швеция — Базовый",
+        "🇷🇺 LTE — Premium",
+        "🇩🇪 Германия — Фри",
+        "🇳🇱 Нидерланды — Фри",
+        "🇫🇮 Финляндия — Фри",
+        "🇵🇱 Польша — Фри",
+        "🇸🇪 Швеция — Фри",
+        "🇷🇺 Россия LTE — Фри",
         "direct"
       ],
       "default": "🇩🇪 ⚡️ Германия — Premium"

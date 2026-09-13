@@ -67,8 +67,8 @@ BASE64_RE = re.compile(r"^[A-Za-z0-9+/=\s]+$")
 
 def is_toxic_config(raw: str) -> bool:
     s = raw.lower()
-    # 1. Запрещенные/нецензурные слова в SNI или хосте, гарантированно блокируемые ТСПУ РКН
-    toxic_keywords = ["fuck", "rkn", "porn", "xxx", "gov.ru", "mil.ru", "gosuslugi", "nalog", "fsb"]
+    # 1. Запрещенные/нецензурные слова в SNI или хосте, гарантированно блокируемые ТСПУ РКН, а также иранские серверы
+    toxic_keywords = ["fuck", "rkn", "porn", "xxx", "gov.ru", "mil.ru", "gosuslugi", "nalog", "fsb", ".ir"]
     if any(k in s for k in toxic_keywords):
         return True
     # 2. Невалидный Reality (отсутствие публичного ключа pbk)
@@ -571,6 +571,10 @@ def apply_label(raw: str, label: str) -> str:
         except Exception:
             pass
     base = s[: s.rindex("#")] if "#" in s else s.rstrip()
+    b_low = base.lower()
+    if "security=tls" in b_low and "allowinsecure=" not in b_low and "insecure=" not in b_low:
+        sep = "&" if "?" in base else "?"
+        base = f"{base}{sep}allowInsecure=1"
     return f"{base}#{label}"
 
 # ── Конвертеры Sing-box & Xray ───────────────────────────────────────────
@@ -789,8 +793,26 @@ def build_pools(
             res = test_results[val]
             alive_tested.append((c[0], c[1], c[2], val, c[4], c[5], res.latency_ms, res.speed_mbps))
 
-    # Сортировка: минимальный True Delay, затем максимальная скорость
-    alive_tested.sort(key=lambda x: (x[6], -x[7]))
+    # Сортировка: приоритет Reality и CDN WS, затем минимальный True Delay, затем скорость
+    def config_priority_score(c_tuple) -> tuple[int, float, float]:
+        # c_tuple: (cc, name, proto, val, hp, kind, latency_ms, speed_mbps)
+        proto, val, lat, spd = c_tuple[2], c_tuple[3], c_tuple[6], c_tuple[7]
+        v_low = val.lower()
+        # 0: VLESS-Reality с валидным pbk — золотой стандарт (не блокируется ТСПУ, работает всегда)
+        if proto == "vless" and "security=reality" in v_low and "pbk=" in v_low:
+            prio = 0
+        # 1: Cloudflare CDN WebSocket (type=ws) — глобальный доверенный CA сертификат
+        elif "type=ws" in v_low:
+            prio = 1
+        # 2: Trojan / VLESS с явным allowinsecure
+        elif "allowinsecure=1" in v_low or "insecure=1" in v_low:
+            prio = 2
+        else:
+            # 3: Обычный TLS — частые сбои сертификата в мобильных клиентах
+            prio = 3
+        return (prio, lat, -spd)
+
+    alive_tested.sort(key=config_priority_score)
     logger.info("Успешно прошли True Delay и тест скорости: %d серверов", len(alive_tested))
 
     # ── Формирование пулов с гарантией флагов, без дубликатов и с базовыми узлами в VIP ──
@@ -858,7 +880,7 @@ def build_pools(
             best = matching[0]
             used_hosts_free.add(best[4][0])
             flag = COUNTRY_FLAGS.get(cc, "🌐")
-            lbl = f"{flag} {best[1]} — Базовый"
+            lbl = f"{flag} {best[1]} — Фри"
             free_items.append((lbl, best[3]))
 
     # Если в Free меньше 5 узлов, добираем из любых живых европейских узлов
@@ -870,7 +892,7 @@ def build_pools(
                 used_hosts_free.add(c[4][0])
                 free_cc_used.add(cc)
                 flag = COUNTRY_FLAGS.get(cc, "🌐")
-                lbl = f"{flag} {c[1]} — Базовый"
+                lbl = f"{flag} {c[1]} — Фри"
                 free_items.append((lbl, c[3]))
                 if len(free_items) >= 5:
                     break
@@ -879,7 +901,7 @@ def build_pools(
     for c in alive_tested:
         if c[5] in ("lte", "whitelist") and c[6] <= 750.0 and c[4][0] not in used_hosts_free:
             used_hosts_free.add(c[4][0])
-            free_items.append(("🇷🇺 Россия LTE — Базовый", c[3]))
+            free_items.append(("🇷🇺 Россия LTE — Фри", c[3]))
             break
 
     # Защита от пустых подписок: восстанавливаем из кэша
@@ -895,8 +917,8 @@ def build_pools(
     for f_lbl, f_uri in free_items:
         vip_items.append((f_lbl, f_uri))
 
-    logger.info("Сформирован Базовый пул: %d серверов (0 дублей)", len(free_items))
-    logger.info("Сформирован Premium пул: %d серверов (включая базовые резервные)", len(vip_items))
+    logger.info("Сформирован Фри пул: %d серверов (0 дублей)", len(free_items))
+    logger.info("Сформирован Premium пул: %d серверов (включая фри резервные)", len(vip_items))
     return free_items, vip_items
 
 # ── Скрапинг источников ───────────────────────────────────────────────────
