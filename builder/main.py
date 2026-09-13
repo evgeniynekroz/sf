@@ -1034,8 +1034,7 @@ def build() -> None:
                             if ru in lbl:
                                 c_code = cc
                                 break
-                    break
-            cached_configs.append(ConfigItem(source="cache", protocol=proto, value=u, country=c_code, kind=kind_val))
+            cached_configs.append(ConfigItem(protocol=proto, value=u, source_name="cache", source_url="cache", found_in="cache", kind=kind_val, country=c_code))
 
     sources = load_sources()
     all_configs: list[ConfigItem] = list(cached_configs)
