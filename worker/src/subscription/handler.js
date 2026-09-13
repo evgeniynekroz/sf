@@ -8,11 +8,11 @@ import { getUserByToken, getSetting } from "../db/turso.js";
 function isSingboxCoreClient(request) {
   const ua = (request.headers.get("user-agent") || "").toLowerCase();
   return (
-    ua.includes("sing-box") ||
-    ua.includes("hiddify") ||
-    ua.includes("nekobox") ||
-    ua.includes("karing") ||
-    ua.includes("happ")
+    (ua.includes("sing-box") ||
+      ua.includes("hiddify") ||
+      ua.includes("nekobox") ||
+      ua.includes("karing")) &&
+    !ua.includes("happ")
   );
 }
 
@@ -23,7 +23,8 @@ function isB64RequiredClient(request) {
     ua.includes("shadowrocket") ||
     ua.includes("streisand") ||
     ua.includes("sagernet") ||
-    ua.includes("matsuri")
+    ua.includes("matsuri") ||
+    ua.includes("happ")
   );
 }
 
@@ -53,8 +54,12 @@ export async function handleSubscription(request) {
   const rawParam = url.searchParams.get("raw") === "1";
   const b64Param = url.searchParams.get("b64") === "1" || formatParam === "b64";
 
-  const isXray = formatParam === "xray";
-  const isSingbox = formatParam === "singbox" || isSingboxCoreClient(request);
+  // Happ — клиент V2Ray/Xray, подписка для него ВСЕГДА Base64 список серверов (не singbox JSON)
+  const ua = (request.headers.get("user-agent") || "").toLowerCase();
+  const isHapp = ua.includes("happ") || formatParam === "happ";
+
+  const isXray = !isHapp && formatParam === "xray";
+  const isSingbox = !isHapp && (formatParam === "singbox" || isSingboxCoreClient(request));
   const format = isXray ? "xray" : isSingbox ? "singbox" : "text";
 
   const isTest = token === "test" || token === "hqray-test";

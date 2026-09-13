@@ -25,8 +25,7 @@ export function mainMenuKeyboard() {
 }
 
 export function cabinetKeyboard(subUrl) {
-  const happUrl = subUrl.includes("?") ? `${subUrl}&format=singbox` : `${subUrl}?format=singbox`;
-  const encoded = encodeURIComponent(happUrl);
+  const encoded = encodeURIComponent(subUrl);
   return {
     inline_keyboard: [
       [
@@ -78,8 +77,7 @@ export function cryptoInvoiceKeyboard(payUrl, invoiceId) {
 }
 
 export function subLinksKeyboard(subUrl) {
-  const happUrl = subUrl.includes("?") ? `${subUrl}&format=singbox` : `${subUrl}?format=singbox`;
-  const encoded = encodeURIComponent(happUrl);
+  const encoded = encodeURIComponent(subUrl);
   return {
     inline_keyboard: [
       [{ text: "⚡ Добавить в Happ (1 клик)", url: `happ://add/${encoded}` }],

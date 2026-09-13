@@ -785,7 +785,7 @@ def apply_label(raw: str, label: str) -> str:
             ).decode()
         except Exception:
             pass
-    base = s[: s.rindex("#")] if "#" in s else s.rstrip()
+    base = s.split("#", 1)[0].rstrip()
     if "?" in base:
         prefix, qs = base.split("?", 1)
         qs = re.sub(r"(?i)\btype=raw\b", "type=tcp", qs)
