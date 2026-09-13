@@ -13,8 +13,8 @@ export function welcomeText(user, isNew = false) {
     `Добро пожаловать в <b>${BRAND_NAME}</b> — Народный VPN нового поколения!\n\n` +
     trialMsg +
     `🛡️ <b>У нас 2 уровня доступа:</b>\n` +
-    `• 🌐 <b>Free (Фри)</b>: 6 серверов (DE, NL, FI, PL, SE + LTE). Бесплатно навсегда.\n` +
-    `• ⚡ <b>VIP (Премиум)</b>: 15+ быстрых серверов со скоростью <b>60+ Мбит/с</b> (DE, NL, FI, EE, PL, SE, GB, US, TR, KZ, JP, AT + LTE-обход блокировок). YouTube 4K, Discord, игры без лагов!\n\n` +
+    `• 🌐 <b>FREE</b>: 8 серверов (DE, NL, FI, PL, SE + 2 резервных + LTE). Бесплатно навсегда.\n` +
+    `• ⚡ <b>VIP (Премиум)</b>: 20+ скоростных серверов (DE, NL, FI, EE, PL, SE, AT, BY, GB, US, TR, KZ, JP + игровые Hysteria 2 + 5 резервных + LTE). YouTube 4K, Discord, игры без лагов!\n\n` +
     `💳 <b>Народные цены:</b> от <b>59 ₽</b> за 14 дней или <b>99 ₽</b> за месяц!\n` +
     `Нажмите кнопку ниже, чтобы получить подписку или настроить приложение 👇`
   );
@@ -24,8 +24,8 @@ export function cabinetText(user, subUrl) {
   const now = new Date();
   const exp = user.subscription_expires ? new Date(user.subscription_expires) : null;
   const isVip = exp && exp > now;
-  let statusBadge = "🌐 Фри (Free)";
-  let expStr = "Бессрочно (6 серверов)";
+  let statusBadge = "🌐 FREE";
+  let expStr = "Бессрочно (8 серверов)";
   if (isVip) {
     statusBadge = "⚡ VIP Премиум (60+ Мбит/с)";
     expStr = exp.toLocaleDateString("ru-RU", {
@@ -36,7 +36,7 @@ export function cabinetText(user, subUrl) {
       minute: "2-digit",
     });
   } else if (exp) {
-    statusBadge = "⏳ VIP истек (действует Free тариф)";
+    statusBadge = "⏳ VIP истек (действует FREE тариф)";
     expStr = `Истек ${exp.toLocaleDateString("ru-RU")}`;
   }
   const token = user.subscription_token || "—";
@@ -100,7 +100,7 @@ export function subLinksText(user, subUrl) {
   const isVip = exp && exp > new Date();
   const tierName = isVip
     ? "⚡ VIP (60+ Мбит/с, Premium серверы)"
-    : "🌐 Free (Фри, 6 серверов)";
+    : "🌐 FREE (8 серверов)";
   return (
     `🔗 <b>Ваша подписка ${BRAND_NAME}</b>\n` +
     `Уровень: <b>${tierName}</b>\n\n` +
@@ -114,8 +114,8 @@ export function statusText(vipCount = 0, freeCount = 0) {
   return (
     `📊 <b>Статус инфраструктуры ${BRAND_NAME}</b>\n\n` +
     `🟢 Все сервисы работают в штатном режиме.\n` +
-    `• ⚡ <b>VIP серверы</b>: ${vipCount || "15+"} активных узлов (HTTP GET True Delay проверено)\n` +
-    `• 🌐 <b>Free серверы</b>: ${freeCount || "6"} активных узлов\n` +
+    `• ⚡ <b>VIP серверы</b>: ${vipCount || "20+"} активных узлов (Hysteria 2 + Reality, HTTP GET True Delay проверено)\n` +
+    `• 🌐 <b>FREE серверы</b>: ${freeCount || "8"} активных узлов\n` +
     `• 🔄 Автоматическое обновление пула: каждый час через GitHub Actions\n` +
     `• 🛡️ Фильтрация блокировок ТСПУ/РКН: активна`
   );

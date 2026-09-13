@@ -50,6 +50,16 @@ jobs:
           sudo chmod +x /usr/local/bin/xray
           xray version
 
+      - name: Install sing-box (for Hysteria 2 True Delay)
+        run: |
+          SINGBOX_FALLBACK="1.11.0"
+          echo "Installing sing-box v${SINGBOX_FALLBACK}"
+          curl -sL "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_FALLBACK}/sing-box-${SINGBOX_FALLBACK}-linux-amd64.tar.gz" -o singbox.tar.gz
+          tar -xzf singbox.tar.gz
+          sudo mv sing-box-${SINGBOX_FALLBACK}-linux-amd64/sing-box /usr/local/bin/sing-box
+          sudo chmod +x /usr/local/bin/sing-box
+          sing-box version
+
       - name: Run builder
         env:
           PYTHONIOENCODING: "utf-8"

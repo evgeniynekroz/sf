@@ -1,6 +1,69 @@
 {
   "sources": [
     {
+      "name": "Au1rxx-hysteria2",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/protocol/hysteria2/v2ray-base64-0001.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
+      "name": "belarus-bobi-1",
+      "url": "https://raw.githubusercontent.com/ginolrewadsb11/studious-umbrella/main/countries/belarus.txt",
+      "kind": "auto",
+      "country": "BY",
+      "enabled": true
+    },
+    {
+      "name": "belarus-bobi-2",
+      "url": "https://raw.githubusercontent.com/seknei3/psychic-fiestas/main/countries/belarus.txt",
+      "kind": "auto",
+      "country": "BY",
+      "enabled": true
+    },
+    {
+      "name": "austria-bobi",
+      "url": "https://raw.githubusercontent.com/ginolrewadsb11/studious-umbrella/main/countries/austria.txt",
+      "kind": "auto",
+      "country": "AT",
+      "enabled": true
+    },
+    {
+      "name": "Au1rxx-de",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-DE.txt",
+      "kind": "auto",
+      "country": "DE",
+      "enabled": true
+    },
+    {
+      "name": "Au1rxx-fi",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-FI.txt",
+      "kind": "auto",
+      "country": "FI",
+      "enabled": true
+    },
+    {
+      "name": "Au1rxx-se",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-SE.txt",
+      "kind": "auto",
+      "country": "SE",
+      "enabled": true
+    },
+    {
+      "name": "Au1rxx-at",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AT.txt",
+      "kind": "auto",
+      "country": "AT",
+      "enabled": true
+    },
+    {
+      "name": "3inker-all-not-ru",
+      "url": "https://raw.githubusercontent.com/3inker/v2ray-subscription/main/subs/all_not_ru.txt",
+      "kind": "auto",
+      "country": null,
+      "enabled": true
+    },
+    {
       "name": "4n0nymou3-tested",
       "url": "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs_tested.txt",
       "kind": "auto",
