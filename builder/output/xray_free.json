@@ -5,11 +5,40 @@
     "settings": {
       "vnext": [
         {
-          "address": "172.238.232.239",
-          "port": 32833,
+          "address": "91.240.86.186",
+          "port": 443,
           "users": [
             {
-              "id": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+              "id": "04efc4d5-db83-41e0-9a4b-4892a46097bf",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yandex.ru",
+        "publicKey": "2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4",
+        "shortId": "7bb730e3e6616d31",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇱 Нидерланды — Фри",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "77.233.213.106",
+          "port": 40443,
+          "users": [
+            {
+              "id": "279a8eef-898f-44ef-b4f5-67a494f4b542",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,24 +50,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.intel.com",
-        "publicKey": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-        "shortId": "a0a305ccc8e94aa8",
+        "serverName": "deepl.com",
+        "publicKey": "vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M",
+        "shortId": "5b98",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇳🇱 Нидерланды — Фри",
+    "tag": "🇫🇮 Финляндия — Фри",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "94.241.174.157",
-          "port": 40443,
+          "address": "45.136.126.70",
+          "port": 8443,
           "users": [
             {
-              "id": "8ac637bf-554e-4902-94d7-baf01780a83c",
+              "id": "0a2dde28-70da-4863-a06f-35d007d94d35",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -51,36 +80,8 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.google.com",
-        "publicKey": "mM33xyzf1GPaU2CQX",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — Фри",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.79.138.71",
-          "port": 448,
-          "users": [
-            {
-              "id": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.samsung.com",
-        "publicKey": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-        "shortId": "cd21e552537c7c0b",
+        "publicKey": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M",
+        "shortId": "67933d8be5b42f78",
         "fingerprint": "chrome"
       }
     }
@@ -91,25 +92,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.5.64",
-          "port": 443,
+          "address": "185.223.57.10",
+          "port": 33743,
           "users": [
             {
-              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "pl6.moritech.net",
-        "fingerprint": "firefox",
-        "allowInsecure": true
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.google.com",
+        "publicKey": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+        "shortId": "",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "TunService"
       }
     }
   },
@@ -139,34 +143,6 @@
         "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
         "shortId": "",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — Фри",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "104.16.100.66",
-          "port": 8880,
-          "users": [
-            {
-              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
       }
     }
   }

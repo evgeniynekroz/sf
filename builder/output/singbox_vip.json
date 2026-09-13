@@ -25,81 +25,89 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "server": "91.240.86.186",
+      "server_port": 443,
+      "uuid": "04efc4d5-db83-41e0-9a4b-4892a46097bf",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
+          "public_key": "2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4",
+          "short_id": "7bb730e3e6616d31"
         },
-        "server_name": "www.intel.com"
+        "server_name": "yandex.ru"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "94.241.174.157",
+      "server": "77.233.213.106",
       "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "uuid": "279a8eef-898f-44ef-b4f5-67a494f4b542",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
+          "public_key": "vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M",
+          "short_id": "5b98"
+        },
+        "server_name": "deepl.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+      "server": "45.136.126.70",
+      "server_port": 8443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M",
+          "short_id": "67933d8be5b42f78"
         },
         "server_name": "www.google.com"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        },
-        "server_name": "www.samsung.com"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇪🇪 ⚡️ Эстония — Premium",
-      "server": "150.241.101.80",
-      "server_port": 8443,
-      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
         },
-        "server_name": "yandex.net"
+        "server_name": "www.cloudflare.com"
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 ⚡️ Польша — Premium",
-      "server": "144.31.5.64",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "server": "185.223.57.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        },
+        "server_name": "www.google.com"
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -121,50 +129,43 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 США — Premium",
+      "server": "47.253.226.114",
+      "server_port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
+        },
+        "server_name": "www.cloudflare.com"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇹 ⚡️ Австрия — Premium",
-      "server": "150.241.72.76",
+      "server": "austria-2.moritech.net",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "austria-2.moritech.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 США — Premium",
-      "server": "192.3.247.109",
-      "server_port": 32132,
-      "uuid": "23504a34-5216-4e10-86a0-b6a70976f996",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
-          "short_id": "24cbfb05123722"
-        },
-        "server_name": "apple.com"
+        "server_name": "austria-2.moritech.net"
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇷 Франция — Premium",
-      "server": "104.21.58.93",
+      "server": "162.19.10.99",
       "server_port": 443,
-      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "4-M13.aYUTtHAya-XX.kDnS.fR",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
-        "headers": {
-          "Host": "4-m13.aYUtThaYA-xx.KdnS.Fr"
-        }
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com"
       }
     },
     {
@@ -186,130 +187,106 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 Турция — Premium",
-      "server": "tr.iramssmoth.ir",
-      "server_port": 8443,
-      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs",
-          "short_id": "8dc4f3de3846efa9"
-        },
-        "server_name": "play-apps-features.googleusercontent.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 Казахстан — Premium",
-      "server": "83.222.23.81",
-      "server_port": 38065,
-      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
-          "short_id": "fa"
-        },
-        "server_name": "yahoo.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 Япония — Premium",
-      "server": "162.159.254.3",
+      "tag": "🇳🇴 Норвегия — Premium",
+      "server": "151.242.169.119",
       "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "uuid": "10de5732-5d62-43bd-80a2-ec678100824a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": true
+        "reality": {
+          "enabled": true,
+          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "short_id": "fd55b698ee8c3629"
+        },
+        "server_name": "yidio.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция — Premium",
+      "server": "217.149.31.117",
+      "server_port": 443,
+      "uuid": "1f507f26-949e-4dab-9191-0d116e2bd8aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.wba-pn.ru"
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 LTE — Premium",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
+        "path": "/",
+        "headers": {}
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — Фри",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "server": "91.240.86.186",
+      "server_port": 443,
+      "uuid": "04efc4d5-db83-41e0-9a4b-4892a46097bf",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
+          "public_key": "2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4",
+          "short_id": "7bb730e3e6616d31"
         },
-        "server_name": "www.intel.com"
+        "server_name": "yandex.ru"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — Фри",
-      "server": "94.241.174.157",
+      "server": "77.233.213.106",
       "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "uuid": "279a8eef-898f-44ef-b4f5-67a494f4b542",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
+          "public_key": "vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M",
+          "short_id": "5b98"
+        },
+        "server_name": "deepl.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — Фри",
+      "server": "45.136.126.70",
+      "server_port": 8443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M",
+          "short_id": "67933d8be5b42f78"
         },
         "server_name": "www.google.com"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 Финляндия — Фри",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tag": "🇵🇱 Польша — Фри",
+      "server": "185.223.57.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
         },
-        "server_name": "www.samsung.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 Польша — Фри",
-      "server": "144.31.5.64",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true
+        "server_name": "www.google.com"
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -330,20 +307,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 Россия LTE — Фри",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
-      }
-    },
-    {
       "type": "direct",
       "tag": "direct"
     },
@@ -361,20 +324,17 @@
         "🇪🇪 ⚡️ Эстония — Premium",
         "🇵🇱 ⚡️ Польша — Premium",
         "🇸🇪 ⚡️ Швеция — Premium",
-        "🇦🇹 ⚡️ Австрия — Premium",
         "🇺🇸 США — Premium",
+        "🇦🇹 ⚡️ Австрия — Premium",
         "🇫🇷 Франция — Premium",
         "🇷🇺 Россия — Premium",
+        "🇳🇴 Норвегия — Premium",
         "🇹🇷 Турция — Premium",
-        "🇰🇿 Казахстан — Premium",
-        "🇯🇵 Япония — Premium",
-        "🇷🇺 LTE — Premium",
         "🇩🇪 Германия — Фри",
         "🇳🇱 Нидерланды — Фри",
         "🇫🇮 Финляндия — Фри",
         "🇵🇱 Польша — Фри",
         "🇸🇪 Швеция — Фри",
-        "🇷🇺 Россия LTE — Фри",
         "direct"
       ],
       "default": "🇩🇪 ⚡️ Германия — Premium"
