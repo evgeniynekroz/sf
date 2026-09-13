@@ -1083,9 +1083,12 @@ def build_pools(
             for item in cached_vip if "uri" in item and not is_toxic_config(item["uri"])
         ]
 
-    # 3. Базовые FREE узлы обязательно добавляются в конец VIP подписки как резервные
+    # 3. Базовые FREE узлы обязательно добавляются в конец VIP подписки как резервные (без дубликатов)
+    vip_uris = {r for _, r in vip_items}
     for f_lbl, f_uri in free_items:
-        vip_items.append((f_lbl, f_uri))
+        if f_uri not in vip_uris:
+            vip_uris.add(f_uri)
+            vip_items.append((f_lbl, f_uri))
 
     logger.info("Сформирован FREE пул: %d серверов (0 дублей)", len(free_items))
     logger.info("Сформирован Premium пул: %d серверов (включая FREE резервные)", len(vip_items))
