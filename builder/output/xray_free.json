@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "93.94.52.23",
-          "port": 40443,
+          "address": "144.31.168.95",
+          "port": 443,
           "users": [
             {
-              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-        "shortId": "db46e2946fc466fd",
+        "serverName": "eu-central.cendora.ru",
+        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+        "shortId": "00bca5982f82d083",
         "fingerprint": "chrome"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "146.103.98.84",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "eaae5be2-8a3b-4edb-a968-39366a478ab2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
+        "serverName": "nl-74.southnets.work",
+        "publicKey": "3e_yPFFI_hf_CmzsfdElJHdI9HlVaULKWanfMYY5qB0",
+        "shortId": "65201ddbe0cef5",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -154,36 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇪🇪 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "151.242.168.125",
-          "port": 390,
-          "users": [
-            {
-              "id": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,10 +166,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "bowandbead.com",
-        "publicKey": "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8",
-        "shortId": "b545fe8c5e22f92d",
-        "fingerprint": "ios"
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇩🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "193.58.121.189",
+          "port": 443,
+          "users": [
+            {
+              "id": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "de.pinkmoon.pro",
+        "publicKey": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
+        "shortId": "8ffa160e608bf539",
+        "fingerprint": "firefox"
       }
     }
   }
