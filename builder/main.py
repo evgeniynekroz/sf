@@ -710,13 +710,35 @@ def apply_label(raw: str, label: str) -> str:
         except Exception:
             pass
     base = s[: s.rindex("#")] if "#" in s else s.rstrip()
-    b_low = base.lower()
-    if "security=tls" in b_low and "allowinsecure=" not in b_low and "insecure=" not in b_low:
-        sep = "&" if "?" in base else "?"
-        base = f"{base}{sep}allowInsecure=1"
-    if (b_low.startswith("hy2://") or b_low.startswith("hysteria2://")) and "insecure=" not in b_low:
-        sep = "&" if "?" in base else "?"
-        base = f"{base}{sep}insecure=1"
+    if "?" in base:
+        prefix, qs = base.split("?", 1)
+        qs = re.sub(r"(?i)\btype=raw\b", "type=tcp", qs)
+        params = parse_qs(qs, keep_blank_values=True)
+        proto = prefix.split("://")[0].lower() if "://" in prefix else ""
+        if proto == "vless":
+            net_val = params.get("type", ["tcp"])[0].lower()
+            if not net_val or net_val == "raw":
+                params["type"] = ["tcp"]
+            sec_val = params.get("security", [""])[0].lower()
+            if sec_val == "reality":
+                flow_val = params.get("flow", [""])[0]
+                if not flow_val or flow_val == "none":
+                    params["flow"] = ["xtls-rprx-vision"]
+            if "fp" not in params or not params["fp"][0]:
+                params["fp"] = ["chrome"]
+            if sec_val == "tls" and "allowInsecure" not in params:
+                params["allowInsecure"] = ["1"]
+        elif proto in ("hy2", "hysteria2"):
+            if "insecure" not in params:
+                params["insecure"] = ["1"]
+        pairs = []
+        for k, vals in params.items():
+            for v in vals:
+                if v:
+                    pairs.append(f"{k}={v}")
+                else:
+                    pairs.append(f"{k}=")
+        base = f"{prefix}?{'&'.join(pairs)}"
     return f"{base}#{label}"
 
 def build_singbox_config(items: list[tuple[str, str]], title: str) -> dict:

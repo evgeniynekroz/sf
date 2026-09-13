@@ -119,9 +119,9 @@ export async function handleSubscription(request) {
   if (format === "singbox" || format === "xray") {
     contentType = "application/json; charset=utf-8";
   } else {
-    // Для текстовых vless:// списков:
-    // Если клиент требует base64 (v2rayNG, Shadowrocket) или явно передан b64=1, и не запрошен raw=1
-    if ((b64Param || isB64RequiredClient(request)) && !rawParam && formatParam !== "raw") {
+    // Стандарт V2Ray/Happ/v2rayNG: подписка ВСЕГДА кодируется в Base64.
+    // Если явно запрошен raw=1 или format=raw (для отладки в браузере), отдаем чистый текст.
+    if (!rawParam && formatParam !== "raw") {
       finalBody = encodeB64(content);
     }
   }
