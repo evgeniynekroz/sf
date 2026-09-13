@@ -1,0 +1,61 @@
+name: HQRay VPN Builder
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "builder/**"
+      - ".github/workflows/**"
+
+concurrency:
+  group: hqray-builder
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install libsql-experimental
+
+      - name: Install Xray-core
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          XRAY_FALLBACK="25.6.8"
+          XRAY_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}"             https://api.github.com/repos/XTLS/Xray-core/releases/latest             | grep -Po '"tag_name": "v\K[^"]*' || true)
+          if [ -z "$XRAY_VERSION" ]; then
+            XRAY_VERSION="$XRAY_FALLBACK"
+          fi
+          echo "Installing Xray-core v${XRAY_VERSION}"
+          curl -sL "https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip" -o xray.zip
+          unzip -q xray.zip -d xray-bin
+          sudo mv xray-bin/xray /usr/local/bin/xray
+          sudo chmod +x /usr/local/bin/xray
+          xray version
+
+      - name: Run builder
+        run: python builder/main.py
+
+      - name: Commit and push updated subscriptions
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add builder/output/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(feed): auto-update subscriptions [skip ci]" && git push)

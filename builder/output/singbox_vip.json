@@ -1,0 +1,112 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "tls://1.1.1.1"
+      },
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8"
+      }
+    ],
+    "final": "cloudflare"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция — Premium",
+      "server": "158.94.216.50",
+      "server_port": 32306,
+      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA",
+          "short_id": "61614f026070554f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 Япония — Premium",
+      "server": "103.27.186.195",
+      "server_port": 443,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tls": {
+        "enabled": true,
+        "server_name": "m73j8.fssr.jst.hh.vavava.kdns.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "m73j8.fssr.jst.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 LTE — Premium",
+      "server": "104.16.100.66",
+      "server_port": 8880,
+      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 LTE #2 — Premium",
+      "server": "104.17.181.19",
+      "server_port": 8880,
+      "uuid": "70853635-5b3e-4561-bd3f-4354b56194de",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "broken-glitter-6d2f.408-51c.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "💎 HQRay VPN - @hqraybot",
+      "outbounds": [
+        "🇹🇷 Турция — Premium",
+        "🇯🇵 Япония — Premium",
+        "🇷🇺 LTE — Premium",
+        "🇷🇺 LTE #2 — Premium",
+        "direct"
+      ],
+      "default": "🇹🇷 Турция — Premium"
+    }
+  ],
+  "route": {
+    "final": "💎 HQRay VPN - @hqraybot",
+    "auto_detect_interface": true
+  }
+}

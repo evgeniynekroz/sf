@@ -55,7 +55,8 @@ export async function handleSubscription(request) {
         "Content-Type": format === "plain" ? "text/plain; charset=utf-8" : "application/json; charset=utf-8",
         "Cache-Control": "no-store",
         "Access-Control-Allow-Origin": "*",
-        "profile-title": encodeB64("⚡ HQRay VIP [Тест]"),
+        "profile-title": "base64:" + encodeB64("💎 HQRay VPN - @hqraybot"),
+        "Content-Disposition": 'attachment; filename="💎 HQRay VPN - @hqraybot"; filename*=UTF-8\'\'%F0%9F%92%8E%20HQRay%20VPN%20-%20%40hqraybot',
       },
     });
   }
@@ -87,7 +88,7 @@ export async function handleSubscription(request) {
   const isVip = exp && exp > now;
 
   let poolKey = isVip ? "subscription_vip" : "subscription_free";
-  let profileTitle = isVip ? "⚡ HQRay VIP [60M+]" : "🌐 HQRay Free (6 серверов)";
+  const profileTitle = "💎 HQRay VPN - @hqraybot";
 
   let content = null;
   if (format === "xray") {
@@ -116,10 +117,10 @@ export async function handleSubscription(request) {
 
   const headers = {
     "Content-Type": format === "plain" ? "text/plain; charset=utf-8" : "application/json; charset=utf-8",
-    "Content-Disposition": 'attachment; filename="hqray"',
+    "Content-Disposition": 'attachment; filename="💎 HQRay VPN - @hqraybot"; filename*=UTF-8\'\'%F0%9F%92%8E%20HQRay%20VPN%20-%20%40hqraybot',
     "Cache-Control": "no-store",
     "Access-Control-Allow-Origin": "*",
-    "profile-title": encodeB64(profileTitle),
+    "profile-title": "base64:" + encodeB64(profileTitle),
     "subscription-userinfo": `upload=0; download=${usedMb * 1024 * 1024}; total=0; expire=${expireTs}`,
     "profile-update-interval": "1",
     "support-url": `https://t.me/${BOT_USERNAME}`,

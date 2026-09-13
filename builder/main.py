@@ -35,10 +35,10 @@ TCP_MAX_WORKERS   = 50
 
 # ── Xray Core Проверка скорости и задержки ──────────────────────────────────
 REAL_CHECK_WORKERS       = 8
-REAL_CHECK_TIMEOUT       = 5
-REAL_CHECK_SPEED_URL     = "https://speed.cloudflare.com/__down?bytes=5000000"  # 5MB для точного замера
-REAL_CHECK_MIN_VIP_MBPS  = 60.0  # СТРОГО: от 60 Мбит/с для VIP
-REAL_CHECK_MIN_FREE_MBPS = 5.0   # от 5 Мбит/с для Free
+REAL_CHECK_TIMEOUT       = 4
+REAL_CHECK_SPEED_URL     = "https://speed.cloudflare.com/__down?bytes=1500000"  # 1.5MB для быстрого замера
+REAL_CHECK_MIN_VIP_MBPS  = 25.0  # От 25 Мбит/с для Premium
+REAL_CHECK_MIN_FREE_MBPS = 3.0   # От 3 Мбит/с для Free
 REAL_CHECK_IP_URL        = "https://api.ipify.org"
 REAL_CHECK_URL           = "http://cp.cloudflare.com/generate_204"
 REAL_CHECK_PORT_BASE     = 21080
@@ -77,27 +77,55 @@ COUNTRY_NAMES_RU: dict[str, str] = {
 }
 
 COUNTRY_TAG_RULES = {
-    "DE": [r"\bDE\b", "Германия", "GERMANY", "🇩🇪"],
-    "NL": [r"\bNL\b", "Нидерланды", "NETHERLANDS", "HOLLAND", "🇳🇱"],
-    "FI": [r"\bFI\b", "Финляндия", "FINLAND", "🇫🇮"],
-    "EE": [r"\bEE\b", "Эстония", "ESTONIA", "🇪🇪"],
-    "PL": [r"\bPL\b", "Польша", "POLAND", "🇵🇱", "pol2"],
-    "SE": [r"\bSE\b", "Швеция", "SWEDEN", "🇸🇪"],
-    "GB": [r"\bGB\b", r"\bUK\b", "Великобритания", "UNITED KINGDOM", "ENGLAND", "🇬🇧"],
-    "US": [r"\bUS\b", r"\bUSA\b", "США", "UNITED STATES", "🇺🇸"],
-    "TR": [r"\bTR\b", "Турция", "TURKEY", "🇹🇷"],
-    "KZ": [r"\bKZ\b", "Казахстан", "KAZAKHSTAN", "🇰🇿"],
-    "JP": [r"\bJP\b", "Япония", "JAPAN", "TOKYO", "🇯🇵"],
-    "RU": [r"\bRU\b", "Россия", "RUSSIA", "🇷🇺", "posa", "api3-max", "WHITE"],
-    "AT": [r"\bAT\b", "Австрия", "AUSTRIA", "austria", "🇦🇹"],
-    "NO": [r"\bNO\b", "Норвегия", "NORWAY", "norway", "🇳🇴"],
-    "IT": [r"\bIT\b", "Италия", "ITALY", "roma", "🇮🇹"],
-    "FR": [r"\bFR\b", "Франция", "FRANCE", "🇫🇷"],
+    "DE": [r"(?i)(?:\b|_|-)(?:de\d*|germany|frankfurt|berlin|munich|hetzner)(?:\b|_|-|\.)", "Германия", "GERMANY", "🇩🇪"],
+    "NL": [r"(?i)(?:\b|_|-)(?:nl\d*|netherlands|holland|amsterdam)(?:\b|_|-|\.)", "Нидерланды", "NETHERLANDS", "HOLLAND", "🇳🇱"],
+    "FI": [r"(?i)(?:\b|_|-)(?:fi\d*|finland|helsinki)(?:\b|_|-|\.)", "Финляндия", "FINLAND", "🇫🇮"],
+    "EE": [r"(?i)(?:\b|_|-)(?:ee\d*|estonia|tallinn|est)(?:\b|_|-|\.)", "Эстония", "ESTONIA", "🇪🇪"],
+    "PL": [r"(?i)(?:\b|_|-)(?:pl\d*|poland|warsaw|pol\d*)(?:\b|_|-|\.)", "Польша", "POLAND", "🇵🇱"],
+    "SE": [r"(?i)(?:\b|_|-)(?:se\d*|sweden|stockholm)(?:\b|_|-|\.)", "Швеция", "SWEDEN", "🇸🇪"],
+    "AT": [r"(?i)(?:\b|_|-)(?:at\d*|austria|vienna)(?:\b|_|-|\.)", "Австрия", "AUSTRIA", "🇦🇹"],
+    "GB": [r"(?i)(?:\b|_|-)(?:gb\d*|uk\d*|london|england|britain)(?:\b|_|-|\.)", "Великобритания", "UNITED KINGDOM", "ENGLAND", "🇬🇧"],
+    "US": [r"(?i)(?:\b|_|-)(?:us\d*|usa\d*|united\.states|america)(?:\b|_|-|\.)", "США", "UNITED STATES", "🇺🇸"],
+    "TR": [r"(?i)(?:\b|_|-)(?:tr\d*|turkey|istanbul)(?:\b|_|-|\.)", "Турция", "TURKEY", "🇹🇷"],
+    "KZ": [r"(?i)(?:\b|_|-)(?:kz\d*|kazakhstan|almaty|astana)(?:\b|_|-|\.)", "Казахстан", "KAZAKHSTAN", "🇰🇿"],
+    "JP": [r"(?i)(?:\b|_|-)(?:jp\d*|japan|tokyo)(?:\b|_|-|\.)", "Япония", "JAPAN", "TOKYO", "🇯🇵"],
+    "NO": [r"(?i)(?:\b|_|-)(?:no\d*|norway|oslo)(?:\b|_|-|\.)", "Норвегия", "NORWAY", "🇳🇴"],
+    "IT": [r"(?i)(?:\b|_|-)(?:it\d*|italy|roma|milan)(?:\b|_|-|\.)", "Италия", "ITALY", "🇮🇹"],
+    "FR": [r"(?i)(?:\b|_|-)(?:fr\d*|france|paris)(?:\b|_|-|\.)", "Франция", "FRANCE", "🇫🇷"],
+    "RU": [r"(?i)(?:\b|_|-)(?:ru\d*|russia|moscow|posa|api3-max|white)(?:\b|_|-|\.)", "Россия", "RUSSIA", "🇷🇺"],
 }
 
 # Страны для пулов
 FREE_TARGET_COUNTRIES = ["DE", "NL", "FI", "PL", "SE"]
 VIP_TARGET_COUNTRIES  = ["DE", "NL", "FI", "EE", "PL", "SE", "GB", "US", "TR", "KZ", "JP", "NO", "IT", "AT"]
+
+# ⚡️ Ближние к России страны (получают префикс-молнию ⚡️)
+NEARBY_COUNTRIES = {"DE", "NL", "FI", "EE", "PL", "SE", "AT"}
+
+# Максимально допустимая задержка (мс) для добавления в подписку
+COUNTRY_MAX_LATENCY: dict[str, float] = {
+    # ⚡️ Ближняя Европа (быстрые для игр/видео)
+    "DE": 280.0,
+    "FI": 280.0,
+    "EE": 280.0,
+    "PL": 280.0,
+    "SE": 280.0,
+    "NL": 280.0,
+    "AT": 280.0,
+    # Средние страны
+    "GB": 280.0,
+    "IT": 280.0,
+    "KZ": 280.0,
+    "TR": 280.0,
+    "NO": 280.0,
+    "FR": 280.0,
+    # Дальние страны
+    "US": 350.0,
+    "JP": 420.0,
+    # LTE / Белый список
+    "RU": 280.0,
+}
+DEFAULT_MAX_LATENCY = 280.0
 
 @dataclass(slots=True)
 class Source:
@@ -386,40 +414,81 @@ def real_check_node(raw: str, port: int) -> CheckResult:
         )
         time.sleep(0.4)
 
-        # 1. HTTP GET 204 Check + Latency
-        t0 = time.perf_counter()
-        basic = _curl(REAL_CHECK_URL, ["-o", NULL_DEVICE, "-w", "%{http_code}"], REAL_CHECK_TIMEOUT)
-        latency = (time.perf_counter() - t0) * 1000.0
+        # 1. HTTP GET 204 Check + точный замер Latency через curl %{time_total}
+        fmt = "%{http_code}:%{time_total}"
+        basic = _curl(REAL_CHECK_URL, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
+        parts = basic.stdout.strip().split(":")
+        http_code = parts[0] if parts else ""
+        time_total_s = float(parts[1]) if len(parts) > 1 and parts[1] else 9.999
+        latency = time_total_s * 1000.0
 
         is_ru_whitelist = False
-        if basic.returncode != 0 or basic.stdout.strip() not in ("200", "204", "301", "302"):
+        if basic.returncode != 0 or http_code not in ("200", "204", "301", "302"):
             # Проверка для белых списков РФ (где зарубежный Cloudflare заблокирован)
-            t0 = time.perf_counter()
-            ru_check = _curl("http://ya.ru", ["-o", NULL_DEVICE, "-w", "%{http_code}"], REAL_CHECK_TIMEOUT)
-            if ru_check.returncode == 0 and ru_check.stdout.strip() in ("200", "301", "302"):
+            ru_check = _curl("http://ya.ru", ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
+            ru_parts = ru_check.stdout.strip().split(":")
+            ru_code = ru_parts[0] if ru_parts else ""
+            if ru_check.returncode == 0 and ru_code in ("200", "301", "302"):
                 is_ru_whitelist = True
-                latency = (time.perf_counter() - t0) * 1000.0
+                latency = float(ru_parts[1]) * 1000.0 if len(ru_parts) > 1 and ru_parts[1] else 9999.0
             else:
                 return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
 
-        # 2. IP Leak Check (только для зарубежных узлов)
+        # 2. Двойная проверка на стабильность (устранение джиттера и packet loss)
+        chk_url = "http://ya.ru" if is_ru_whitelist else REAL_CHECK_URL
+        basic2 = _curl(chk_url, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
+        parts2 = basic2.stdout.strip().split(":")
+        code2 = parts2[0] if parts2 else ""
+        if basic2.returncode != 0 or code2 not in ("200", "204", "301", "302"):
+            return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
+        lat2 = float(parts2[1]) * 1000.0 if len(parts2) > 1 and parts2[1] else 9999.0
+        latency = (latency + lat2) / 2.0
+
+        # 3. IP Leak Check (только для зарубежных узлов)
         exit_ip = None
         if MY_PUBLIC_IP and not is_ru_whitelist:
-            ip_result = _curl(REAL_CHECK_IP_URL, ["-o", "-"], REAL_CHECK_TIMEOUT)
-            exit_ip = ip_result.stdout.strip()
-            if ip_result.returncode != 0 or not exit_ip or exit_ip == MY_PUBLIC_IP:
-                return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
+            try:
+                ip_result = _curl(REAL_CHECK_IP_URL, ["-o", "-"], 3)
+                if ip_result.returncode == 0:
+                    cand_ip = ip_result.stdout.strip()
+                    if cand_ip == MY_PUBLIC_IP:
+                        # Утечка прямого IP — прокси не скрывает адрес
+                        return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
+                    exit_ip = cand_ip
+            except Exception:
+                pass
 
-        # 3. Скоростной тест
+        # 4. Скоростной тест (1MB блок с cache-buster)
         speed_mbps = 25.0 if is_ru_whitelist else 0.0
         if not is_ru_whitelist:
-            speed = _curl(REAL_CHECK_SPEED_URL, ["-o", NULL_DEVICE, "-w", "%{speed_download}"], REAL_CHECK_TIMEOUT)
-            if speed.returncode == 0 and speed.stdout.strip():
+            cache_param = f"&r={int(time.time() * 1000)}"
+            speed = _curl(REAL_CHECK_SPEED_URL + cache_param, ["-o", NULL_DEVICE, "-w", "%{http_code}:%{speed_download}"], REAL_CHECK_TIMEOUT)
+            sp_parts = speed.stdout.strip().split(":")
+            sp_code = sp_parts[0] if sp_parts else ""
+            if speed.returncode in (0, 28) and sp_code in ("200", "206") and len(sp_parts) > 1:
                 try:
-                    bytes_per_sec = float(speed.stdout.strip())
+                    bytes_per_sec = float(sp_parts[1])
                     speed_mbps = (bytes_per_sec * 8.0) / 1_000_000.0
                 except ValueError:
-                    speed_mbps = 10.0
+                    speed_mbps = 15.0
+            elif sp_code == "429":
+                # Cloudflare rate limit — резервный замер через Tele2
+                t2 = _curl("http://speedtest.tele2.net/1MB.zip", ["-o", NULL_DEVICE, "-w", "%{http_code}:%{speed_download}"], REAL_CHECK_TIMEOUT)
+                t2_parts = t2.stdout.strip().split(":")
+                if t2.returncode in (0, 28) and len(t2_parts) > 1:
+                    try:
+                        speed_mbps = (float(t2_parts[1]) * 8.0) / 1_000_000.0
+                    except ValueError:
+                        speed_mbps = 15.0
+                else:
+                    speed_mbps = 15.0
+            else:
+                # Если HTTP-доступ гарантирован, но сервер блокирует прямой скач тестового файла, даем базовый пропуск
+                speed_mbps = 10.0
+
+            # Отсекаем полностью непригодные для видео/веба узлы
+            if speed_mbps < 2.0:
+                return CheckResult(ok=False, speed_mbps=speed_mbps, latency_ms=latency)
 
         return CheckResult(ok=True, speed_mbps=speed_mbps, latency_ms=latency, exit_ip=exit_ip)
     except Exception:
@@ -674,14 +743,24 @@ def build_pools(
         if is_rkn_blocked(hp[0]):
             rkn_skipped += 1
             continue
-        cc = item.country or "RU"
+        cc = item.country
+        if not cc:
+            val_low = item.value.lower()
+            if any(w in val_low for w in ("api3-max", "posa", ".ru", "white", "белый", "lte", "россия")):
+                cc = "RU"
+        if not cc or cc not in COUNTRY_NAMES_RU:
+            continue
         c_ru = COUNTRY_NAMES_RU.get(cc, "Сервер")
         candidates.append((cc, c_ru, item.protocol, item.value, hp, item.kind))
 
     if rkn_skipped:
         logger.info("RKN-фильтр: пропущено %d заблокированных хостов", rkn_skipped)
 
-    # Отбираем ограниченное число кандидатов на каждую целевую страну для TCP пинга
+    # Приоритет протоколам: vless > trojan > vmess > ss
+    proto_rank = {"vless": 0, "trojan": 1, "vmess": 2, "ss": 3}
+    candidates.sort(key=lambda c: proto_rank.get(c[2], 9))
+
+    # Отбираем кандидатов на каждую целевую страну для TCP пинга
     by_cc_candidates: dict[str, list[tuple]] = defaultdict(list)
     lte_candidates: list[tuple] = []
 
@@ -689,7 +768,7 @@ def build_pools(
         cc, kind = c[0], c[5]
         if kind in ("lte", "whitelist"):
             lte_candidates.append(c)
-        elif len(by_cc_candidates[cc]) < 40:
+        elif len(by_cc_candidates[cc]) < 35:
             by_cc_candidates[cc].append(c)
 
     ping_subset = []
@@ -722,54 +801,64 @@ def build_pools(
         res = test_results.get(c[3])
         if not res or not res.ok:
             return (9999.0, 0.0)
-        # Приоритет для игр: наименьший пинг (мс), затем максимальная скорость
-        return (res.latency_ms, -res.speed_mbps)
+        # Приоритет: минимальный TCP-пинг до узла c[6], затем максимальная скорость
+        return (c[6], -res.speed_mbps)
 
     alive_tested = [c for c in alive if c[3] in test_results and test_results[c[3]].ok]
     alive_tested.sort(key=sort_key)
 
-    # 1. Free Pool (5 EU + 1 LTE) — только 100% рабочие узлы
+    # 1. Free Pool (5 EU + 1 LTE) — только качественные узлы в пределах порога
     free_items: list[tuple[str, str]] = []
     free_nodes_map: dict[str, tuple[str, str]] = {}
 
     for cc in FREE_TARGET_COUNTRIES:
-        matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto"]
+        max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
+        matching = [
+            c for c in alive_tested
+            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat
+        ]
         if matching:
             best = matching[0]
             flag = COUNTRY_FLAGS.get(cc, "🌐")
-            lbl = f"{flag} {best[1]} [Базовый]"
+            lbl = f"{flag} {best[1]} — Базовый"
             free_nodes_map[cc] = (lbl, best[3])
             free_items.append((lbl, best[3]))
 
-    # 1 LTE для Free (строго с пингом < 250 мс)
-    lte_cands = [c for c in alive_tested if c[5] in ("lte", "whitelist") and test_results[c[3]].latency_ms < 250.0]
+    # 1 LTE для Free (строго с пингом <= 250 мс)
+    lte_cands = [c for c in alive_tested if c[5] in ("lte", "whitelist") and c[6] <= 250.0]
     if lte_cands:
-        free_items.append(("🇷🇺 Россия LTE [Базовый]", lte_cands[0][3]))
+        free_items.append(("🇷🇺 Россия LTE — Базовый", lte_cands[0][3]))
 
-    # 2. VIP Pool
+    # 2. Premium (VIP) Pool
     vip_items: list[tuple[str, str]] = []
 
-    # А) VIP High-Speed локации (строго проверенные через реальный HTTP 204)
+    # А) Premium High-Speed локации (строго проверенные, в пределах порога задержки)
     for cc in VIP_TARGET_COUNTRIES:
-        vip_matching = [c for c in alive_tested if c[0] == cc and c[5] == "auto"]
+        max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
+        vip_matching = [
+            c for c in alive_tested
+            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat
+        ]
         if vip_matching:
             best = vip_matching[0]
-            flag = COUNTRY_FLAGS.get(cc, "🌐")
-            res_info = test_results[best[3]]
-            speed_val = res_info.speed_mbps
-            lat_val = res_info.latency_ms
-            tag = f"VIP {lat_val:.0f}ms" if lat_val < 50 else (f"VIP {speed_val:.0f}M+" if speed_val >= REAL_CHECK_MIN_VIP_MBPS else "VIP Fast")
-            vip_items.append((f"{flag} {best[1]} [{tag}]", best[3]))
+            if cc in NEARBY_COUNTRIES:
+                # ⚡️ Молнию только для ближайших к России стран!
+                lbl = f"⚡️{best[1]} — Premium"
+            else:
+                flag = COUNTRY_FLAGS.get(cc, "🌐")
+                lbl = f"{flag} {best[1]} — Premium"
+            vip_items.append((lbl, best[3]))
 
-    # Б) До 7 LTE / White-list локаций для VIP (строго < 250 мс)
+    # Б) До 7 LTE / White-list локаций для Premium (строго <= 250 мс)
     vip_lte_seen = set()
     vip_lte_count = 0
     for c in alive_tested:
-        if c[5] in ("lte", "whitelist") and test_results[c[3]].latency_ms < 250.0 and c[4][0] not in vip_lte_seen:
+        if c[5] in ("lte", "whitelist") and c[6] <= 250.0 and c[4][0] not in vip_lte_seen:
             vip_lte_seen.add(c[4][0])
             vip_lte_count += 1
             kind_title = "LTE" if c[5] == "lte" else "Белый список"
-            vip_items.append((f"🇷🇺 {kind_title} #{vip_lte_count} [VIP]", c[3]))
+            lbl = f"🇷🇺 {kind_title} — Premium" if vip_lte_count == 1 else f"🇷🇺 {kind_title} #{vip_lte_count} — Premium"
+            vip_items.append((lbl, c[3]))
             if vip_lte_count >= 7:
                 break
 
@@ -778,8 +867,8 @@ def build_pools(
         if cc in free_nodes_map:
             vip_items.append(free_nodes_map[cc])
 
-    logger.info("Сформирован Free пул: %d серверов", len(free_items))
-    logger.info("Сформирован VIP пул: %d серверов", len(vip_items))
+    logger.info("Сформирован Базовый пул: %d серверов", len(free_items))
+    logger.info("Сформирован Premium пул: %d серверов", len(vip_items))
     return free_items, vip_items
 
 # ── Скрапинг источников ───────────────────────────────────────────────────
@@ -841,8 +930,14 @@ def detect_country(raw: str, default: str | None = None) -> str | None:
     if default:
         return default
     tag = unquote(raw.split("#")[-1]) if "#" in raw else ""
-    p = urlparse(raw)
-    host = p.hostname or ""
+    host = ""
+    try:
+        # Убираем скобки вокруг IPv4 если есть для совместимости со старыми парсерами
+        clean_raw = re.sub(r'@\[(\d+\.\d+\.\d+\.\d+)\]', r'@\1', raw)
+        p = urlparse(clean_raw)
+        host = p.hostname or ""
+    except Exception:
+        pass
     search_str = f"{tag} {host}"
     for cc, pats in COUNTRY_TAG_RULES.items():
         for pat in pats:
@@ -873,7 +968,29 @@ def dedupe(configs: list[ConfigItem]) -> list[ConfigItem]:
             out.append(c)
     return out
 
-# ── Главный пайплайн сборки ───────────────────────────────────────────────
+# ── Кэш состояния и пайплайн сборки ───────────────────────────────────────
+
+STATE_CACHE_FILE = OUTPUT_DIR / "state_cache.json"
+
+def load_cache() -> dict[str, Any]:
+    if STATE_CACHE_FILE.exists():
+        try:
+            return json.loads(STATE_CACHE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+def save_cache(vip_items: list[tuple[str, str]], free_items: list[tuple[str, str]]) -> None:
+    try:
+        data = {
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "vip": [{"label": l, "uri": r} for l, r in vip_items],
+            "free": [{"label": l, "uri": r} for l, r in free_items],
+        }
+        STATE_CACHE_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        logger.info("Кэш состояния сохранен в %s", STATE_CACHE_FILE)
+    except Exception as e:
+        logger.warning("Не удалось сохранить кэш состояния: %s", e)
 
 def save_to_turso(key: str, value: str) -> None:
     turso_exec("INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)", [key, value])
@@ -885,8 +1002,43 @@ def build() -> None:
     logger.info("Текущий IP хоста: %s", MY_PUBLIC_IP or "не определён")
     RKN_NETWORKS = load_rkn_blocklist()
 
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    # 1. Быстрая проверка ранее работавших серверов из кэша
+    cached = load_cache()
+    cached_vip = cached.get("vip", [])
+    cached_free = cached.get("free", [])
+    cached_uris = list({item["uri"] for item in (cached_vip + cached_free) if "uri" in item})
+    cached_configs: list[ConfigItem] = []
+
+    if cached_uris:
+        logger.info("Проверка %d ранее работавших нод из кэша...", len(cached_uris))
+        cache_check = real_check_batch(cached_uris)
+        healthy_cached = [u for u, res in cache_check.items() if res.ok]
+        logger.info("Из кэша живо и прошло проверку: %d/%d", len(healthy_cached), len(cached_uris))
+        for u in healthy_cached:
+            proto = u.split("://")[0].lower() if "://" in u else "vless"
+            c_code = "DE"
+            kind_val = "auto"
+            for item in cached_vip + cached_free:
+                if item.get("uri") == u:
+                    lbl = item.get("label", "")
+                    if "LTE" in lbl:
+                        kind_val = "lte"
+                        c_code = "RU"
+                    elif "Белый список" in lbl:
+                        kind_val = "whitelist"
+                        c_code = "RU"
+                    else:
+                        for cc, ru in COUNTRY_NAMES_RU.items():
+                            if ru in lbl:
+                                c_code = cc
+                                break
+                    break
+            cached_configs.append(ConfigItem(source="cache", protocol=proto, value=u, country=c_code, kind=kind_val))
+
     sources = load_sources()
-    all_configs: list[ConfigItem] = []
+    all_configs: list[ConfigItem] = list(cached_configs)
 
     for src in sources:
         logger.info("Загрузка: %s (%s)", src.name, src.url)
@@ -898,15 +1050,16 @@ def build() -> None:
             logger.warning("  -> ошибка: %s", e)
 
     unique = dedupe(all_configs)
-    logger.info("Всего уникальных конфигов: %d", len(unique))
+    logger.info("Всего уникальных конфигов (включая кэш): %d", len(unique))
 
     free_items, vip_items = build_pools(unique)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    # Сохраняем в кэш состояния для следующих запусков
+    save_cache(vip_items, free_items)
 
     # 1. Free подписка
     free_plain = "\n".join([apply_label(r, l) for l, r in free_items]) + "\n"
-    free_singbox = build_singbox_config(free_items, "HQRay Free")
+    free_singbox = build_singbox_config(free_items, "💎 HQRay VPN - @hqraybot")
     free_xray = build_xray_array(free_items)
     free_data = {"tier": "free", "count": len(free_items), "items": [{"label": l, "uri": r} for l, r in free_items]}
 
@@ -914,9 +1067,9 @@ def build() -> None:
     (OUTPUT_DIR / "singbox_free.json").write_text(json.dumps(free_singbox, ensure_ascii=False, indent=2), encoding="utf-8")
     (OUTPUT_DIR / "xray_free.json").write_text(json.dumps(free_xray, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 2. VIP подписка
+    # 2. Premium (VIP) подписка
     vip_plain = "\n".join([apply_label(r, l) for l, r in vip_items]) + "\n"
-    vip_singbox = build_singbox_config(vip_items, "HQRay VIP")
+    vip_singbox = build_singbox_config(vip_items, "💎 HQRay VPN - @hqraybot")
     vip_xray = build_xray_array(vip_items)
     vip_data = {"tier": "vip", "count": len(vip_items), "items": [{"label": l, "uri": r} for l, r in vip_items]}
 

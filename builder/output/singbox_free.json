@@ -1,0 +1,52 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "tls://1.1.1.1"
+      },
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8"
+      }
+    ],
+    "final": "cloudflare"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия LTE — Базовый",
+      "server": "104.16.100.66",
+      "server_port": 8880,
+      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "red-flower-a2bf.363.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "selector",
+      "tag": "💎 HQRay VPN - @hqraybot",
+      "outbounds": [
+        "🇷🇺 Россия LTE — Базовый",
+        "direct"
+      ],
+      "default": "🇷🇺 Россия LTE — Базовый"
+    }
+  ],
+  "route": {
+    "final": "💎 HQRay VPN - @hqraybot",
+    "auto_detect_interface": true
+  }
+}
