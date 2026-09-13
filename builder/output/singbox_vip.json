@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "144.31.168.95",
+      "server": "82.118.19.153",
       "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eu-central.cendora.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
         }
       }
     },
@@ -95,18 +95,6 @@
           "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
           "short_id": "abcd1234"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
-      "server": "138.124.0.168",
-      "server_port": 8080,
-      "password": "h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-legend-se.roxa.org",
-        "insecure": false
       }
     },
     {
@@ -222,7 +210,7 @@
       "tag": "🇬🇧 Великобритания — Premium",
       "server": "89.40.70.124",
       "server_port": 443,
-      "uuid": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
+      "uuid": "f0612e46-3d37-4766-904e-7baa3e636c24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -241,20 +229,49 @@
     {
       "type": "vless",
       "tag": "🇺🇸 США — Premium",
-      "server": "mypanel.unixzone.us",
-      "server_port": 12068,
-      "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {}
+      "server": "45.91.138.179",
+      "server_port": 443,
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us05.shifor01.life",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+          "short_id": "169fc2df88419465"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 Казахстан — Premium",
+      "server": "62.233.39.9",
+      "server_port": 443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.dell.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 Япония — Premium",
-      "server": "104.17.20.32",
-      "server_port": 2087,
+      "server": "104.21.91.57",
+      "server_port": 443,
       "uuid": "42c62a5a-cd31-4551-80ef-908732370287",
       "tls": {
         "enabled": true,
@@ -290,30 +307,6 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #1 — Premium",
-      "server": "142.249.37.90",
-      "server_port": 44356,
-      "password": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.561891.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #2 — Premium",
-      "server": "hy2.561891.xyz",
-      "server_port": 44356,
-      "password": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.561891.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #3 — Premium",
       "server": "155.248.209.237",
       "server_port": 33333,
       "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
@@ -325,7 +318,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #4 — Premium",
+      "tag": "🇺🇸 Резерв #2 — Premium",
+      "server": "142.249.37.90",
+      "server_port": 44356,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.561891.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 Резерв #3 — Premium",
       "server": "hy2.123266.xyz",
       "server_port": 33333,
       "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
@@ -337,7 +342,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #5 — Premium",
+      "tag": "🇺🇸 Резерв #4 — Premium",
       "server": "vpn-us-006.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -348,23 +353,46 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 Резерв #5 — Premium",
+      "server": "hy2.561891.xyz",
+      "server_port": 44356,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.561891.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 LTE — Premium",
+      "server": "arianet.on1a.com",
+      "server_port": 22445,
+      "password": "2qin41vasoacn0bi",
+      "tls": {
+        "enabled": true,
+        "server_name": "arianet.on1a.com"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇩🇪 Резерв #2 — FREE",
-      "server": "193.58.121.189",
-      "server_port": 443,
-      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
+      "server": "93.94.52.23",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de.pinkmoon.pro",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
-          "short_id": "8ffa160e608bf539"
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
         }
       }
     },
@@ -384,7 +412,6 @@
         "🇩🇪 ⚡️ Германия (Hysteria 2) — Premium",
         "🇳🇱 ⚡️ Нидерланды — Premium",
         "🇫🇮 ⚡️ Финляндия — Premium",
-        "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
         "🇪🇪 ⚡️ Эстония — Premium",
         "🇵🇱 ⚡️ Польша — Premium",
         "🇸🇪 ⚡️ Швеция — Premium",
@@ -393,6 +420,7 @@
         "🇦🇹 ⚡️ Австрия (Hysteria 2) — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
+        "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇳🇴 Норвегия — Premium",
         "🇺🇸 Резерв #1 — Premium",
@@ -400,6 +428,7 @@
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
         "🇺🇸 Резерв #5 — Premium",
+        "🇷🇺 LTE — Premium",
         "🇩🇪 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -415,7 +444,6 @@
         "🇩🇪 ⚡️ Германия (Hysteria 2) — Premium",
         "🇳🇱 ⚡️ Нидерланды — Premium",
         "🇫🇮 ⚡️ Финляндия — Premium",
-        "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
         "🇪🇪 ⚡️ Эстония — Premium",
         "🇵🇱 ⚡️ Польша — Premium",
         "🇸🇪 ⚡️ Швеция — Premium",
@@ -424,6 +452,7 @@
         "🇦🇹 ⚡️ Австрия (Hysteria 2) — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
+        "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇳🇴 Норвегия — Premium",
         "🇺🇸 Резерв #1 — Premium",
@@ -431,6 +460,7 @@
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
         "🇺🇸 Резерв #5 — Premium",
+        "🇷🇺 LTE — Premium",
         "🇩🇪 Резерв #2 — FREE",
         "direct"
       ],
