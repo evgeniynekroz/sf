@@ -2,7 +2,7 @@ name: HQRay VPN Builder
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -39,7 +39,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           XRAY_FALLBACK="25.6.8"
-          XRAY_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}"             https://api.github.com/repos/XTLS/Xray-core/releases/latest             | grep -Po '"tag_name": "v\K[^"]*' || true)
+          XRAY_VERSION=$(curl -s -H "Authorization: Bearer ${GH_TOKEN}" \
+            https://api.github.com/repos/XTLS/Xray-core/releases/latest \
+            | grep -Po '"tag_name": "v\K[^"]*' || true)
           if [ -z "$XRAY_VERSION" ]; then
             XRAY_VERSION="$XRAY_FALLBACK"
           fi
@@ -63,7 +65,16 @@ jobs:
       - name: Run builder
         env:
           PYTHONIOENCODING: "utf-8"
+          TURSO_URL: ${{ secrets.TURSO_URL || 'https://nekrozvpn-evgen.aws-eu-west-1.turso.io' }}
+          TURSO_TOKEN: ${{ secrets.TURSO_TOKEN || 'eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3ODI1Nzk2MTAsImlkIjoiMDE5ZjBhMDYtMWUwMS03MTIwLTg3ZGMtYWEyMmYxMjk3OGJhIiwicmlkIjoiNGZjYmQwOTAtODA0OS00ZjAwLWExN2ItNjY1Y2E2MDE0ZDVkIn0.Hsq1HO-Y7kB5l_O9QspI33eomZUAvWHfdfEXAxXZ8EmJmiC37FmkAXanQqazPsFf3uvds8vcfK1Ak_KDtkYgCg' }}
         run: python builder/main.py
+
+      - name: Validate sing-box configs
+        run: |
+          echo "Validating singbox_vip.json..."
+          sing-box check -c builder/output/singbox_vip.json
+          echo "Validating singbox_free.json..."
+          sing-box check -c builder/output/singbox_free.json
 
       - name: Commit and push updated subscriptions
         run: |

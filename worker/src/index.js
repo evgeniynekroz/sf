@@ -38,7 +38,11 @@ export default {
     }
 
     // Subscription feed
-    if (url.pathname === "/sub" || url.pathname.startsWith("/sub/")) {
+    if (
+      url.pathname === "/sub" ||
+      url.pathname.startsWith("/sub/") ||
+      url.searchParams.has("token")
+    ) {
       request.env = env;
       return handleSubscription(request);
     }

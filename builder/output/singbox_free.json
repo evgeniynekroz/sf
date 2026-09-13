@@ -25,115 +25,97 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "82.118.19.153",
-      "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "server": "31.56.189.27",
+      "server_port": 8765,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
-        },
-        "server_name": "www.cloudflare.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "130.78.191.25",
-      "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-          "short_id": "3ac25eef1431b799"
-        },
-        "server_name": "nl07.shifor01.life"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 Финляндия — FREE",
-      "server": "31.77.199.182",
-      "server_port": 443,
-      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
-          "short_id": "abcd1234"
-        },
-        "server_name": "fi2.yservice.help"
+          "public_key": "aJ50K_c0vB-2d1G0W_7sY1gP-1g1q1j1W1b1x1a1c1Y",
+          "short_id": "123456"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "144.31.5.64",
+      "server": "188.225.45.152",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "uuid": "238e492b-bc20-4380-92b6-135d39112ca4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net"
+        "server_name": "api8.eaglors.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
+          "short_id": "52ccb3687fe0b7ec"
+        }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "193.148.59.178",
-      "server_port": 443,
-      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
-      "flow": "xtls-rprx-vision",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
       "tls": {
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-          "short_id": "e3daad69"
-        },
-        "server_name": "www.apple.com"
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 Резерв #1 — FREE",
-      "server": "50.7.159.123",
-      "server_port": 8443,
-      "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "192.3.247.109",
+      "server_port": 32132,
+      "uuid": "23504a34-5216-4e10-86a0-b6a70976f996",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "7Axhce2tfEGSbpq0YmPhnH_OWxmm_u0yAqsRwzALbw0",
-          "short_id": "82e5031a63512212"
-        },
-        "server_name": "jp.atlanta-api.com"
+          "public_key": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
+          "short_id": "24cbfb05123722"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇬🇧 Резерв #2 — FREE",
-      "server": "193.160.71.249",
+      "server": "89.40.70.124",
       "server_port": 443,
-      "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
+      "uuid": "f0612e46-3d37-4766-904e-7baa3e636c24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
+        "server_name": "www.sony.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI",
-          "short_id": "ee169e93d3c277a1"
-        },
-        "server_name": "edge-uk2.mystatic-cdn.ru"
+          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+          "short_id": "5b33d3e71a14f4"
+        }
       }
     },
     {
@@ -149,11 +131,9 @@
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
         "🇩🇪 Германия — FREE",
-        "🇳🇱 Нидерланды — FREE",
-        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇬🇧 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -162,15 +142,13 @@
     },
     {
       "type": "selector",
-      "tag": "💎 HQRay VPN - @hqraybot",
+      "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
         "🇩🇪 Германия — FREE",
-        "🇳🇱 Нидерланды — FREE",
-        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇬🇧 Резерв #2 — FREE",
         "direct"
       ],
@@ -178,7 +156,7 @@
     }
   ],
   "route": {
-    "final": "💎 HQRay VPN - @hqraybot",
+    "final": "💎 HQRay VPN",
     "auto_detect_interface": true,
     "rules": [
       {
@@ -199,12 +177,6 @@
           "avito.ru",
           "ozon.ru",
           "wildberries.ru"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "geoip": [
-          "ru"
         ],
         "outbound": "direct"
       }

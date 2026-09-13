@@ -131,10 +131,11 @@ export async function handleSubscription(request) {
 
   const expireTs = isVip && exp ? Math.floor(exp.getTime() / 1000) : 0;
   const usedMb = user?.traffic_used_mb || 0;
+  const filename = (format === "singbox" || format === "xray") ? "config.json" : "hqray_sub.txt";
 
   const headers = {
     "Content-Type": contentType,
-    "Content-Disposition": 'attachment; filename="hqray_sub.txt"',
+    "Content-Disposition": `attachment; filename="${filename}"`,
     "Cache-Control": "no-store, no-cache, must-revalidate",
     "Access-Control-Allow-Origin": "*",
     "profile-title": "base64:" + encodeB64(profileTitle),

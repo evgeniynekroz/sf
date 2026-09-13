@@ -75,9 +75,11 @@ def is_toxic_config(raw: str) -> bool:
     toxic_keywords = ["fuck", "rkn", "porn", "xxx", "gov.ru", "mil.ru", "gosuslugi", "nalog", "fsb", ".ir"]
     if any(k in s for k in toxic_keywords):
         return True
-    # 2. Невалидный Reality (отсутствие публичного ключа pbk)
-    if "security=reality" in s and "pbk=" not in s:
-        return True
+    # 2. Невалидный Reality (отсутствие или короткий/пустой публичный ключ pbk)
+    if "security=reality" in s:
+        m = re.search(r"[?&]pbk=([^&#]+)", raw, re.IGNORECASE)
+        if not m or len(m.group(1).strip()) < 32:
+            return True
     return False
 
 COUNTRY_FLAGS: dict[str, str] = {
@@ -323,15 +325,27 @@ def _xray_outbound(raw: str) -> tuple[str, dict, dict] | None:
             net = g("type", "tcp")
             stream: dict = {"network": net}
             security = g("security", "none")
-            stream["security"] = security if security in ("tls", "reality") else "none"
-            if security == "tls":
-                stream["tlsSettings"] = {"serverName": g("sni") or g("host") or host,
-                                          "fingerprint": g("fp", "chrome")}
+            if security == "reality":
+                pbk = g("pbk", "")
+                if not pbk or len(pbk) < 32:
+                    return None
+                stream["security"] = "reality"
+                stream["realitySettings"] = {
+                    "serverName": g("sni", host),
+                    "publicKey": pbk,
+                    "shortId": g("sid", ""),
+                    "fingerprint": g("fp", "chrome"),
+                }
+            elif security == "tls":
+                stream["security"] = "tls"
+                stream["tlsSettings"] = {
+                    "serverName": g("sni") or g("host") or host,
+                    "fingerprint": g("fp", "chrome"),
+                }
                 if g("allowInsecure") == "1" or g("insecure") == "1":
                     stream["tlsSettings"]["allowInsecure"] = True
-            elif security == "reality" and g("pbk"):
-                stream["realitySettings"] = {"serverName": g("sni", host), "publicKey": g("pbk"),
-                                              "shortId": g("sid", ""), "fingerprint": g("fp", "chrome")}
+            else:
+                stream["security"] = "none"
             if net == "ws":
                 stream["wsSettings"] = {"path": g("path", "/")}
                 if g("host"):
@@ -450,24 +464,35 @@ def uri_to_outbound(raw: str, tag: str) -> dict | None:
             "server_port": u["port"],
             "uuid": user["id"],
         }
-        if user.get("flow"):
+        if user.get("flow") and user["flow"] != "none":
             out["flow"] = user["flow"]
         sec = stream.get("security", "none")
-        if sec in ("tls", "reality"):
-            tls_cfg: dict = {"enabled": True}
-            if sec == "reality":
-                r_set = stream.get("realitySettings", {})
-                tls_cfg["reality"] = {
+        if sec == "reality":
+            r_set = stream.get("realitySettings", {})
+            pbk = str(r_set.get("publicKey", "")).strip()
+            if not pbk or len(pbk) < 32:
+                return None
+            out["tls"] = {
+                "enabled": True,
+                "server_name": r_set.get("serverName", u["address"]),
+                "utls": {
                     "enabled": True,
-                    "public_key": r_set.get("publicKey", ""),
-                    "short_id": r_set.get("shortId", ""),
+                    "fingerprint": r_set.get("fingerprint", "chrome") or "chrome",
+                },
+                "reality": {
+                    "enabled": True,
+                    "public_key": pbk,
+                    "short_id": str(r_set.get("shortId", "")).strip(),
                 }
-                tls_cfg["server_name"] = r_set.get("serverName", u["address"])
-            else:
-                t_set = stream.get("tlsSettings", {})
-                tls_cfg["server_name"] = t_set.get("serverName", u["address"])
-                if t_set.get("allowInsecure"):
-                    tls_cfg["insecure"] = True
+            }
+        elif sec == "tls":
+            t_set = stream.get("tlsSettings", {})
+            tls_cfg = {
+                "enabled": True,
+                "server_name": t_set.get("serverName", u["address"]),
+            }
+            if t_set.get("allowInsecure"):
+                tls_cfg["insecure"] = True
             out["tls"] = tls_cfg
         net = stream.get("network", "tcp")
         if net == "ws":
@@ -480,20 +505,71 @@ def uri_to_outbound(raw: str, tag: str) -> dict | None:
 
     if protocol == "trojan":
         u = settings["servers"][0]
+        t_set = stream.get("tlsSettings", {})
+        tls_cfg = {
+            "enabled": True,
+            "server_name": t_set.get("serverName", u["address"]),
+        }
+        if t_set.get("allowInsecure"):
+            tls_cfg["insecure"] = True
         out = {
             "type": "trojan",
             "tag": tag,
             "server": u["address"],
             "server_port": u["port"],
             "password": u["password"],
-            "tls": {"enabled": True, "server_name": stream.get("tlsSettings", {}).get("serverName", u["address"])}
+            "tls": tls_cfg,
         }
         net = stream.get("network", "tcp")
         if net == "ws":
-            out["transport"] = {"type": "ws", "path": stream.get("wsSettings", {}).get("path", "/")}
+            ws_set = stream.get("wsSettings", {})
+            out["transport"] = {"type": "ws", "path": ws_set.get("path", "/"), "headers": ws_set.get("headers", {})}
         elif net == "grpc":
-            out["transport"] = {"type": "grpc", "service_name": stream.get("grpcSettings", {}).get("serviceName", "")}
+            grpc_set = stream.get("grpcSettings", {})
+            out["transport"] = {"type": "grpc", "service_name": grpc_set.get("serviceName", "")}
         return out
+
+    if protocol == "vmess":
+        u = settings["vnext"][0]
+        user = u["users"][0]
+        out = {
+            "type": "vmess",
+            "tag": tag,
+            "server": u["address"],
+            "server_port": u["port"],
+            "uuid": user["id"],
+            "security": "auto",
+            "alter_id": user.get("alterId", 0),
+        }
+        sec = stream.get("security", "none")
+        if sec == "tls":
+            t_set = stream.get("tlsSettings", {})
+            tls_cfg = {
+                "enabled": True,
+                "server_name": t_set.get("serverName", u["address"]),
+            }
+            if t_set.get("allowInsecure"):
+                tls_cfg["insecure"] = True
+            out["tls"] = tls_cfg
+        net = stream.get("network", "tcp")
+        if net == "ws":
+            ws_set = stream.get("wsSettings", {})
+            out["transport"] = {"type": "ws", "path": ws_set.get("path", "/"), "headers": ws_set.get("headers", {})}
+        elif net == "grpc":
+            grpc_set = stream.get("grpcSettings", {})
+            out["transport"] = {"type": "grpc", "service_name": grpc_set.get("serviceName", "")}
+        return out
+
+    if protocol == "shadowsocks":
+        u = settings["servers"][0]
+        return {
+            "type": "shadowsocks",
+            "tag": tag,
+            "server": u["address"],
+            "server_port": u["port"],
+            "method": u["method"],
+            "password": u["password"],
+        }
 
     return None
 
@@ -826,7 +902,6 @@ def build_singbox_config(items: list[tuple[str, str]], title: str) -> dict:
                     ],
                     "outbound": "direct",
                 },
-                {"geoip": ["ru"], "outbound": "direct"},
             ],
         },
     }
@@ -872,6 +947,7 @@ def build_pools(
 
     # 2. Первичное определение страны по источнику или тегам конфига
     tag_matched_candidates: list[tuple] = []
+    unmatched_hy2: list[tuple] = []
     for item_country, proto, val, hp, kind in candidates:
         final_cc = item_country
         if not final_cc:
@@ -882,31 +958,46 @@ def build_pools(
                     break
         if final_cc in COUNTRY_NAMES_RU:
             tag_matched_candidates.append((final_cc, COUNTRY_NAMES_RU[final_cc], proto, val, hp, kind))
+        elif proto in ("hy2", "hysteria2"):
+            unmatched_hy2.append((proto, val, hp, kind))
 
-    logger.info("Кандидатов с предварительной страной: %d", len(tag_matched_candidates))
+    # Для Hysteria 2 без тегов страны: быстрый пакетный GeoIP резолв
+    if unmatched_hy2:
+        hy2_sample = unmatched_hy2[:120]
+        hy2_hosts = [c[2][0] for c in hy2_sample]
+        logger.info("GeoIP lookup для %d нетегированных Hysteria 2 кандидатов...", len(hy2_hosts))
+        hy2_geomap = batch_lookup_geoip(hy2_hosts)
+        for proto, val, hp, kind in hy2_sample:
+            h_cc = hy2_geomap.get(hp[0])
+            if h_cc and h_cc in COUNTRY_NAMES_RU:
+                tag_matched_candidates.append((h_cc, COUNTRY_NAMES_RU[h_cc], proto, val, hp, kind))
+
+    logger.info("Кандидатов с подтвержденной страной: %d", len(tag_matched_candidates))
 
     # Приоритет протоколам: hy2 > vless > trojan > vmess > ss
     proto_rank = {"hy2": 0, "hysteria2": 0, "vless": 1, "trojan": 2, "vmess": 3, "ss": 4}
     tag_matched_candidates.sort(key=lambda c: proto_rank.get(c[2], 9))
 
-    # Отбираем финалистов на каждую страну (до 16 кандидатов на страну для быстрого теста)
+    # Отбираем финалистов на каждую страну (до 16 кандидатов на страну, до 8 hy2 на страну)
     by_cc_candidates: dict[str, list[tuple]] = defaultdict(list)
+    by_cc_hy2: dict[str, list[tuple]] = defaultdict(list)
     lte_candidates: list[tuple] = []
-    hy2_candidates: list[tuple] = []
 
     for c in tag_matched_candidates:
         cc, proto, kind = c[0], c[2], c[5]
         if kind in ("lte", "whitelist"):
             lte_candidates.append(c)
         elif proto in ("hy2", "hysteria2"):
-            hy2_candidates.append(c)
+            if len(by_cc_hy2[cc]) < 8:
+                by_cc_hy2[cc].append(c)
         elif len(by_cc_candidates[cc]) < 16:
             by_cc_candidates[cc].append(c)
 
     finalists_list: list[tuple] = []
     for c_list in by_cc_candidates.values():
         finalists_list.extend(c_list)
-    finalists_list.extend(hy2_candidates[:30])
+    for c_list in by_cc_hy2.values():
+        finalists_list.extend(c_list)
     finalists_list.extend(lte_candidates[:20])
 
     # Точечный GeoIP-запрос строго для финалистов (1 батч-запрос < 0.5с)
@@ -1273,7 +1364,7 @@ def build() -> None:
 
     # 1. Free подписка
     free_plain = "\n".join([apply_label(r, l) for l, r in free_items]) + "\n"
-    free_singbox = build_singbox_config(free_items, "💎 HQRay VPN - @hqraybot")
+    free_singbox = build_singbox_config(free_items, "💎 HQRay VPN")
     free_xray = build_xray_array(free_items)
     free_data = {"tier": "free", "count": len(free_items), "items": [{"label": l, "uri": r} for l, r in free_items]}
 
@@ -1283,7 +1374,7 @@ def build() -> None:
 
     # 2. Premium (VIP) подписка
     vip_plain = "\n".join([apply_label(r, l) for l, r in vip_items]) + "\n"
-    vip_singbox = build_singbox_config(vip_items, "💎 HQRay VPN - @hqraybot")
+    vip_singbox = build_singbox_config(vip_items, "💎 HQRay VPN")
     vip_xray = build_xray_array(vip_items)
     vip_data = {"tier": "vip", "count": len(vip_items), "items": [{"label": l, "uri": r} for l, r in vip_items]}
 
