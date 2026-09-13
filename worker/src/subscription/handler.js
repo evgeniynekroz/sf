@@ -8,8 +8,11 @@ import { getUserByToken, getSetting } from "../db/turso.js";
 function isSingboxCoreClient(request) {
   const ua = (request.headers.get("user-agent") || "").toLowerCase();
   return (
-    (ua.includes("sing-box") || ua.includes("hiddify") || ua.includes("nekobox") || ua.includes("karing")) &&
-    !ua.includes("happ")
+    ua.includes("sing-box") ||
+    ua.includes("hiddify") ||
+    ua.includes("nekobox") ||
+    ua.includes("karing") ||
+    ua.includes("happ")
   );
 }
 
@@ -89,7 +92,7 @@ export async function handleSubscription(request) {
   }
 
   const poolKey = isVip ? "subscription_vip" : "subscription_free";
-  const profileTitle = isVip ? "💎 HQRay VPN (VIP)" : "🌐 HQRay VPN (Free)";
+  const profileTitle = "💎 HQRay VPN";
 
   let content = null;
   if (format === "xray") {
