@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "82.118.19.153",
-          "port": 443,
+          "address": "93.94.52.23",
+          "port": 40443,
           "users": [
             {
-              "id": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-        "shortId": "670ed9f350bd8ee0",
-        "fingerprint": "firefox"
+        "serverName": "deepl.com",
+        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+        "shortId": "db46e2946fc466fd",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.5.64",
+          "address": "144.31.2.33",
           "port": 443,
           "users": [
             {
@@ -134,10 +134,10 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "pl6.moritech.net",
+        "serverName": "pl3.moritech.net",
         "fingerprint": "firefox"
       }
     }
@@ -255,6 +255,35 @@
     }
   },
   {
+    "tag": "🇹🇷 Турция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "217.149.31.117",
+          "port": 443,
+          "users": [
+            {
+              "id": "1f507f26-949e-4dab-9191-0d116e2bd8aa",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "tr2.wba-pn.ru",
+        "fingerprint": "firefox"
+      },
+      "wsSettings": {
+        "path": "/"
+      }
+    }
+  },
+  {
     "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
@@ -293,7 +322,7 @@
           "port": 443,
           "users": [
             {
-              "id": "7d8a8a02-7eec-498a-84a1-252a4a84a578",
+              "id": "1859decf-1af7-4a75-a461-221f5d2df6f5",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -338,6 +367,35 @@
         "publicKey": "li5NH6qQUDgYest2daHfYUeMjqwADWCkk2jh0s7P1lw",
         "shortId": "9267bf2c26bb92b0",
         "fingerprint": "qq"
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "89.40.70.124",
+          "port": 443,
+          "users": [
+            {
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
+        "fingerprint": "firefox"
       }
     }
   }

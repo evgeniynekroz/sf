@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "82.118.19.153",
-      "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "server": "93.94.52.23",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
         }
       }
     },
@@ -88,13 +88,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "144.31.5.64",
+      "server": "144.31.2.33",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net"
+        "server_name": "pl3.moritech.net"
       }
     },
     {
@@ -120,28 +120,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 Резерв #1 — FREE",
-      "server": "50.7.159.123",
-      "server_port": 8443,
-      "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp.atlanta-api.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Axhce2tfEGSbpq0YmPhnH_OWxmm_u0yAqsRwzALbw0",
-          "short_id": "82e5031a63512212"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 Резерв #2 — FREE",
+      "tag": "🇬🇧 Резерв #1 — FREE",
       "server": "193.160.71.249",
       "server_port": 443,
       "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
@@ -157,6 +136,27 @@
           "enabled": true,
           "public_key": "65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI",
           "short_id": "ee169e93d3c277a1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 Резерв #2 — FREE",
+      "server": "89.40.70.124",
+      "server_port": 443,
+      "uuid": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.sony.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+          "short_id": "5b33d3e71a14f4"
         }
       }
     },
@@ -177,7 +177,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇬🇧 Резерв #1 — FREE",
         "🇬🇧 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -194,7 +194,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇬🇧 Резерв #1 — FREE",
         "🇬🇧 Резерв #2 — FREE",
         "direct"
       ],

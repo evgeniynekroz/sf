@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-13T12:36:31.213109+00:00",
+  "updated_at": "2026-09-13T12:41:55.660121+00:00",
   "vip": [
     {
       "label": "🇩🇪 ⚡️ Германия — Premium",
-      "uri": "vless://adcaa148-7c66-4282-a81a-99ec8afa029d@82.118.19.153:443?flow=xtls-rprx-vision&fp=firefox&pbk=Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE&security=reality&sid=670ed9f350bd8ee0&sni=www.cloudflare.com&type=tcp#vless-1254189516"
+      "uri": "vless://bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54@93.94.52.23:40443?flow=xtls-rprx-vision&pbk=w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4&security=reality&sid=db46e2946fc466fd&sni=deepl.com&type=raw#vless-1272976725"
     },
     {
       "label": "🇩🇪 ⚡️ Германия (Hysteria 2) — Premium",
@@ -27,7 +27,7 @@
     },
     {
       "label": "🇵🇱 ⚡️ Польша — Premium",
-      "uri": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@144.31.5.64:443?type=raw&security=tls&flow=xtls-rprx-vision&fp=firefox&sni=pl6.moritech.net#5526"
+      "uri": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@144.31.2.33:443?type=tcp&security=tls&flow=xtls-rprx-vision&fp=firefox&sni=pl3.moritech.net#5746"
     },
     {
       "label": "🇸🇪 ⚡️ Швеция — Premium",
@@ -54,12 +54,16 @@
       "uri": "vless://05caca6c-9e97-4c0f-8edf-7b88a6e572c5@mypanel.unixzone.us:12068?type=ws&sni=mypanel.unixzone.us#5619"
     },
     {
+      "label": "🇹🇷 Турция — Premium",
+      "uri": "vless://1f507f26-949e-4dab-9191-0d116e2bd8aa@217.149.31.117:443?encryption=none&fp=firefox&security=tls&sni=tr2.wba-pn.ru&type=ws#🇹🇷"
+    },
+    {
       "label": "🇯🇵 Япония — Premium",
       "uri": "vless://42d932cb-8768-41de-b57b-299252a493d2@50.7.159.123:8443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=7Axhce2tfEGSbpq0YmPhnH_OWxmm_u0yAqsRwzALbw0&sid=82e5031a63512212&sni=jp.atlanta-api.com#4594"
     },
     {
       "label": "🇳🇴 Норвегия — Premium",
-      "uri": "vless://7d8a8a02-7eec-498a-84a1-252a4a84a578@151.242.169.119:443?flow=xtls-rprx-vision&fp=firefox&pbk=SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY&security=reality&sid=fd55b698ee8c3629&sni=yidio.com&type=tcp#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Sandefjord%20%7C%20%5BBL%5D"
+      "uri": "vless://1859decf-1af7-4a75-a461-221f5d2df6f5@151.242.169.119:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY&security=reality&sid=fd55b698ee8c3629&sni=yidio.com&type=tcp#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Sandefjord%20%7C%20%5BBL%5D"
     },
     {
       "label": "🇮🇹 Италия — Premium",
@@ -67,29 +71,33 @@
     },
     {
       "label": "🇺🇸 Резерв #1 — Premium",
-      "uri": "hysteria2://dongtaiwang.com@142.249.37.90:44356?sni=hy2.561891.xyz#🇺🇸"
+      "uri": "hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-us-003.fastervpn.world:443?insecure=1&sni=vpn-us-003.fastervpn.world#hysteria2-101779684"
     },
     {
       "label": "🇺🇸 Резерв #2 — Premium",
-      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333?insecure=1&sni=155.248.209.237#🇺🇸"
+      "uri": "hysteria2://dongtaiwang.com@142.249.37.90:44356?sni=hy2.561891.xyz#🇺🇸"
     },
     {
       "label": "🇺🇸 Резерв #3 — Premium",
-      "uri": "hysteria2://dongtaiwang.com@hy2.561891.xyz:44356?sni=hy2.561891.xyz#🇺🇸"
+      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333?insecure=1&sni=155.248.209.237#🇺🇸"
     },
     {
       "label": "🇺🇸 Резерв #4 — Premium",
-      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333?sni=hy2.123266.xyz#🇺🇸"
+      "uri": "hysteria2://dongtaiwang.com@hy2.561891.xyz:44356?sni=hy2.561891.xyz#🇺🇸"
     },
     {
       "label": "🇺🇸 Резерв #5 — Premium",
-      "uri": "hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-us-006.fastervpn.world:443?insecure=1&sni=vpn-us-006.fastervpn.world#🇺🇸 ⚡️ Резерв #2 — Premium"
+      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333?sni=hy2.123266.xyz#🇺🇸"
+    },
+    {
+      "label": "🇬🇧 Резерв #2 — FREE",
+      "uri": "vless://a5c761a5-ea2d-4af4-ab42-a9f85def664e@89.40.70.124:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8&sid=5b33d3e71a14f4&sni=www.sony.co.uk#4004"
     }
   ],
   "free": [
     {
       "label": "🇩🇪 Германия — FREE",
-      "uri": "vless://adcaa148-7c66-4282-a81a-99ec8afa029d@82.118.19.153:443?flow=xtls-rprx-vision&fp=firefox&pbk=Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE&security=reality&sid=670ed9f350bd8ee0&sni=www.cloudflare.com&type=tcp#vless-1254189516"
+      "uri": "vless://bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54@93.94.52.23:40443?flow=xtls-rprx-vision&pbk=w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4&security=reality&sid=db46e2946fc466fd&sni=deepl.com&type=raw#vless-1272976725"
     },
     {
       "label": "🇳🇱 Нидерланды — FREE",
@@ -101,19 +109,19 @@
     },
     {
       "label": "🇵🇱 Польша — FREE",
-      "uri": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@144.31.5.64:443?type=raw&security=tls&flow=xtls-rprx-vision&fp=firefox&sni=pl6.moritech.net#5526"
+      "uri": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@144.31.2.33:443?type=tcp&security=tls&flow=xtls-rprx-vision&fp=firefox&sni=pl3.moritech.net#5746"
     },
     {
       "label": "🇸🇪 Швеция — FREE",
       "uri": "vless://20d7c485-5d24-49b5-a5cc-bb7a7daf9908@193.148.59.178:443?flow=xtls-rprx-vision&fp=edge&pbk=-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE&security=reality&sid=e3daad69&sni=www.apple.com&type=tcp#vless-890289723"
     },
     {
-      "label": "🇯🇵 Резерв #1 — FREE",
-      "uri": "vless://42d932cb-8768-41de-b57b-299252a493d2@50.7.159.123:8443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=7Axhce2tfEGSbpq0YmPhnH_OWxmm_u0yAqsRwzALbw0&sid=82e5031a63512212&sni=jp.atlanta-api.com#4594"
+      "label": "🇬🇧 Резерв #1 — FREE",
+      "uri": "vless://42d932cb-8768-41de-b57b-299252a493d2@193.160.71.249:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI&sid=ee169e93d3c277a1&sni=edge-uk2.mystatic-cdn.ru#0276"
     },
     {
       "label": "🇬🇧 Резерв #2 — FREE",
-      "uri": "vless://42d932cb-8768-41de-b57b-299252a493d2@193.160.71.249:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI&sid=ee169e93d3c277a1&sni=edge-uk2.mystatic-cdn.ru#0276"
+      "uri": "vless://a5c761a5-ea2d-4af4-ab42-a9f85def664e@89.40.70.124:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8&sid=5b33d3e71a14f4&sni=www.sony.co.uk#4004"
     }
   ]
 }
