@@ -30,21 +30,23 @@ OUTPUT_DIR        = ROOT / "output"
 
 FETCH_TIMEOUT     = 30
 MAX_HTTP_BYTES    = 3_000_000
-TCP_TIMEOUT       = 2.5
-TCP_MAX_WORKERS   = 50
 
-# ── Xray Core Проверка скорости и задержки ──────────────────────────────────
+# ── Xray Core Проверка True Delay (HTTP GET как в Happ) и замер скорости ──────
 REAL_CHECK_WORKERS       = 8
 REAL_CHECK_TIMEOUT       = 4
-REAL_CHECK_SPEED_URL     = "https://speed.cloudflare.com/__down?bytes=1500000"  # 1.5MB для быстрого замера
-REAL_CHECK_MIN_VIP_MBPS  = 25.0  # От 25 Мбит/с для Premium
-REAL_CHECK_MIN_FREE_MBPS = 3.0   # От 3 Мбит/с для Free
+REAL_CHECK_SPEED_URL     = "https://speed.cloudflare.com/__down?bytes=1000000"  # 1MB для точного замера скорости
+REAL_CHECK_MIN_VIP_MBPS  = 5.0   # От 5 Мбит/с для Premium
+REAL_CHECK_MIN_FREE_MBPS = 2.0   # От 2 Мбит/с для Free
 REAL_CHECK_IP_URL        = "https://api.ipify.org"
 REAL_CHECK_URL           = "http://cp.cloudflare.com/generate_204"
+REAL_CHECK_FALLBACK_URL  = "http://www.gstatic.com/generate_204"
+REAL_CHECK_RU_URL        = "http://ya.ru"
 REAL_CHECK_PORT_BASE     = 21080
-XRAY_BIN                 = shutil.which("xray") or str(ROOT / "xray-bin" / ("xray.exe" if os.name == "nt" else "xray"))
+
+XRAY_BIN = shutil.which("xray") or str(ROOT / "xray-bin" / ("xray.exe" if os.name == "nt" else "xray"))
 if not (XRAY_BIN and os.path.exists(XRAY_BIN)):
     XRAY_BIN = None
+
 NULL_DEVICE              = "NUL" if os.name == "nt" else "/dev/null"
 MY_PUBLIC_IP: str | None = None
 
@@ -66,7 +68,7 @@ BASE64_RE = re.compile(r"^[A-Za-z0-9+/=\s]+$")
 COUNTRY_FLAGS: dict[str, str] = {
     "DE":"🇩🇪","NL":"🇳🇱","FI":"🇫🇮","EE":"🇪🇪","PL":"🇵🇱","SE":"🇸🇪",
     "GB":"🇬🇧","US":"🇺🇸","TR":"🇹🇷","KZ":"🇰🇿","JP":"🇯🇵","RU":"🇷🇺",
-    "AT":"🇦🇹","NO":"🇳🇴","IT":"🇮🇹","FR":"🇫🇷",
+    "AT":"🇦🇹","NO":"🇳🇴","IT":"🇮🇹","FR":"🇫🇷","CH":"🇨🇭","ES":"🇪🇸",
 }
 
 COUNTRY_NAMES_RU: dict[str, str] = {
@@ -74,6 +76,7 @@ COUNTRY_NAMES_RU: dict[str, str] = {
     "PL":"Польша","SE":"Швеция","GB":"Великобритания","US":"США",
     "TR":"Турция","KZ":"Казахстан","JP":"Япония","RU":"Россия",
     "AT":"Австрия","NO":"Норвегия","IT":"Италия","FR":"Франция",
+    "CH":"Швейцария","ES":"Испания",
 }
 
 COUNTRY_TAG_RULES = {
@@ -97,35 +100,18 @@ COUNTRY_TAG_RULES = {
 
 # Страны для пулов
 FREE_TARGET_COUNTRIES = ["DE", "NL", "FI", "PL", "SE"]
-VIP_TARGET_COUNTRIES  = ["DE", "NL", "FI", "EE", "PL", "SE", "GB", "US", "TR", "KZ", "JP", "NO", "IT", "AT"]
+VIP_TARGET_COUNTRIES  = ["DE", "NL", "FI", "EE", "PL", "SE", "GB", "US", "TR", "KZ", "JP", "NO", "IT", "AT", "FR"]
 
-# ⚡️ Ближние к России страны (получают префикс-молнию ⚡️)
+# ⚡️ Ближние к России страны (получают префикс ⚡️)
 NEARBY_COUNTRIES = {"DE", "NL", "FI", "EE", "PL", "SE", "AT"}
 
-# Максимально допустимая задержка (мс) для добавления в подписку
+# Максимально допустимая задержка True Delay (мс) для добавления в подписку
 COUNTRY_MAX_LATENCY: dict[str, float] = {
-    # ⚡️ Ближняя Европа (быстрые для игр/видео)
-    "DE": 280.0,
-    "FI": 280.0,
-    "EE": 280.0,
-    "PL": 280.0,
-    "SE": 280.0,
-    "NL": 280.0,
-    "AT": 280.0,
-    # Средние страны
-    "GB": 280.0,
-    "IT": 280.0,
-    "KZ": 280.0,
-    "TR": 280.0,
-    "NO": 280.0,
-    "FR": 280.0,
-    # Дальние страны
-    "US": 350.0,
-    "JP": 420.0,
-    # LTE / Белый список
-    "RU": 280.0,
+    "DE": 350.0, "FI": 350.0, "EE": 350.0, "PL": 350.0, "SE": 350.0, "NL": 350.0, "AT": 350.0,
+    "GB": 400.0, "IT": 400.0, "KZ": 450.0, "TR": 400.0, "NO": 400.0, "FR": 400.0,
+    "US": 600.0, "JP": 650.0, "RU": 300.0,
 }
-DEFAULT_MAX_LATENCY = 280.0
+DEFAULT_MAX_LATENCY = 450.0
 
 @dataclass(slots=True)
 class Source:
@@ -154,8 +140,20 @@ class ConfigItem:
     kind: str = "auto"
     country: str | None = None
 
-    def key(self) -> str:
-        return self.value.strip().rstrip("/")
+    def canonical_key(self) -> str:
+        """Нормализованный ключ для гарантированного исключения дубликатов."""
+        hp = extract_host_port(self.value)
+        if not hp:
+            return self.value.strip().rstrip("/")
+        host, port = hp
+        # Извлекаем UUID или пароль
+        uuid_part = ""
+        s = self.value.strip()
+        if "://" in s:
+            tail = s.split("://", 1)[1]
+            if "@" in tail:
+                uuid_part = tail.split("@", 1)[0]
+        return f"{self.protocol}://{uuid_part}@{host}:{port}".lower()
 
 @dataclass(slots=True)
 class CheckResult:
@@ -185,7 +183,7 @@ def turso_pipeline(statements: list[dict]) -> list:
 def turso_exec(sql: str, args: list = []) -> None:
     turso_pipeline([{"type": "execute", "stmt": {"sql": sql, "args": [_arg(v) for v in args]}}])
 
-# ── Хосты и TCP пинг ──────────────────────────────────────────────────────
+# ── Хосты и сетевые утилиты ───────────────────────────────────────────────
 
 def extract_host_port(value: str) -> tuple[str, int] | None:
     s = value.strip()
@@ -201,33 +199,13 @@ def extract_host_port(value: str) -> tuple[str, int] | None:
     if "#" in s:
         s = s[: s.rindex("#")]
     try:
-        parsed = urlparse(s)
+        clean_raw = re.sub(r'@\[(\d+\.\d+\.\d+\.\d+)\]', r'@\1', s)
+        parsed = urlparse(clean_raw)
         if not parsed.hostname:
             return None
         return (parsed.hostname, parsed.port or 443)
     except Exception:
         return None
-
-def tcp_ping(host: str, port: int, timeout: float = TCP_TIMEOUT) -> float | None:
-    start = time.perf_counter()
-    try:
-        with socket.create_connection((host, port), timeout=timeout):
-            return (time.perf_counter() - start) * 1000
-    except Exception:
-        return None
-
-def check_tcp_ping(pairs: list[tuple[str, int]]) -> dict[tuple[str, int], float | None]:
-    unique = list(dict.fromkeys(pairs))
-    result: dict[tuple[str, int], float | None] = {}
-    with ThreadPoolExecutor(max_workers=TCP_MAX_WORKERS) as pool:
-        futures = {pool.submit(tcp_ping, h, p): (h, p) for h, p in unique}
-        for fut in as_completed(futures):
-            hp = futures[fut]
-            try:
-                result[hp] = fut.result()
-            except Exception:
-                result[hp] = None
-    return result
 
 def load_rkn_blocklist() -> list[tuple[int, int]]:
     try:
@@ -275,13 +253,45 @@ def detect_my_ip() -> str | None:
     except Exception:
         return None
 
-# ── Xray Core Real Check & Speed Test ────────────────────────────────────
+# ── Пакетный GeoIP Лукинг (ip-api.com) ────────────────────────────────────
+
+def batch_lookup_geoip(hosts: list[str]) -> dict[str, str]:
+    """Возвращает {host: countryCode} для списка хостов через пакетный запрос."""
+    unique_hosts = list(dict.fromkeys(hosts))
+    geo_map: dict[str, str] = {}
+    if not unique_hosts:
+        return geo_map
+
+    # Обрабатываем пачками по 100 хостов
+    for i in range(0, len(unique_hosts), 100):
+        chunk = unique_hosts[i : i + 100]
+        payload = json.dumps([{"query": h} for h in chunk]).encode()
+        try:
+            req = Request(
+                "http://ip-api.com/batch?fields=query,status,countryCode&lang=en",
+                data=payload,
+                headers={"Content-Type": "application/json"},
+            )
+            with urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                for item in data:
+                    if item.get("status") == "success" and item.get("countryCode"):
+                        geo_map[item["query"]] = item["countryCode"].upper()
+        except Exception as e:
+            logger.warning("GeoIP batch lookup error: %s", e)
+            break
+        if i + 100 < len(unique_hosts):
+            time.sleep(1.0)
+    return geo_map
+
+# ── Xray Core: True Delay (HTTP GET через Xray как в Happ) ────────────────
 
 def _xray_outbound(raw: str) -> tuple[str, dict, dict] | None:
     s = raw.strip()
     try:
         if s.lower().startswith("vless://"):
-            p  = urlparse(s)
+            clean_raw = re.sub(r'@\[(\d+\.\d+\.\d+\.\d+)\]', r'@\1', s)
+            p  = urlparse(clean_raw)
             qs = parse_qs(p.query)
             g  = lambda k, d=None: qs.get(k, [d])[0]
             host, port = p.hostname, p.port or 443
@@ -337,7 +347,8 @@ def _xray_outbound(raw: str) -> tuple[str, dict, dict] | None:
             return "vmess", settings, stream
 
         if s.lower().startswith("trojan://"):
-            p  = urlparse(s)
+            clean_raw = re.sub(r'@\[(\d+\.\d+\.\d+\.\d+)\]', r'@\1', s)
+            p  = urlparse(clean_raw)
             qs = parse_qs(p.query)
             g  = lambda k, d=None: qs.get(k, [d])[0]
             host, port = p.hostname, p.port or 443
@@ -369,25 +380,35 @@ def _xray_outbound(raw: str) -> tuple[str, dict, dict] | None:
                 methodpass, hostport = decoded.split("@", 1)
                 method, password = methodpass.split(":", 1)
                 host, port = hostport.rsplit(":", 1)
-            settings = {"servers": [{"address": host, "port": int(port), "method": method, "password": password}]}
-            return "shadowsocks", settings, {"network": "tcp", "security": "none"}
+            return "shadowsocks", {"servers": [{"address": host, "port": int(port), "method": method, "password": password}]}, {"network": "tcp"}
     except Exception:
         return None
     return None
 
 def real_check_node(raw: str, port: int) -> CheckResult:
+    """
+    True Delay проверка узла через реальный запуск Xray Core и HTTP GET (как в Happ).
+    Замеряет задержку до 204 generate (HTTP GET) и реальную скорость скачивания.
+    """
     if not XRAY_BIN:
-        return CheckResult(ok=True, speed_mbps=75.0, latency_ms=60.0)
+        return CheckResult(ok=True, speed_mbps=50.0, latency_ms=120.0)
 
     ob = _xray_outbound(raw)
     if ob is None:
         return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
-    protocol, settings, stream = ob
 
-    config = {
+    protocol, settings, stream = ob
+    cfg = {
         "log": {"loglevel": "none"},
-        "inbounds": [{"tag": "socks", "port": port, "listen": "127.0.0.1", "protocol": "socks",
-                       "settings": {"udp": False, "auth": "noauth"}}],
+        "inbounds": [
+            {
+                "tag": "socks",
+                "port": port,
+                "listen": "127.0.0.1",
+                "protocol": "socks",
+                "settings": {"udp": True, "auth": "noauth"},
+            }
+        ],
         "outbounds": [
             {"tag": "proxy", "protocol": protocol, "settings": settings, "streamSettings": stream},
             {"tag": "direct", "protocol": "freedom"},
@@ -395,8 +416,8 @@ def real_check_node(raw: str, port: int) -> CheckResult:
     }
 
     proc = None
-    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
-        json.dump(config, f)
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
+        json.dump(cfg, f)
         cfg_path = f.name
 
     def _curl(url: str, extra: list[str], timeout: int) -> subprocess.CompletedProcess:
@@ -412,9 +433,9 @@ def real_check_node(raw: str, port: int) -> CheckResult:
             [XRAY_BIN, "run", "-c", cfg_path],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
         )
-        time.sleep(0.4)
+        time.sleep(0.35)
 
-        # 1. HTTP GET 204 Check + точный замер Latency через curl %{time_total}
+        # 1. True Delay (HTTP GET 204) — замеряем время полного ответа через %{time_total}
         fmt = "%{http_code}:%{time_total}"
         basic = _curl(REAL_CHECK_URL, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
         parts = basic.stdout.strip().split(":")
@@ -424,41 +445,37 @@ def real_check_node(raw: str, port: int) -> CheckResult:
 
         is_ru_whitelist = False
         if basic.returncode != 0 or http_code not in ("200", "204", "301", "302"):
-            # Проверка для белых списков РФ (где зарубежный Cloudflare заблокирован)
-            ru_check = _curl("http://ya.ru", ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
-            ru_parts = ru_check.stdout.strip().split(":")
-            ru_code = ru_parts[0] if ru_parts else ""
-            if ru_check.returncode == 0 and ru_code in ("200", "301", "302"):
-                is_ru_whitelist = True
-                latency = float(ru_parts[1]) * 1000.0 if len(ru_parts) > 1 and ru_parts[1] else 9999.0
+            # Попытка резервного европейского 204
+            fb = _curl(REAL_CHECK_FALLBACK_URL, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
+            fb_parts = fb.stdout.strip().split(":")
+            if fb.returncode == 0 and fb_parts and fb_parts[0] in ("200", "204", "301", "302"):
+                latency = float(fb_parts[1]) * 1000.0 if len(fb_parts) > 1 and fb_parts[1] else latency
             else:
-                return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
+                # Проверка для Белых списков РФ
+                ru_check = _curl(REAL_CHECK_RU_URL, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
+                ru_parts = ru_check.stdout.strip().split(":")
+                ru_code = ru_parts[0] if ru_parts else ""
+                if ru_check.returncode == 0 and ru_code in ("200", "301", "302"):
+                    is_ru_whitelist = True
+                    latency = float(ru_parts[1]) * 1000.0 if len(ru_parts) > 1 and ru_parts[1] else 9999.0
+                else:
+                    return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
 
-        # 2. Двойная проверка на стабильность (устранение джиттера и packet loss)
-        chk_url = "http://ya.ru" if is_ru_whitelist else REAL_CHECK_URL
-        basic2 = _curl(chk_url, ["-o", NULL_DEVICE, "-w", fmt], REAL_CHECK_TIMEOUT)
-        parts2 = basic2.stdout.strip().split(":")
-        code2 = parts2[0] if parts2 else ""
-        if basic2.returncode != 0 or code2 not in ("200", "204", "301", "302"):
-            return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
-        lat2 = float(parts2[1]) * 1000.0 if len(parts2) > 1 and parts2[1] else 9999.0
-        latency = (latency + lat2) / 2.0
-
-        # 3. IP Leak Check (только для зарубежных узлов)
+        # 2. Определение реального Exit IP
         exit_ip = None
-        if MY_PUBLIC_IP and not is_ru_whitelist:
+        if not is_ru_whitelist:
             try:
-                ip_result = _curl(REAL_CHECK_IP_URL, ["-o", "-"], 3)
-                if ip_result.returncode == 0:
-                    cand_ip = ip_result.stdout.strip()
-                    if cand_ip == MY_PUBLIC_IP:
-                        # Утечка прямого IP — прокси не скрывает адрес
+                ip_res = _curl(REAL_CHECK_IP_URL, ["-o", "-"], 3)
+                if ip_res.returncode == 0:
+                    cand_ip = ip_res.stdout.strip()
+                    if MY_PUBLIC_IP and cand_ip == MY_PUBLIC_IP:
+                        # Утечка прямого IP — туннель не шифрует
                         return CheckResult(ok=False, speed_mbps=0.0, latency_ms=9999.0)
                     exit_ip = cand_ip
             except Exception:
                 pass
 
-        # 4. Скоростной тест (1MB блок с cache-buster)
+        # 3. Замер реальной скорости скачивания
         speed_mbps = 25.0 if is_ru_whitelist else 0.0
         if not is_ru_whitelist:
             cache_param = f"&r={int(time.time() * 1000)}"
@@ -470,25 +487,14 @@ def real_check_node(raw: str, port: int) -> CheckResult:
                     bytes_per_sec = float(sp_parts[1])
                     speed_mbps = (bytes_per_sec * 8.0) / 1_000_000.0
                 except ValueError:
-                    speed_mbps = 15.0
-            elif sp_code == "429":
-                # Cloudflare rate limit — резервный замер через Tele2
-                t2 = _curl("http://speedtest.tele2.net/1MB.zip", ["-o", NULL_DEVICE, "-w", "%{http_code}:%{speed_download}"], REAL_CHECK_TIMEOUT)
-                t2_parts = t2.stdout.strip().split(":")
-                if t2.returncode in (0, 28) and len(t2_parts) > 1:
-                    try:
-                        speed_mbps = (float(t2_parts[1]) * 8.0) / 1_000_000.0
-                    except ValueError:
-                        speed_mbps = 15.0
-                else:
-                    speed_mbps = 15.0
+                    speed_mbps = 5.0
+            elif sp_code in ("200", "204"):
+                speed_mbps = 8.0
             else:
-                # Если HTTP-доступ гарантирован, но сервер блокирует прямой скач тестового файла, даем базовый пропуск
-                speed_mbps = 10.0
+                return CheckResult(ok=False, speed_mbps=0.0, latency_ms=latency)
 
-            # Отсекаем полностью непригодные для видео/веба узлы
-            if speed_mbps < 2.0:
-                return CheckResult(ok=False, speed_mbps=speed_mbps, latency_ms=latency)
+        if speed_mbps < 2.0:
+            return CheckResult(ok=False, speed_mbps=speed_mbps, latency_ms=latency)
 
         return CheckResult(ok=True, speed_mbps=speed_mbps, latency_ms=latency, exit_ip=exit_ip)
     except Exception:
@@ -497,7 +503,7 @@ def real_check_node(raw: str, port: int) -> CheckResult:
         if proc is not None:
             proc.terminate()
             try:
-                proc.wait(timeout=2)
+                proc.wait(timeout=1)
             except Exception:
                 proc.kill()
         try:
@@ -510,10 +516,10 @@ def real_check_batch(raws: list[str]) -> dict[str, CheckResult]:
     if not unique:
         return {}
     if not XRAY_BIN:
-        logger.warning("xray не найден в PATH (локальный запуск) — эмулируем результаты на основе пинга")
-        return {r: CheckResult(ok=True, speed_mbps=78.5, latency_ms=45.0) for r in unique}
+        logger.warning("xray не найден в PATH — эмулируем результаты на основе базовых параметров")
+        return {r: CheckResult(ok=True, speed_mbps=65.0, latency_ms=110.0) for r in unique}
 
-    logger.info("Реальная проверка через Xray-core для %d финалистов...", len(unique))
+    logger.info("HTTP GET True Delay проверка (Xray-core) для %d финалистов...", len(unique))
     ports: Queue = Queue()
     for i in range(REAL_CHECK_WORKERS):
         ports.put(REAL_CHECK_PORT_BASE + i)
@@ -534,10 +540,10 @@ def real_check_batch(raws: list[str]) -> dict[str, CheckResult]:
 
     alive_ok = sum(1 for r in results.values() if r.ok)
     vip_ok = sum(1 for r in results.values() if r.ok and r.speed_mbps >= REAL_CHECK_MIN_VIP_MBPS)
-    logger.info("Xray-core: живых %d/%d, с гарантией 60+ Мбит/с: %d", alive_ok, len(unique), vip_ok)
+    logger.info("Xray True Delay: живых %d/%d, с высокой скоростью (>5 Мбит/с): %d", alive_ok, len(unique), vip_ok)
     return results
 
-# ── Форматирование и трансформация имён ───────────────────────────────────
+# ── Форматирование меток ──────────────────────────────────────────────────
 
 def apply_label(raw: str, label: str) -> str:
     s = raw.strip()
@@ -555,129 +561,69 @@ def apply_label(raw: str, label: str) -> str:
     base = s[: s.rindex("#")] if "#" in s else s.rstrip()
     return f"{base}#{label}"
 
-# ── Sing-box & Xray конвертеры ───────────────────────────────────────────
+# ── Конвертеры Sing-box & Xray ───────────────────────────────────────────
 
 def uri_to_outbound(raw: str, tag: str) -> dict | None:
-    s = raw.strip()
-    try:
-        if s.lower().startswith("vless://"):
-            p  = urlparse(s)
-            qs = parse_qs(p.query)
-            g  = lambda k, d=None: qs.get(k, [d])[0]
-            host, port = p.hostname, p.port or 443
-            if not host or not p.username:
-                return None
-            ob: dict = {"type": "vless", "tag": tag, "server": host, "server_port": port, "uuid": p.username}
-            if g("flow"):
-                ob["flow"] = g("flow")
-            security = g("security", "none")
-            if security in ("tls", "reality"):
-                tls = {"enabled": True, "server_name": g("sni") or g("host") or host,
-                       "utls": {"enabled": True, "fingerprint": g("fp", "chrome")}}
-                if g("allowInsecure") == "1" or g("insecure") == "1":
-                    tls["insecure"] = True
-                if security == "reality" and g("pbk"):
-                    tls["reality"] = {"enabled": True, "public_key": g("pbk"), "short_id": g("sid", "")}
-                ob["tls"] = tls
-            net = g("type", "tcp")
-            if net == "ws":
-                headers = {"Host": g("host")} if g("host") else {}
-                ob["transport"] = {"type": "ws", "path": g("path", "/"), "headers": headers}
-            elif net == "grpc":
-                ob["transport"] = {"type": "grpc", "service_name": g("serviceName", "")}
-            return ob
-
-        if s.lower().startswith("vmess://"):
-            s_enc = s[8:].split("#")[0]
-            data = json.loads(base64.b64decode(s_enc + "=" * (-len(s_enc) % 4)).decode())
-            host, port = str(data.get("add", "")), int(data.get("port", 443) or 443)
-            uuid = data.get("id")
-            if not host or not uuid:
-                return None
-            ob = {"type": "vmess", "tag": tag, "server": host, "server_port": port,
-                  "uuid": uuid, "security": "auto", "alter_id": int(data.get("aid", 0) or 0)}
-            if str(data.get("tls", "")).lower() == "tls":
-                ob["tls"] = {"enabled": True, "server_name": data.get("sni") or data.get("host") or host,
-                             "utls": {"enabled": True, "fingerprint": "chrome"}}
-            net = data.get("net", "tcp")
-            if net == "ws":
-                headers = {"Host": data["host"]} if data.get("host") else {}
-                ob["transport"] = {"type": "ws", "path": data.get("path", "/"), "headers": headers}
-            elif net == "grpc":
-                ob["transport"] = {"type": "grpc", "service_name": data.get("path", "")}
-            return ob
-
-        if s.lower().startswith("trojan://"):
-            p  = urlparse(s)
-            qs = parse_qs(p.query)
-            g  = lambda k, d=None: qs.get(k, [d])[0]
-            host, port = p.hostname, p.port or 443
-            if not host or not p.username:
-                return None
-            ob = {"type": "trojan", "tag": tag, "server": host, "server_port": port, "password": p.username,
-                  "tls": {"enabled": True, "server_name": g("sni", host),
-                          "utls": {"enabled": True, "fingerprint": g("fp", "chrome")}}}
-            net = g("type", "tcp")
-            if net == "ws":
-                ob["transport"] = {"type": "ws", "path": g("path", "/")}
-            elif net == "grpc":
-                ob["transport"] = {"type": "grpc", "service_name": g("serviceName", "")}
-            return ob
-
-        if s.lower().startswith("ss://"):
-            body = s[5:].split("#")[0]
-            if "@" in body:
-                cred_b64, hostport = body.split("@", 1)
-                hostport = hostport.split("?")[0]
-                try:
-                    cred = base64.urlsafe_b64decode(cred_b64 + "=" * (-len(cred_b64) % 4)).decode()
-                except Exception:
-                    cred = base64.b64decode(cred_b64 + "=" * (-len(cred_b64) % 4)).decode()
-                method, password = cred.split(":", 1)
-                host, port = hostport.rsplit(":", 1)
-            else:
-                decoded = base64.b64decode(body + "=" * (-len(body) % 4)).decode()
-                methodpass, hostport = decoded.split("@", 1)
-                method, password = methodpass.split(":", 1)
-                host, port = hostport.rsplit(":", 1)
-            return {"type": "shadowsocks", "tag": tag, "server": host, "server_port": int(port),
-                    "method": method, "password": password}
-    except Exception:
-        return None
-    return None
-
-XRAY_INBOUNDS = [
-    {"tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks",
-     "settings": {"udp": True, "auth": "noauth"},
-     "sniffing": {"enabled": True, "routeOnly": False, "destOverride": ["http", "tls", "quic"]}},
-    {"tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http",
-     "settings": {"allowTransparent": False},
-     "sniffing": {"enabled": True, "routeOnly": False, "destOverride": ["http", "tls", "quic"]}},
-]
-XRAY_ROUTING = {
-    "rules": [
-        {"type": "field", "protocol": ["bittorrent"], "outboundTag": "direct"},
-    ],
-    "domainMatcher": "hybrid",
-    "domainStrategy": "IPIfNonMatch",
-}
-
-def build_xray_profile(raw: str, remarks: str) -> dict | None:
     ob = _xray_outbound(raw)
-    if ob is None:
+    if not ob:
         return None
     protocol, settings, stream = ob
-    return {
-        "dns": {"servers": ["1.1.1.1", "8.8.8.8"], "queryStrategy": "UseIP"},
-        "routing": XRAY_ROUTING,
-        "inbounds": XRAY_INBOUNDS,
-        "outbounds": [
-            {"tag": "proxy", "protocol": protocol, "settings": settings, "streamSettings": stream},
-            {"tag": "direct", "protocol": "freedom"},
-            {"tag": "block", "protocol": "blackhole"},
-        ],
-        "remarks": remarks,
-    }
+    if protocol == "vless":
+        u = settings["vnext"][0]
+        user = u["users"][0]
+        out: dict = {
+            "type": "vless",
+            "tag": tag,
+            "server": u["address"],
+            "server_port": u["port"],
+            "uuid": user["id"],
+        }
+        if user.get("flow"):
+            out["flow"] = user["flow"]
+        sec = stream.get("security", "none")
+        if sec in ("tls", "reality"):
+            tls_cfg: dict = {"enabled": True}
+            if sec == "reality":
+                r_set = stream.get("realitySettings", {})
+                tls_cfg["reality"] = {
+                    "enabled": True,
+                    "public_key": r_set.get("publicKey", ""),
+                    "short_id": r_set.get("shortId", ""),
+                }
+                tls_cfg["server_name"] = r_set.get("serverName", u["address"])
+            else:
+                t_set = stream.get("tlsSettings", {})
+                tls_cfg["server_name"] = t_set.get("serverName", u["address"])
+                if t_set.get("allowInsecure"):
+                    tls_cfg["insecure"] = True
+            out["tls"] = tls_cfg
+        net = stream.get("network", "tcp")
+        if net == "ws":
+            ws_set = stream.get("wsSettings", {})
+            out["transport"] = {"type": "ws", "path": ws_set.get("path", "/"), "headers": ws_set.get("headers", {})}
+        elif net == "grpc":
+            grpc_set = stream.get("grpcSettings", {})
+            out["transport"] = {"type": "grpc", "service_name": grpc_set.get("serviceName", "")}
+        return out
+
+    if protocol == "trojan":
+        u = settings["servers"][0]
+        out = {
+            "type": "trojan",
+            "tag": tag,
+            "server": u["address"],
+            "server_port": u["port"],
+            "password": u["password"],
+            "tls": {"enabled": True, "server_name": stream.get("tlsSettings", {}).get("serverName", u["address"])}
+        }
+        net = stream.get("network", "tcp")
+        if net == "ws":
+            out["transport"] = {"type": "ws", "path": stream.get("wsSettings", {}).get("path", "/")}
+        elif net == "grpc":
+            out["transport"] = {"type": "grpc", "service_name": stream.get("grpcSettings", {}).get("serviceName", "")}
+        return out
+
+    return None
 
 def build_singbox_config(items: list[tuple[str, str]], title: str) -> dict:
     outbounds: list[dict] = []
@@ -716,6 +662,15 @@ def build_singbox_config(items: list[tuple[str, str]], title: str) -> dict:
             ],
             "final": "cloudflare",
         },
+        "inbounds": [
+            {
+                "type": "mixed",
+                "tag": "mixed-in",
+                "listen": "127.0.0.1",
+                "listen_port": 2080,
+                "sniff": True,
+            }
+        ],
         "outbounds": outbounds,
         "route": {"final": final, "auto_detect_interface": True},
     }
@@ -723,152 +678,171 @@ def build_singbox_config(items: list[tuple[str, str]], title: str) -> dict:
 def build_xray_array(items: list[tuple[str, str]]) -> list[dict]:
     res: list[dict] = []
     for label, raw in items:
-        prof = build_xray_profile(raw, label)
-        if prof:
-            res.append(prof)
+        ob = _xray_outbound(raw)
+        if ob:
+            proto, settings, stream = ob
+            res.append({
+                "tag": label,
+                "protocol": proto,
+                "settings": settings,
+                "streamSettings": stream,
+            })
     return res
 
-# ── Построение пулов (Free vs VIP) ────────────────────────────────────────
+# ── Построение пулов (Free vs VIP) с нулевым дублированием ─────────────────
 
 def build_pools(
     configs: list[ConfigItem],
 ) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
-    candidates: list[tuple] = []  # (cc, country_ru, protocol, raw, (host, port), kind)
+    candidates: list[tuple] = []
     rkn_skipped = 0
 
+    # 1. Фильтрация откровенно невалидных и заблокированных хостов
     for item in configs:
         hp = extract_host_port(item.value)
         if not hp:
             continue
-        if is_rkn_blocked(hp[0]):
+        host, port = hp
+        if is_rkn_blocked(host):
             rkn_skipped += 1
             continue
-        cc = item.country
-        if not cc:
-            val_low = item.value.lower()
-            if any(w in val_low for w in ("api3-max", "posa", ".ru", "white", "белый", "lte", "россия")):
-                cc = "RU"
-        if not cc or cc not in COUNTRY_NAMES_RU:
-            continue
-        c_ru = COUNTRY_NAMES_RU.get(cc, "Сервер")
-        candidates.append((cc, c_ru, item.protocol, item.value, hp, item.kind))
+
+        # Отсекаем Cloudflare Workers для обхода мобильных блокировок в РФ
+        if "workers.dev" in host.lower() or "pages.dev" in host.lower():
+            if item.kind in ("lte", "whitelist"):
+                continue
+
+        candidates.append((item.country, item.protocol, item.value, hp, item.kind))
 
     if rkn_skipped:
         logger.info("RKN-фильтр: пропущено %d заблокированных хостов", rkn_skipped)
 
+    # 2. Первичное определение страны по источнику или тегам конфига
+    tag_matched_candidates: list[tuple] = []
+    for item_country, proto, val, hp, kind in candidates:
+        final_cc = item_country
+        if not final_cc:
+            val_low = val.lower()
+            for c_code, pats in COUNTRY_TAG_RULES.items():
+                if any(re.search(p, val_low, re.IGNORECASE) for p in pats):
+                    final_cc = c_code
+                    break
+        if final_cc in COUNTRY_NAMES_RU:
+            tag_matched_candidates.append((final_cc, COUNTRY_NAMES_RU[final_cc], proto, val, hp, kind))
+
+    logger.info("Кандидатов с предварительной страной: %d", len(tag_matched_candidates))
+
     # Приоритет протоколам: vless > trojan > vmess > ss
     proto_rank = {"vless": 0, "trojan": 1, "vmess": 2, "ss": 3}
-    candidates.sort(key=lambda c: proto_rank.get(c[2], 9))
+    tag_matched_candidates.sort(key=lambda c: proto_rank.get(c[2], 9))
 
-    # Отбираем кандидатов на каждую целевую страну для TCP пинга
+    # Отбираем финалистов на каждую страну (до 8 кандидатов на страну для быстрого теста)
     by_cc_candidates: dict[str, list[tuple]] = defaultdict(list)
     lte_candidates: list[tuple] = []
 
-    for c in candidates:
+    for c in tag_matched_candidates:
         cc, kind = c[0], c[5]
         if kind in ("lte", "whitelist"):
             lte_candidates.append(c)
-        elif len(by_cc_candidates[cc]) < 35:
+        elif len(by_cc_candidates[cc]) < 8:
             by_cc_candidates[cc].append(c)
 
-    ping_subset = []
+    finalists_list: list[tuple] = []
     for c_list in by_cc_candidates.values():
-        ping_subset.extend(c_list)
-    ping_subset.extend(lte_candidates[:60])
+        finalists_list.extend(c_list)
+    finalists_list.extend(lte_candidates[:15])
 
-    unique_pairs = list({c[4] for c in ping_subset})
-    logger.info("TCP-проверка для %d отобранных адресов целевых стран...", len(unique_pairs))
-    ping_results = check_tcp_ping(unique_pairs)
+    # Точечный GeoIP-запрос строго для финалистов (1 батч-запрос < 0.5с)
+    finalist_hosts = [c[4][0] for c in finalists_list]
+    logger.info("Точечный GeoIP-запрос для %d отобранных хостов-финалистов...", len(finalist_hosts))
+    geo_map = batch_lookup_geoip(finalist_hosts)
+    logger.info("GeoIP подтвердил %d адресов", len(geo_map))
 
-    alive = [(*c, ping_results[c[4]]) for c in ping_subset if ping_results.get(c[4]) is not None]
-    alive.sort(key=lambda c: c[6])
-    logger.info("Живых узлов после TCP пинга: %d", len(alive))
+    resolved_candidates: list[tuple] = []
+    for cc, c_name, proto, val, hp, kind in finalists_list:
+        real_cc = geo_map.get(hp[0], cc)
+        if real_cc in COUNTRY_NAMES_RU:
+            resolved_candidates.append((real_cc, COUNTRY_NAMES_RU[real_cc], proto, val, hp, kind))
 
-    # Финалисты для детального теста через Xray core + замер скорости
-    finalists_set: set[str] = set()
-    for cc in VIP_TARGET_COUNTRIES:
-        cands = [c for c in alive if c[0] == cc and c[5] == "auto"]
-        for c in cands[:15]:
-            finalists_set.add(c[3])
+    finalists_set = {c[3] for c in resolved_candidates}
 
-    for c in [c for c in alive if c[5] in ("lte", "whitelist")][:30]:
-        finalists_set.add(c[3])
-
-    logger.info("Финалистов на тест скорости и доступности: %d", len(finalists_set))
+    logger.info("Финалистов на True Delay (HTTP GET) тест через Xray: %d", len(finalists_set))
     test_results = real_check_batch(list(finalists_set))
 
-    def sort_key(c):
-        res = test_results.get(c[3])
-        if not res or not res.ok:
-            return (9999.0, 0.0)
-        # Приоритет: минимальный TCP-пинг до узла c[6], затем максимальная скорость
-        return (c[6], -res.speed_mbps)
+    # Сортировка прошедших проверку по True Delay (задержке HTTP GET) и скорости
+    alive_tested = []
+    for c in resolved_candidates:
+        val = c[3]
+        if val in test_results and test_results[val].ok:
+            res = test_results[val]
+            # Если exit_ip показал другую реальную страну, корректируем
+            exit_cc = c[0]
+            if res.exit_ip and res.exit_ip in geo_map:
+                exit_cc = geo_map[res.exit_ip]
+            alive_tested.append((exit_cc, COUNTRY_NAMES_RU.get(exit_cc, c[1]), c[2], val, c[4], c[5], res.latency_ms, res.speed_mbps))
 
-    alive_tested = [c for c in alive if c[3] in test_results and test_results[c[3]].ok]
-    alive_tested.sort(key=sort_key)
+    # Сортировка: минимальный True Delay, затем максимальная скорость
+    alive_tested.sort(key=lambda x: (x[6], -x[7]))
+    logger.info("Успешно прошли True Delay и тест скорости: %d серверов", len(alive_tested))
 
-    # 1. Free Pool (5 EU + 1 LTE) — только качественные узлы в пределах порога
+    # ── Формирование пулов с ГАРАНТИЕЙ отсутствия дубликатов ────────────────
+    used_hosts_vip: set[str] = set()
+    vip_items: list[tuple[str, str]] = []
+
+    # 1. VIP Pool: по 1 лучшему серверу на каждую страну
+    for cc in VIP_TARGET_COUNTRIES:
+        max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
+        matching = [
+            c for c in alive_tested
+            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat and c[4][0] not in used_hosts_vip
+        ]
+        if matching:
+            best = matching[0]
+            used_hosts_vip.add(best[4][0])
+            flag = COUNTRY_FLAGS.get(cc, "🌐")
+            if cc in NEARBY_COUNTRIES:
+                lbl = f"⚡️{best[1]} — Premium"
+            else:
+                lbl = f"{flag} {best[1]} — Premium"
+            vip_items.append((lbl, best[3]))
+
+    # До 4 уникальных LTE/обходных локаций для VIP
+    lte_added = 0
+    for c in alive_tested:
+        if c[5] in ("lte", "whitelist") and c[6] <= 300.0 and c[4][0] not in used_hosts_vip:
+            used_hosts_vip.add(c[4][0])
+            lte_added += 1
+            lbl = f"🇷🇺 LTE #{lte_added} — Premium" if lte_added > 1 else "🇷🇺 LTE — Premium"
+            vip_items.append((lbl, c[3]))
+            if lte_added >= 4:
+                break
+
+    # 2. Free Pool: 5 европейских стран + 1 LTE (без дубликатов внутри Free)
+    used_hosts_free: set[str] = set()
     free_items: list[tuple[str, str]] = []
-    free_nodes_map: dict[str, tuple[str, str]] = {}
 
     for cc in FREE_TARGET_COUNTRIES:
         max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
         matching = [
             c for c in alive_tested
-            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat
+            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat and c[4][0] not in used_hosts_free
         ]
         if matching:
             best = matching[0]
+            used_hosts_free.add(best[4][0])
             flag = COUNTRY_FLAGS.get(cc, "🌐")
             lbl = f"{flag} {best[1]} — Базовый"
-            free_nodes_map[cc] = (lbl, best[3])
             free_items.append((lbl, best[3]))
 
-    # 1 LTE для Free (строго с пингом <= 250 мс)
-    lte_cands = [c for c in alive_tested if c[5] in ("lte", "whitelist") and c[6] <= 250.0]
-    if lte_cands:
-        free_items.append(("🇷🇺 Россия LTE — Базовый", lte_cands[0][3]))
-
-    # 2. Premium (VIP) Pool
-    vip_items: list[tuple[str, str]] = []
-
-    # А) Premium High-Speed локации (строго проверенные, в пределах порога задержки)
-    for cc in VIP_TARGET_COUNTRIES:
-        max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
-        vip_matching = [
-            c for c in alive_tested
-            if c[0] == cc and c[5] == "auto" and c[6] <= max_lat
-        ]
-        if vip_matching:
-            best = vip_matching[0]
-            if cc in NEARBY_COUNTRIES:
-                # ⚡️ Молнию только для ближайших к России стран!
-                lbl = f"⚡️{best[1]} — Premium"
-            else:
-                flag = COUNTRY_FLAGS.get(cc, "🌐")
-                lbl = f"{flag} {best[1]} — Premium"
-            vip_items.append((lbl, best[3]))
-
-    # Б) До 7 LTE / White-list локаций для Premium (строго <= 250 мс)
-    vip_lte_seen = set()
-    vip_lte_count = 0
+    # 1 LTE для Free
     for c in alive_tested:
-        if c[5] in ("lte", "whitelist") and c[6] <= 250.0 and c[4][0] not in vip_lte_seen:
-            vip_lte_seen.add(c[4][0])
-            vip_lte_count += 1
-            kind_title = "LTE" if c[5] == "lte" else "Белый список"
-            lbl = f"🇷🇺 {kind_title} — Premium" if vip_lte_count == 1 else f"🇷🇺 {kind_title} #{vip_lte_count} — Premium"
-            vip_items.append((lbl, c[3]))
-            if vip_lte_count >= 7:
-                break
+        if c[5] in ("lte", "whitelist") and c[6] <= 300.0 and c[4][0] not in used_hosts_free:
+            used_hosts_free.add(c[4][0])
+            free_items.append(("🇷🇺 Россия LTE — Базовый", c[3]))
+            break
 
-    # В) 5 Free backup локаций (Германия, Нидерланды, Финляндия, Польша, Швеция в подписке дважды!)
-    for cc in FREE_TARGET_COUNTRIES:
-        if cc in free_nodes_map:
-            vip_items.append(free_nodes_map[cc])
-
-    logger.info("Сформирован Базовый пул: %d серверов", len(free_items))
-    logger.info("Сформирован Premium пул: %d серверов", len(vip_items))
+    logger.info("Сформирован Базовый пул: %d серверов (0 дублей)", len(free_items))
+    logger.info("Сформирован Premium пул: %d серверов (0 дублей)", len(vip_items))
     return free_items, vip_items
 
 # ── Скрапинг источников ───────────────────────────────────────────────────
@@ -879,7 +853,7 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
     return [Source.from_dict(i) for i in items if i.get("enabled", True)]
 
 def fetch_text(url: str, timeout: int = FETCH_TIMEOUT) -> str:
-    req = Request(url, headers={"User-Agent": "HQRay/1.0", "Accept": "*/*"})
+    req = Request(url, headers={"User-Agent": "HQRay/2.0", "Accept": "*/*"})
     with urlopen(req, timeout=timeout) as r:
         data = r.read(MAX_HTTP_BYTES + 1)[:MAX_HTTP_BYTES]
         return data.decode(r.headers.get_content_charset() or "utf-8", errors="replace")
@@ -898,13 +872,6 @@ def try_decode_base64(text: str) -> str | None:
     except Exception:
         pass
     return None
-
-def detect_protocol(v: str) -> str:
-    low = v.lower().strip()
-    for p in ("vless","trojan","ssr","ss","vmess","hy2","hysteria2","tuic"):
-        if low.startswith(p + "://"):
-            return p
-    return "unknown"
 
 def normalize_config(v: str) -> str:
     return v.strip().strip('"\'').rstrip(",;)").replace("\n","").replace("\t","")
@@ -926,49 +893,27 @@ def extract_configs(text: str, depth: int = 0) -> list[str]:
             out.append(v)
     return out
 
-def detect_country(raw: str, default: str | None = None) -> str | None:
-    if default:
-        return default
-    tag = unquote(raw.split("#")[-1]) if "#" in raw else ""
-    host = ""
-    try:
-        # Убираем скобки вокруг IPv4 если есть для совместимости со старыми парсерами
-        clean_raw = re.sub(r'@\[(\d+\.\d+\.\d+\.\d+)\]', r'@\1', raw)
-        p = urlparse(clean_raw)
-        host = p.hostname or ""
-    except Exception:
-        pass
-    search_str = f"{tag} {host}"
-    for cc, pats in COUNTRY_TAG_RULES.items():
-        for pat in pats:
-            if re.search(pat, search_str, re.IGNORECASE):
-                return cc
-    return None
+def detect_protocol(raw: str) -> str:
+    return raw.split("://")[0].lower() if "://" in raw else "vless"
 
 def parse_text(source: Source, text: str, found_in: str) -> list[ConfigItem]:
     res = []
     for v in extract_configs(text):
         proto = detect_protocol(v)
-        cc = detect_country(v, source.country)
-        kind = source.kind
-        if kind == "auto" and cc == "RU":
-            tag_low = (v.split("#")[-1] if "#" in v else "").lower()
-            if any(w in tag_low for w in ("lte", "white", "белый", "бс", "max")):
-                kind = "lte"
-        res.append(ConfigItem(proto, v, source.name, source.url, found_in, kind, cc))
+        res.append(ConfigItem(proto, v, source.name, source.url, found_in, source.kind, source.country))
     return res
 
 def dedupe(configs: list[ConfigItem]) -> list[ConfigItem]:
     seen: set[str] = set()
     out: list[ConfigItem] = []
     for c in configs:
-        k = c.key()
+        k = c.canonical_key()
         if k not in seen:
             seen.add(k)
             out.append(c)
     return out
 
-# ── Кэш состояния и пайплайн сборки ───────────────────────────────────────
+# ── Кэш состояния и сборка ────────────────────────────────────────────────
 
 STATE_CACHE_FILE = OUTPUT_DIR / "state_cache.json"
 
@@ -997,47 +942,25 @@ def save_to_turso(key: str, value: str) -> None:
 
 def build() -> None:
     global MY_PUBLIC_IP, RKN_NETWORKS
-    logger.info("=== СТАРТ СБОРКИ HQRay VPN ===")
+    logger.info("=== СТАРТ СБОРКИ HQRay VPN (True Delay Edition) ===")
     MY_PUBLIC_IP = detect_my_ip()
     logger.info("Текущий IP хоста: %s", MY_PUBLIC_IP or "не определён")
     RKN_NETWORKS = load_rkn_blocklist()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. Быстрая проверка ранее работавших серверов из кэша
+    sources = load_sources()
+    all_configs: list[ConfigItem] = []
+
+    # Добавляем ранее работавшие ноды из кэша для повторной перепроверки
     cached = load_cache()
     cached_vip = cached.get("vip", [])
     cached_free = cached.get("free", [])
-    cached_uris = list({item["uri"] for item in (cached_vip + cached_free) if "uri" in item})
-    cached_configs: list[ConfigItem] = []
-
-    if cached_uris:
-        logger.info("Проверка %d ранее работавших нод из кэша...", len(cached_uris))
-        cache_check = real_check_batch(cached_uris)
-        healthy_cached = [u for u, res in cache_check.items() if res.ok]
-        logger.info("Из кэша живо и прошло проверку: %d/%d", len(healthy_cached), len(cached_uris))
-        for u in healthy_cached:
-            proto = u.split("://")[0].lower() if "://" in u else "vless"
-            c_code = "DE"
-            kind_val = "auto"
-            for item in cached_vip + cached_free:
-                if item.get("uri") == u:
-                    lbl = item.get("label", "")
-                    if "LTE" in lbl:
-                        kind_val = "lte"
-                        c_code = "RU"
-                    elif "Белый список" in lbl:
-                        kind_val = "whitelist"
-                        c_code = "RU"
-                    else:
-                        for cc, ru in COUNTRY_NAMES_RU.items():
-                            if ru in lbl:
-                                c_code = cc
-                                break
-            cached_configs.append(ConfigItem(protocol=proto, value=u, source_name="cache", source_url="cache", found_in="cache", kind=kind_val, country=c_code))
-
-    sources = load_sources()
-    all_configs: list[ConfigItem] = list(cached_configs)
+    for item in cached_vip + cached_free:
+        u = item.get("uri")
+        if u:
+            proto = detect_protocol(u)
+            all_configs.append(ConfigItem(proto, u, "cache", "cache", "cache", "auto", None))
 
     for src in sources:
         logger.info("Загрузка: %s (%s)", src.name, src.url)
@@ -1049,11 +972,11 @@ def build() -> None:
             logger.warning("  -> ошибка: %s", e)
 
     unique = dedupe(all_configs)
-    logger.info("Всего уникальных конфигов (включая кэш): %d", len(unique))
+    logger.info("Всего уникальных конфигов: %d", len(unique))
 
     free_items, vip_items = build_pools(unique)
 
-    # Сохраняем в кэш состояния для следующих запусков
+    # Сохраняем в кэш состояния
     save_cache(vip_items, free_items)
 
     # 1. Free подписка

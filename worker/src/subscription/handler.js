@@ -1,16 +1,26 @@
 // ═══════════════════════════════════════════════════════════════════════════════
-//  HQRay VPN  —  Subscription Feed Handler (Multi-Tier Free / VIP)
+//  HQRay VPN — Multi-Tier Subscription Feed Handler
 // ═══════════════════════════════════════════════════════════════════════════════
 
 import { BRAND_NAME, BOT_USERNAME } from "../config.js";
 import { getUserByToken, getSetting } from "../db/turso.js";
-
 
 function isSingboxCoreClient(request) {
   const ua = (request.headers.get("user-agent") || "").toLowerCase();
   return (
     (ua.includes("sing-box") || ua.includes("hiddify") || ua.includes("nekobox") || ua.includes("karing")) &&
     !ua.includes("happ")
+  );
+}
+
+function isB64RequiredClient(request) {
+  const ua = (request.headers.get("user-agent") || "").toLowerCase();
+  return (
+    ua.includes("v2rayng") ||
+    ua.includes("shadowrocket") ||
+    ua.includes("streisand") ||
+    ua.includes("sagernet") ||
+    ua.includes("matsuri")
   );
 }
 
@@ -36,59 +46,50 @@ export async function handleSubscription(request) {
     );
   }
 
-  const formatParam = url.searchParams.get("format");
+  const formatParam = (url.searchParams.get("format") || "").toLowerCase();
+  const rawParam = url.searchParams.get("raw") === "1";
+  const b64Param = url.searchParams.get("b64") === "1" || formatParam === "b64";
+
   const isXray = formatParam === "xray";
   const isSingbox = formatParam === "singbox" || isSingboxCoreClient(request);
-  const format = isXray ? "xray" : isSingbox ? "singbox" : "plain";
+  const format = isXray ? "xray" : isSingbox ? "singbox" : "text";
 
-  // Тестовый токен
-  if (token === "test" || token === "hqray-test") {
-    const vipContent =
-      format === "xray"
-        ? await getSetting(request.env, "subscription_vip_xray")
-        : format === "singbox"
-        ? await getSetting(request.env, "subscription_vip_singbox")
-        : await getSetting(request.env, "subscription_vip");
+  const isTest = token === "test" || token === "hqray-test";
+  let user = null;
+  let isVip = false;
+  let exp = null;
 
-    return new Response(vipContent || "# Конфигурации временно обновляются\n", {
-      headers: {
-        "Content-Type": format === "plain" ? "text/plain; charset=utf-8" : "application/json; charset=utf-8",
-        "Cache-Control": "no-store",
-        "Access-Control-Allow-Origin": "*",
-        "profile-title": "base64:" + encodeB64("💎 HQRay VPN - @hqraybot"),
-        "Content-Disposition": 'attachment; filename="💎 HQRay VPN - @hqraybot"; filename*=UTF-8\'\'%F0%9F%92%8E%20HQRay%20VPN%20-%20%40hqraybot',
-      },
-    });
+  if (isTest) {
+    isVip = true;
+  } else {
+    user = await getUserByToken(request.env, token);
+    if (!user) {
+      return new Response(
+        `# ${BRAND_NAME}\n# Ошибка: токен не найден или был отозван.\n# Запустите @${BOT_USERNAME} для получения нового ключа.\n`,
+        {
+          status: 403,
+          headers: { "Content-Type": "text/plain; charset=utf-8" },
+        }
+      );
+    }
+
+    if (user.banned) {
+      return new Response(
+        `# ${BRAND_NAME}\n# Ваш доступ заблокирован: ${user.ban_reason || "нарушение правил"}.\n# Поддержка: @${BOT_USERNAME}\n`,
+        {
+          status: 403,
+          headers: { "Content-Type": "text/plain; charset=utf-8" },
+        }
+      );
+    }
+
+    const now = new Date();
+    exp = user.subscription_expires ? new Date(user.subscription_expires) : null;
+    isVip = Boolean(exp && exp > now);
   }
 
-  // Проверка пользователя в Turso DB
-  const user = await getUserByToken(request.env, token);
-  if (!user) {
-    return new Response(
-      `# ${BRAND_NAME}\n# Ошибка: токен не найден или был отозван.\n# Запустите @${BOT_USERNAME} для получения нового ключа.\n`,
-      {
-        status: 403,
-        headers: { "Content-Type": "text/plain; charset=utf-8" },
-      }
-    );
-  }
-
-  if (user.banned) {
-    return new Response(
-      `# ${BRAND_NAME}\n# Ваш доступ заблокирован: ${user.ban_reason || "нарушение правил"}.\n# Поддержка: @${BOT_USERNAME}\n`,
-      {
-        status: 403,
-        headers: { "Content-Type": "text/plain; charset=utf-8" },
-      }
-    );
-  }
-
-  const now = new Date();
-  const exp = user.subscription_expires ? new Date(user.subscription_expires) : null;
-  const isVip = exp && exp > now;
-
-  let poolKey = isVip ? "subscription_vip" : "subscription_free";
-  const profileTitle = "💎 HQRay VPN - @hqraybot";
+  const poolKey = isVip ? "subscription_vip" : "subscription_free";
+  const profileTitle = isVip ? "💎 HQRay VPN (VIP)" : "🌐 HQRay VPN (Free)";
 
   let content = null;
   if (format === "xray") {
@@ -112,13 +113,26 @@ export async function handleSubscription(request) {
     );
   }
 
-  const expireTs = isVip ? Math.floor(exp.getTime() / 1000) : 0;
-  const usedMb = user.traffic_used_mb || 0;
+  let finalBody = content;
+  let contentType = "text/plain; charset=utf-8";
+
+  if (format === "singbox" || format === "xray") {
+    contentType = "application/json; charset=utf-8";
+  } else {
+    // Для текстовых vless:// списков:
+    // Если клиент требует base64 (v2rayNG, Shadowrocket) или явно передан b64=1, и не запрошен raw=1
+    if ((b64Param || isB64RequiredClient(request)) && !rawParam && formatParam !== "raw") {
+      finalBody = encodeB64(content);
+    }
+  }
+
+  const expireTs = isVip && exp ? Math.floor(exp.getTime() / 1000) : 0;
+  const usedMb = user?.traffic_used_mb || 0;
 
   const headers = {
-    "Content-Type": format === "plain" ? "text/plain; charset=utf-8" : "application/json; charset=utf-8",
-    "Content-Disposition": 'attachment; filename="💎 HQRay VPN - @hqraybot"; filename*=UTF-8\'\'%F0%9F%92%8E%20HQRay%20VPN%20-%20%40hqraybot',
-    "Cache-Control": "no-store",
+    "Content-Type": contentType,
+    "Content-Disposition": 'attachment; filename="hqray_sub.txt"',
+    "Cache-Control": "no-store, no-cache, must-revalidate",
     "Access-Control-Allow-Origin": "*",
     "profile-title": "base64:" + encodeB64(profileTitle),
     "subscription-userinfo": `upload=0; download=${usedMb * 1024 * 1024}; total=0; expire=${expireTs}`,
@@ -126,5 +140,5 @@ export async function handleSubscription(request) {
     "support-url": `https://t.me/${BOT_USERNAME}`,
   };
 
-  return new Response(content, { headers });
+  return new Response(finalBody, { headers });
 }

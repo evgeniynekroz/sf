@@ -51,6 +51,8 @@ jobs:
           xray version
 
       - name: Run builder
+        env:
+          PYTHONIOENCODING: "utf-8"
         run: python builder/main.py
 
       - name: Commit and push updated subscriptions
