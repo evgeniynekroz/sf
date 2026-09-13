@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "188.225.45.152",
+          "address": "144.31.5.64",
           "port": 443,
           "users": [
             {
-              "id": "238e492b-bc20-4380-92b6-135d39112ca4",
+              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -133,12 +133,10 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "api8.eaglors.com",
-        "publicKey": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
-        "shortId": "52ccb3687fe0b7ec",
+      "network": "raw",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "pl6.moritech.net",
         "fingerprint": "firefox"
       }
     }
@@ -259,6 +257,32 @@
     }
   },
   {
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "3h-kazakhstan1.09vpn.com",
+          "port": 80,
+          "users": [
+            {
+              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/vmess/"
+      }
+    }
+  },
+  {
     "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
@@ -297,7 +321,7 @@
           "port": 443,
           "users": [
             {
-              "id": "7d8a8a02-7eec-498a-84a1-252a4a84a578",
+              "id": "a34ecff0-a6bc-4bac-94ad-25e1f82afcbe",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
