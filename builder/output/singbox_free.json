@@ -25,35 +25,35 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "server": "170.101.109.37",
+      "server_port": 443,
+      "uuid": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
+          "public_key": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+          "short_id": "ab88d256"
         },
-        "server_name": "www.intel.com"
+        "server_name": "www.cloudflare.com"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "94.241.174.157",
-      "server_port": 40443,
-      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
+      "server_port": 443,
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "mM33xyzf1GPaU2CQX",
-          "short_id": ""
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
         },
-        "server_name": "www.google.com"
+        "server_name": "www.apple.com"
       }
     },
     {
@@ -75,14 +75,18 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "144.31.5.64",
+      "server": "188.225.45.152",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "uuid": "238e492b-bc20-4380-92b6-135d39112ca4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true
+        "reality": {
+          "enabled": true,
+          "public_key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
+          "short_id": "52ccb3687fe0b7ec"
+        },
+        "server_name": "api8.eaglors.com"
       }
     },
     {
@@ -104,40 +108,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "104.16.100.66",
-      "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
-        }
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "192.3.247.109",
+      "server_port": 32132,
+      "uuid": "23504a34-5216-4e10-86a0-b6a70976f996",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0",
+          "short_id": "24cbfb05123722"
+        },
+        "server_name": "apple.com"
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇩🇪 Резерв #1 — FREE",
-      "server": "46.229.243.133",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "type": "vless",
+      "tag": "🇬🇧 Резерв #2 — FREE",
+      "server": "89.40.70.124",
+      "server_port": 443,
+      "uuid": "f0612e46-3d37-4766-904e-7baa3e636c24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "grape-turbo.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Резерв #2 — FREE",
-      "server": "46.229.243.136",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-turbo.xyz",
-        "insecure": true
+        "reality": {
+          "enabled": true,
+          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+          "short_id": "5b33d3e71a14f4"
+        },
+        "server_name": "www.sony.co.uk"
       }
     },
     {
@@ -157,9 +156,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇩🇪 Резерв #1 — FREE",
-        "🇳🇱 Резерв #2 — FREE"
+        "🇺🇸 Резерв #1 — FREE",
+        "🇬🇧 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -175,9 +173,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇩🇪 Резерв #1 — FREE",
-        "🇳🇱 Резерв #2 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
+        "🇬🇧 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
