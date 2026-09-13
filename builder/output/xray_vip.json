@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.2.33",
+          "address": "13.143.139.165",
           "port": 443,
           "users": [
             {
-              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+              "id": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -135,9 +135,11 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "pl3.moritech.net",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pol2.pinkmoon.pro",
+        "publicKey": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
+        "shortId": "8ffa160e608bf539",
         "fingerprint": "firefox"
       }
     }
@@ -206,11 +208,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.160.71.249",
+          "address": "89.40.70.124",
           "port": 443,
           "users": [
             {
-              "id": "42d932cb-8768-41de-b57b-299252a493d2",
+              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -219,12 +221,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "edge-uk2.mystatic-cdn.ru",
-        "publicKey": "65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI",
-        "shortId": "ee169e93d3c277a1",
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
       }
     }
@@ -255,16 +257,16 @@
     }
   },
   {
-    "tag": "🇹🇷 Турция — Premium",
+    "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "217.149.31.117",
-          "port": 443,
+          "address": "104.19.33.7",
+          "port": 8443,
           "users": [
             {
-              "id": "1f507f26-949e-4dab-9191-0d116e2bd8aa",
+              "id": "42c62a5a-cd31-4551-80ef-908732370287",
               "encryption": "none"
             }
           ]
@@ -275,40 +277,11 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "tr2.wba-pn.ru",
-        "fingerprint": "firefox"
+        "serverName": "fq.jp188.dpdns.org",
+        "fingerprint": "chrome"
       },
       "wsSettings": {
         "path": "/"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "50.7.159.123",
-          "port": 8443,
-          "users": [
-            {
-              "id": "42d932cb-8768-41de-b57b-299252a493d2",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "jp.atlanta-api.com",
-        "publicKey": "7Axhce2tfEGSbpq0YmPhnH_OWxmm_u0yAqsRwzALbw0",
-        "shortId": "82e5031a63512212",
-        "fingerprint": "firefox"
       }
     }
   },
@@ -367,35 +340,6 @@
         "publicKey": "li5NH6qQUDgYest2daHfYUeMjqwADWCkk2jh0s7P1lw",
         "shortId": "9267bf2c26bb92b0",
         "fingerprint": "qq"
-      }
-    }
-  },
-  {
-    "tag": "🇬🇧 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "89.40.70.124",
-          "port": 443,
-          "users": [
-            {
-              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
-        "fingerprint": "firefox"
       }
     }
   }
