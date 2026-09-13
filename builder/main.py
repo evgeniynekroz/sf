@@ -107,11 +107,11 @@ NEARBY_COUNTRIES = {"DE", "NL", "FI", "EE", "PL", "SE", "AT"}
 
 # Максимально допустимая задержка True Delay (мс) для добавления в подписку
 COUNTRY_MAX_LATENCY: dict[str, float] = {
-    "DE": 350.0, "FI": 350.0, "EE": 350.0, "PL": 350.0, "SE": 350.0, "NL": 350.0, "AT": 350.0,
-    "GB": 400.0, "IT": 400.0, "KZ": 450.0, "TR": 400.0, "NO": 400.0, "FR": 400.0,
-    "US": 600.0, "JP": 650.0, "RU": 300.0,
+    "DE": 650.0, "FI": 650.0, "EE": 650.0, "PL": 650.0, "SE": 650.0, "NL": 650.0, "AT": 650.0,
+    "GB": 700.0, "IT": 700.0, "KZ": 750.0, "TR": 700.0, "NO": 700.0, "FR": 700.0,
+    "US": 850.0, "JP": 850.0, "RU": 600.0,
 }
-DEFAULT_MAX_LATENCY = 450.0
+DEFAULT_MAX_LATENCY = 750.0
 
 @dataclass(slots=True)
 class Source:
@@ -744,13 +744,13 @@ def build_pools(
         cc, kind = c[0], c[5]
         if kind in ("lte", "whitelist"):
             lte_candidates.append(c)
-        elif len(by_cc_candidates[cc]) < 8:
+        elif len(by_cc_candidates[cc]) < 16:
             by_cc_candidates[cc].append(c)
 
     finalists_list: list[tuple] = []
     for c_list in by_cc_candidates.values():
         finalists_list.extend(c_list)
-    finalists_list.extend(lte_candidates[:15])
+    finalists_list.extend(lte_candidates[:20])
 
     # Точечный GeoIP-запрос строго для финалистов (1 батч-запрос < 0.5с)
     finalist_hosts = [c[4][0] for c in finalists_list]
@@ -775,11 +775,7 @@ def build_pools(
         val = c[3]
         if val in test_results and test_results[val].ok:
             res = test_results[val]
-            # Если exit_ip показал другую реальную страну, корректируем
-            exit_cc = c[0]
-            if res.exit_ip and res.exit_ip in geo_map:
-                exit_cc = geo_map[res.exit_ip]
-            alive_tested.append((exit_cc, COUNTRY_NAMES_RU.get(exit_cc, c[1]), c[2], val, c[4], c[5], res.latency_ms, res.speed_mbps))
+            alive_tested.append((c[0], c[1], c[2], val, c[4], c[5], res.latency_ms, res.speed_mbps))
 
     # Сортировка: минимальный True Delay, затем максимальная скорость
     alive_tested.sort(key=lambda x: (x[6], -x[7]))
@@ -789,7 +785,7 @@ def build_pools(
     used_hosts_vip: set[str] = set()
     vip_items: list[tuple[str, str]] = []
 
-    # 1. VIP Pool: по 1 лучшему серверу на каждую страну
+    # 1. VIP Pool: по 1 лучшему серверу на каждую целевую страну
     for cc in VIP_TARGET_COUNTRIES:
         max_lat = COUNTRY_MAX_LATENCY.get(cc, DEFAULT_MAX_LATENCY)
         matching = [
@@ -806,10 +802,22 @@ def build_pools(
                 lbl = f"{flag} {best[1]} — Premium"
             vip_items.append((lbl, best[3]))
 
+    # Если в целевых странах набралось мало, добираем любые живые скоростные узлы
+    if len(vip_items) < 10:
+        for c in alive_tested:
+            if c[4][0] not in used_hosts_vip and c[5] == "auto":
+                used_hosts_vip.add(c[4][0])
+                flag = COUNTRY_FLAGS.get(c[0], "🌐")
+                prefix = "⚡️" if c[0] in NEARBY_COUNTRIES else flag + " "
+                lbl = f"{prefix}{c[1]} — Premium"
+                vip_items.append((lbl, c[3]))
+                if len(vip_items) >= 15:
+                    break
+
     # До 4 уникальных LTE/обходных локаций для VIP
     lte_added = 0
     for c in alive_tested:
-        if c[5] in ("lte", "whitelist") and c[6] <= 300.0 and c[4][0] not in used_hosts_vip:
+        if c[5] in ("lte", "whitelist") and c[6] <= 600.0 and c[4][0] not in used_hosts_vip:
             used_hosts_vip.add(c[4][0])
             lte_added += 1
             lbl = f"🇷🇺 LTE #{lte_added} — Premium" if lte_added > 1 else "🇷🇺 LTE — Premium"
@@ -834,12 +842,31 @@ def build_pools(
             lbl = f"{flag} {best[1]} — Базовый"
             free_items.append((lbl, best[3]))
 
+    # Если в Free меньше 5 узлов, добираем из любых живых европейских узлов
+    if len(free_items) < 5:
+        for c in alive_tested:
+            if c[0] in NEARBY_COUNTRIES and c[4][0] not in used_hosts_free and c[5] == "auto":
+                used_hosts_free.add(c[4][0])
+                flag = COUNTRY_FLAGS.get(c[0], "🌐")
+                lbl = f"{flag} {c[1]} — Базовый"
+                free_items.append((lbl, c[3]))
+                if len(free_items) >= 5:
+                    break
+
     # 1 LTE для Free
     for c in alive_tested:
-        if c[5] in ("lte", "whitelist") and c[6] <= 300.0 and c[4][0] not in used_hosts_free:
+        if c[5] in ("lte", "whitelist") and c[6] <= 600.0 and c[4][0] not in used_hosts_free:
             used_hosts_free.add(c[4][0])
             free_items.append(("🇷🇺 Россия LTE — Базовый", c[3]))
             break
+
+    # Защита от пустых подписок: если по какой-то причине пул пуст, берем кэш
+    if not vip_items and cached_vip:
+        logger.warning("VIP пул пуст — восстанавливаем из кэша")
+        vip_items = [(item["label"], item["uri"]) for item in cached_vip if "uri" in item]
+    if not free_items and cached_free:
+        logger.warning("Free пул пуст — восстанавливаем из кэша")
+        free_items = [(item["label"], item["uri"]) for item in cached_free if "uri" in item]
 
     logger.info("Сформирован Базовый пул: %d серверов (0 дублей)", len(free_items))
     logger.info("Сформирован Premium пул: %d серверов (0 дублей)", len(vip_items))
