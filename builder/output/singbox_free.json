@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "82.118.19.153",
+      "server": "46.28.69.53",
       "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "uuid": "f2381f29-c724-4491-95a3-a17bd6eea47f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "de2.willo.help",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
+          "public_key": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
+          "short_id": "abcd1234"
         }
       }
     },
@@ -67,20 +67,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "2.27.42.33",
+      "server_port": 443,
+      "uuid": "f2381f29-c724-4491-95a3-a17bd6eea47f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "fi.willo.help",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+          "public_key": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
+          "short_id": "abcd1234"
         }
       }
     },
@@ -108,7 +109,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "194.24.161.177",
+      "server": "91.239.208.198",
       "server_port": 443,
       "uuid": "54b029e2-ff19-404d-ae24-8692bf2e4aa8",
       "flow": "xtls-rprx-vision",
@@ -128,43 +129,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "45.91.138.179",
+      "tag": "🇬🇧 Резерв #1 — FREE",
+      "server": "publics.betust.net",
       "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us05.shifor01.life",
+        "server_name": "publics.betust.net",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-          "short_id": "169fc2df88419465"
+          "public_key": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo",
+          "short_id": "6591f200"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Резерв #2 — FREE",
-      "server": "91.239.208.198",
+      "tag": "🇬🇧 Резерв #2 — FREE",
+      "server": "89.40.70.124",
       "server_port": 443,
-      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+      "uuid": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "evagonc.inklysoft.xyz",
+        "server_name": "www.sony.co.uk",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
-          "short_id": ""
+          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+          "short_id": "5b33d3e71a14f4"
         }
       }
     },
@@ -185,8 +186,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇸🇪 Резерв #2 — FREE"
+        "🇬🇧 Резерв #1 — FREE",
+        "🇬🇧 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -202,8 +203,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇸🇪 Резерв #2 — FREE",
+        "🇬🇧 Резерв #1 — FREE",
+        "🇬🇧 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
