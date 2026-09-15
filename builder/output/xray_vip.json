@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "128.254.186.111",
+          "address": "82.118.19.153",
           "port": 443,
           "users": [
             {
-              "id": "32721515-985b-4773-9e70-5d2e1b88a060",
+              "id": "adcaa148-7c66-4282-a81a-99ec8afa029d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "jobinvest.ru",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+        "shortId": "670ed9f350bd8ee0",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "146.103.98.84",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "eaae5be2-8a3b-4edb-a968-39366a478ab2",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-74.southnets.work",
-        "publicKey": "3e_yPFFI_hf_CmzsfdElJHdI9HlVaULKWanfMYY5qB0",
-        "shortId": "65201ddbe0cef5",
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
         "fingerprint": "firefox"
       }
     }
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "50.7.249.181",
+          "address": "188.255.163.64",
           "port": 443,
           "users": [
             {
-              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+              "id": "f2381f29-c724-4491-95a3-a17bd6eea47f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -134,9 +134,11 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "pl-dedic-2.failspace.top",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl.willo.help",
+        "publicKey": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
+        "shortId": "abcd1234",
         "fingerprint": "firefox"
       }
     }
@@ -147,11 +149,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.239.208.198",
+          "address": "194.24.161.177",
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "54b029e2-ff19-404d-ae24-8692bf2e4aa8",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -209,7 +211,7 @@
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -218,7 +220,7 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
         "serverName": "www.sony.co.uk",
@@ -304,44 +306,16 @@
     }
   },
   {
-    "tag": "🇷🇺 LTE — Premium",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "us-1.gsafevpnapi.com",
-          "port": 20270,
-          "users": [
-            {
-              "id": "e016d072-ed97-40d4-a83f-04c00f8df2a5",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.yahoo.com",
-        "publicKey": "9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE",
-        "shortId": "e67d9a00676f15ac",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #2 — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "one.trstcore.pro",
+          "address": "91.239.208.198",
           "port": 443,
           "users": [
             {
-              "id": "a8f5e04b-be34-4b84-9359-684ad9c417b0",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -353,10 +327,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "one.trstcore.pro",
-        "publicKey": "Un-ganlZFYDu8bvW1C_QwMkJEie1e6Ma9qfuG_jBzjA",
-        "shortId": "dce5d94ab5907cd5",
-        "fingerprint": "chrome"
+        "serverName": "evagonc.inklysoft.xyz",
+        "publicKey": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   }
