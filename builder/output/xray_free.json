@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.28.21",
-          "port": 443,
+          "address": "185.79.138.71",
+          "port": 448,
           "users": [
             {
-              "id": "0e7b66f1-567a-4527-b330-5a7b006d198c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+              "encryption": "none"
             }
           ]
         }
@@ -79,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finland.biznes.lol",
-        "publicKey": "T0hPoN_eVwntNZZ3Djyfi8AQK8U0dGRmygP5jNJ6bk8",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.samsung.com",
+        "publicKey": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+        "shortId": "cd21e552537c7c0b",
+        "fingerprint": "qq"
       }
     }
   },
@@ -150,11 +149,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "usa.superbuba.top",
-          "port": 443,
+          "address": "us-1.gsafevpnapi.com",
+          "port": 20270,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379",
               "encryption": "none"
             }
           ]
@@ -162,30 +161,27 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": ""
+        "serverName": "www.yahoo.com",
+        "publicKey": "9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE",
+        "shortId": "e67d9a00676f15ac",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇬🇧 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "89.40.70.124",
+          "address": "45.91.138.179",
           "port": 443,
           "users": [
             {
-              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -197,9 +193,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
+        "serverName": "us05.shifor01.life",
+        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+        "shortId": "169fc2df88419465",
         "fingerprint": "firefox"
       }
     }
