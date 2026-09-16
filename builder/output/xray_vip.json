@@ -5,26 +5,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "46.28.69.53",
-          "port": 443,
+          "address": "178.162.252.123",
+          "port": 10000,
           "users": [
             {
-              "id": "f2381f29-c724-4491-95a3-a17bd6eea47f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1b96549e-b6e4-4e19-9259-2ab1b10ce7f7",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.willo.help",
-        "publicKey": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
-        "shortId": "abcd1234",
-        "fingerprint": "firefox"
+        "serverName": "zoom.us",
+        "publicKey": "UOa0v_JpSPRPMO6ABMM7tIir-GclotOVfnbI2WqJGVE",
+        "shortId": "9791feaccc1ca4d8",
+        "fingerprint": "qq"
       }
     }
   },
@@ -63,13 +62,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.199.182",
+          "address": "fi.yabloko.top",
           "port": 443,
           "users": [
             {
-              "id": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "fe7a9e7a-cd1f-4128-b2a1-48ef38dd107e",
+              "encryption": "none"
             }
           ]
         }
@@ -79,9 +77,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi2.yservice.help",
-        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
-        "shortId": "abcd1234",
+        "serverName": "fi.yabloko.top",
+        "publicKey": "PedRm9kq-9CQ4f9Wr1utMyCf1V3qUXH_IeCBBMhy8z0",
+        "shortId": "e07824f6b1be0b82",
         "fingerprint": "firefox"
       }
     }
@@ -92,26 +90,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.58.181.88",
-          "port": 8443,
+          "address": "ee.shamanapp.online",
+          "port": 443,
           "users": [
             {
-              "id": "71470f80-ee36-47e0-8089-0987657ea5d4",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tradingview.com",
-        "publicKey": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+        "serverName": "www.google.com",
+        "publicKey": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "TunService"
       }
     }
   },
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.63.246",
+          "address": "188.255.163.64",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "f2381f29-c724-4491-95a3-a17bd6eea47f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
+        "serverName": "pl.willo.help",
+        "publicKey": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
+        "shortId": "abcd1234",
         "fingerprint": "firefox"
       }
     }
@@ -208,11 +208,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.40.70.124",
+          "address": "publics.betust.net",
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
+              "id": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -224,9 +224,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
+        "serverName": "publics.betust.net",
+        "publicKey": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo",
+        "shortId": "6591f200",
         "fingerprint": "firefox"
       }
     }
@@ -292,16 +292,16 @@
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
+    "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "77.239.112.241",
-          "port": 43429,
+          "address": "red-flower-a2bf.363.workers.dev",
+          "port": 8880,
           "users": [
             {
-              "id": "18555f9e-9a8d-4f95-a70f-54910292fabc",
+              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
               "encryption": "none"
             }
           ]
@@ -309,46 +309,28 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "it.nvidia.com",
-        "publicKey": "Q8SGL5DI3ZxostwfuYBdqpwxo8dzb-W3-T2_8Nf6Zno",
-        "shortId": "e91a88be55a76c63",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": ""
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
+    "tag": "🇮🇹 Италия — Premium",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "us05.shifor01.life",
-          "port": 443,
-          "users": [
-            {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "address": "57.131.48.45",
+          "port": 8388,
+          "method": "aes-256-gcm",
+          "password": "itzvpn@321"
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
-        "fingerprint": "chrome"
-      }
+      "network": "tcp"
     }
   }
 ]
