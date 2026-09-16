@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "178.162.252.123",
-          "port": 10000,
+          "address": "144.31.168.95",
+          "port": 443,
           "users": [
             {
-              "id": "1b96549e-b6e4-4e19-9259-2ab1b10ce7f7",
-              "encryption": "none"
+              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -20,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "zoom.us",
-        "publicKey": "UOa0v_JpSPRPMO6ABMM7tIir-GclotOVfnbI2WqJGVE",
-        "shortId": "9791feaccc1ca4d8",
-        "fingerprint": "qq"
+        "serverName": "eu-central.cendora.ru",
+        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+        "shortId": "00bca5982f82d083",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -62,12 +63,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "fi.yabloko.top",
+          "address": "144.31.28.21",
           "port": 443,
           "users": [
             {
-              "id": "fe7a9e7a-cd1f-4128-b2a1-48ef38dd107e",
-              "encryption": "none"
+              "id": "0e7b66f1-567a-4527-b330-5a7b006d198c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -77,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi.yabloko.top",
-        "publicKey": "PedRm9kq-9CQ4f9Wr1utMyCf1V3qUXH_IeCBBMhy8z0",
-        "shortId": "e07824f6b1be0b82",
+        "serverName": "finland.biznes.lol",
+        "publicKey": "T0hPoN_eVwntNZZ3Djyfi8AQK8U0dGRmygP5jNJ6bk8",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -123,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -148,40 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.91.138.179",
+          "address": "usa.superbuba.top",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇪🇪 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "ee.shamanapp.online",
-          "port": 443,
-          "users": [
-            {
-              "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
               "encryption": "none"
             }
           ]
@@ -192,13 +165,42 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "usa.superbuba.top",
+        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+        "shortId": "9c2378562188c3cb",
+        "fingerprint": "firefox"
       },
       "grpcSettings": {
-        "serviceName": "TunService"
+        "serviceName": ""
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "89.40.70.124",
+          "port": 443,
+          "users": [
+            {
+              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
+        "fingerprint": "firefox"
       }
     }
   }
