@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "free-amsterdam-node-1.cloudwidecdn.com",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-        "shortId": "1d86d17709852910",
-        "fingerprint": "chrome"
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.242.168.125",
-          "port": 390,
+          "address": "72.56.41.33",
+          "port": 40443,
           "users": [
             {
-              "id": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
+              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "bowandbead.com",
-        "publicKey": "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8",
-        "shortId": "b545fe8c5e22f92d",
-        "fingerprint": "ios"
+        "serverName": "deepl.com",
+        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+        "shortId": "ee33",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "188.255.163.64",
+          "address": "217.60.33.44",
           "port": 443,
           "users": [
             {
-              "id": "f2381f29-c724-4491-95a3-a17bd6eea47f",
+              "id": "92089155-6602-4122-86d4-fe6de20e8c4d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.willo.help",
-        "publicKey": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
-        "shortId": "abcd1234",
+        "serverName": "pl.aeternavpn.space",
+        "publicKey": "-ubiZfIMxZvsVa7d6pT7CCxg7-J-VADM7zj1QVMpC2A",
+        "shortId": "a1b2c3d4",
         "fingerprint": "firefox"
       }
     }
@@ -154,7 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -208,11 +208,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.40.70.124",
+          "address": "31.76.39.141",
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -224,9 +224,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
+        "serverName": "gb.superbuba.top",
+        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+        "shortId": "4fa44664f6a566d3",
         "fingerprint": "firefox"
       }
     }
@@ -292,20 +292,62 @@
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
-    "protocol": "shadowsocks",
+    "tag": "🇯🇵 Япония — Premium",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "57.131.48.45",
-          "port": 8388,
-          "method": "aes-256-gcm",
-          "password": "itzvpn@321"
+          "address": "jp-1.gsafevpnapi.com",
+          "port": 20270,
+          "users": [
+            {
+              "id": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
+              "encryption": "none"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.yahoo.com",
+        "publicKey": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
+        "shortId": "28500ae15838f905",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇮🇹 Италия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "176.108.246.58",
+          "port": 9881,
+          "users": [
+            {
+              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dl.google.com",
+        "publicKey": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
+        "shortId": "",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-tunnel"
+      }
     }
   }
 ]

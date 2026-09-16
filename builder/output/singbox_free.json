@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "free-amsterdam-node-1.cloudwidecdn.com",
+      "server": "130.78.191.25",
       "server_port": 443,
-      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "nl07.shifor01.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-          "short_id": "1d86d17709852910"
+          "public_key": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+          "short_id": "3ac25eef1431b799"
         }
       }
     },
@@ -88,21 +88,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "188.255.163.64",
+      "server": "217.60.33.44",
       "server_port": 443,
-      "uuid": "f2381f29-c724-4491-95a3-a17bd6eea47f",
+      "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.willo.help",
+        "server_name": "pl.aeternavpn.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MldGYzZegwydL76HI_beMlXgD-4ZyCZjIX0sBVPjphY",
-          "short_id": "abcd1234"
+          "public_key": "-ubiZfIMxZvsVa7d6pT7CCxg7-J-VADM7zj1QVMpC2A",
+          "short_id": "a1b2c3d4"
         }
       }
     },
@@ -111,7 +111,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -154,21 +154,21 @@
     {
       "type": "vless",
       "tag": "🇬🇧 Резерв #2 — FREE",
-      "server": "89.40.70.124",
+      "server": "31.76.39.141",
       "server_port": 443,
-      "uuid": "f0612e46-3d37-4766-904e-7baa3e636c24",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.co.uk",
+        "server_name": "gb.superbuba.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-          "short_id": "5b33d3e71a14f4"
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
         }
       }
     },
