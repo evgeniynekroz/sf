@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "162.248.166.35",
+      "server": "144.31.168.95",
       "server_port": 443,
-      "uuid": "d92b6509-8b63-4505-b3a2-1dc5b1c014ac",
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.caradisiac.com",
+        "server_name": "eu-central.cendora.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NYG48Fv1MF3SqOpHwoa4GqJH5IJrocSrwWzrffY-tCk",
-          "short_id": "c6dc8abb0235dc05"
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
         }
       }
     },
@@ -58,42 +58,46 @@
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "31.76.109.18",
+      "server": "45.144.54.2",
       "server_port": 443,
-      "uuid": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+      "uuid": "729425fa-585b-458e-841a-ea30872d4ac2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl2.jokervpn.space",
+        "server_name": "www.uva.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yBRh0iiSv_UG6R3iO4cgQlH3VDcpIvK91seyr7nZ6H0",
-          "short_id": "ff3fc228afdec470"
+          "public_key": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
+          "short_id": "940dbf5b"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-      "server": "31.76.8.192",
-      "server_port": 443,
-      "uuid": "fe7a9e7a-cd1f-4128-b2a1-48ef38dd107e",
+      "server": "186.246.4.107",
+      "server_port": 2055,
+      "uuid": "cfffb81e-5034-49ce-8729-18b60c7f1e89",
       "tls": {
         "enabled": true,
-        "server_name": "fi.yabloko.top",
+        "server_name": "tt.sonyabibboop.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PedRm9kq-9CQ4f9Wr1utMyCf1V3qUXH_IeCBBMhy8z0",
-          "short_id": "e07824f6b1be0b82"
+          "public_key": "WRPeyQ_iktgiTrL_TekP-U_I7AAAdFokfKZHK2Ankzw",
+          "short_id": "d5cb64c07671c019"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "sonya-grpc"
       }
     },
     {
@@ -120,21 +124,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 ⚡️ Польша — Premium",
-      "server": "31.77.59.225",
+      "server": "194.93.63.246",
       "server_port": 443,
-      "uuid": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.jokervpn.space",
+        "server_name": "pl.bubahero.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
-          "short_id": "f43f3666afdec470"
+          "public_key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
+          "short_id": "9c2378562188c3cb"
         }
       }
     },
@@ -269,27 +273,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 Турция — Premium",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇰🇿 Казахстан — Premium",
       "server": "213.155.20.83",
       "server_port": 443,
@@ -312,32 +295,20 @@
     {
       "type": "vless",
       "tag": "🇯🇵 Япония — Premium",
-      "server": "104.16.100.66",
+      "server": "104.16.106.213",
       "server_port": 8880,
-      "uuid": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+      "uuid": "7121d0be-40f5-4eda-b3d1-1556e71ea4fa",
       "transport": {
         "type": "ws",
         "path": "/pyip=ProxyIP.JP.CMLiussss.net",
         "headers": {
-          "Host": "red-flower-a2bf.363.workers.dev"
+          "Host": "shrill-recipe-0c1d.404-a1d.workers.dev"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #1 — Premium",
-      "server": "155.248.209.237",
-      "server_port": 33333,
-      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
-      "tls": {
-        "enabled": true,
-        "server_name": "155.248.209.237",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #2 — Premium",
       "server": "142.249.37.90",
       "server_port": 44356,
       "password": "dongtaiwang.com",
@@ -345,6 +316,18 @@
         "enabled": true,
         "server_name": "hy2.561891.xyz",
         "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 Резерв #2 — Premium",
+      "server": "vpn-us-003.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-us-003.fastervpn.world",
+        "insecure": true
       }
     },
     {
@@ -362,37 +345,25 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #4 — Premium",
-      "server": "hy2.123266.xyz",
+      "server": "155.248.209.237",
       "server_port": 33333,
       "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.123266.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #5 — Premium",
-      "server": "vpn-us-006.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-us-006.fastervpn.world",
+        "server_name": "155.248.209.237",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 LTE — Premium",
-      "server": "194.48.250.234",
+      "tag": "🇫🇷 Резерв #5 — Premium",
+      "server": "vpn-fr-002.fastervpn.world",
       "server_port": 443,
-      "password": "a2c74ce7-5daa-4bee-a1eb-52863873b3c3",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "mol.ultimagamest.com",
-        "insecure": false
+        "server_name": "vpn-fr-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
@@ -444,15 +415,13 @@
         "🇧🇾 ⚡️ Беларусь — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
-        "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
-        "🇺🇸 Резерв #5 — Premium",
-        "🇷🇺 LTE — Premium",
+        "🇫🇷 Резерв #5 — Premium",
         "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -477,15 +446,13 @@
         "🇧🇾 ⚡️ Беларусь — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
-        "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
-        "🇺🇸 Резерв #5 — Premium",
-        "🇷🇺 LTE — Premium",
+        "🇫🇷 Резерв #5 — Premium",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
