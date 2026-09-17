@@ -25,42 +25,42 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "144.31.168.95",
+      "server": "162.248.166.35",
       "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "uuid": "d92b6509-8b63-4505-b3a2-1dc5b1c014ac",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eu-central.cendora.ru",
+        "server_name": "www.caradisiac.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
+          "public_key": "NYG48Fv1MF3SqOpHwoa4GqJH5IJrocSrwWzrffY-tCk",
+          "short_id": "c6dc8abb0235dc05"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "93.152.220.23",
+      "server": "31.76.109.18",
       "server_port": 443,
-      "uuid": "0480039e-2e85-49e4-9087-ba85e738851a",
+      "uuid": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl-3.it-crp.ru",
+        "server_name": "nl2.jokervpn.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
+          "public_key": "yBRh0iiSv_UG6R3iO4cgQlH3VDcpIvK91seyr7nZ6H0",
+          "short_id": "ff3fc228afdec470"
         }
       }
     },
@@ -87,21 +87,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "217.60.33.44",
+      "server": "31.77.59.225",
       "server_port": 443,
-      "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d",
+      "uuid": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.aeternavpn.space",
+        "server_name": "pl.jokervpn.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-ubiZfIMxZvsVa7d6pT7CCxg7-J-VADM7zj1QVMpC2A",
-          "short_id": "a1b2c3d4"
+          "public_key": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
+          "short_id": "f43f3666afdec470"
         }
       }
     },
@@ -110,7 +110,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -127,14 +127,15 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "111.88.215.247",
-      "server_port": 2087,
-      "password": "C8WViwpSS5lwUHGl27OQRlLm2Ursg0Jj",
+      "server": "194.48.250.234",
+      "server_port": 443,
+      "password": "a2c74ce7-5daa-4bee-a1eb-52863873b3c3",
       "tls": {
         "enabled": true,
-        "server_name": "canalnotes.site"
+        "server_name": "mol.ultimagamest.com",
+        "insecure": false
       }
     },
     {
@@ -164,22 +165,25 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "45.91.138.179",
+      "server": "usa.superbuba.top",
       "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
-      "flow": "xtls-rprx-vision",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "tls": {
         "enabled": true,
-        "server_name": "us05.shifor01.life",
+        "server_name": "usa.superbuba.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-          "short_id": "169fc2df88419465"
+          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+          "short_id": "9c2378562188c3cb"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
       }
     },
     {
