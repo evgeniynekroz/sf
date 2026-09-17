@@ -46,67 +46,55 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "130.78.191.25",
+      "server": "nl3.freekeysh110.online",
       "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "uuid": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl07.shifor01.life",
+        "server_name": "nl3.freekeysh110.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-          "short_id": "3ac25eef1431b799"
+          "public_key": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
+          "short_id": "b664d93e9d7a04f1"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "186.246.4.107",
-      "server_port": 2055,
-      "uuid": "cfffb81e-5034-49ce-8729-18b60c7f1e89",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tt.sonyabibboop.com",
+        "server_name": "fi2.yservice.help",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WRPeyQ_iktgiTrL_TekP-U_I7AAAdFokfKZHK2Ankzw",
-          "short_id": "d5cb64c07671c019"
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "sonya-grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "194.93.63.246",
+      "server": "50.7.248.237",
       "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.bubahero.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-          "short_id": "9c2378562188c3cb"
-        }
+        "server_name": "pl-new-dedic.failspace.top"
       }
     },
     {
@@ -157,25 +145,22 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "usa.superbuba.top",
+      "server": "92.118.112.73",
       "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "uuid": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "usa.superbuba.top",
+        "server_name": "usa.jokervpn.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-          "short_id": "9c2378562188c3cb"
+          "public_key": "5yVkeulmscPbzvGlFp0JPVjEA9hQmO_F8-7gFdf3lUg",
+          "short_id": "ff3f3666afdec470"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {

@@ -34,71 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "nl3.freekeysh110.online",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "186.246.4.107",
-          "port": 2055,
-          "users": [
-            {
-              "id": "cfffb81e-5034-49ce-8729-18b60c7f1e89",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tt.sonyabibboop.com",
-        "publicKey": "WRPeyQ_iktgiTrL_TekP-U_I7AAAdFokfKZHK2Ankzw",
-        "shortId": "d5cb64c07671c019",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "sonya-grpc"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "194.93.63.246",
-          "port": 443,
-          "users": [
-            {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -110,10 +50,66 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
+        "serverName": "nl3.freekeysh110.online",
+        "publicKey": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
+        "shortId": "b664d93e9d7a04f1",
+        "fingerprint": "edge"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.77.199.182",
+          "port": 443,
+          "users": [
+            {
+              "id": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "50.7.248.237",
+          "port": 443,
+          "users": [
+            {
+              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "pl-new-dedic.failspace.top",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -183,28 +179,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "usa.superbuba.top",
+          "address": "92.118.112.73",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none"
+              "id": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": ""
+        "serverName": "usa.jokervpn.space",
+        "publicKey": "5yVkeulmscPbzvGlFp0JPVjEA9hQmO_F8-7gFdf3lUg",
+        "shortId": "ff3f3666afdec470",
+        "fingerprint": "firefox"
       }
     }
   }
