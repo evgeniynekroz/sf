@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.168.95",
+          "address": "170.101.109.37",
           "port": 443,
           "users": [
             {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+              "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
-        "fingerprint": "chrome"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+        "shortId": "ab88d256",
+        "fingerprint": "qq"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.144.54.2",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "729425fa-585b-458e-841a-ea30872d4ac2",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,12 +47,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.uva.nl",
-        "publicKey": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
-        "shortId": "940dbf5b",
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
         "fingerprint": "firefox"
       }
     }
@@ -152,11 +152,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.239.208.198",
+          "address": "194.24.161.177",
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -210,7 +210,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "172.64.149.65",
+          "address": "172.64.156.60",
           "port": 443,
           "users": [
             {
@@ -225,13 +225,13 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
+        "serverName": "powered-by-surena.configfarsi6982dd6e0355e.workers.dev",
         "fingerprint": "chrome"
       },
       "wsSettings": {
         "path": "/",
         "headers": {
-          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
+          "Host": "powered-by-surena.configfarsi6982dd6e0355e.workers.dev"
         }
       }
     }
@@ -242,11 +242,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
+          "address": "89.40.70.124",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -255,12 +255,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
       }
     }
@@ -322,34 +322,6 @@
         "publicKey": "RR_T91yZY_QUPN53wQNakGmCN3mq0i_Ozom7etyh4RI",
         "shortId": "",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "104.16.106.213",
-          "port": 8880,
-          "users": [
-            {
-              "id": "7121d0be-40f5-4eda-b3d1-1556e71ea4fa",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "shrill-recipe-0c1d.404-a1d.workers.dev"
-        }
       }
     }
   },

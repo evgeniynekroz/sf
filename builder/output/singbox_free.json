@@ -25,42 +25,42 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "144.31.168.95",
+      "server": "170.101.109.37",
       "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "uuid": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eu-central.cendora.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
+          "public_key": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+          "short_id": "ab88d256"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "45.144.54.2",
+      "server": "130.78.191.25",
       "server_port": 443,
-      "uuid": "729425fa-585b-458e-841a-ea30872d4ac2",
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.uva.nl",
+        "server_name": "nl07.shifor01.life",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
-          "short_id": "940dbf5b"
+          "public_key": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+          "short_id": "3ac25eef1431b799"
         }
       }
     },
@@ -112,9 +112,9 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "91.239.208.198",
+      "server": "194.24.161.177",
       "server_port": 443,
-      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,

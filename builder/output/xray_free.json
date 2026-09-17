@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.168.95",
+          "address": "170.101.109.37",
           "port": 443,
           "users": [
             {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+              "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
-        "fingerprint": "chrome"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+        "shortId": "ab88d256",
+        "fingerprint": "qq"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.144.54.2",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "729425fa-585b-458e-841a-ea30872d4ac2",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,12 +47,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.uva.nl",
-        "publicKey": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
-        "shortId": "940dbf5b",
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
         "fingerprint": "firefox"
       }
     }
@@ -123,11 +123,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.239.208.198",
+          "address": "194.24.161.177",
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
