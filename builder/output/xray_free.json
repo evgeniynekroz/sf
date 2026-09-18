@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.109.18",
+          "address": "nl5.freekeysh110.online",
           "port": 443,
           "users": [
             {
-              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.jokervpn.space",
-        "publicKey": "yBRh0iiSv_UG6R3iO4cgQlH3VDcpIvK91seyr7nZ6H0",
-        "shortId": "ff3fc228afdec470",
-        "fingerprint": "firefox"
+        "serverName": "nl5.freekeysh110.online",
+        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
+        "shortId": "04b9f0b2470fae16",
+        "fingerprint": "edge"
       }
     }
   },
@@ -95,7 +95,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -115,16 +115,16 @@
     }
   },
   {
-    "tag": "🇦🇹 Австрия — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "152.53.1.40",
-          "port": 443,
+          "address": "156.226.168.221",
+          "port": 35193,
           "users": [
             {
-              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+              "id": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,46 +136,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "at.quattro-tech.ru",
-        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-        "shortId": "43dcff53849b81e6",
-        "fingerprint": "chrome"
+        "serverName": "www.apple.com",
+        "publicKey": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+        "shortId": "e8daed2d",
+        "fingerprint": "firefox"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "88.216.57.128",
-          "port": 443,
-          "users": [
-            {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": ""
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -198,6 +167,35 @@
       "realitySettings": {
         "serverName": "tradingview.com",
         "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
+        "shortId": "",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇪🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.58.181.88",
+          "port": 8443,
+          "users": [
+            {
+              "id": "71470f80-ee36-47e0-8089-0987657ea5d4",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "tradingview.com",
+        "publicKey": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
         "shortId": "",
         "fingerprint": "firefox"
       }
