@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.58.181.88",
-          "port": 8443,
+          "address": "156.226.168.221",
+          "port": 35193,
           "users": [
             {
-              "id": "71470f80-ee36-47e0-8089-0987657ea5d4",
+              "id": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -104,13 +104,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tradingview.com",
-        "publicKey": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+        "shortId": "e8daed2d",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.63.246",
+          "address": "50.7.248.237",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -134,12 +134,10 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "pl-new-dedic.failspace.top",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -153,7 +151,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -202,48 +200,16 @@
     }
   },
   {
-    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "172.64.150.34",
-          "port": 443,
-          "users": [
-            {
-              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "powered-by-surena.configfarsi695fce27aa549.workers.dev",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/?ed",
-        "headers": {
-          "Host": "powered-by-surena.configfarsi695fce27aa549.workers.dev"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
-          "port": 443,
+          "address": "31.58.181.88",
+          "port": 8443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "41a463f0-8c2d-4090-8456-e3278cab8fa2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -255,9 +221,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
+        "serverName": "tradingview.com",
+        "publicKey": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -268,11 +234,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "92.118.112.73",
-          "port": 443,
+          "address": "31.58.50.200",
+          "port": 8443,
           "users": [
             {
-              "id": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
+              "id": "315adcfd-5eab-4041-b876-f9cc8e2aa6c2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -284,38 +250,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.jokervpn.space",
-        "publicKey": "5yVkeulmscPbzvGlFp0JPVjEA9hQmO_F8-7gFdf3lUg",
-        "shortId": "ff3f3666afdec470",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "tr.curry-load.rutube.info",
-          "port": 443,
-          "users": [
-            {
-              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dw.b-cdn.net",
-        "publicKey": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-        "shortId": "08",
+        "serverName": "tradingview.com",
+        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -326,11 +263,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "kz.cdn-update.rutube.info",
-          "port": 8443,
+          "address": "kz3.zuoai.cf",
+          "port": 443,
           "users": [
             {
-              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+              "id": "b2593749-691c-428c-9481-14979cba3446",
               "encryption": "none"
             }
           ]
@@ -338,16 +275,14 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dest1.cdn-update.rutube.info",
-        "publicKey": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
-        "shortId": "08",
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "xi.tbv.ccwu.cc",
         "fingerprint": "chrome"
       },
-      "grpcSettings": {
-        "serviceName": "grpc"
+      "wsSettings": {
+        "path": "/"
       }
     }
   },
