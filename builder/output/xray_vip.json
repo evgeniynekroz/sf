@@ -149,7 +149,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.24.161.177",
+          "address": "91.239.208.198",
           "port": 443,
           "users": [
             {
@@ -292,6 +292,35 @@
     }
   },
   {
+    "tag": "🇹🇷 Турция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "tr.curry-load.rutube.info",
+          "port": 443,
+          "users": [
+            {
+              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dw.b-cdn.net",
+        "publicKey": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
+        "shortId": "08",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
     "tag": "🇰🇿 Казахстан — Premium",
     "protocol": "vless",
     "settings": {
@@ -328,11 +357,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "172.65.90.53",
+          "address": "104.16.106.213",
           "port": 8880,
           "users": [
             {
-              "id": "812b1aeb-c6f7-43cb-8d8b-981711fea21a",
+              "id": "7121d0be-40f5-4eda-b3d1-1556e71ea4fa",
               "encryption": "none"
             }
           ]
@@ -345,22 +374,51 @@
       "wsSettings": {
         "path": "/pyip=ProxyIP.JP.CMLiussss.net",
         "headers": {
-          "Host": "dark-cake-4743.198-46c.workers.dev"
+          "Host": "shrill-recipe-0c1d.404-a1d.workers.dev"
         }
       }
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
+    "tag": "🇫🇷 Франция — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "it-api.cdn-ozon.icu",
-          "port": 2443,
+          "address": "217.60.37.56",
+          "port": 443,
           "users": [
             {
-              "id": "2cbf425a-aed6-4c8f-937f-6265ed13a7fa",
+              "id": "8f67e374-53d9-43bb-85c9-a459a959cd1b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fr-1.lunoa.ru",
+        "publicKey": "l8vhMtOhGEsduzrsXfFg2tq3eiKVBHRQLIm0VtbUJDs",
+        "shortId": "277201d753225a01",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "88.216.57.128",
+          "port": 443,
+          "users": [
+            {
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
               "encryption": "none"
             }
           ]
@@ -371,74 +429,13 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "it-api.cdn-ozon.icu",
-        "publicKey": "3J5mYA5NziIVJi77fRsx9dZPYWzLkvaIz-cCdZQvhn8",
-        "shortId": "ab90218fde328913",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc-service"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇷 Франция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "cf-vless-4cf55824.aimall.fr",
-          "port": 443,
-          "users": [
-            {
-              "id": "ea50b1a3-3a98-4c5e-a150-48ada40d68d7",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "cf-vless-4cf55824.aimall.fr",
+        "serverName": "usa.superbuba.top",
+        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+        "shortId": "9c2378562188c3cb",
         "fingerprint": "chrome"
       },
-      "wsSettings": {
-        "path": "/",
-        "headers": {
-          "Host": "cf-vless-4cf55824.aimall.fr"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "45.91.138.179",
-          "port": 443,
-          "users": [
-            {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
-        "fingerprint": "firefox"
+      "grpcSettings": {
+        "serviceName": ""
       }
     }
   }
