@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "82.118.19.153",
+      "server": "144.31.168.95",
       "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "eu-central.cendora.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
         }
       }
     },
@@ -67,20 +67,42 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "server": "fi-hel-3.blook.network",
+      "server_port": 443,
+      "uuid": "cd3c6f92-6b01-4e52-a85b-73f5ee6f0df8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "fi-hel-3.blook.network",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "public_key": "XV4Of6VCSeRWn9-3fIYIdy09wM8a1oSVGOhZ5_MsHyc",
+          "short_id": "420e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша — FREE",
+      "server": "144.31.131.38",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "prod.pl-node-01.security-sbrf.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
         }
       }
     },
@@ -89,7 +111,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+      "uuid": "6fb79584-30b8-4888-b358-98f7ef6b8697",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -107,28 +129,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 Эстония — FREE",
-      "server": "156.226.168.221",
-      "server_port": 35193,
-      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "tag": "🇬🇧 Резерв #1 — FREE",
+      "server": "31.76.39.141",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "gb.superbuba.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-          "short_id": "e8daed2d"
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
+      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "31.58.50.200",
       "server_port": 8443,
       "uuid": "315adcfd-5eab-4041-b876-f9cc8e2aa6c2",
@@ -148,27 +170,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 Резерв #2 — FREE",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "71470f80-ee36-47e0-8089-0987657ea5d4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "direct",
       "tag": "direct"
     },
@@ -183,10 +184,10 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
+        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇪🇪 Эстония — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇪🇪 Резерв #2 — FREE"
+        "🇬🇧 Резерв #1 — FREE",
+        "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -200,10 +201,10 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
+        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇪🇪 Эстония — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇪🇪 Резерв #2 — FREE",
+        "🇬🇧 Резерв #1 — FREE",
+        "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
