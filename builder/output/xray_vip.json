@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.168.95",
+          "address": "170.101.109.37",
           "port": 443,
           "users": [
             {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+              "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+        "shortId": "ab88d256",
         "fingerprint": "random"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.92.78",
+          "address": "nl5.freekeysh110.online",
           "port": 443,
           "users": [
             {
-              "id": "5934cc4f-c17b-41c0-9280-c75eb222f4b7",
+              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "vu.nl",
-        "publicKey": "BTCZ0hMhV10H818mbm54EQdU0s3qQXMtY4Hl67dFA18",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "nl5.freekeysh110.online",
+        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
+        "shortId": "04b9f0b2470fae16",
+        "fingerprint": "edge"
       }
     }
   },
@@ -91,40 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.242.168.125",
-          "port": 390,
+          "address": "156.226.168.221",
+          "port": 35193,
           "users": [
             {
-              "id": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "bowandbead.com",
-        "publicKey": "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8",
-        "shortId": "b545fe8c5e22f92d",
-        "fingerprint": "ios"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "144.31.131.38",
-          "port": 443,
-          "users": [
-            {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +107,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "prod.pl-node-01.security-sbrf.ru",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "safari"
+        "serverName": "www.apple.com",
+        "publicKey": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+        "shortId": "e8daed2d",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 ⚡️ Польша — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "94.183.157.8",
+          "port": 443,
+          "users": [
+            {
+              "id": "1b487f79-6b87-4971-863c-526bd31abd44",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "poland2.serverslocal.ru",
+        "publicKey": "dkaIImQrQ1ZVQGNfyrNZbtkE-8hxp_u8AH99XDFgfHw",
+        "shortId": "75c55b707d25ae8d",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -211,7 +211,7 @@
           "port": 443,
           "users": [
             {
-              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -265,11 +265,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "core-data.gorekmas.online",
+          "address": "81.177.215.94",
           "port": 443,
           "users": [
             {
-              "id": "4f8a1d19-4d21-47f5-816e-a8f475fbd3f7",
+              "id": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -281,10 +281,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "core-data.gorekmas.online",
-        "publicKey": "CRh0VOb2qvDm4H89m6qiHg_9M6nnJ0f_h0kpPitA6hw",
-        "shortId": "266337e69bb1f189",
-        "fingerprint": "random"
+        "serverName": "tr.plus-hit.ru",
+        "publicKey": "d3yQvdpwFHpLkl0ZbTnMH4uihCTKn4CAHy0W6so0VTI",
+        "shortId": "7c8e3d4a9b1f26d3",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -294,11 +294,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.dzen-kz-1.com",
-          "port": 8443,
+          "address": "31.43.179.36",
+          "port": 443,
           "users": [
             {
-              "id": "bcb5a897-8cc4-4e21-ad96-c82fb3a9d72a",
+              "id": "b2593749-691c-428c-9481-14979cba3446",
               "encryption": "none"
             }
           ]
@@ -306,13 +306,17 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "2.dzen-kz-1.com",
-        "publicKey": "gNIk9M0_JAgXNkEoWxPFBkZYyLBSbXEyRgpTg63W8xE",
-        "shortId": "19aa25f681923dc8",
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "xi.tbv.ccwu.cc",
         "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
       }
     }
   }
