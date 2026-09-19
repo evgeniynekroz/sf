@@ -34,40 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.92.78",
+          "address": "nl5.freekeysh110.online",
           "port": 443,
           "users": [
             {
-              "id": "5934cc4f-c17b-41c0-9280-c75eb222f4b7",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "vu.nl",
-        "publicKey": "BTCZ0hMhV10H818mbm54EQdU0s3qQXMtY4Hl67dFA18",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "31.77.199.182",
-          "port": 443,
-          "users": [
-            {
-              "id": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +50,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi2.yservice.help",
-        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
-        "shortId": "abcd1234",
+        "serverName": "nl5.freekeysh110.online",
+        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
+        "shortId": "04b9f0b2470fae16",
+        "fingerprint": "edge"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.76.80.238",
+          "port": 443,
+          "users": [
+            {
+              "id": "9bbd487f-8f84-4ad7-b897-681c3f7d95dc",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "jujujuj.mervi.icu",
+        "publicKey": "j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w",
+        "shortId": "573703f224b75e8c",
         "fingerprint": "chrome"
       }
     }
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "156.226.168.221",
-          "port": 35193,
+          "address": "46.22.216.32",
+          "port": 443,
           "users": [
             {
-              "id": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-        "shortId": "e8daed2d",
+        "serverName": "mail.protech-plus.ee",
+        "publicKey": "NiCJO84l7l--GJ10ggvb6HcOS8qLR30pWTphwvWozhg",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -125,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
+              "id": "7957928d-bcfb-45bb-8e78-a072ef578ae4",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -154,7 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -179,11 +179,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "152.53.1.40",
+          "address": "67.159.17.62",
           "port": 443,
           "users": [
             {
-              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+              "id": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "at.quattro-tech.ru",
-        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-        "shortId": "43dcff53849b81e6",
+        "serverName": "filesconvert.org",
+        "publicKey": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
+        "shortId": "10debbdf94767541",
         "fingerprint": "chrome"
       }
     }
@@ -266,11 +266,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "81.177.215.94",
+          "address": "31.56.187.240",
           "port": 443,
           "users": [
             {
-              "id": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
+              "id": "377c75b9-e452-46c5-9d10-6c242a283e98",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -282,9 +282,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tr.plus-hit.ru",
-        "publicKey": "d3yQvdpwFHpLkl0ZbTnMH4uihCTKn4CAHy0W6so0VTI",
-        "shortId": "7c8e3d4a9b1f26d3",
+        "serverName": "tr.i-love-russia.online",
+        "publicKey": "Tm50a8xPW6cazNhgmTSHNbVfqaplvNSx0BQoJCGe3jU",
+        "shortId": "4aa753c327e7fd94",
         "fingerprint": "firefox"
       }
     }
@@ -347,6 +347,35 @@
         "headers": {
           "Host": "jp3.yohototo.top"
         }
+      }
+    }
+  },
+  {
+    "tag": "🇫🇷 Франция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "fr.node.katahost.org",
+          "port": 2000,
+          "users": [
+            {
+              "id": "cc3dfc2d-dead-41be-97bf-410a40891f38",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "zalupa.gayvibe.dpdns.org",
+        "fingerprint": "edge"
+      },
+      "wsSettings": {
+        "path": "/"
       }
     }
   },
