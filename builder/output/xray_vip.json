@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "170.101.109.37",
+          "address": "144.31.168.95",
           "port": 443,
           "users": [
             {
-              "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
+              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
-        "shortId": "ab88d256",
+        "serverName": "eu-central.cendora.ru",
+        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+        "shortId": "00bca5982f82d083",
         "fingerprint": "random"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,7 +92,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "72.56.41.33",
+          "address": "72.56.40.97",
           "port": 40443,
           "users": [
             {
@@ -111,7 +111,7 @@
         "serverName": "deepl.com",
         "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
         "shortId": "ee33",
-        "fingerprint": "edge"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -125,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "7957928d-bcfb-45bb-8e78-a072ef578ae4",
+              "id": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -150,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.24.161.177",
+          "address": "91.239.208.198",
           "port": 443,
           "users": [
             {
@@ -212,7 +212,7 @@
           "port": 443,
           "users": [
             {
-              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -237,11 +237,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "us1.grg.digital",
+          "address": "us05.shifor01.life",
           "port": 443,
           "users": [
             {
-              "id": "3fc9dced-907f-45d9-a4a1-b8647bd98fdc",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -253,10 +253,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us1.grg.digital",
-        "publicKey": "MlXQqlki7M9aZF48YEul5pcRi7vq00UezcwtddeL-08",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "us05.shifor01.life",
+        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+        "shortId": "169fc2df88419465",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -295,11 +295,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "62.233.39.9",
+          "address": "31.43.179.109",
           "port": 443,
           "users": [
             {
-              "id": "b2141c97-76af-ff6f-839b-70a53e23aad9",
+              "id": "b2593749-691c-428c-9481-14979cba3446",
               "encryption": "none"
             }
           ]
@@ -307,13 +307,14 @@
       ]
     },
     "streamSettings": {
-      "network": "xhttp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dl.dell.com",
-        "publicKey": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
-        "shortId": "",
-        "fingerprint": "firefox"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "xi.tbv.ccwu.cc",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/proxyip=us.xiabibi.cf"
       }
     }
   },
@@ -346,18 +347,17 @@
     }
   },
   {
-    "tag": "🇳🇴 Норвегия — Premium",
+    "tag": "🇮🇹 Италия — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.5.121",
+          "address": "34.154.47.33",
           "port": 443,
           "users": [
             {
-              "id": "988be430-813f-4174-b5ed-86fcebd7cda0",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "4d4bfd21-88fc-4de7-87bd-c2ddaedc4078",
+              "encryption": "none"
             }
           ]
         }
@@ -367,10 +367,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dilonorway.purpl.su",
-        "publicKey": "FW6_M3_eKqREWL-NAm_zJoUyBWbMszFEwKd1LZAedxs",
-        "shortId": "0a97965fd5412c",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "jGfJxbIyf2aLRFQyT9NsJBu1CzJmrAa2sF19GNw46z8",
+        "shortId": "29615707650b941d",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -380,11 +380,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.239.208.198",
+          "address": "194.24.161.177",
           "port": 443,
           "users": [
             {
-              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
