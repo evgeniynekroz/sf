@@ -46,41 +46,42 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "nl5.freekeysh110.online",
+      "server": "88.216.92.78",
       "server_port": 443,
-      "uuid": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
+      "uuid": "5934cc4f-c17b-41c0-9280-c75eb222f4b7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl5.freekeysh110.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
-          "short_id": "04b9f0b2470fae16"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 Финляндия — FREE",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "vu.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "public_key": "BTCZ0hMhV10H818mbm54EQdU0s3qQXMtY4Hl67dFA18",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — FREE",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
         }
       }
     },
@@ -89,7 +90,7 @@
       "tag": "🇵🇱 Польша — FREE",
       "server": "94.183.157.8",
       "server_port": 443,
-      "uuid": "1b487f79-6b87-4971-863c-526bd31abd44",
+      "uuid": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -110,7 +111,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -129,12 +130,12 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "82.38.64.229",
+      "server": "46.229.243.153",
       "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
+        "server_name": "grape-turbo-fr.roxa.org",
         "insecure": false
       }
     },
@@ -161,22 +162,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 Резерв #2 — FREE",
-      "server": "156.226.168.221",
-      "server_port": 35193,
-      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "45.91.138.179",
+      "server_port": 443,
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "us05.shifor01.life",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-          "short_id": "e8daed2d"
+          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+          "short_id": "169fc2df88419465"
         }
       }
     },
@@ -199,7 +200,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇪🇪 Резерв #2 — FREE"
+        "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -217,7 +218,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇪🇪 Резерв #2 — FREE",
+        "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"

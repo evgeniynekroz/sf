@@ -58,41 +58,42 @@
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "nl5.freekeysh110.online",
+      "server": "88.216.92.78",
       "server_port": 443,
-      "uuid": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
+      "uuid": "5934cc4f-c17b-41c0-9280-c75eb222f4b7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl5.freekeysh110.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
-          "short_id": "04b9f0b2470fae16"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "vu.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "public_key": "BTCZ0hMhV10H818mbm54EQdU0s3qQXMtY4Hl67dFA18",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
         }
       }
     },
@@ -122,7 +123,7 @@
       "tag": "🇵🇱 ⚡️ Польша — Premium",
       "server": "94.183.157.8",
       "server_port": 443,
-      "uuid": "1b487f79-6b87-4971-863c-526bd31abd44",
+      "uuid": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -143,7 +144,7 @@
       "tag": "🇸🇪 ⚡️ Швеция — Premium",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -207,21 +208,21 @@
     {
       "type": "vless",
       "tag": "🇬🇧 Великобритания — Premium",
-      "server": "89.40.70.124",
+      "server": "31.76.39.141",
       "server_port": 443,
-      "uuid": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.co.uk",
+        "server_name": "gb.superbuba.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-          "short_id": "5b33d3e71a14f4"
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
         }
       }
     },
@@ -270,7 +271,7 @@
     {
       "type": "vless",
       "tag": "🇰🇿 Казахстан — Premium",
-      "server": "31.43.179.36",
+      "server": "31.43.179.109",
       "server_port": 443,
       "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
@@ -280,8 +281,24 @@
       "transport": {
         "type": "ws",
         "path": "/proxyip=us.xiabibi.cf",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 Япония — Premium",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "xi.tbv.ccwu.cc"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -335,19 +352,43 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 Резерв #5 — Premium",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tag": "🇳🇱 ⚡️ Резерв #5 — Premium",
+      "server": "72.56.92.120",
+      "server_port": 443,
+      "password": "CnVfXXvMzh",
       "tls": {
         "enabled": true,
-        "server_name": "152-67-200-82.liao.kdns.fr",
+        "server_name": "hys13.wba-pn.ru",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 LTE — Premium",
+      "server": "46.229.243.153",
+      "server_port": 8443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-turbo-fr.roxa.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 LTE #2 — Premium",
+      "server": "95.85.252.47",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 LTE #3 — Premium",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -355,6 +396,27 @@
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "45.91.138.179",
+      "server_port": 443,
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us05.shifor01.life",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+          "short_id": "169fc2df88419465"
+        }
       }
     },
     {
@@ -383,12 +445,16 @@
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
+        "🇯🇵 Япония — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
-        "🇫🇷 Резерв #5 — Premium",
-        "🇷🇺 LTE — Premium"
+        "🇳🇱 ⚡️ Резерв #5 — Premium",
+        "🇷🇺 LTE — Premium",
+        "🇷🇺 LTE #2 — Premium",
+        "🇷🇺 LTE #3 — Premium",
+        "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -413,12 +479,16 @@
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
+        "🇯🇵 Япония — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
         "🇺🇸 Резерв #4 — Premium",
-        "🇫🇷 Резерв #5 — Premium",
+        "🇳🇱 ⚡️ Резерв #5 — Premium",
         "🇷🇺 LTE — Premium",
+        "🇷🇺 LTE #2 — Premium",
+        "🇷🇺 LTE #3 — Premium",
+        "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
