@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "de1.edge-9d7c.com",
+          "address": "136.148.71.4",
           "port": 443,
           "users": [
             {
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de1.edge-9d7c.com",
+        "serverName": "de2.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "free-amsterdam-node-1.cloudwidecdn.com",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-        "shortId": "1d86d17709852910",
-        "fingerprint": "chrome"
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.80.238",
+          "address": "31.77.199.182",
           "port": 443,
           "users": [
             {
-              "id": "9bbd487f-8f84-4ad7-b897-681c3f7d95dc",
+              "id": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "jujujuj.mervi.icu",
-        "publicKey": "j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w",
-        "shortId": "573703f224b75e8c",
-        "fingerprint": "chrome"
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.242.168.125",
-          "port": 390,
+          "address": "72.56.40.97",
+          "port": 40443,
           "users": [
             {
-              "id": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
+              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "bowandbead.com",
-        "publicKey": "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8",
-        "shortId": "b545fe8c5e22f92d",
-        "fingerprint": "ios"
+        "serverName": "deepl.com",
+        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+        "shortId": "ee33",
+        "fingerprint": "qq"
       }
     }
   },
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.63.246",
+          "address": "94.183.157.8",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
+        "serverName": "poland2.serverslocal.ru",
+        "publicKey": "dkaIImQrQ1ZVQGNfyrNZbtkE-8hxp_u8AH99XDFgfHw",
+        "shortId": "75c55b707d25ae8d",
         "fingerprint": "firefox"
       }
     }
@@ -154,7 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -208,11 +208,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
+          "address": "89.40.70.124",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -221,12 +221,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
       }
     }
@@ -266,11 +266,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "tr.plus-hit.ru",
+          "address": "31.56.187.240",
           "port": 443,
           "users": [
             {
-              "id": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
+              "id": "11368cc1-3f27-4495-9619-6f02641a64cb",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -282,10 +282,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tr.plus-hit.ru",
-        "publicKey": "d3yQvdpwFHpLkl0ZbTnMH4uihCTKn4CAHy0W6so0VTI",
-        "shortId": "7c8e3d4a9b1f26d3",
-        "fingerprint": "random"
+        "serverName": "tr.i-love-russia.online",
+        "publicKey": "Tm50a8xPW6cazNhgmTSHNbVfqaplvNSx0BQoJCGe3jU",
+        "shortId": "4aa753c327e7fd94",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -295,42 +295,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "kz.cdn-update.rutube.info",
-          "port": 8443,
+          "address": "kz3.zuoai.cf",
+          "port": 443,
           "users": [
             {
-              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dest1.cdn-update.rutube.info",
-        "publicKey": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
-        "shortId": "08",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "172.64.88.168",
-          "port": 8880,
-          "users": [
-            {
-              "id": "6f876b28-1b3e-4088-85c0-d299e56bfccd",
+              "id": "b2593749-691c-428c-9481-14979cba3446",
               "encryption": "none"
             }
           ]
@@ -339,12 +308,13 @@
     },
     "streamSettings": {
       "network": "ws",
-      "security": "none",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "xi.tbv.ccwu.cc",
+        "fingerprint": "chrome"
+      },
       "wsSettings": {
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "throbbing-haze-fbde.388-6c4.workers.dev"
-        }
+        "path": "/"
       }
     }
   },
@@ -376,35 +346,6 @@
       },
       "grpcSettings": {
         "serviceName": "grpc_common1"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "45.91.138.179",
-          "port": 443,
-          "users": [
-            {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
-        "fingerprint": "firefox"
       }
     }
   }
