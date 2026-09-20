@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "170.101.109.37",
+          "address": "179.254.115.49",
           "port": 443,
           "users": [
             {
-              "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
+              "id": "2ac46dc3-0593-4898-bd52-42a7d5a8f2e2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
-        "shortId": "ab88d256",
-        "fingerprint": "random"
+        "serverName": "de1-web.mysoyka.online",
+        "publicKey": "5USjl6vRG3X4bxVWL9oZ7eUpyr-N3kezxnUi14WOrlY",
+        "shortId": "3d475d331e49eee8",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "nl5.freekeysh110.online",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl5.freekeysh110.online",
-        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
-        "shortId": "04b9f0b2470fae16",
-        "fingerprint": "edge"
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "46.22.216.32",
-          "port": 443,
+          "address": "72.56.40.97",
+          "port": 40443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "mail.protech-plus.ee",
-        "publicKey": "NiCJO84l7l--GJ10ggvb6HcOS8qLR30pWTphwvWozhg",
-        "shortId": "",
+        "serverName": "deepl.com",
+        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+        "shortId": "ee33",
         "fingerprint": "firefox"
       }
     }
@@ -125,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "7957928d-bcfb-45bb-8e78-a072ef578ae4",
+              "id": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -154,7 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -179,11 +179,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "67.159.17.62",
+          "address": "152.53.1.40",
           "port": 443,
           "users": [
             {
-              "id": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,10 +195,42 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "filesconvert.org",
-        "publicKey": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
-        "shortId": "10debbdf94767541",
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.149.65",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
+        }
       }
     }
   },
@@ -266,11 +298,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.56.187.240",
+          "address": "81.177.215.94",
           "port": 443,
           "users": [
             {
-              "id": "377c75b9-e452-46c5-9d10-6c242a283e98",
+              "id": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -282,9 +314,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tr.i-love-russia.online",
-        "publicKey": "Tm50a8xPW6cazNhgmTSHNbVfqaplvNSx0BQoJCGe3jU",
-        "shortId": "4aa753c327e7fd94",
+        "serverName": "tr.plus-hit.ru",
+        "publicKey": "d3yQvdpwFHpLkl0ZbTnMH4uihCTKn4CAHy0W6so0VTI",
+        "shortId": "7c8e3d4a9b1f26d3",
         "fingerprint": "firefox"
       }
     }
@@ -295,11 +327,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.43.179.109",
-          "port": 443,
+          "address": "kz.cdn-update.rutube.info",
+          "port": 8443,
           "users": [
             {
-              "id": "b2593749-691c-428c-9481-14979cba3446",
+              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
               "encryption": "none"
             }
           ]
@@ -307,14 +339,16 @@
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "xi.tbv.ccwu.cc",
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dest1.cdn-update.rutube.info",
+        "publicKey": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
+        "shortId": "08",
         "fingerprint": "chrome"
       },
-      "wsSettings": {
-        "path": "/proxyip=us.xiabibi.cf"
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   },
@@ -324,11 +358,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "188.114.97.6",
+          "address": "www.visa.co.jp",
           "port": 443,
           "users": [
             {
-              "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+              "id": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
               "encryption": "none"
             }
           ]
@@ -339,14 +373,11 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "jp3.yohototo.top",
-        "fingerprint": "unsafe"
+        "serverName": "misaka.cndyw.ggff.net",
+        "fingerprint": "random"
       },
       "wsSettings": {
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
+        "path": "/"
       }
     }
   },
@@ -356,11 +387,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "fr.node.katahost.org",
-          "port": 2000,
+          "address": "172.67.222.62",
+          "port": 443,
           "users": [
             {
-              "id": "cc3dfc2d-dead-41be-97bf-410a40891f38",
+              "id": "ea50b1a3-3a98-4c5e-a150-48ada40d68d7",
               "encryption": "none"
             }
           ]
@@ -371,8 +402,8 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "zalupa.gayvibe.dpdns.org",
-        "fingerprint": "edge"
+        "serverName": "cf-vless-4cf55824.aimall.fr",
+        "fingerprint": "chrome"
       },
       "wsSettings": {
         "path": "/"
