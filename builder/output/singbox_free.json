@@ -25,16 +25,16 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "136.148.71.4",
+      "server": "45.141.131.16",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de2.edge-9d7c.com",
+        "server_name": "de5.edge-9d7c.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "130.78.191.25",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
       "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl07.shifor01.life",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-          "short_id": "3ac25eef1431b799"
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
         }
       }
     },
@@ -90,7 +90,7 @@
       "tag": "🇵🇱 Польша — FREE",
       "server": "94.183.157.8",
       "server_port": 443,
-      "uuid": "aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d",
+      "uuid": "1b487f79-6b87-4971-863c-526bd31abd44",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -111,7 +111,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -130,12 +130,12 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "82.38.64.229",
+      "server": "46.229.243.153",
       "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
+        "server_name": "grape-turbo-fr.roxa.org",
         "insecure": false
       }
     },
@@ -162,22 +162,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 Резерв #2 — FREE",
-      "server": "89.40.70.124",
+      "tag": "🇸🇪 Резерв #2 — FREE",
+      "server": "fr-node.usel.pro",
       "server_port": 443,
-      "uuid": "f0612e46-3d37-4766-904e-7baa3e636c24",
+      "uuid": "6fb79584-30b8-4888-b358-98f7ef6b8697",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.co.uk",
+        "server_name": "evagonc.inklysoft.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-          "short_id": "5b33d3e71a14f4"
+          "public_key": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
+          "short_id": ""
         }
       }
     },
@@ -200,7 +200,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇬🇧 Резерв #2 — FREE"
+        "🇸🇪 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -218,7 +218,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇬🇧 Резерв #2 — FREE",
+        "🇸🇪 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"

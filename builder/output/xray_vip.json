@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.148.71.4",
+          "address": "45.141.131.16",
           "port": 443,
           "users": [
             {
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.edge-9d7c.com",
+        "serverName": "de5.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -125,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d",
+              "id": "1b487f79-6b87-4971-863c-526bd31abd44",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -154,7 +154,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -179,11 +179,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "67.159.17.62",
+          "address": "152.53.1.40",
           "port": 443,
           "users": [
             {
-              "id": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "filesconvert.org",
-        "publicKey": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
-        "shortId": "10debbdf94767541",
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
         "fingerprint": "chrome"
       }
     }
@@ -212,7 +212,7 @@
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -346,6 +346,35 @@
       },
       "grpcSettings": {
         "serviceName": "grpc_common1"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "fr-node.usel.pro",
+          "port": 443,
+          "users": [
+            {
+              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "evagonc.inklysoft.xyz",
+        "publicKey": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   }
