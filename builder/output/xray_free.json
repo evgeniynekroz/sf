@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.148.71.9",
+          "address": "45.141.131.16",
           "port": 443,
           "users": [
             {
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de3.edge-9d7c.com",
+        "serverName": "de5.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,28 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.141.33.2",
+          "address": "5.253.59.156",
           "port": 443,
           "users": [
             {
-              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
-              "encryption": "none"
+              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.node-edge09.com",
-        "publicKey": "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw",
-        "shortId": "8319913f2e5f5711",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
+        "serverName": "nl5.freekeysh110.online",
+        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
+        "shortId": "04b9f0b2470fae16",
+        "fingerprint": "edge"
       }
     }
   },
@@ -65,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "185.79.138.71",
+          "port": 448,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "id": "0b0915d7-6800-4580-a44b-77d84f105e6a",
               "encryption": "none"
             }
           ]
@@ -80,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "random"
+        "serverName": "www.samsung.com",
+        "publicKey": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+        "shortId": "cd21e552537c7c0b",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -93,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.27.244.166",
+          "address": "94.183.157.8",
           "port": 443,
           "users": [
             {
-              "id": "377c75b9-e452-46c5-9d10-6c242a283e98",
+              "id": "aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -109,24 +107,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.i-love-russia.online",
-        "publicKey": "Tm50a8xPW6cazNhgmTSHNbVfqaplvNSx0BQoJCGe3jU",
-        "shortId": "4aa753c327e7fd94",
+        "serverName": "poland2.serverslocal.ru",
+        "publicKey": "dkaIImQrQ1ZVQGNfyrNZbtkE-8hxp_u8AH99XDFgfHw",
+        "shortId": "75c55b707d25ae8d",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇦🇹 Австрия — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "fr-node.usel.pro",
+          "address": "152.53.1.40",
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -138,15 +136,44 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "evagonc.inklysoft.xyz",
-        "publicKey": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "138.124.60.146",
+          "port": 443,
+          "users": [
+            {
+              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "usa.oblaco.bet",
+        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
         "shortId": "",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -171,37 +198,6 @@
         "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
         "shortId": "",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇱 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "nl.node-edge09.com",
-          "port": 443,
-          "users": [
-            {
-              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl.node-edge09.com",
-        "publicKey": "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw",
-        "shortId": "8319913f2e5f5711",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
       }
     }
   }
