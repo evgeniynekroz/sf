@@ -25,16 +25,16 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "136.148.71.9",
+      "server": "201.10.94.5",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de3.edge-9d7c.com",
+        "server_name": "de1.edge-9d7c.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -113,7 +113,7 @@
       "tag": "🇸🇪 Швеция — FREE",
       "server": "91.239.208.198",
       "server_port": 443,
-      "uuid": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+      "uuid": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -132,12 +132,12 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "46.229.243.153",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "server": "95.133.242.213",
+      "server_port": 30443,
+      "password": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
       "tls": {
         "enabled": true,
-        "server_name": "grape-turbo-fr.roxa.org",
+        "server_name": "filesconvert.org",
         "insecure": false
       }
     },

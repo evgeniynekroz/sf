@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.148.71.9",
+          "address": "201.10.94.5",
           "port": 443,
           "users": [
             {
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de3.edge-9d7c.com",
+        "serverName": "de1.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -155,7 +155,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -204,12 +204,44 @@
     }
   },
   {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "chatgpt.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.user68f797c2f3e1b.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.user68f797c2f3e1b.workers.dev"
+        }
+      }
+    }
+  },
+  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.153",
+          "address": "31.76.39.141",
           "port": 443,
           "users": [
             {
@@ -271,7 +303,7 @@
           "port": 443,
           "users": [
             {
-              "id": "377c75b9-e452-46c5-9d10-6c242a283e98",
+              "id": "11368cc1-3f27-4495-9619-6f02641a64cb",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -326,10 +358,10 @@
       "vnext": [
         {
           "address": "188.114.97.6",
-          "port": 443,
+          "port": 8080,
           "users": [
             {
-              "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+              "id": "4212034d-c18b-4060-b218-4f8372e5473a",
               "encryption": "none"
             }
           ]
@@ -338,15 +370,11 @@
     },
     "streamSettings": {
       "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "jp3.yohototo.top",
-        "fingerprint": "unsafe"
-      },
+      "security": "none",
       "wsSettings": {
-        "path": "/tyxyws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "summer-hill-7f65.275-521.workers.dev"
         }
       }
     }
@@ -379,6 +407,35 @@
       },
       "grpcSettings": {
         "serviceName": "grpc_common1"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇷 Франция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "www.5h.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "4c0b7280-76bb-495c-9c8b-f05712ebf805",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "youxuanku.kdns.fr",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/"
       }
     }
   },

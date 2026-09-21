@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.148.71.9",
+          "address": "201.10.94.5",
           "port": 443,
           "users": [
             {
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de3.edge-9d7c.com",
+        "serverName": "de1.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -126,7 +126,7 @@
           "port": 443,
           "users": [
             {
-              "id": "ee7dd2fe-0a16-468a-bd45-55c221b2a8e2",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
