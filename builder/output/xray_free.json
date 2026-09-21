@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.10.94.5",
+          "address": "136.148.71.9",
           "port": 443,
           "users": [
             {
@@ -21,7 +21,7 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de1.edge-9d7c.com",
+        "serverName": "de3.edge-9d7c.com",
         "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
         "shortId": "9d84de9d9f7b85e9",
         "fingerprint": "chrome"
@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "nl.node-edge09.com",
+          "address": "185.141.33.2",
           "port": 443,
           "users": [
             {
@@ -52,7 +52,7 @@
         "serverName": "nl.node-edge09.com",
         "publicKey": "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw",
         "shortId": "8319913f2e5f5711",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       },
       "grpcSettings": {
         "serviceName": "grpc"
@@ -97,7 +97,7 @@
           "port": 443,
           "users": [
             {
-              "id": "11368cc1-3f27-4495-9619-6f02641a64cb",
+              "id": "377c75b9-e452-46c5-9d10-6c242a283e98",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -122,7 +122,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.239.208.198",
+          "address": "fr-node.usel.pro",
           "port": 443,
           "users": [
             {
@@ -151,11 +151,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "138.124.60.146",
-          "port": 443,
+          "address": "31.58.50.200",
+          "port": 8443,
           "users": [
             {
-              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+              "id": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -167,39 +167,41 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.oblaco.bet",
-        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+        "serverName": "tradingview.com",
+        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
         "shortId": "",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇳🇱 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "45.91.138.179",
+          "address": "nl.node-edge09.com",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
-        "fingerprint": "firefox"
+        "serverName": "nl.node-edge09.com",
+        "publicKey": "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw",
+        "shortId": "8319913f2e5f5711",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   }
