@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "103.109.234.246",
+          "address": "144.31.168.95",
           "port": 443,
           "users": [
             {
-              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de10.delivery-4f1c.com",
-        "publicKey": "z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs",
-        "shortId": "59eee550a1014198",
+        "serverName": "eu-central.cendora.ru",
+        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+        "shortId": "00bca5982f82d083",
         "fingerprint": "chrome"
       }
     }
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "fr-node.usel.pro",
+          "address": "91.239.208.198",
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }

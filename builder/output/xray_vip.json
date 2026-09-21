@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "103.109.234.246",
+          "address": "144.31.168.95",
           "port": 443,
           "users": [
             {
-              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de10.delivery-4f1c.com",
-        "publicKey": "z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs",
-        "shortId": "59eee550a1014198",
+        "serverName": "eu-central.cendora.ru",
+        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+        "shortId": "00bca5982f82d083",
         "fingerprint": "chrome"
       }
     }
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "72.56.41.33",
-          "port": 40443,
+          "address": "156.226.168.221",
+          "port": 35193,
           "users": [
             {
-              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
+              "id": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
-        "shortId": "ee33",
+        "serverName": "www.apple.com",
+        "publicKey": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+        "shortId": "e8daed2d",
         "fingerprint": "firefox"
       }
     }
@@ -150,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "fr-node.usel.pro",
+          "address": "91.239.208.198",
           "port": 443,
           "users": [
             {
-              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
+              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -208,11 +208,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "3.9.135.156",
-          "port": 51847,
+          "address": "31.76.39.141",
+          "port": 443,
           "users": [
             {
-              "id": "391a01e9-b664-407b-9158-610fab3f5920",
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -224,10 +224,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.tesla.com",
-        "publicKey": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-        "shortId": "0eec442e7b34d2f2",
-        "fingerprint": "chrome"
+        "serverName": "gb.superbuba.top",
+        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+        "shortId": "4fa44664f6a566d3",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -266,11 +266,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "tr.curry-load.rutube.info",
+          "address": "31.210.52.149",
           "port": 443,
           "users": [
             {
-              "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+              "id": "206a4c50-2eb6-4b7f-b7a5-15c6ab7b3f4c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -282,10 +282,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dw.b-cdn.net",
-        "publicKey": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-        "shortId": "08",
-        "fingerprint": "firefox"
+        "serverName": "tr-ist-5.blook.network",
+        "publicKey": "HabIMykoF6jIw0rAgi_t3xm_hdWTLFKIpODwNJFjznE",
+        "shortId": "625a948aab4f",
+        "fingerprint": "safari"
       }
     }
   },
@@ -315,38 +315,6 @@
       },
       "wsSettings": {
         "path": "/proxyip=us.xiabibi.cf"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "162.159.254.3",
-          "port": 443,
-          "users": [
-            {
-              "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "jp3.yohototo.top",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
       }
     }
   },
@@ -407,32 +375,6 @@
         "publicKey": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
         "shortId": "dc927a04e8572c61",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #3 — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "78.135.77.91",
-          "port": 25020,
-          "users": [
-            {
-              "id": "nitro_teeam@",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/"
       }
     }
   },
