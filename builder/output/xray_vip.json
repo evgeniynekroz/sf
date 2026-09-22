@@ -5,26 +5,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.168.95",
-          "port": 443,
+          "address": "162.55.242.208",
+          "port": 2053,
           "users": [
             {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "659ffdfa-47d2-47d7-af40-5afe0907eead",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+        "shortId": "4d14da19b19cfc8c",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -149,26 +148,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.148.59.178",
-          "port": 443,
+          "address": "31.184.219.147",
+          "port": 9872,
           "users": [
             {
-              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-        "shortId": "e3daad69",
-        "fingerprint": "chrome"
+        "serverName": "dl.google.com",
+        "publicKey": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
+        "shortId": "",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-tunnel"
       }
     }
   },
@@ -268,52 +269,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.195.187",
+          "address": "138.124.60.146",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none"
+              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
+        "serverName": "usa.oblaco.bet",
+        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+        "shortId": "",
         "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": ""
-      }
-    }
-  },
-  {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "172.67.167.173",
-          "port": 8443,
-          "password": "U&RdRdcsoeB;VU9.IO"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "Te096C8unFj1zOKTL5peU24bS.878nAMn3I0xJ17no6p3.wORkErS.Dev",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/tr/oUxHeBhI2aoGvGd83MTCkEy2kmdXsBX0?ed=2560"
       }
     }
   },
@@ -352,26 +327,60 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.254.94.102",
-          "port": 44444,
+          "address": "104.21.8.201",
+          "port": 2096,
           "users": [
             {
-              "id": "ae2368cc-0fbe-4a06-a23e-fb73a4ac025a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "36788cf4-fcb4-49c5-a563-5f888849b1cc",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "cdn-jp.skyvora.app",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/vqyps6kf3",
+        "headers": {
+          "Host": "cdn-jp.skyvora.app"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇮🇹 Италия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "2.26.17.7",
+          "port": 50618,
+          "users": [
+            {
+              "id": "ce32a764-162b-41cf-9646-90cf64b0a6a8",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.iij.ad.jp",
-        "publicKey": "LZnkyLxA8cYoDAsmxGh0lOr1-auyZI5t_LSU-FNBkSs",
-        "shortId": "",
+        "serverName": "it.nvidia.com",
+        "publicKey": "HVh_yIHxdzLlSh6RUF6Nb4347KtkWK7EKtocAylDDUI",
+        "shortId": "4be9d05cc6ed5d",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc_common1"
       }
     }
   },
@@ -410,26 +419,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "138.124.60.146",
+          "address": "88.216.195.187",
           "port": 443,
           "users": [
             {
-              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.oblaco.bet",
-        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-        "shortId": "",
+        "serverName": "usa.superbuba.top",
+        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+        "shortId": "9c2378562188c3cb",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": ""
       }
     }
   }
