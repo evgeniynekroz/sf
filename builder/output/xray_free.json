@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.168.95",
+          "address": "201.10.94.5",
           "port": 443,
           "users": [
             {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+              "id": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
+        "serverName": "de1.edge-9d7c.com",
+        "publicKey": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
+        "shortId": "9d84de9d9f7b85e9",
         "fingerprint": "chrome"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.253.59.156",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl5.freekeysh110.online",
-        "publicKey": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
-        "shortId": "04b9f0b2470fae16",
-        "fingerprint": "edge"
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.131.38",
+          "address": "31.77.59.76",
           "port": 443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "add59713-f5c6-4442-83a3-6bc9281f5c90",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "prod.pl-node-01.security-sbrf.ru",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
+        "serverName": "pl.dexlen.cc",
+        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -125,7 +125,7 @@
           "port": 443,
           "users": [
             {
-              "id": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+              "id": "1e2c38d5-e0dc-472e-b31b-a1e15f083cc7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -145,36 +145,33 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "31.58.50.200",
-          "port": 8443,
+          "address": "78.135.77.91",
+          "port": 25020,
           "users": [
             {
-              "id": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "nitro_teeam@",
+              "alterId": 0,
+              "security": "auto"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tradingview.com",
-        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
-        "shortId": "",
-        "fingerprint": "chrome"
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -199,6 +196,35 @@
         "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
         "shortId": "",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.58.50.200",
+          "port": 8443,
+          "users": [
+            {
+              "id": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "tradingview.com",
+        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   }
