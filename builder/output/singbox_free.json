@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "2.27.249.144",
+      "server": "31.57.34.139",
       "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "uuid": "8d2196c0-2ec7-4867-8d66-d5d19bf8fb23",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl5.citysborka.ru",
+        "server_name": "nl2.bbobr.win",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "I5G9JXV21qrWwDPvOvegdnK_4KPfVHFtqME8fEt-BgI",
-          "short_id": ""
+          "public_key": "eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc",
+          "short_id": "fbe9c012125d90d2"
         }
       }
     },
@@ -87,48 +87,72 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "2.26.173.44",
+      "server": "144.31.131.38",
       "server_port": 443,
-      "uuid": "974f2c7e-a292-4207-8315-ef4151bdca41",
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "poland.travel",
+        "server_name": "prod.pl-node-01.security-sbrf.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
-          "short_id": ""
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "91.239.208.198",
+      "server": "193.148.59.178",
       "server_port": 443,
-      "uuid": "6fb79584-30b8-4888-b358-98f7ef6b8697",
+      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "evagonc.inklysoft.xyz",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fTxan5odgqq8enNPQ-MOOYOaQKIaG01NQ1Yvs0Zd-SE",
-          "short_id": ""
+          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+          "short_id": "e3daad69"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "88.216.195.187",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+          "short_id": "9c2378562188c3cb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "138.124.60.146",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -145,30 +169,6 @@
           "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
           "short_id": ""
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "usa.superbuba.top",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.superbuba.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-          "short_id": "9c2378562188c3cb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {
