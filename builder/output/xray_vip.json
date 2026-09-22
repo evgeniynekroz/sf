@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.78.191.25",
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
           "port": 443,
           "users": [
             {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl07.shifor01.life",
-        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
-        "shortId": "3ac25eef1431b799",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.76",
+          "address": "polandwarp.5gvpn.pw",
           "port": 443,
           "users": [
             {
-              "id": "add59713-f5c6-4442-83a3-6bc9281f5c90",
+              "id": "aebbd166-e3e3-42f1-a334-0f007b2b207a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.dexlen.cc",
-        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
-        "shortId": "",
+        "serverName": "polandwarp.5gvpn.pw",
+        "publicKey": "luj0MJhKBnHIDSAeJ9Np59kAghjAvyUJkP6tQ7wu0nk",
+        "shortId": "c6c206607d9fec1a",
         "fingerprint": "firefox"
       }
     }
@@ -269,11 +269,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "138.124.60.146",
-          "port": 443,
+          "address": "31.58.50.200",
+          "port": 8443,
           "users": [
             {
-              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+              "id": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -285,39 +285,34 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.oblaco.bet",
-        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+        "serverName": "tradingview.com",
+        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
   {
     "tag": "🇹🇷 Турция — Premium",
-    "protocol": "vless",
+    "protocol": "trojan",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "31.210.52.149",
+          "address": "104.21.56.225",
           "port": 443,
-          "users": [
-            {
-              "id": "206a4c50-2eb6-4b7f-b7a5-15c6ab7b3f4c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "password": "Telegram_healer_config"
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tr-ist-5.blook.network",
-        "publicKey": "HabIMykoF6jIw0rAgi_t3xm_hdWTLFKIpODwNJFjznE",
-        "shortId": "625a948aab4f",
-        "fingerprint": "safari"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "IJM8X9UgwPIQRmN-Lo-s.ZTl55ltkpuB38y36MCTGM.wOrKERs.deV",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/tr/MyONKU8UND5ZRBBUz6C?ed=2560"
       }
     }
   },
@@ -356,11 +351,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "www.visa.co.jp",
-          "port": 443,
+          "address": "172.64.88.168",
+          "port": 8880,
           "users": [
             {
-              "id": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+              "id": "6f876b28-1b3e-4088-85c0-d299e56bfccd",
               "encryption": "none"
             }
           ]
@@ -369,13 +364,12 @@
     },
     "streamSettings": {
       "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "misaka.cndyw.ggff.net",
-        "fingerprint": "random"
-      },
+      "security": "none",
       "wsSettings": {
-        "path": "/"
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "throbbing-haze-fbde.388-6c4.workers.dev"
+        }
       }
     }
   },
@@ -440,42 +434,16 @@
     }
   },
   {
-    "tag": "🇷🇺 LTE — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "78.135.77.91",
-          "port": 25020,
-          "users": [
-            {
-              "id": "nitro_teeam@",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.58.50.200",
-          "port": 8443,
+          "address": "138.124.60.146",
+          "port": 443,
           "users": [
             {
-              "id": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
+              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -487,10 +455,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tradingview.com",
-        "publicKey": "mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU",
+        "serverName": "usa.oblaco.bet",
+        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   }
