@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "qq.utiltools.site",
-          "port": 443,
+          "address": "72.56.40.97",
+          "port": 40443,
           "users": [
             {
-              "id": "4054fdc2-ee80-4419-8a8e-d937df4719e2",
+              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,10 +107,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "qq.utiltools.site",
-        "publicKey": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
-        "shortId": "",
-        "fingerprint": "qq"
+        "serverName": "deepl.com",
+        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+        "shortId": "ee33",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -178,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.69.58",
+          "address": "152.53.1.40",
           "port": 443,
           "users": [
             {
-              "id": "61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8",
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,10 +194,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fastly.jsdelivr.net",
-        "publicKey": "J9-352rPmu8GybqIDnC22sE3zs6Vg8tnMbbi-DyLFR8",
-        "shortId": "830b93d6a086e00e",
-        "fingerprint": "safari"
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -207,11 +207,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.40.70.124",
+          "address": "31.76.39.141",
           "port": 443,
           "users": [
             {
-              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -223,10 +223,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
-        "fingerprint": "firefox"
+        "serverName": "gb.superbuba.top",
+        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+        "shortId": "4fa44664f6a566d3",
+        "fingerprint": "random"
       }
     }
   },
@@ -262,62 +262,31 @@
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
-    "protocol": "vless",
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "2.26.17.7",
-          "port": 50618,
+          "address": "38.107.234.57",
+          "port": 80,
           "users": [
             {
-              "id": "ce32a764-162b-41cf-9646-90cf64b0a6a8",
-              "encryption": "none"
+              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+              "alterId": 0,
+              "security": "auto"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "it.nvidia.com",
-        "publicKey": "HVh_yIHxdzLlSh6RUF6Nb4347KtkWK7EKtocAylDDUI",
-        "shortId": "4be9d05cc6ed5d",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc_common1"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "144.31.168.95",
-          "port": 443,
-          "users": [
-            {
-              "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
         }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "eu-central.cendora.ru",
-        "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-        "shortId": "00bca5982f82d083",
-        "fingerprint": "firefox"
       }
     }
   },
@@ -351,62 +320,31 @@
     }
   },
   {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "3h-kazakhstan1.09vpn.com",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇮🇹 Италия — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "usa.superbuba.top",
+          "address": "217.144.188.131",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none"
+              "id": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": ""
+        "serverName": "admin.vkroom-it-service.xyz",
+        "publicKey": "RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g",
+        "shortId": "f3a9c21e8b6d4571",
+        "fingerprint": "firefox"
       }
     }
   }
