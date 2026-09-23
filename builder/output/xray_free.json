@@ -5,13 +5,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.202.10.2",
-          "port": 40443,
+          "address": "34.185.172.52",
+          "port": 443,
           "users": [
             {
-              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "3255d065-119c-4103-a422-ea9d301b0707",
+              "encryption": "none"
             }
           ]
         }
@@ -21,10 +20,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-        "shortId": "db46e2946fc466fd",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "-XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw",
+        "shortId": "690ec9207866c84e",
+        "fingerprint": "qq"
       }
     }
   },
@@ -34,7 +33,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "nl3.freekeysh110.online",
+          "address": "89.125.147.214",
           "port": 443,
           "users": [
             {
@@ -53,7 +52,7 @@
         "serverName": "nl3.freekeysh110.online",
         "publicKey": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
         "shortId": "b664d93e9d7a04f1",
-        "fingerprint": "edge"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,12 +62,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "est1313.ggisopi.su",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -78,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "random"
+        "serverName": "est1313.ggisopi.su",
+        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "143.246.194.213",
+          "address": "193.148.59.178",
           "port": 443,
           "users": [
             {
-              "id": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
+              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.ikea.com",
-        "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
-        "shortId": "",
-        "fingerprint": "qq"
+        "serverName": "www.apple.com",
+        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+        "shortId": "e3daad69",
+        "fingerprint": "chrome"
       }
     }
   },
