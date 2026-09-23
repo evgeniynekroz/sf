@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.63.246",
+          "address": "144.31.131.38",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,39 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 ⚡️ Швеция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "143.246.194.213",
-          "port": 443,
-          "users": [
-            {
-              "id": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.ikea.com",
-        "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
-        "shortId": "",
-        "fingerprint": "safari"
+        "serverName": "prod.pl-node-01.security-sbrf.ru",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -239,11 +210,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
+          "address": "89.40.70.124",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -252,12 +223,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
       }
     }
@@ -297,9 +268,9 @@
     "settings": {
       "servers": [
         {
-          "address": "172.67.167.173",
-          "port": 8443,
-          "password": "U&RdRdcsoeB;VU9.IO"
+          "address": "104.21.8.63",
+          "port": 443,
+          "password": "5855d6850594830f"
         }
       ]
     },
@@ -307,11 +278,11 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "Te096C8unFj1zOKTL5peU24bS.878nAMn3I0xJ17no6p3.wORkErS.Dev",
+        "serverName": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV",
         "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/tr/oUxHeBhI2aoGvGd83MTCkEy2kmdXsBX0?ed=2560"
+        "path": "/tr/w2O3K3xXNYDKIxwOIw7?ed=2560"
       }
     }
   },
@@ -353,11 +324,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "jolly-shape-3ce6.392.workers.dev",
+          "address": "104.27.82.154",
           "port": 8880,
           "users": [
             {
-              "id": "14e0ab2e-fb3e-4fd1-a6d9-62eeae62976b",
+              "id": "902fd911-ca5d-49a6-99ad-47372a266804",
               "encryption": "none"
             }
           ]
@@ -370,7 +341,7 @@
       "wsSettings": {
         "path": "/pyip=ProxyIP.JP.CMLiussss.net",
         "headers": {
-          "Host": "jolly-shape-3ce6.392.workers.dev"
+          "Host": "young-wildflower-6b6c.100-52d.workers.dev"
         }
       }
     }

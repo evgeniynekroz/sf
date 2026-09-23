@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.63.246",
+          "address": "144.31.131.38",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,24 +107,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.bubahero.com",
-        "publicKey": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
+        "serverName": "prod.pl-node-01.security-sbrf.ru",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇦🇹 Австрия — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "143.246.194.213",
+          "address": "152.53.1.40",
           "port": 443,
           "users": [
             {
-              "id": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.ikea.com",
-        "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
-        "shortId": "",
-        "fingerprint": "safari"
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
+        "fingerprint": "chrome"
       }
     }
   },
