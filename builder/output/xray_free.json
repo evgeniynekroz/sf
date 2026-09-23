@@ -5,40 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.238.191.109",
-          "port": 443,
+          "address": "193.202.10.2",
+          "port": 40443,
           "users": [
             {
-              "id": "1e078c17-3a93-462d-9fce-9276609e29e2",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "de3.global-cdn.org",
-        "publicKey": "bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg",
-        "shortId": "f7d0420b8ab26060",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇱 Нидерланды — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "31.57.34.139",
-          "port": 443,
-          "users": [
-            {
-              "id": "8d2196c0-2ec7-4867-8d66-d5d19bf8fb23",
+              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +21,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.bbobr.win",
-        "publicKey": "eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc",
-        "shortId": "fbe9c012125d90d2",
+        "serverName": "deepl.com",
+        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+        "shortId": "db46e2946fc466fd",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇱 Нидерланды — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "nl3.freekeysh110.online",
+          "port": 443,
+          "users": [
+            {
+              "id": "f679bada-55ac-45e7-94f0-b28b4b70df2b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "nl3.freekeysh110.online",
+        "publicKey": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
+        "shortId": "b664d93e9d7a04f1",
+        "fingerprint": "edge"
       }
     }
   },
@@ -115,16 +115,16 @@
     }
   },
   {
-    "tag": "🇦🇹 Австрия — FREE",
+    "tag": "🇸🇪 Швеция — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "152.53.1.40",
+          "address": "143.246.194.213",
           "port": 443,
           "users": [
             {
-              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+              "id": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,44 +136,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "at.quattro-tech.ru",
-        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-        "shortId": "43dcff53849b81e6",
-        "fingerprint": "chrome"
+        "serverName": "www.ikea.com",
+        "publicKey": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+        "shortId": "",
+        "fingerprint": "qq"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "138.124.60.146",
-          "port": 443,
-          "users": [
-            {
-              "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa.oblaco.bet",
-        "publicKey": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-        "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -197,6 +168,37 @@
         "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
         "shortId": "9c2378562188c3cb",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": ""
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "usa.superbuba.top",
+          "port": 443,
+          "users": [
+            {
+              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "usa.superbuba.top",
+        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+        "shortId": "9c2378562188c3cb",
+        "fingerprint": "chrome"
       },
       "grpcSettings": {
         "serviceName": ""

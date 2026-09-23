@@ -25,42 +25,42 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "185.238.191.109",
-      "server_port": 443,
-      "uuid": "1e078c17-3a93-462d-9fce-9276609e29e2",
+      "server": "193.202.10.2",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de3.global-cdn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg",
-          "short_id": "f7d0420b8ab26060"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "31.57.34.139",
-      "server_port": 443,
-      "uuid": "8d2196c0-2ec7-4867-8d66-d5d19bf8fb23",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl2.bbobr.win",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc",
-          "short_id": "fbe9c012125d90d2"
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды — FREE",
+      "server": "nl3.freekeysh110.online",
+      "server_port": 443,
+      "uuid": "f679bada-55ac-45e7-94f0-b28b4b70df2b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl3.freekeysh110.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
+          "short_id": "b664d93e9d7a04f1"
         }
       }
     },
@@ -107,49 +107,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 Австрия — FREE",
-      "server": "152.53.1.40",
+      "tag": "🇸🇪 Швеция — FREE",
+      "server": "143.246.194.213",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
+      "uuid": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "www.ikea.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "138.124.60.146",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
           "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
+      "tag": "🇺🇸 Резерв #1 — FREE",
       "server": "88.216.195.187",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -159,6 +138,30 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+          "short_id": "9c2378562188c3cb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "usa.superbuba.top",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -187,7 +190,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇦🇹 Австрия — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -204,7 +207,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇦🇹 Австрия — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
