@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "34.185.172.52",
+          "address": "31.77.161.15",
           "port": 443,
           "users": [
             {
-              "id": "3255d065-119c-4103-a422-ea9d301b0707",
-              "encryption": "none"
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -20,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "-XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw",
-        "shortId": "690ec9207866c84e",
-        "fingerprint": "qq"
+        "serverName": "nvidia.com",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
+        "fingerprint": "random"
       }
     }
   },
@@ -144,6 +145,39 @@
     }
   },
   {
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "chatgpt.com",
+          "port": 8443,
+          "users": [
+            {
+              "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "v2ray1.dozapp.xyz",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    }
+  },
+  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
@@ -175,31 +209,33 @@
     }
   },
   {
-    "tag": "🇬🇧 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
+          "address": "usa.superbuba.top",
           "port": 443,
           "users": [
             {
               "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
-        "fingerprint": "random"
+        "serverName": "usa.superbuba.top",
+        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+        "shortId": "9c2378562188c3cb",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": ""
       }
     }
   }
