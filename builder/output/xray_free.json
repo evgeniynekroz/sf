@@ -58,35 +58,6 @@
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "est1313.ggisopi.su",
-          "port": 443,
-          "users": [
-            {
-              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "est1313.ggisopi.su",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇵🇱 Польша — FREE",
     "protocol": "vless",
     "settings": {
@@ -145,35 +116,31 @@
     }
   },
   {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "vmess",
+    "tag": "🇦🇹 Австрия — FREE",
+    "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "chatgpt.com",
-          "port": 8443,
+          "address": "152.53.1.40",
+          "port": 443,
           "users": [
             {
-              "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-              "alterId": 0,
-              "security": "auto"
+              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "v2ray1.dozapp.xyz",
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "at.quattro-tech.ru",
+        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+        "shortId": "43dcff53849b81e6",
         "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
       }
     }
   },
@@ -183,28 +150,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.195.187",
+          "address": "45.91.138.179",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-              "encryption": "none"
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
+        "serverName": "us05.shifor01.life",
+        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+        "shortId": "169fc2df88419465",
         "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": ""
       }
     }
   },
@@ -214,7 +179,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "usa.superbuba.top",
+          "address": "88.216.195.187",
           "port": 443,
           "users": [
             {

@@ -58,16 +58,16 @@
     }
   },
   {
-    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+    "tag": "🇪🇪 ⚡️ Эстония — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "est1313.ggisopi.su",
-          "port": 443,
+          "address": "150.241.101.80",
+          "port": 8443,
           "users": [
             {
-              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+              "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,39 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est1313.ggisopi.su",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
+        "serverName": "yandex.net",
+        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "shortId": "6ba85179e30d4fc2",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇪🇪 ⚡️ Эстония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "72.56.41.33",
-          "port": 40443,
-          "users": [
-            {
-              "id": "5be7fb02-b6a5-450f-b041-3243b98e8420",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
-        "shortId": "ee33",
-        "fingerprint": "firefox"
       }
     }
   },
@@ -240,11 +211,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.39.141",
+          "address": "89.40.70.124",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -256,10 +227,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.superbuba.top",
-        "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-        "shortId": "4fa44664f6a566d3",
-        "fingerprint": "random"
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -269,11 +240,40 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.195.187",
+          "address": "45.91.138.179",
           "port": 443,
           "users": [
             {
-              "id": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us05.shifor01.life",
+        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+        "shortId": "169fc2df88419465",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇹🇷 Турция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "93.190.9.30",
+          "port": 3090,
+          "users": [
+            {
+              "id": "5afea0a3-cd66-43fd-b431-5203ce3e14c5",
               "encryption": "none"
             }
           ]
@@ -282,39 +282,38 @@
     },
     "streamSettings": {
       "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa.superbuba.top",
-        "publicKey": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-        "shortId": "9c2378562188c3cb",
-        "fingerprint": "firefox"
-      },
+      "security": "none",
       "grpcSettings": {
-        "serviceName": ""
+        "serviceName": "vless"
       }
     }
   },
   {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "trojan",
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vmess",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "172.67.167.173",
-          "port": 8443,
-          "password": "U&RdRdcsoeB;VU9.IO"
+          "address": "38.107.234.57",
+          "port": 80,
+          "users": [
+            {
+              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
       "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "Te096C8unFj1zOKTL5peU24bS.878nAMn3I0xJ17no6p3.wORkErS.Dev",
-        "fingerprint": "chrome"
-      },
+      "security": "none",
       "wsSettings": {
-        "path": "/tr/oUxHeBhI2aoGvGd83MTCkEy2kmdXsBX0?ed=2560"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
       }
     }
   },
@@ -405,45 +404,12 @@
     }
   },
   {
-    "tag": "🇷🇺 LTE — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "chatgpt.com",
-          "port": 8443,
-          "users": [
-            {
-              "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "v2ray1.dozapp.xyz",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "usa.superbuba.top",
+          "address": "88.216.195.187",
           "port": 443,
           "users": [
             {
