@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
-          "port": 443,
+          "address": "193.202.10.2",
+          "port": 40443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "deepl.com",
+        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+        "shortId": "db46e2946fc466fd",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,26 +92,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "132.243.65.151",
-          "port": 443,
+          "address": "176.109.106.182",
+          "port": 9881,
           "users": [
             {
-              "id": "17f388d7-1fa2-440f-a8f4-720b72d19195",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ee.global-cdn.org",
-        "publicKey": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
-        "shortId": "7a3f9e2b1c8d4f6a",
+        "serverName": "dl.google.com",
+        "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+        "shortId": "",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-tunnel"
       }
     }
   },
@@ -121,11 +123,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.26.186.69",
+          "address": "144.31.131.38",
           "port": 443,
           "users": [
             {
-              "id": "a0248c3b-b631-4ada-b8d6-e2f6af2986d0",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -134,12 +136,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "d1-pl.cloud-cdn.xyz",
-        "publicKey": "nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ",
-        "shortId": "7a3f9e2b1c8d4f6a",
+        "serverName": "prod.pl-node-01.security-sbrf.ru",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
         "fingerprint": "firefox"
       }
     }
@@ -321,31 +323,31 @@
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
-    "protocol": "vless",
+    "tag": "🇷🇺 LTE #3 — Premium",
+    "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "62.60.152.1",
-          "port": 56328,
+          "address": "45.32.128.44",
+          "port": 2095,
           "users": [
             {
-              "id": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1da76fea-2360-40d7-99ce-7374971808bb",
+              "alterId": 0,
+              "security": "auto"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "table.vkroom-it-service.xyz",
-        "publicKey": "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M",
-        "shortId": "f3a9c21e8b6d4571",
-        "fingerprint": "safari"
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "1da76fea-2360-40d7-99ce-7374971808bb-vm",
+        "headers": {
+          "Host": "www.bing.com"
+        }
       }
     }
   },
