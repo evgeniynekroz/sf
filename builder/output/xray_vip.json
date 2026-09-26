@@ -5,42 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "176.123.161.222",
-          "port": 9892,
-          "users": [
-            {
-              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-        "shortId": "aabb",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc-tunnel"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "89.125.147.214",
+          "address": "136.148.71.151",
           "port": 443,
           "users": [
             {
-              "id": "c21fc85c-0568-4684-8a6e-2725393dfecf",
+              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -52,10 +21,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl3.freekeysh110.online",
-        "publicKey": "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg",
-        "shortId": "b664d93e9d7a04f1",
+        "serverName": "germa12.ggisopi.su",
+        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+        "shortId": "",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -65,7 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "83.219.97.26",
+          "address": "est1313.ggisopi.su",
           "port": 443,
           "users": [
             {
@@ -94,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.159.250.214",
+          "address": "144.31.170.72",
           "port": 443,
           "users": [
             {
-              "id": "4054fdc2-ee80-4419-8a8e-d937df4719e2",
+              "id": "deea5046-3543-4b1b-a17f-3d08a65db91d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -110,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "qq.utiltools.site",
-        "publicKey": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
+        "serverName": "est.bopen.bond",
+        "publicKey": "fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0",
         "shortId": "",
-        "fingerprint": "random"
+        "fingerprint": "safari"
       }
     }
   },
@@ -123,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.138.151",
-          "port": 8444,
+          "address": "31.77.59.225",
+          "port": 443,
           "users": [
             {
-              "id": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
+              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -139,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl1.gursub.com",
-        "publicKey": "sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE",
-        "shortId": "a3f509aa7a4b41cc",
-        "fingerprint": "chrome"
+        "serverName": "pl.jokervpn.space",
+        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
+        "shortId": "f43f3666afdec470",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -214,36 +212,7 @@
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
-        "shortId": "5b33d3e71a14f4",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 США — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "45.91.138.179",
-          "port": 443,
-          "users": [
-            {
-              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -255,10 +224,98 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us05.shifor01.life",
-        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-        "shortId": "169fc2df88419465",
+        "serverName": "www.sony.co.uk",
+        "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
+        "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇯🇵 Япония — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "137.175.82.40",
+          "port": 30556,
+          "users": [
+            {
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.76.76.28",
+          "port": 2053,
+          "users": [
+            {
+              "id": "de5906f3-df38-4463-aa9d-2b01320cc6ea",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dzen.ru",
+        "publicKey": "c3XEY47JDU92n3eqwZW0PLZOxJPAdAbeXWaCDoZFiXQ",
+        "shortId": "096e0d43c8",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 США — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "84.235.244.108",
+          "port": 22573,
+          "users": [
+            {
+              "id": "39947382-3212-41c9-bc3a-589574ac8b23",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     }
   },
@@ -289,16 +346,16 @@
     }
   },
   {
-    "tag": "🇯🇵 Япония — Premium",
+    "tag": "🇩🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "137.175.82.40",
-          "port": 30556,
+          "address": "de2.dzvn.space",
+          "port": 2291,
           "users": [
             {
-              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "id": "25284368-40d5-4abe-9f56-54a07e88a7af",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -310,9 +367,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.lovelive-anime.jp",
-        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-        "shortId": "d082f567",
+        "serverName": "de2.dzvn.space",
+        "publicKey": "tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg",
+        "shortId": "50ace5ab34f6df9b",
         "fingerprint": "firefox"
       }
     }
