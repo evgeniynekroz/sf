@@ -100,7 +100,7 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
-      "server": "222.167.212.160",
+      "server": "222.167.212.159",
       "server_port": 8443,
       "password": "kewr0929_M9ic23iqe_m9E2R93Js8034c_Rt10",
       "tls": {
@@ -112,21 +112,21 @@
     {
       "type": "vless",
       "tag": "🇪🇪 ⚡️ Эстония — Premium",
-      "server": "78.159.250.214",
-      "server_port": 443,
-      "uuid": "4054fdc2-ee80-4419-8a8e-d937df4719e2",
+      "server": "72.56.41.33",
+      "server_port": 40443,
+      "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "qq.utiltools.site",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
-          "short_id": ""
+          "public_key": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+          "short_id": "ee33"
         }
       }
     },
@@ -175,13 +175,13 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 ⚡️ Швеция (Hysteria 2) — Premium",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "server": "se1.chromevpn.cc",
+      "server_port": 443,
+      "password": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
       "tls": {
         "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
+        "server_name": "se1.chromevpn.cc",
+        "insecure": false
       }
     },
     {
@@ -215,6 +215,24 @@
         "enabled": true,
         "server_name": "filesconvert.org",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+      "server": "172.64.145.94",
+      "server_port": 443,
+      "uuid": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+      "tls": {
+        "enabled": true,
+        "server_name": "powered-by-surena.configfarsi695fd01a94fe7.workers.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fd01a94fe7.workers.dev"
+        }
       }
     },
     {
@@ -276,22 +294,38 @@
     {
       "type": "vless",
       "tag": "🇯🇵 Япония — Premium",
-      "server": "jumpernode.online",
-      "server_port": 443,
-      "uuid": "e4cd263b-c5c7-4410-bf61-8893179ec429",
+      "server": "137.175.82.40",
+      "server_port": 30556,
+      "uuid": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "amazon.com",
+        "server_name": "www.lovelive-anime.jp",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE",
-          "short_id": "6d962e8d8a0dce"
+          "public_key": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+          "short_id": "d082f567"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 Франция — Premium",
+      "server": "172.67.142.169",
+      "server_port": 443,
+      "uuid": "4c0b7280-76bb-495c-9c8b-f05712ebf805",
+      "tls": {
+        "enabled": true,
+        "server_name": "youxuanku.kdns.fr"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {}
       }
     },
     {
@@ -321,13 +355,13 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #3 — Premium",
-      "server": "vpn-us-003.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "hy2.123266.xyz",
+      "server_port": 33333,
+      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-us-003.fastervpn.world",
-        "insecure": true
+        "server_name": "hy2.123266.xyz",
+        "insecure": false
       }
     },
     {
@@ -357,7 +391,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 LTE — Premium",
-      "server": "77.74.123.99",
+      "server": "77.74.123.98",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -369,7 +403,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 LTE #2 — Premium",
-      "server": "77.74.123.98",
+      "server": "77.74.123.99",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -388,27 +422,6 @@
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 Резерв #2 — FREE",
-      "server": "31.77.161.15",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
       }
     },
     {
@@ -434,10 +447,12 @@
         "🇸🇪 ⚡️ Швеция (Hysteria 2) — Premium",
         "🇦🇹 ⚡️ Австрия — Premium",
         "🇦🇹 ⚡️ Австрия (Hysteria 2) — Premium",
+        "🇧🇾 ⚡️ Беларусь — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇯🇵 Япония — Premium",
+        "🇫🇷 Франция — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
@@ -445,8 +460,7 @@
         "🇫🇷 Резерв #5 — Premium",
         "🇷🇺 LTE — Premium",
         "🇷🇺 LTE #2 — Premium",
-        "🇷🇺 LTE #3 — Premium",
-        "🇩🇪 Резерв #2 — FREE"
+        "🇷🇺 LTE #3 — Premium"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -468,10 +482,12 @@
         "🇸🇪 ⚡️ Швеция (Hysteria 2) — Premium",
         "🇦🇹 ⚡️ Австрия — Premium",
         "🇦🇹 ⚡️ Австрия (Hysteria 2) — Premium",
+        "🇧🇾 ⚡️ Беларусь — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇯🇵 Япония — Premium",
+        "🇫🇷 Франция — Premium",
         "🇺🇸 Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
@@ -480,7 +496,6 @@
         "🇷🇺 LTE — Premium",
         "🇷🇺 LTE #2 — Premium",
         "🇷🇺 LTE #3 — Premium",
-        "🇩🇪 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"

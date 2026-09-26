@@ -145,7 +145,36 @@
     }
   },
   {
-    "tag": "🇬🇧 Резерв #1 — FREE",
+    "tag": "🇯🇵 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "137.175.82.40",
+          "port": 30556,
+          "users": [
+            {
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -170,35 +199,6 @@
         "publicKey": "2UHMR3ko8nBUTbZpQrvWP9ylSmcAj5YXSNG_o-N8EW8",
         "shortId": "5b33d3e71a14f4",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇩🇪 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "31.77.161.15",
-          "port": 443,
-          "users": [
-            {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "chrome"
       }
     }
   }
