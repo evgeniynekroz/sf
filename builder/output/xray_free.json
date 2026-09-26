@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.27.204.92",
+          "address": "free-amsterdam-node-1.cloudwidecdn.com",
           "port": 443,
           "users": [
             {
-              "id": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
+              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.makafon.online",
-        "publicKey": "R9XXrwZNQp8uMccaUwxV8lTAvqfiGgcc2msTLfqfrlc",
-        "shortId": "6c0fb5453951ddbc",
-        "fingerprint": "safari"
+        "serverName": "www.apple.com",
+        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+        "shortId": "1d86d17709852910",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -145,16 +145,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇪🇪 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "usa.netgridflow.com",
+          "address": "xray2-direct-mci1-fs-ce.freesocks.work",
           "port": 443,
           "users": [
             {
-              "id": "d3aeadf0-94bd-46bd-88f5-ed920a3449fd",
+              "id": "715569e9-ee89-4b7d-b276-e73c8b4e964b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,10 +166,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.netgridflow.com",
-        "publicKey": "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg",
-        "shortId": "018c7fb89aa975de",
-        "fingerprint": "qq"
+        "serverName": "dl.google.com",
+        "publicKey": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
