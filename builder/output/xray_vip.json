@@ -34,40 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "free-amsterdam-node-1.cloudwidecdn.com",
-          "port": 443,
+          "address": "129.101.120.5",
+          "port": 37951,
           "users": [
             {
-              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-        "shortId": "1d86d17709852910",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "83.219.97.26",
-          "port": 443,
-          "users": [
-            {
-              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+              "id": "25284368-40d5-4abe-9f56-54a07e88a7af",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +50,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est1313.ggisopi.su",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "nl2.dzvn.space",
+        "publicKey": "O6ZOpoz4sxon8iHxCd5EEvx2K9NUThd4SvOCBEvADEI",
+        "shortId": "a9e21fd097d019c6",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "95.217.24.236",
+          "port": 2087,
+          "users": [
+            {
+              "id": "10d85f65-f8d6-4504-b1e2-94649db1577a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "95.217.24.236",
+        "publicKey": "KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk",
+        "shortId": "a32cfb5deca913ad",
+        "fingerprint": "random"
       }
     }
   },
@@ -121,40 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.138.151",
-          "port": 8444,
-          "users": [
-            {
-              "id": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl1.gursub.com",
-        "publicKey": "sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE",
-        "shortId": "a3f509aa7a4b41cc",
-        "fingerprint": "safari"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 ⚡️ Швеция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "193.148.59.178",
+          "address": "31.77.59.225",
           "port": 443,
           "users": [
             {
-              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
+              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,10 +137,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-        "shortId": "e3daad69",
-        "fingerprint": "chrome"
+        "serverName": "pl.jokervpn.space",
+        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
+        "shortId": "f43f3666afdec470",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 ⚡️ Швеция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "5.157.10.148",
+          "port": 443,
+          "users": [
+            {
+              "id": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "surstreming.vvzzkontaktezzvv.garden",
+        "publicKey": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+        "shortId": "fb442438e2223836",
+        "fingerprint": "random"
       }
     }
   },
@@ -203,6 +203,38 @@
     }
   },
   {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.150.34",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fce27aa549.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fce27aa549.workers.dev"
+        }
+      }
+    }
+  },
+  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
@@ -212,7 +244,7 @@
           "port": 443,
           "users": [
             {
-              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
+              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -237,54 +269,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "85.17.145.65",
-          "port": 12068,
+          "address": "45.91.138.179",
+          "port": 443,
           "users": [
             {
-              "id": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
-              "encryption": "none"
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/",
-        "headers": {
-          "Host": "mypanel.unixzone.us"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "38.107.234.57",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us05.shifor01.life",
+        "publicKey": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+        "shortId": "169fc2df88419465",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -343,6 +347,35 @@
         "publicKey": "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M",
         "shortId": "f3a9c21e8b6d4571",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇷 Франция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "104.21.63.28",
+          "port": 443,
+          "users": [
+            {
+              "id": "4c0b7280-76bb-495c-9c8b-f05712ebf805",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "youxuanku.kdns.fr",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/"
       }
     }
   }
