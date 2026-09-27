@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "31.77.161.15",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "df3aff719526dc5a",
+        "serverName": "nvidia.com",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
         "fingerprint": "chrome"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.56.185.51",
+          "address": "130.78.191.25",
           "port": 443,
           "users": [
             {
-              "id": "6230dfe2-7de5-4d4b-990f-73ac7f53e987",
+              "id": "11f21602-47aa-42e2-9149-69120f2e6df6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.demka.live",
-        "publicKey": "bqvAqKkRuIS_v7bNdClyz7jGAwuwjNiKbEsfOh2vqmI",
-        "shortId": "298e435ae715ce16",
+        "serverName": "nl07.shifor01.life",
+        "publicKey": "0FwNJ9HYJgVj5566tb0zwjGTPLb-42i-mlXnceB9-Tc",
+        "shortId": "3ac25eef1431b799",
         "fingerprint": "firefox"
       }
     }
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.225",
-          "port": 443,
+          "address": "151.241.138.151",
+          "port": 8444,
           "users": [
             {
-              "id": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
+              "id": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.jokervpn.space",
-        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
-        "shortId": "f43f3666afdec470",
-        "fingerprint": "firefox"
+        "serverName": "pl1.gursub.com",
+        "publicKey": "sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE",
+        "shortId": "a3f509aa7a4b41cc",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -149,11 +149,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.157.10.148",
+          "address": "193.148.59.178",
           "port": 443,
           "users": [
             {
-              "id": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,10 +165,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "surstreming.vvzzkontaktezzvv.garden",
-        "publicKey": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-        "shortId": "fb442438e2223836",
-        "fingerprint": "random"
+        "serverName": "www.apple.com",
+        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+        "shortId": "e3daad69",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -202,38 +202,6 @@
     }
   },
   {
-    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "172.64.144.198",
-          "port": 443,
-          "users": [
-            {
-              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/",
-        "headers": {
-          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
@@ -243,7 +211,7 @@
           "port": 443,
           "users": [
             {
-              "id": "d81b3a26-1111-497a-a243-a34d80b1b1b9",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -321,43 +289,12 @@
     }
   },
   {
-    "tag": "🇮🇹 Италия — Premium",
+    "tag": "🇳🇴 Норвегия — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "176.108.246.58",
-          "port": 9881,
-          "users": [
-            {
-              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
-        "shortId": "",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc-tunnel"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "usa.netgridflow.com",
+          "address": "46.29.238.72",
           "port": 443,
           "users": [
             {
@@ -373,10 +310,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa.netgridflow.com",
+        "serverName": "no.netgridflow.com",
         "publicKey": "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg",
-        "shortId": "018c7fb89aa975de",
-        "fingerprint": "qq"
+        "shortId": "bbe7cea59ba5fc76",
+        "fingerprint": "random"
       }
     }
   }
