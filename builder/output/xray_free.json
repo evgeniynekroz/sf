@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.202.10.248",
-          "port": 40443,
+          "address": "193.202.10.137",
+          "port": 2291,
           "users": [
             {
-              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+              "id": "25284368-40d5-4abe-9f56-54a07e88a7af",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-        "shortId": "db46e2946fc466fd",
-        "fingerprint": "random"
+        "serverName": "de2.dzvn.space",
+        "publicKey": "tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg",
+        "shortId": "50ace5ab34f6df9b",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "185.79.138.71",
+          "port": 448,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "id": "0b0915d7-6800-4580-a44b-77d84f105e6a",
               "encryption": "none"
             }
           ]
@@ -75,13 +75,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "firefox"
+        "serverName": "www.samsung.com",
+        "publicKey": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+        "shortId": "cd21e552537c7c0b",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.157.10.148",
+          "address": "2.26.101.148",
           "port": 443,
           "users": [
             {
-              "id": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+              "id": "68d89911-b92d-46fe-9007-3645c3b285f0",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "surstreming.vvzzkontaktezzvv.garden",
-        "publicKey": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-        "shortId": "fb442438e2223836",
-        "fingerprint": "random"
+        "serverName": "se.chick-chirik.com",
+        "publicKey": "RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8",
+        "shortId": "e9eb910e5af883e3",
+        "fingerprint": "firefox"
       }
     }
   },
