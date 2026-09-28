@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "83.219.97.26",
-          "port": 443,
+          "address": "13.158.67.183",
+          "port": 33561,
           "users": [
             {
-              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est1313.ggisopi.su",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs",
+        "shortId": "6b9e61372a82002c",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.225",
+          "address": "151.241.138.240",
           "port": 443,
           "users": [
             {
-              "id": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
+              "id": "5dff1842-c02f-4dd4-b1ad-2e597b99dc31",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,24 +108,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.jokervpn.space",
-        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
-        "shortId": "f43f3666afdec470",
+        "serverName": "pl240.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
+    "tag": "🇸🇪 Швеция — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "23.191.200.206",
+          "address": "surstreming.vvzzkontaktezzvv.garden",
           "port": 443,
           "users": [
             {
-              "id": "eccd70d1-ee28-4123-a1dd-4cac94c7139c",
+              "id": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "surstreming.vvzzkontaktezzvv.garden",
+        "publicKey": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+        "shortId": "fb442438e2223836",
+        "fingerprint": "random"
       }
     }
   },
@@ -174,16 +174,16 @@
     }
   },
   {
-    "tag": "🇩🇪 Резерв #2 — FREE",
+    "tag": "🇬🇧 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "172.104.237.173",
-          "port": 20855,
+          "address": "23.160.56.194",
+          "port": 443,
           "users": [
             {
-              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+              "id": "ae0d0211-b7dc-461d-9d41-1eb224876f30",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,10 +195,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8",
-        "shortId": "efe9",
-        "fingerprint": "chrome"
+        "serverName": "us.responsiblecare.uk",
+        "publicKey": "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg",
+        "shortId": "2ad4123458ff3fe5",
+        "fingerprint": "firefox"
       }
     }
   }
