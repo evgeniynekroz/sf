@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "172.104.237.173",
-          "port": 20855,
+          "address": "192.142.12.175",
+          "port": 443,
           "users": [
             {
-              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+              "id": "365de9e9-ba29-0004-af2d-766f9638e3be",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8",
-        "shortId": "efe9",
-        "fingerprint": "chrome"
+        "serverName": "diffoscope.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
+        "fingerprint": "random"
       }
     }
   },
@@ -96,7 +96,7 @@
           "port": 443,
           "users": [
             {
-              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+              "id": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -145,16 +145,16 @@
     }
   },
   {
-    "tag": "🇯🇵 Резерв #1 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "137.175.82.40",
-          "port": 30556,
+          "address": "136.0.213.120",
+          "port": 443,
           "users": [
             {
-              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "id": "a368752a-32fc-42f3-980a-6b049218b23f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,24 +166,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.lovelive-anime.jp",
-        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-        "shortId": "d082f567",
+        "serverName": "usa-3.letsconnectpoint.com",
+        "publicKey": "Fd6VTTHCVNkP_H9EZBlSXEsHp_J3aRKeBpoYZ5gRiQc",
+        "shortId": "a2b95f1d",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇰🇿 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "176.109.104.195",
-          "port": 9882,
+          "address": "us1-r.link-t7.com",
+          "port": 10238,
           "users": [
             {
-              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+              "id": "8A9905B7-801B-41AF-BFC9-2034212770F6",
               "encryption": "none"
             }
           ]
@@ -194,13 +194,13 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-        "shortId": "aabbccdd",
-        "fingerprint": "firefox"
+        "serverName": "s0.awsstatic.com",
+        "publicKey": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+        "shortId": "686c0ef0",
+        "fingerprint": "chrome"
       },
       "grpcSettings": {
-        "serviceName": "grpc-tunnel"
+        "serviceName": "movie"
       }
     }
   }

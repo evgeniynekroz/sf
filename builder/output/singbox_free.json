@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "172.104.237.173",
-      "server_port": 20855,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+      "server": "192.142.12.175",
+      "server_port": 443,
+      "uuid": "365de9e9-ba29-0004-af2d-766f9638e3be",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "diffoscope.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8",
-          "short_id": "efe9"
+          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "short_id": "1c3e8241a8743df9"
         }
       }
     },
@@ -90,7 +90,7 @@
       "tag": "🇵🇱 Польша — FREE",
       "server": "31.77.59.225",
       "server_port": 443,
-      "uuid": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+      "uuid": "df23d74c-c5ea-441c-a573-9d7b0e88dd14",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -130,7 +130,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "77.74.123.101",
+      "server": "77.74.123.100",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -141,47 +141,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 Резерв #1 — FREE",
-      "server": "137.175.82.40",
-      "server_port": 30556,
-      "uuid": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "136.0.213.120",
+      "server_port": 443,
+      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.lovelive-anime.jp",
+        "server_name": "usa-3.letsconnectpoint.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-          "short_id": "d082f567"
+          "public_key": "Fd6VTTHCVNkP_H9EZBlSXEsHp_J3aRKeBpoYZ5gRiQc",
+          "short_id": "a2b95f1d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 Резерв #2 — FREE",
-      "server": "176.109.104.195",
-      "server_port": 9882,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "us1-r.link-t7.com",
+      "server_port": 10238,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "s0.awsstatic.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": "aabbccdd"
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc-tunnel"
+        "service_name": "movie"
       }
     },
     {
@@ -202,8 +202,8 @@
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇯🇵 Резерв #1 — FREE",
-        "🇰🇿 Резерв #2 — FREE"
+        "🇺🇸 Резерв #1 — FREE",
+        "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -220,8 +220,8 @@
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇯🇵 Резерв #1 — FREE",
-        "🇰🇿 Резерв #2 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
+        "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
