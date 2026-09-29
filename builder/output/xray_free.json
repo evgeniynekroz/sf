@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
-          "port": 443,
+          "address": "172.104.237.173",
+          "port": 20855,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8",
+        "shortId": "efe9",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "13.158.67.183",
-          "port": 33561,
+          "address": "45.149.147.97",
+          "port": 443,
           "users": [
             {
-              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+              "id": "f28e0ce1-ed75-4e90-b069-5215a80dfb4a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs",
-        "shortId": "6b9e61372a82002c",
-        "fingerprint": "chrome"
+        "serverName": "google.com",
+        "publicKey": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
+        "shortId": "d345ad4657adeef9",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -174,31 +174,33 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇰🇿 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "23.237.193.202",
-          "port": 8443,
+          "address": "176.109.104.195",
+          "port": 9882,
           "users": [
             {
-              "id": "55bfbfcd-26e5-45bc-b39b-cfc830d7ff2f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "dl.google.com",
+        "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+        "shortId": "aabbccdd",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-tunnel"
       }
     }
   }
