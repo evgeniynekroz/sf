@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.202.10.137",
-          "port": 2291,
+          "address": "31.77.161.15",
+          "port": 443,
           "users": [
             {
-              "id": "25284368-40d5-4abe-9f56-54a07e88a7af",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.dzvn.space",
-        "publicKey": "tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg",
-        "shortId": "50ace5ab34f6df9b",
-        "fingerprint": "firefox"
+        "serverName": "nvidia.com",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
+        "fingerprint": "random"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "83.219.97.26",
-          "port": 443,
+          "address": "13.158.67.183",
+          "port": 33561,
           "users": [
             {
-              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+              "id": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est1313.ggisopi.su",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs",
+        "shortId": "6b9e61372a82002c",
         "fingerprint": "chrome"
       }
     }
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.138.240",
+          "address": "31.77.59.225",
           "port": 443,
           "users": [
             {
-              "id": "5dff1842-c02f-4dd4-b1ad-2e597b99dc31",
+              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl240.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
+        "serverName": "pl.jokervpn.space",
+        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
+        "shortId": "f43f3666afdec470",
         "fingerprint": "firefox"
       }
     }
@@ -145,7 +145,36 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇯🇵 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "137.175.82.40",
+          "port": 30556,
+          "users": [
+            {
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -170,35 +199,6 @@
         "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
         "shortId": "9db6b6d13d17987e",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "92.118.112.49",
-          "port": 443,
-          "users": [
-            {
-              "id": "d3aeadf0-94bd-46bd-88f5-ed920a3449fd",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa.netgridflow.com",
-        "publicKey": "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg",
-        "shortId": "018c7fb89aa975de",
-        "fingerprint": "random"
       }
     }
   }
