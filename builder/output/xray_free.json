@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "51.89.13.63",
-          "port": 443,
+          "address": "85.234.100.9",
+          "port": 40443,
           "users": [
             {
-              "id": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,41 +21,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "vimeo.com",
-        "publicKey": "bKoCicEJTym3khfTMZtje-S0DoRi-79l2AT1ixY3cjs",
-        "shortId": "91b4ede4e90115cf",
-        "fingerprint": "firefox"
+        "serverName": "deepl.com",
+        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+        "shortId": "db46e2946fc466fd",
+        "fingerprint": "random"
       }
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — FREE",
+    "tag": "🇳🇱 Нидерланды — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "85.208.86.91",
-          "port": 9872,
+          "address": "nl-1.omuservice.tech",
+          "port": 8443,
           "users": [
             {
-              "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-              "encryption": "none"
+              "id": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
-        "shortId": "aa",
-        "fingerprint": "ios"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc-tunnel"
+        "serverName": "www.ozone.nl",
+        "publicKey": "XgdHElYEGdc0A5NTZP4uTya2Y4WTKnfFV4ormD7rLx4",
+        "shortId": "97",
+        "fingerprint": "random"
       }
     }
   },
@@ -176,33 +174,31 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "us1-r.link-t7.com",
-          "port": 10238,
+          "address": "137.175.82.40",
+          "port": 30556,
           "users": [
             {
-              "id": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-              "encryption": "none"
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "s0.awsstatic.com",
-        "publicKey": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-        "shortId": "686c0ef0",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "movie"
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
+        "fingerprint": "firefox"
       }
     }
   }
