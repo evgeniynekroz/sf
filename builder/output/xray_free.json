@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
-          "port": 443,
+          "address": "89.169.53.176",
+          "port": 4443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "de.wvpn.one",
+        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+        "shortId": "df3aff719526dc5a",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,39 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "162.35.242.252",
+          "address": "id-nl-01.mintrocket.org",
           "port": 443,
           "users": [
             {
-              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl.aksay.pro",
-        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
-        "shortId": "82c2b7d5e70ff000",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "finland.sishka.network",
-          "port": 443,
-          "users": [
-            {
-              "id": "bebc775c-0de1-451c-80cb-64ee06fd5447",
+              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +50,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finland.sishka.network",
-        "publicKey": "RRLWiexnslYbEANDk133HfWlAJDrA0P3GUvA6F-a0Qg",
-        "shortId": "1864413ebcd5d840",
-        "fingerprint": "qq"
+        "serverName": "id-nl-01.mintrocket.org",
+        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+        "shortId": "fee1f986a72444db",
+        "fingerprint": "safari"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "fi.gaz-service.shop",
+          "port": 9446,
+          "users": [
+            {
+              "id": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fi.gaz-service.shop",
+        "publicKey": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+        "shortId": "f5781bd8af7dbaf6",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -173,16 +174,16 @@
     }
   },
   {
-    "tag": "🇯🇵 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "137.175.82.40",
-          "port": 30556,
+          "address": "bgroup.us2.ilovegairport.com",
+          "port": 443,
           "users": [
             {
-              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "id": "8079ccd4-4b4b-44e2-92f0-8f0367ad9c24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.lovelive-anime.jp",
-        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-        "shortId": "d082f567",
+        "serverName": "us-west-2.console.aws.amazon.com",
+        "publicKey": "s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY",
+        "shortId": "afe73effea",
         "fingerprint": "firefox"
       }
     }

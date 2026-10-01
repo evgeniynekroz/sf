@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
-          "port": 443,
+          "address": "89.169.53.176",
+          "port": 4443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "de.wvpn.one",
+        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+        "shortId": "df3aff719526dc5a",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,39 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "162.35.242.252",
+          "address": "id-nl-01.mintrocket.org",
           "port": 443,
           "users": [
             {
-              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl.aksay.pro",
-        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
-        "shortId": "82c2b7d5e70ff000",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "finland.sishka.network",
-          "port": 443,
-          "users": [
-            {
-              "id": "bebc775c-0de1-451c-80cb-64ee06fd5447",
+              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +50,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finland.sishka.network",
-        "publicKey": "RRLWiexnslYbEANDk133HfWlAJDrA0P3GUvA6F-a0Qg",
-        "shortId": "1864413ebcd5d840",
-        "fingerprint": "qq"
+        "serverName": "id-nl-01.mintrocket.org",
+        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+        "shortId": "fee1f986a72444db",
+        "fingerprint": "safari"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "fi.gaz-service.shop",
+          "port": 9446,
+          "users": [
+            {
+              "id": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fi.gaz-service.shop",
+        "publicKey": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+        "shortId": "f5781bd8af7dbaf6",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -202,6 +203,38 @@
     }
   },
   {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.144.198",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
+        }
+      }
+    }
+  },
+  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
@@ -211,7 +244,7 @@
           "port": 443,
           "users": [
             {
-              "id": "f0612e46-3d37-4766-904e-7baa3e636c24",
+              "id": "a5c761a5-ea2d-4af4-ab42-a9f85def664e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -220,7 +253,7 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
         "serverName": "www.sony.co.uk",
@@ -318,35 +351,6 @@
     }
   },
   {
-    "tag": "🇳🇴 Норвегия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "82.148.29.250",
-          "port": 443,
-          "users": [
-            {
-              "id": "2f6c70f3-206a-4bc1-ac1f-6b70153f9c73",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "unpkg.com",
-        "publicKey": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
-        "shortId": "b0d8c9a285c70f6f",
-        "fingerprint": "qq"
-      }
-    }
-  },
-  {
     "tag": "🇮🇹 Италия — Premium",
     "protocol": "vless",
     "settings": {
@@ -381,8 +385,8 @@
     "settings": {
       "vnext": [
         {
-          "address": "104.18.39.218",
-          "port": 2082,
+          "address": "162.159.0.53",
+          "port": 2086,
           "users": [
             {
               "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -400,6 +404,35 @@
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "bgroup.us2.ilovegairport.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "8079ccd4-4b4b-44e2-92f0-8f0367ad9c24",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us-west-2.console.aws.amazon.com",
+        "publicKey": "s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY",
+        "shortId": "afe73effea",
+        "fingerprint": "firefox"
       }
     }
   }
