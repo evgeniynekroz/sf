@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.132.160.209",
+          "address": "31.76.249.174",
           "port": 443,
           "users": [
             {
-              "id": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+              "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dlcdn.apache.org",
-        "publicKey": "9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0",
-        "shortId": "f1004027e382c2fa",
-        "fingerprint": "random"
+        "serverName": "conge.ggisopi.su",
+        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+        "shortId": "",
+        "fingerprint": "ios"
       }
     }
   },
@@ -34,13 +34,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.224.240",
-          "port": 18443,
+          "address": "162.35.242.252",
+          "port": 443,
           "users": [
             {
-              "id": "a85fe87b-0fba-4657-9a0e-35ef48c43ef4",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
+              "encryption": "none"
             }
           ]
         }
@@ -50,10 +49,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.vpnifty.ru",
-        "publicKey": "7cjXiyeAfM-T8WIAKKfqXtNn4Myv0Tm8N0OaXm2QAkU",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "nl.aksay.pro",
+        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
+        "shortId": "82c2b7d5e70ff000",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,13 +62,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "finland.sishka.network",
-          "port": 443,
+          "address": "77.42.20.51",
+          "port": 1085,
           "users": [
             {
-              "id": "80277367-ce50-478e-80ea-615296dc4185",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "0c1b7949-fe09-43d9-863f-2c031f66bfc1",
+              "encryption": "none"
             }
           ]
         }
@@ -77,13 +75,7 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "finland.sishka.network",
-        "publicKey": "RRLWiexnslYbEANDk133HfWlAJDrA0P3GUvA6F-a0Qg",
-        "shortId": "e76716871e25fd1b",
-        "fingerprint": "qq"
-      }
+      "security": "none"
     }
   },
   {
@@ -92,11 +84,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "pol8.pandaonline.org",
+          "address": "95.85.253.202",
           "port": 443,
           "users": [
             {
-              "id": "26c0e78b-9d55-409a-9b40-b0ed7b187825",
+              "id": "4314a583-3a39-45e1-883e-70bf570d252a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +100,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pol8.pandaonline.org",
-        "publicKey": "p51ZLDExiHyxjbnibYkeRu4FhyFgr1dpl7OiL7uFmzE",
+        "serverName": "pl0001.kubservice.icu",
+        "publicKey": "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU",
         "shortId": "",
-        "fingerprint": "random"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -121,11 +113,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.58.222.23",
+          "address": "150.241.65.252",
           "port": 443,
           "users": [
             {
-              "id": "80277367-ce50-478e-80ea-615296dc4185",
+              "id": "2cd90015-3349-49b5-b00c-a915848cffa5",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,24 +129,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se-59347d80.sishka.network",
-        "publicKey": "uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8",
-        "shortId": "0ececd9b2731357d",
+        "serverName": "sweden.biznes.lol",
+        "publicKey": "SG0oIguDhzoiNsBFqfyaRInrrJjKuts7UIfI1K2KYjo",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇯🇵 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "50.114.179.2",
-          "port": 443,
+          "address": "137.175.82.40",
+          "port": 30556,
           "users": [
             {
-              "id": "a368752a-32fc-42f3-980a-6b049218b23f",
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,9 +158,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-3.letsconnectpoint.com",
-        "publicKey": "Fd6VTTHCVNkP_H9EZBlSXEsHp_J3aRKeBpoYZ5gRiQc",
-        "shortId": "a2b95f1d",
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
         "fingerprint": "firefox"
       }
     }
