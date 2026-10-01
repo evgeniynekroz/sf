@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "91.132.160.209",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "2412bd96-925b-43f2-81d1-0ed4f0793699",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "df3aff719526dc5a",
-        "fingerprint": "firefox"
+        "serverName": "dlcdn.apache.org",
+        "publicKey": "9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0",
+        "shortId": "f1004027e382c2fa",
+        "fingerprint": "random"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "id-nl-01.mintrocket.org",
-          "port": 443,
+          "address": "144.31.224.240",
+          "port": 18443,
           "users": [
             {
-              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+              "id": "a85fe87b-0fba-4657-9a0e-35ef48c43ef4",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "id-nl-01.mintrocket.org",
-        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
-        "shortId": "fee1f986a72444db",
-        "fingerprint": "safari"
+        "serverName": "nl.vpnifty.ru",
+        "publicKey": "7cjXiyeAfM-T8WIAKKfqXtNn4Myv0Tm8N0OaXm2QAkU",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "fi.gaz-service.shop",
-          "port": 9446,
+          "address": "finland.sishka.network",
+          "port": 443,
           "users": [
             {
-              "id": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+              "id": "80277367-ce50-478e-80ea-615296dc4185",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi.gaz-service.shop",
-        "publicKey": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
-        "shortId": "f5781bd8af7dbaf6",
-        "fingerprint": "firefox"
+        "serverName": "finland.sishka.network",
+        "publicKey": "RRLWiexnslYbEANDk133HfWlAJDrA0P3GUvA6F-a0Qg",
+        "shortId": "e76716871e25fd1b",
+        "fingerprint": "qq"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.225",
+          "address": "pol8.pandaonline.org",
           "port": 443,
           "users": [
             {
-              "id": "24b84bd3-baa3-4192-9625-23c9690ae6f6",
+              "id": "26c0e78b-9d55-409a-9b40-b0ed7b187825",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.jokervpn.space",
-        "publicKey": "D-Kt4_vBDB11deWnNmsK1OqF5Tt8tNcyuUPPXI0Y1yQ",
-        "shortId": "f43f3666afdec470",
-        "fingerprint": "firefox"
+        "serverName": "pol8.pandaonline.org",
+        "publicKey": "p51ZLDExiHyxjbnibYkeRu4FhyFgr1dpl7OiL7uFmzE",
+        "shortId": "",
+        "fingerprint": "random"
       }
     }
   },
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.65.252",
+          "address": "194.58.222.23",
           "port": 443,
           "users": [
             {
-              "id": "2cd90015-3349-49b5-b00c-a915848cffa5",
+              "id": "80277367-ce50-478e-80ea-615296dc4185",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "sweden.biznes.lol",
-        "publicKey": "SG0oIguDhzoiNsBFqfyaRInrrJjKuts7UIfI1K2KYjo",
-        "shortId": "",
+        "serverName": "se-59347d80.sishka.network",
+        "publicKey": "uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8",
+        "shortId": "0ececd9b2731357d",
         "fingerprint": "firefox"
       }
     }
@@ -150,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "usa-2.letsconnectpoint.com",
+          "address": "50.114.179.2",
           "port": 443,
           "users": [
             {
@@ -166,24 +166,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-2.letsconnectpoint.com",
-        "publicKey": "iOXJkurGWCpwU-Z1B3RPJnjXGSQ_v1-H5XtHa6mEeFc",
-        "shortId": "b1c1b5e2",
+        "serverName": "usa-3.letsconnectpoint.com",
+        "publicKey": "Fd6VTTHCVNkP_H9EZBlSXEsHp_J3aRKeBpoYZ5gRiQc",
+        "shortId": "a2b95f1d",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇪🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "bgroup.us2.ilovegairport.com",
+          "address": "23.191.200.206",
           "port": 443,
           "users": [
             {
-              "id": "8079ccd4-4b4b-44e2-92f0-8f0367ad9c24",
+              "id": "eccd70d1-ee28-4123-a1dd-4cac94c7139c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-west-2.console.aws.amazon.com",
-        "publicKey": "s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY",
-        "shortId": "afe73effea",
+        "serverName": "dl.google.com",
+        "publicKey": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
