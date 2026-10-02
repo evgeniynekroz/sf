@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
+          "address": "82.118.19.153",
           "port": 443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "adcaa148-7c66-4282-a81a-99ec8afa029d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+        "shortId": "670ed9f350bd8ee0",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -34,13 +34,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "189.74.114.135",
+          "address": "162.35.242.252",
           "port": 443,
           "users": [
             {
-              "id": "ea954244-bd25-4233-a77e-bf04b7a7fd5a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
+              "encryption": "none"
             }
           ]
         }
@@ -50,9 +49,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "api.setevoyprichal.cc",
-        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-        "shortId": "a8",
+        "serverName": "nl.aksay.pro",
+        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
+        "shortId": "82c2b7d5e70ff000",
         "fingerprint": "firefox"
       }
     }
@@ -63,26 +62,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.249.204",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "sh-fi-01.mintrocket.org",
-        "publicKey": "WHb-QaDcaJMJ0S8Jtw83C_AdCK2anMZvTd3YCdcNanc",
-        "shortId": "e4d61fb3192a14a3",
-        "fingerprint": "random"
+        "serverName": "www.google.com",
+        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+        "shortId": "d368b94e275ab080",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -121,7 +119,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {
@@ -145,16 +143,16 @@
     }
   },
   {
-    "tag": "🇸🇪 Резерв #1 — FREE",
+    "tag": "🇯🇵 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.184",
-          "port": 443,
+          "address": "137.175.82.40",
+          "port": 30556,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,10 +164,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "serverName": "www.lovelive-anime.jp",
+        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
+        "shortId": "d082f567",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -179,7 +177,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -198,7 +196,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   }
