@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.233.121.32",
+          "address": "31.77.161.15",
           "port": 443,
           "users": [
             {
-              "id": "5469c1d9-e949-4553-a146-ac3ad363a705",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "Ez3w5uLzFlysA6Owr7SguTK5kzlIFZ09TgalzUHGAR4",
-        "shortId": "9f51e98fb874846b",
-        "fingerprint": "chrome"
+        "serverName": "nvidia.com",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
+        "fingerprint": "random"
       }
     }
   },
@@ -34,12 +34,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "162.35.242.252",
+          "address": "31.59.217.119",
           "port": 443,
           "users": [
             {
-              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
-              "encryption": "none"
+              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -49,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.aksay.pro",
-        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
-        "shortId": "82c2b7d5e70ff000",
+        "serverName": "nl119.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
         "fingerprint": "firefox"
       }
     }
@@ -119,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.148.59.178",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
-              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -135,24 +136,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-        "shortId": "e3daad69",
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇯🇵 Резерв #1 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "137.175.82.40",
-          "port": 30556,
+          "address": "140.150.227.51",
+          "port": 443,
           "users": [
             {
-              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
+              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -164,10 +165,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.lovelive-anime.jp",
-        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-        "shortId": "d082f567",
-        "fingerprint": "firefox"
+        "serverName": "us51.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
+        "fingerprint": "ios"
       }
     }
   },
@@ -177,12 +178,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "us.monkora.org",
+          "address": "us51.mech-pro.online",
           "port": 443,
           "users": [
             {
-              "id": "454431fc-71e2-42b1-b375-5b55dd06666a",
-              "encryption": "none"
+              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -192,9 +194,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "example.org",
-        "publicKey": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
-        "shortId": "",
+        "serverName": "us51.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
         "fingerprint": "firefox"
       }
     }
