@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
-          "port": 443,
+          "address": "85.234.100.9",
+          "port": 40443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
+        "serverName": "deepl.com",
+        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+        "shortId": "db46e2946fc466fd",
         "fingerprint": "random"
       }
     }
@@ -34,12 +34,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "162.35.242.252",
+          "address": "109.176.202.7",
           "port": 443,
           "users": [
             {
-              "id": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
-              "encryption": "none"
+              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -49,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.aksay.pro",
-        "publicKey": "ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY",
-        "shortId": "82c2b7d5e70ff000",
-        "fingerprint": "chrome"
+        "serverName": "id-nl-01.mintrocket.org",
+        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+        "shortId": "fee1f986a72444db",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -62,12 +63,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "77.42.20.51",
-          "port": 1085,
+          "address": "151.241.137.132",
+          "port": 443,
           "users": [
             {
-              "id": "0c1b7949-fe09-43d9-863f-2c031f66bfc1",
-              "encryption": "none"
+              "id": "5786d86f-7731-4174-b1a3-84297e54b015",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -75,7 +77,13 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "none"
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "finland.ali-bard.online",
+        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+        "shortId": "",
+        "fingerprint": "firefox"
+      }
     }
   },
   {
@@ -113,11 +121,39 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.65.252",
+          "address": "www.gov.se",
+          "port": 8080,
+          "users": [
+            {
+              "id": "989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/",
+        "headers": {
+          "Host": "sdf23g-billowing-moon-348e.mzm468gc.workers.dev"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "107.148.158.102",
           "port": 443,
           "users": [
             {
-              "id": "2cd90015-3349-49b5-b00c-a915848cffa5",
+              "id": "a368752a-32fc-42f3-980a-6b049218b23f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -129,67 +165,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "sweden.biznes.lol",
-        "publicKey": "SG0oIguDhzoiNsBFqfyaRInrrJjKuts7UIfI1K2KYjo",
+        "serverName": "usa-2.letsconnectpoint.com",
+        "publicKey": "iOXJkurGWCpwU-Z1B3RPJnjXGSQ_v1-H5XtHa6mEeFc",
+        "shortId": "b1c1b5e2",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇪🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "23.191.200.207",
+          "port": 443,
+          "users": [
+            {
+              "id": "715569e9-ee89-4b7d-b276-e73c8b4e964b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dl.google.com",
+        "publicKey": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
         "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "137.175.82.40",
-          "port": 30556,
-          "users": [
-            {
-              "id": "949d278e-6d98-4014-84e9-59f1c6c93e0e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.lovelive-anime.jp",
-        "publicKey": "EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E",
-        "shortId": "d082f567",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "179.254.86.179",
-          "port": 443,
-          "users": [
-            {
-              "id": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us1.serverslocal.ru",
-        "publicKey": "VbUdI9MaHFYPBJ1gmmfGyUX415RdeS2yg7ojhX43_m8",
-        "shortId": "b5ea2877aadeb97c",
         "fingerprint": "firefox"
       }
     }
