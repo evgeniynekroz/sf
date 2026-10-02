@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "85.234.100.9",
-          "port": 40443,
+          "address": "31.77.161.15",
+          "port": 443,
           "users": [
             {
-              "id": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "deepl.com",
-        "publicKey": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-        "shortId": "db46e2946fc466fd",
+        "serverName": "nvidia.com",
+        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+        "shortId": "db04ce8bdb8900f1",
         "fingerprint": "random"
       }
     }
@@ -34,7 +34,36 @@
     "settings": {
       "vnext": [
         {
-          "address": "109.176.202.7",
+          "address": "189.74.114.135",
+          "port": 443,
+          "users": [
+            {
+              "id": "ea954244-bd25-4233-a77e-bf04b7a7fd5a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "api.setevoyprichal.cc",
+        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+        "shortId": "a8",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "144.31.249.204",
           "port": 443,
           "users": [
             {
@@ -50,39 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "id-nl-01.mintrocket.org",
-        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
-        "shortId": "fee1f986a72444db",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "151.241.137.132",
-          "port": 443,
-          "users": [
-            {
-              "id": "5786d86f-7731-4174-b1a3-84297e54b015",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "finland.ali-bard.online",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "sh-fi-01.mintrocket.org",
+        "publicKey": "WHb-QaDcaJMJ0S8Jtw83C_AdCK2anMZvTd3YCdcNanc",
+        "shortId": "e4d61fb3192a14a3",
+        "fingerprint": "random"
       }
     }
   },
@@ -121,39 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "www.gov.se",
-          "port": 8080,
-          "users": [
-            {
-              "id": "989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/",
-        "headers": {
-          "Host": "sdf23g-billowing-moon-348e.mzm468gc.workers.dev"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "107.148.158.102",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
-              "id": "a368752a-32fc-42f3-980a-6b049218b23f",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,24 +137,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-2.letsconnectpoint.com",
-        "publicKey": "iOXJkurGWCpwU-Z1B3RPJnjXGSQ_v1-H5XtHa6mEeFc",
-        "shortId": "b1c1b5e2",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇪🇪 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "23.191.200.207",
+          "address": "169.40.42.184",
           "port": 443,
           "users": [
             {
-              "id": "715569e9-ee89-4b7d-b276-e73c8b4e964b",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,10 +166,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "dl.google.com",
-        "publicKey": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.15",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
       }
     }
   }
