@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "185.236.8.32",
-      "server_port": 443,
-      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+      "server": "147.182.144.185",
+      "server_port": 8039,
+      "uuid": "3f2eaa98-5e92-20d8-c006-899e69c948a4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl32.mech-pro.online",
+        "server_name": "www.tno.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-          "short_id": "16e0f049"
+          "public_key": "ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8",
+          "short_id": "35938c4e546cd459"
         }
       }
     },
@@ -88,25 +88,22 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl.srv.vbuste-bot.com",
-      "server_port": 444,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "server": "pl37.mech-pro.online",
+      "server_port": 443,
+      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.srv.vbuste-bot.com",
+        "server_name": "pl37.mech-pro.online",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
+          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+          "short_id": "16e0f049"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {
@@ -133,7 +130,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "77.74.123.104",
+      "server": "77.74.123.100",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -145,42 +142,41 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "47.253.226.114",
+      "server": "195.123.240.65",
       "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "uuid": "ce18d0eb-5c71-41f9-96e5-1632e22456e4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "short_id": ""
+          "public_key": "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE",
+          "short_id": "19296c9f1bf9c7b1"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 Резерв #2 — FREE",
-      "server": "89.39.121.186",
-      "server_port": 2087,
-      "uuid": "90e12a40-ea12-4951-a0ef-142a1fb164ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇷 Резерв #2 — FREE",
+      "server": "194.76.154.31",
+      "server_port": 40443,
+      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MbSfYN0EDX7TaqYNUlx4eMfd_ablcmFVHKxW8Oy10iQ",
-          "short_id": "a7b8c9d0e1f20d14"
+          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
+          "short_id": "a8ae"
         }
       }
     },
@@ -203,7 +199,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇩🇪 Резерв #2 — FREE"
+        "🇫🇷 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -221,7 +217,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇩🇪 Резерв #2 — FREE",
+        "🇫🇷 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
