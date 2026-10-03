@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "162.19.230.250",
+          "address": "31.77.168.192",
           "port": 443,
           "users": [
             {
-              "id": "7017a1ca-7a31-463d-832e-5a7261a3dd62",
-              "encryption": "none"
+              "id": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -20,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.amazon.com",
-        "publicKey": "i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0",
-        "shortId": "2b",
-        "fingerprint": "chrome"
+        "serverName": "d3-de1.cloud-cdn.xyz",
+        "publicKey": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
+        "shortId": "494afdc75f8c2fa8",
+        "fingerprint": "edge"
       }
     }
   },
@@ -33,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.217.119",
+          "address": "newhollandafter.world",
           "port": 443,
           "users": [
             {
-              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "id": "f811a2e8-08ed-4b30-b44c-449a7cab54d8",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -49,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl119.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
+        "serverName": "newhollandafter.world",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
+        "fingerprint": "qq"
       }
     }
   },
@@ -62,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.137.132",
+          "address": "31.76.21.78",
           "port": 443,
           "users": [
             {
-              "id": "5786d86f-7731-4174-b1a3-84297e54b015",
+              "id": "fee34dc3-0837-4214-8b76-c4ed4d7404ba",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finland.ali-bard.online",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
         "fingerprint": "firefox"
       }
     }
@@ -91,7 +92,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.13.202",
+          "address": "163.245.52.91",
           "port": 443,
           "users": [
             {
@@ -120,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.163",
+          "address": "31.59.204.227",
           "port": 443,
           "users": [
             {
-              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "id": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl37.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
+        "serverName": "pl3.cloud-static.org",
+        "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
+        "shortId": "96ef4f5dd00f1ba0",
+        "fingerprint": "edge"
       }
     }
   },
@@ -149,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.224",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -174,31 +175,19 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "152.53.1.40",
-          "port": 443,
-          "users": [
-            {
-              "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "at.quattro-tech.ru",
-        "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-        "shortId": "43dcff53849b81e6",
-        "fingerprint": "chrome"
-      }
+      "network": "tcp"
     }
   },
   {
@@ -207,11 +196,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.96.74",
-          "port": 2053,
+          "address": "chatgpt.com",
+          "port": 443,
           "users": [
             {
-              "id": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
               "encryption": "none"
             }
           ]
@@ -222,13 +211,13 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "wss.zazazuza.ru",
+        "serverName": "powered-by-surena.user68f797c2f3e1b.workers.dev",
         "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/vpn-wss/fluxor/59011/",
+        "path": "/?ed",
         "headers": {
-          "Host": "wss.zazazuza.ru"
+          "Host": "powered-by-surena.user68f797c2f3e1b.workers.dev"
         }
       }
     }
@@ -268,11 +257,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "140.150.227.51",
+          "address": "23.134.76.212",
           "port": 443,
           "users": [
             {
-              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "id": "3cd1770d-f285-4cf4-8979-e9dd8f4be36a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -284,10 +273,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us51.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "ios"
+        "serverName": "us.dark-bit.cc",
+        "publicKey": "cYmfBXsDs1sqQ2ZBW3xsFroB7JHV_ufFT5m7ab7STnU",
+        "shortId": "9ab513f082d4c6e1",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -355,11 +344,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "it.monkora.org",
-          "port": 443,
+          "address": "milan.adaspoloandco.com",
+          "port": 8443,
           "users": [
             {
-              "id": "454431fc-71e2-42b1-b375-5b55dd06666a",
+              "id": "69ac162b-1643-4acb-9f49-09d8b0fad609",
               "encryption": "none"
             }
           ]
@@ -367,13 +356,17 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "example.org",
-        "publicKey": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
-        "shortId": "",
-        "fingerprint": "firefox"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "milan.adaspoloandco.com",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/RoBeRt",
+        "headers": {
+          "Host": "milan.adaspoloandco.com"
+        }
       }
     }
   },
@@ -407,12 +400,12 @@
     }
   },
   {
-    "tag": "🇸🇪 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.224",
           "port": 443,
           "users": [
             {
