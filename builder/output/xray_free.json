@@ -5,13 +5,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.15",
+          "address": "162.19.230.250",
           "port": 443,
           "users": [
             {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "7017a1ca-7a31-463d-832e-5a7261a3dd62",
+              "encryption": "none"
             }
           ]
         }
@@ -21,10 +20,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "random"
+        "serverName": "www.amazon.com",
+        "publicKey": "i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0",
+        "shortId": "2b",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,24 +62,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "151.241.137.132",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "5786d86f-7731-4174-b1a3-84297e54b015",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "finland.ali-bard.online",
+        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -91,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.59.107",
+          "address": "31.77.59.163",
           "port": 443,
           "users": [
             {
@@ -107,7 +107,7 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl193.mech-pro.online",
+        "serverName": "pl37.mech-pro.online",
         "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
         "shortId": "16e0f049",
         "fingerprint": "firefox"
@@ -120,7 +120,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.224",
           "port": 443,
           "users": [
             {
@@ -139,7 +139,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },
@@ -173,16 +173,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "us51.mech-pro.online",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
-              "id": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,10 +194,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us51.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
       }
     }
   }
