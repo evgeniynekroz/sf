@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.58.178.127",
+          "address": "31.58.178.110",
           "port": 443,
           "users": [
             {
@@ -24,7 +24,7 @@
         "serverName": "de3.swcdn.xyz",
         "publicKey": "N6RFNy2oUKtxhdpKyIbZnjWSMghyiu37veqd6MLjbgk",
         "shortId": "d641efc97408a7e4",
-        "fingerprint": "firefox"
+        "fingerprint": "random"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.236.8.32",
+          "address": "189.74.114.117",
           "port": 443,
           "users": [
             {
-              "id": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+              "id": "b0a05ac4-eade-4f26-a514-bdae074bd63b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl32.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
+        "serverName": "api.mediapriboy.cc",
+        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+        "shortId": "a8",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -140,7 +140,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },

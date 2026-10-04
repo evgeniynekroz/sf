@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.58.178.127",
+          "address": "31.58.178.110",
           "port": 443,
           "users": [
             {
@@ -24,7 +24,7 @@
         "serverName": "de3.swcdn.xyz",
         "publicKey": "N6RFNy2oUKtxhdpKyIbZnjWSMghyiu37veqd6MLjbgk",
         "shortId": "d641efc97408a7e4",
-        "fingerprint": "firefox"
+        "fingerprint": "random"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.236.8.32",
+          "address": "189.74.114.117",
           "port": 443,
           "users": [
             {
-              "id": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+              "id": "b0a05ac4-eade-4f26-a514-bdae074bd63b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl32.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
+        "serverName": "api.mediapriboy.cc",
+        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+        "shortId": "a8",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -150,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -169,25 +169,69 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "shadowsocks",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "82.110.60.9",
-          "port": 19999,
-          "method": "aes-256-gcm",
-          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+          "address": "95.163.176.170",
+          "port": 443,
+          "users": [
+            {
+              "id": "9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "at-04-10.zetnik.site",
+        "publicKey": "SRiCmlDq2MeazWpOaQRW0vX9biFHR-mXNFWRUjJ3LQc",
+        "shortId": "35dd8abf1a7df7d0",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.149.192",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fd42d43c58.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/?ed",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fd42d43c58.workers.dev"
+        }
+      }
     }
   },
   {
@@ -249,18 +293,17 @@
     }
   },
   {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
+    "tag": "🇯🇵 Япония — Premium",
+    "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "3h-kazakhstan1.09vpn.com",
-          "port": 80,
+          "address": "red-flower-a2bf.363.workers.dev",
+          "port": 8880,
           "users": [
             {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
+              "id": "b4a18856-301d-4bb2-b729-6afcb700faf5",
+              "encryption": "none"
             }
           ]
         }
@@ -270,36 +313,7 @@
       "network": "ws",
       "security": "none",
       "wsSettings": {
-        "path": "/vmess/"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "13.231.19.51",
-          "port": 11690,
-          "users": [
-            {
-              "id": "e2b8b217-cffb-4d66-9b8b-eca6e4334032",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.tesla.com",
-        "publicKey": "Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg",
-        "shortId": "034885e346fd30",
-        "fingerprint": "firefox"
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net"
       }
     }
   },
