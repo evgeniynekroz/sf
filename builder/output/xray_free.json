@@ -5,7 +5,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.58.178.110",
+          "address": "31.58.178.127",
           "port": 443,
           "users": [
             {
@@ -24,7 +24,7 @@
         "serverName": "de3.swcdn.xyz",
         "publicKey": "N6RFNy2oUKtxhdpKyIbZnjWSMghyiu37veqd6MLjbgk",
         "shortId": "d641efc97408a7e4",
-        "fingerprint": "random"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "189.74.114.117",
+          "address": "109.176.202.7",
           "port": 443,
           "users": [
             {
-              "id": "b0a05ac4-eade-4f26-a514-bdae074bd63b",
+              "id": "f0a52dd3-4377-4402-a450-210bc81bcf25",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "api.mediapriboy.cc",
-        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-        "shortId": "a8",
-        "fingerprint": "chrome"
+        "serverName": "id-nl-01.mintrocket.org",
+        "publicKey": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+        "shortId": "fee1f986a72444db",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.137.132",
+          "address": "31.76.21.78",
           "port": 443,
           "users": [
             {
-              "id": "5786d86f-7731-4174-b1a3-84297e54b015",
+              "id": "fee34dc3-0837-4214-8b76-c4ed4d7404ba",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finland.ali-bard.online",
-        "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-        "shortId": "",
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
         "fingerprint": "firefox"
       }
     }
@@ -92,7 +92,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.206.218",
+          "address": "31.59.204.104",
           "port": 443,
           "users": [
             {
@@ -111,7 +111,7 @@
         "serverName": "pl3.cloud-static.org",
         "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
         "shortId": "96ef4f5dd00f1ba0",
-        "fingerprint": "random"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -150,35 +150,6 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.123.240.65",
-          "port": 443,
-          "users": [
-            {
-              "id": "ce18d0eb-5c71-41f9-96e5-1632e22456e4",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE",
-        "shortId": "19296c9f1bf9c7b1",
-        "fingerprint": "random"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
           "address": "47.253.226.114",
           "port": 443,
           "users": [
@@ -197,6 +168,35 @@
       "realitySettings": {
         "serverName": "www.cloudflare.com",
         "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "159.89.87.21",
+          "port": 28190,
+          "users": [
+            {
+              "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "aws.amazon.com",
+        "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
         "shortId": "",
         "fingerprint": "chrome"
       }
