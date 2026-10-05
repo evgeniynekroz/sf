@@ -109,70 +109,76 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "193.148.59.178",
+      "server": "169.40.42.212",
       "server_port": 443,
-      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-          "short_id": "e3daad69"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "77.74.123.107",
+      "server_port": 8443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-test-italy.dynuddns.net",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "84.32.71.124",
+      "server": "47.253.226.114",
       "server_port": 443,
-      "uuid": "e90759b7-6454-4b3a-8453-279e6f496f3a",
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us1.jetservaki.fit",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wLANFlHX4PxKF73pKoFgd7gdd6myrYhPEn9FipTTFQQ",
-          "short_id": "f01acad2ba23e527"
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "us1.jetservaki.fit",
+      "tag": "🇸🇪 Резерв #2 — FREE",
+      "server": "169.40.42.232",
       "server_port": 443,
-      "uuid": "e90759b7-6454-4b3a-8453-279e6f496f3a",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us1.jetservaki.fit",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wLANFlHX4PxKF73pKoFgd7gdd6myrYhPEn9FipTTFQQ",
-          "short_id": "f01acad2ba23e527"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
@@ -192,8 +198,9 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇺🇸 Резерв #2 — FREE"
+        "🇸🇪 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -209,8 +216,9 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇺🇸 Резерв #2 — FREE",
+        "🇸🇪 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
