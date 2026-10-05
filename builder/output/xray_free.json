@@ -92,39 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "149.50.116.171",
+          "address": "31.59.204.227",
           "port": 443,
           "users": [
             {
-              "id": "65616081-1772-49d7-a793-42bc13d22f69",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl-1-1.imnotgay.party",
-        "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-        "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 Швеция — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "169.40.42.15",
-          "port": 443,
-          "users": [
-            {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +108,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "serverName": "pl3.cloud-static.org",
+        "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
+        "shortId": "96ef4f5dd00f1ba0",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Швеция — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "193.148.59.178",
+          "port": 443,
+          "users": [
+            {
+              "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+        "shortId": "e3daad69",
+        "fingerprint": "chrome"
       }
     }
   },

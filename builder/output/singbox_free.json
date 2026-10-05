@@ -88,54 +88,43 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "149.50.116.171",
+      "server": "31.59.204.227",
       "server_port": 443,
-      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl-1-1.imnotgay.party",
+        "server_name": "pl3.cloud-static.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
+          "public_key": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
+          "short_id": "96ef4f5dd00f1ba0"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "169.40.42.15",
+      "server": "193.148.59.178",
       "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+          "short_id": "e3daad69"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "77.74.123.103",
-      "server_port": 8443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false
       }
     },
     {
@@ -203,7 +192,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -221,7 +209,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
