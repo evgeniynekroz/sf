@@ -34,28 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "171.22.183.155",
+          "address": "78.159.131.79",
           "port": 443,
           "users": [
             {
-              "id": "e90759b7-6454-4b3a-8453-279e6f496f3a",
-              "encryption": "none"
+              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl1.jetservaki.fit",
-        "publicKey": "qYmjDdoe-W9e55-Rs6u_G4HCHMk31G_qj0t1Q4_BcUg",
-        "shortId": "884b938083b628d2",
+        "serverName": "nl-root.sworkingvpn.com",
+        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+        "shortId": "15bcc0a77c3cacdf",
         "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
       }
     }
   },
@@ -94,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "94.183.157.192",
+          "address": "31.59.205.36",
           "port": 443,
           "users": [
             {
-              "id": "2b781b4a-5942-0018-a7f3-5a07b7b488c1",
+              "id": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -110,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl-root.sworkingvpn.com",
-        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-        "shortId": "15bcc0a77c3cacdf",
+        "serverName": "pl3.cloud-static.org",
+        "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
+        "shortId": "96ef4f5dd00f1ba0",
         "fingerprint": "firefox"
       }
     }
@@ -123,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.184",
+          "address": "169.40.42.95",
           "port": 443,
           "users": [
             {
@@ -142,7 +140,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -152,42 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "84.32.71.124",
-          "port": 443,
+          "address": "23.237.193.202",
+          "port": 8443,
           "users": [
             {
-              "id": "e90759b7-6454-4b3a-8453-279e6f496f3a",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us1.jetservaki.fit",
-        "publicKey": "wLANFlHX4PxKF73pKoFgd7gdd6myrYhPEn9FipTTFQQ",
-        "shortId": "f01acad2ba23e527",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.53.209.67",
-          "port": 443,
-          "users": [
-            {
-              "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
+              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -199,10 +166,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-2.srv.dvzh.net",
-        "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-        "shortId": "d30f9d846a7c8cba",
-        "fingerprint": "firefox"
+        "serverName": "usa-nf.reddotcorp.org",
+        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
+        "shortId": "9db6b6d13d17987e",
+        "fingerprint": "random"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.212",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
       }
     }
   }
