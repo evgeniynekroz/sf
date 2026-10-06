@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.205.36",
+          "address": "94.183.157.192",
           "port": 443,
           "users": [
             {
-              "id": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+              "id": "2b781b4a-5942-0018-a7f3-5a07b7b488c1",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl3.cloud-static.org",
-        "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
-        "shortId": "96ef4f5dd00f1ba0",
+        "serverName": "pl-root.sworkingvpn.com",
+        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+        "shortId": "15bcc0a77c3cacdf",
         "fingerprint": "firefox"
       }
     }
@@ -179,7 +179,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.212",
+          "address": "169.40.42.75",
           "port": 443,
           "users": [
             {
