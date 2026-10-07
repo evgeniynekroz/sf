@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "64.188.126.56",
-          "port": 43000,
+          "address": "104.194.159.237",
+          "port": 8443,
           "users": [
             {
-              "id": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
+              "id": "8afeb33c-b686-43e9-a629-0d98f991ec28",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "64.188.126.56",
-        "publicKey": "jjbMUO41S9JE7ou_zbbDStzSYLzJVN_0O-j0f6b380E",
-        "shortId": "bf4e20af99d3042d",
-        "fingerprint": "random"
+        "serverName": "github.com",
+        "publicKey": "L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys",
+        "shortId": "1aec480577a542ee",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.8.154",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "fd260c22-c5a9-47fc-bb68-5b3e890ee7c4",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "encryption": "none"
             }
           ]
         }
@@ -79,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi2.yservice.help",
-        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
-        "shortId": "abcd1234",
-        "fingerprint": "chrome"
+        "serverName": "www.google.com",
+        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+        "shortId": "d368b94e275ab080",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.205.36",
+          "address": "31.59.204.104",
           "port": 443,
           "users": [
             {
@@ -121,7 +120,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.212",
+          "address": "169.40.42.95",
           "port": 443,
           "users": [
             {
@@ -179,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "23.237.193.202",
-          "port": 8443,
+          "address": "23.134.76.212",
+          "port": 443,
           "users": [
             {
-              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
+              "id": "3cd1770d-f285-4cf4-8979-e9dd8f4be36a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +194,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "us.dark-bit.cc",
+        "publicKey": "cYmfBXsDs1sqQ2ZBW3xsFroB7JHV_ufFT5m7ab7STnU",
+        "shortId": "9ab513f082d4c6e1",
         "fingerprint": "firefox"
       }
     }
