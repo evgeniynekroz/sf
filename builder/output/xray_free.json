@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.56.123.131",
-          "port": 443,
+          "address": "64.188.126.56",
+          "port": 43000,
           "users": [
             {
-              "id": "a47f8110-de83-4c37-b6a7-16010535aef4",
+              "id": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "contact.yump.online",
-        "publicKey": "wDAQ_iQ_vv6lQiB9nCxIJviEhARWOQOPyhzos8EJW3o",
-        "shortId": "9da47879658f9f25",
-        "fingerprint": "firefox"
+        "serverName": "64.188.126.56",
+        "publicKey": "jjbMUO41S9JE7ou_zbbDStzSYLzJVN_0O-j0f6b380E",
+        "shortId": "bf4e20af99d3042d",
+        "fingerprint": "random"
       }
     }
   },
@@ -63,7 +63,36 @@
     "settings": {
       "vnext": [
         {
-          "address": "132.243.231.4",
+          "address": "31.76.8.154",
+          "port": 443,
+          "users": [
+            {
+              "id": "fd260c22-c5a9-47fc-bb68-5b3e890ee7c4",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.59.205.36",
           "port": 443,
           "users": [
             {
@@ -79,38 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "d3-se1.cloud-cdn.xyz",
-        "publicKey": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
-        "shortId": "5efa80b939612291",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "179.198.49.99",
-          "port": 443,
-          "users": [
-            {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl1.nztvpn.com",
-        "publicKey": "iwHKqXfMtE61bupFq0qdpc8_uGwQswGc3JpLvDVB9Wo",
-        "shortId": "088b263ae349cc97",
+        "serverName": "pl3.cloud-static.org",
+        "publicKey": "cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24",
+        "shortId": "96ef4f5dd00f1ba0",
         "fingerprint": "firefox"
       }
     }
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.232",
+          "address": "169.40.42.212",
           "port": 443,
           "users": [
             {
@@ -179,11 +179,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "83.229.67.25",
-          "port": 443,
+          "address": "23.237.193.202",
+          "port": 8443,
           "users": [
             {
-              "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
+              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-2.srv.dvzh.net",
-        "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-        "shortId": "d30f9d846a7c8cba",
+        "serverName": "usa-nf.reddotcorp.org",
+        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
+        "shortId": "9db6b6d13d17987e",
         "fingerprint": "firefox"
       }
     }
