@@ -5,7 +5,36 @@
     "settings": {
       "vnext": [
         {
-          "address": "87.120.216.137",
+          "address": "130.17.25.67",
+          "port": 443,
+          "users": [
+            {
+              "id": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "github.com",
+        "publicKey": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+        "shortId": "9e4eced6e98ed4d4",
+        "fingerprint": "random"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "144.31.123.247",
           "port": 443,
           "users": [
             {
@@ -21,41 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de-root.sworkingvpn.com",
+        "serverName": "nl-root.sworkingvpn.com",
         "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
         "shortId": "15bcc0a77c3cacdf",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.170.211.197",
-          "port": 443,
-          "users": [
-            {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl6.bbobr.win",
-        "publicKey": "eZXyfQzQgQSreAbhKSorx38cgnKmGuSOiQbthBfG5k0",
-        "shortId": "0e903b415d812c59",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "api.v2.nl6d19f4b7"
       }
     }
   },
@@ -123,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "pl7.bbobr.win",
+          "address": "185.70.199.98",
           "port": 443,
           "users": [
             {
@@ -177,34 +175,19 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "188.114.97.6",
-          "port": 443,
-          "users": [
-            {
-              "id": "698b212d-ca12-4794-8256-252a6e1b4533",
-              "encryption": "none"
-            }
-          ]
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
         }
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "w2p6.vpnpolar.online",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/beeline",
-        "headers": {
-          "Host": "w2p6.vpnpolar.online"
-        }
-      }
+      "network": "tcp"
     }
   },
   {
@@ -242,11 +225,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "us1-r.link-t7.com",
-          "port": 10238,
+          "address": "45.8.201.83",
+          "port": 443,
           "users": [
             {
-              "id": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
               "encryption": "none"
             }
           ]
@@ -257,39 +240,13 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "s0.awsstatic.com",
-        "publicKey": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-        "shortId": "686c0ef0",
-        "fingerprint": "chrome"
+        "serverName": "us7.bbobr.win",
+        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+        "shortId": "a59ba372400e4779",
+        "fingerprint": "firefox"
       },
       "grpcSettings": {
-        "serviceName": "movie"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "3h-kazakhstan1.09vpn.com",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/"
+        "serviceName": "api.v2.us7f28b1d6"
       }
     }
   },
@@ -351,16 +308,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇷🇺 Россия — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "66.55.64.42",
-          "port": 443,
+          "address": "45.141.118.232",
+          "port": 7443,
           "users": [
             {
-              "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
+              "id": "81a227e3-cb97-40fe-b7b6-45a60ed065cf",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -372,10 +329,99 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-1.srv.dvzh.net",
-        "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-        "shortId": "e4e77e76e6e49da7",
+        "serverName": "node.remnagecsp.ru",
+        "publicKey": "0BVxZKOt6wO0jIB1xRkAAtaFUkmyFAbVWfkkKSJBfEI",
+        "shortId": "570ffeb12f6e4635",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "109.248.170.119",
+          "port": 13447,
+          "users": [
+            {
+              "id": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+        "shortId": "83",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "89.125.96.89",
+          "port": 2053,
+          "users": [
+            {
+              "id": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "wss.zazazuza.ru",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "92.118.112.249",
+          "port": 443,
+          "users": [
+            {
+              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us-root.sworkingvpn.com",
+        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+        "shortId": "15bcc0a77c3cacdf",
+        "fingerprint": "firefox"
       }
     }
   }

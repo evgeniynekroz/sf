@@ -25,13 +25,34 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "87.120.216.137",
+      "server": "130.17.25.67",
+      "server_port": 443,
+      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+          "short_id": "9e4eced6e98ed4d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды — FREE",
+      "server": "144.31.123.247",
       "server_port": 443,
       "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de-root.sworkingvpn.com",
+        "server_name": "nl-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -41,30 +62,6 @@
           "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
           "short_id": "15bcc0a77c3cacdf"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "185.170.211.197",
-      "server_port": 443,
-      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl6.bbobr.win",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eZXyfQzQgQSreAbhKSorx38cgnKmGuSOiQbthBfG5k0",
-          "short_id": "0e903b415d812c59"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v2.nl6d19f4b7"
       }
     },
     {
@@ -91,7 +88,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl7.bbobr.win",
+      "server": "185.70.199.98",
       "server_port": 443,
       "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "flow": "xtls-rprx-vision",
@@ -133,45 +130,45 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "us1-r.link-t7.com",
-      "server_port": 10238,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "server": "45.8.201.83",
+      "server_port": 443,
+      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
         "enabled": true,
-        "server_name": "s0.awsstatic.com",
+        "server_name": "us7.bbobr.win",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
+          "public_key": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+          "short_id": "a59ba372400e4779"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "movie"
+        "service_name": "api.v2.us7f28b1d6"
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "66.55.64.42",
+      "server": "92.118.112.249",
       "server_port": 443,
-      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us-1.srv.dvzh.net",
+        "server_name": "us-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-          "short_id": "e4e77e76e6e49da7"
+          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
