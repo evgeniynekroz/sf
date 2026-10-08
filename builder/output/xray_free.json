@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "64.188.126.56",
-          "port": 43000,
+          "address": "130.17.25.67",
+          "port": 443,
           "users": [
             {
-              "id": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
+              "id": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "64.188.126.56",
-        "publicKey": "jjbMUO41S9JE7ou_zbbDStzSYLzJVN_0O-j0f6b380E",
-        "shortId": "bf4e20af99d3042d",
+        "serverName": "github.com",
+        "publicKey": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+        "shortId": "9e4eced6e98ed4d4",
         "fingerprint": "random"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.159.131.79",
+          "address": "185.220.204.145",
           "port": 443,
           "users": [
             {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+              "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-root.sworkingvpn.com",
-        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-        "shortId": "15bcc0a77c3cacdf",
+        "serverName": "nl-2.srv.dvzh.net",
+        "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+        "shortId": "e0ccc8c2f487d913",
         "fingerprint": "firefox"
       }
     }
@@ -63,12 +63,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "31.76.8.154",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "fd260c22-c5a9-47fc-bb68-5b3e890ee7c4",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -78,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "firefox"
+        "serverName": "fi2.yservice.help",
+        "publicKey": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+        "shortId": "abcd1234",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -120,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {
@@ -149,35 +150,6 @@
     "settings": {
       "vnext": [
         {
-          "address": "92.118.112.249",
-          "port": 443,
-          "users": [
-            {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us-root.sworkingvpn.com",
-        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-        "shortId": "15bcc0a77c3cacdf",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
           "address": "47.253.226.114",
           "port": 443,
           "users": [
@@ -198,6 +170,35 @@
         "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "92.118.112.249",
+          "port": 443,
+          "users": [
+            {
+              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us-root.sworkingvpn.com",
+        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+        "shortId": "15bcc0a77c3cacdf",
+        "fingerprint": "firefox"
       }
     }
   }
