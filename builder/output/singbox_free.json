@@ -67,21 +67,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "13.143.166.245",
+      "server": "217.60.178.61",
       "server_port": 443,
-      "uuid": "2a0b565e-904e-4d3b-a7eb-0725d6a2c7cd",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.jsdelivr.net",
+        "server_name": "fi-s-1.pythonmakemigreat.wiki",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FuKGULeQ9xZMJN8hWz6J_49tDJKT9HA-nsAXOOVRmyM",
-          "short_id": "ff867ed245c73f43"
+          "public_key": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+          "short_id": "78f97d82e16aaad6"
         }
       }
     },
@@ -130,7 +130,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "45.8.201.83",
+      "server": "23.134.124.54",
       "server_port": 443,
       "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {

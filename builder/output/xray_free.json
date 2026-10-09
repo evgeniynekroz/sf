@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "13.143.166.245",
+          "address": "217.60.178.61",
           "port": 443,
           "users": [
             {
-              "id": "2a0b565e-904e-4d3b-a7eb-0725d6a2c7cd",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cdn.jsdelivr.net",
-        "publicKey": "FuKGULeQ9xZMJN8hWz6J_49tDJKT9HA-nsAXOOVRmyM",
-        "shortId": "ff867ed245c73f43",
-        "fingerprint": "chrome"
+        "serverName": "fi-s-1.pythonmakemigreat.wiki",
+        "publicKey": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+        "shortId": "78f97d82e16aaad6",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -150,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.83",
+          "address": "23.134.124.54",
           "port": 443,
           "users": [
             {
