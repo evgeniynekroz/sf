@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.123.247",
+          "address": "177.3.212.247",
           "port": 443,
           "users": [
             {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+              "id": "56de13ac-086e-4789-8e1e-1bf2bd90216b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-root.sworkingvpn.com",
-        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-        "shortId": "15bcc0a77c3cacdf",
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.224",
           "port": 443,
           "users": [
             {
@@ -140,43 +140,36 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "trojan",
+    "settings": {
+      "servers": [
+        {
+          "address": "russia.com",
+          "port": 443,
+          "password": "bpb-trojan"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "6982410.xyz",
+        "fingerprint": "ios"
+      },
+      "wsSettings": {
+        "path": "/tr"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "23.134.124.54",
-          "port": 443,
-          "users": [
-            {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us7.bbobr.win",
-        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
-        "shortId": "a59ba372400e4779",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "api.v2.us7f28b1d6"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -200,6 +193,35 @@
         "serverName": "us-root.sworkingvpn.com",
         "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
         "shortId": "15bcc0a77c3cacdf",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "23.237.193.202",
+          "port": 8443,
+          "users": [
+            {
+              "id": "a6be94fc-e742-4714-8a38-c8d7410ae066",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "usa-nf.reddotcorp.org",
+        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
+        "shortId": "9db6b6d13d17987e",
         "fingerprint": "firefox"
       }
     }
