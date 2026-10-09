@@ -63,7 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "217.60.178.61",
+          "address": "31.56.186.115",
           "port": 443,
           "users": [
             {
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.155.55.3",
-          "port": 8443,
+          "address": "195.123.213.28",
+          "port": 443,
           "users": [
             {
-              "id": "a6be94fc-e742-4714-8a38-c8d7410ae066",
+              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ee-nf.reddotcorp.org",
-        "publicKey": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
-        "shortId": "661766b2bcef440a",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+        "shortId": "5c256336e3b673fa",
         "fingerprint": "chrome"
       }
     }
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.70.199.98",
+          "address": "pol11.pandaonline.org",
           "port": 443,
           "users": [
             {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "id": "2111b7d2-e31a-474b-95a2-5218bc6cce71",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,9 +137,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl7.bbobr.win",
-        "publicKey": "jZ8yA5Qm_-fP3XM_Q8F7zCSZglmK0TmZKNGckmM3O2w",
-        "shortId": "1e025404945a396c",
+        "serverName": "pol11.pandaonline.org",
+        "publicKey": "rjWKgK1TgmW7ohSJmnVM5Fkm06HembMZf-l49sTbkEU",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -191,38 +191,6 @@
     }
   },
   {
-    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "172.64.144.198",
-          "port": 443,
-          "users": [
-            {
-              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "powered-by-surena.configfarsi695fd42d43c58.workers.dev",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "powered-by-surena.configfarsi695fd42d43c58.workers.dev"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇬🇧 Великобритания — Premium",
     "protocol": "vless",
     "settings": {
@@ -257,69 +225,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "92.118.112.249",
+          "address": "45.8.201.121",
           "port": 443,
           "users": [
             {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us-root.sworkingvpn.com",
-        "publicKey": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-        "shortId": "15bcc0a77c3cacdf",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "62.133.63.15",
-          "port": 443,
-          "users": [
-            {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tr-root.sworkingvpn.com",
-        "publicKey": "ytK-P4kX0kJND-f_e_k5422ek2jaUEWtRz3osiUsjxw",
-        "shortId": "15bcc0a77c3cacdf",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "172.64.88.168",
-          "port": 8880,
-          "users": [
-            {
-              "id": "6f876b28-1b3e-4088-85c0-d299e56bfccd",
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
               "encryption": "none"
             }
           ]
@@ -327,42 +237,16 @@
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
-        "headers": {
-          "Host": "throbbing-haze-fbde.388-6c4.workers.dev"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇮🇹 Италия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "45.155.68.166",
-          "port": 443,
-          "users": [
-            {
-              "id": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "it-root.sworkingvpn.com",
-        "publicKey": "m36Bb1dQ2v4zhgPAtkJnNmFY_4K75zvBo5e1JiitciM",
-        "shortId": "15bcc0a77c3cacdf",
-        "fingerprint": "chrome"
+        "serverName": "us7.bbobr.win",
+        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+        "shortId": "a59ba372400e4779",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v2.us7f28b1d6"
       }
     }
   },
@@ -395,40 +279,16 @@
     }
   },
   {
-    "tag": "🇷🇺 LTE — Premium",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "russia.com",
-          "port": 443,
-          "password": "bpb-trojan"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "6982410.xyz",
-        "fingerprint": "ios"
-      },
-      "wsSettings": {
-        "path": "/tr"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇷🇺 Россия — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "23.237.193.202",
-          "port": 8443,
+          "address": "45.141.118.232",
+          "port": 7443,
           "users": [
             {
-              "id": "a6be94fc-e742-4714-8a38-c8d7410ae066",
+              "id": "81a227e3-cb97-40fe-b7b6-45a60ed065cf",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -440,10 +300,128 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "node.remnagecsp.ru",
+        "publicKey": "0BVxZKOt6wO0jIB1xRkAAtaFUkmyFAbVWfkkKSJBfEI",
+        "shortId": "570ffeb12f6e4635",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇴 Норвегия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "87.242.95.164",
+          "port": 9443,
+          "users": [
+            {
+              "id": "522aa385-ae51-49ca-98a9-dbf5cd421b31",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "passport.yandex.ru",
+        "publicKey": "9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ",
+        "shortId": "8375b32501373f41",
+        "fingerprint": "qq"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "89.125.96.93",
+          "port": 2053,
+          "users": [
+            {
+              "id": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "wss.zazazuza.ru",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 LTE #3 — Premium",
+    "protocol": "trojan",
+    "settings": {
+      "servers": [
+        {
+          "address": "45.80.111.7",
+          "port": 443,
+          "password": "humanity"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "www.calmlunch.com",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/assignment"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "45.8.201.83",
+          "port": 443,
+          "users": [
+            {
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us7.bbobr.win",
+        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+        "shortId": "a59ba372400e4779",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v2.us7f28b1d6"
       }
     }
   }

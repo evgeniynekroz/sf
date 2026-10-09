@@ -67,7 +67,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "217.60.178.61",
+      "server": "31.56.186.115",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -88,21 +88,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "185.70.199.98",
+      "server": "pol11.pandaonline.org",
       "server_port": 443,
-      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+      "uuid": "2111b7d2-e31a-474b-95a2-5218bc6cce71",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl7.bbobr.win",
+        "server_name": "pol11.pandaonline.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jZ8yA5Qm_-fP3XM_Q8F7zCSZglmK0TmZKNGckmM3O2w",
-          "short_id": "1e025404945a396c"
+          "public_key": "rjWKgK1TgmW7ohSJmnVM5Fkm06HembMZf-l49sTbkEU",
+          "short_id": ""
         }
       }
     },
@@ -128,61 +128,63 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "russia.com",
-      "server_port": 443,
-      "password": "bpb-trojan",
+      "server": "5.254.51.109",
+      "server_port": 9443,
+      "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
         "enabled": true,
-        "server_name": "6982410.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr",
-        "headers": {}
+        "server_name": "keyhop-voxility-at.dynuddns.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "92.118.112.249",
+      "server": "45.8.201.121",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
         "enabled": true,
-        "server_name": "us-root.sworkingvpn.com",
+        "server_name": "us7.bbobr.win",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+          "public_key": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+          "short_id": "a59ba372400e4779"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.us7f28b1d6"
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "23.237.193.202",
-      "server_port": 8443,
-      "uuid": "a6be94fc-e742-4714-8a38-c8d7410ae066",
-      "flow": "xtls-rprx-vision",
+      "server": "45.8.201.83",
+      "server_port": 443,
+      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
         "enabled": true,
-        "server_name": "usa-nf.reddotcorp.org",
+        "server_name": "us7.bbobr.win",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-          "short_id": "9db6b6d13d17987e"
+          "public_key": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+          "short_id": "a59ba372400e4779"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.us7f28b1d6"
       }
     },
     {
