@@ -94,24 +94,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "80.47.12.94",
+          "address": "213.21.232.224",
           "port": 443,
           "users": [
             {
-              "id": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-              "encryption": "none"
+              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl-1-1.unturned-rust-dead.lol",
-        "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-        "shortId": "",
+        "serverName": "pl-4.ardesnode.ru",
+        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+        "shortId": "9ea74b83f4993ca9",
         "fingerprint": "random"
       }
     }
@@ -122,28 +123,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "62.60.159.81",
-          "port": 2053,
+          "address": "169.40.42.184",
+          "port": 443,
           "users": [
             {
-              "id": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
-              "encryption": "none"
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.samsung.com",
-        "publicKey": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-        "shortId": "d0ea1847066af5a6",
-        "fingerprint": "safari"
-      },
-      "grpcSettings": {
-        "serviceName": "grpce5bb9e71"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
       }
     }
   },
@@ -153,7 +152,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.119",
+          "address": "45.8.201.83",
           "port": 443,
           "users": [
             {
@@ -171,7 +170,7 @@
         "serverName": "us7.bbobr.win",
         "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
         "shortId": "a59ba372400e4779",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       },
       "grpcSettings": {
         "serviceName": "api.v2.us7f28b1d6"
