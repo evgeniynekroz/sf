@@ -34,28 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.170.211.197",
+          "address": "150.241.80.113",
           "port": 443,
           "users": [
             {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
-              "encryption": "none"
+              "id": "86037609-3790-4901-bd2f-c698092fb1fc",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl6.bbobr.win",
-        "publicKey": "eZXyfQzQgQSreAbhKSorx38cgnKmGuSOiQbthBfG5k0",
-        "shortId": "0e903b415d812c59",
+        "serverName": "nl.skfv-mirror.ru",
+        "publicKey": "qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM",
+        "shortId": "87cc0414902bee2d",
         "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "api.v2.nl6d19f4b7"
       }
     }
   },
@@ -94,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.10.90.118",
+          "address": "213.21.232.230",
           "port": 443,
           "users": [
             {
-              "id": "86096188-0ece-41af-922d-792c5f96c3ad",
+              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -110,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl1.w-brand.shop",
-        "publicKey": "SUqLHKFiu82qz10ruF3RVkoYesyoCcEHCATTz8XPahY",
-        "shortId": "acc1edca2a337172",
-        "fingerprint": "firefox"
+        "serverName": "pl-1.ardesnode.ru",
+        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+        "shortId": "9ea74b83f4993ca9",
+        "fingerprint": "random"
       }
     }
   },
@@ -123,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.52",
           "port": 443,
           "users": [
             {
@@ -152,55 +150,59 @@
     "settings": {
       "vnext": [
         {
-          "address": "167.17.69.171",
+          "address": "45.8.201.83",
           "port": 443,
           "users": [
             {
-              "id": "00144519-7e0d-476b-8d28-435576af9262",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-        "shortId": "0990d22f",
-        "fingerprint": "chrome"
+        "serverName": "us7.bbobr.win",
+        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+        "shortId": "a59ba372400e4779",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v2.us7f28b1d6"
       }
     }
   },
   {
-    "tag": "🇸🇪 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.52",
+          "address": "45.8.201.121",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "serverName": "us7.bbobr.win",
+        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
+        "shortId": "a59ba372400e4779",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v2.us7f28b1d6"
       }
     }
   }
