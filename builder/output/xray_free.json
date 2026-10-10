@@ -34,26 +34,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.80.113",
+          "address": "178.253.233.114",
           "port": 443,
           "users": [
             {
-              "id": "86037609-3790-4901-bd2f-c698092fb1fc",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl.skfv-mirror.ru",
-        "publicKey": "qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM",
-        "shortId": "87cc0414902bee2d",
+        "serverName": "nl7.bbobr.win",
+        "publicKey": "aRhhdxVu0EiUbVl1Wyq6DLjJMRRJ78YQY2rN5Ne98gg",
+        "shortId": "5d3849c8fc1e63b0",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v2.nl7c05e8a3"
       }
     }
   },
@@ -92,7 +94,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "213.21.232.230",
+          "address": "213.21.232.224",
           "port": 443,
           "users": [
             {
@@ -108,7 +110,7 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl-1.ardesnode.ru",
+        "serverName": "pl-4.ardesnode.ru",
         "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
         "shortId": "9ea74b83f4993ca9",
         "fingerprint": "random"
@@ -121,7 +123,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.52",
+          "address": "169.40.42.184",
           "port": 443,
           "users": [
             {
@@ -140,7 +142,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },
@@ -150,7 +152,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.83",
+          "address": "45.8.201.119",
           "port": 443,
           "users": [
             {
@@ -181,7 +183,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.121",
+          "address": "45.8.201.83",
           "port": 443,
           "users": [
             {

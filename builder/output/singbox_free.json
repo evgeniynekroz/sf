@@ -46,22 +46,25 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "150.241.80.113",
+      "server": "178.253.233.114",
       "server_port": 443,
-      "uuid": "86037609-3790-4901-bd2f-c698092fb1fc",
-      "flow": "xtls-rprx-vision",
+      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
         "enabled": true,
-        "server_name": "nl.skfv-mirror.ru",
+        "server_name": "nl7.bbobr.win",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM",
-          "short_id": "87cc0414902bee2d"
+          "public_key": "aRhhdxVu0EiUbVl1Wyq6DLjJMRRJ78YQY2rN5Ne98gg",
+          "short_id": "5d3849c8fc1e63b0"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.nl7c05e8a3"
       }
     },
     {
@@ -88,13 +91,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "213.21.232.230",
+      "server": "213.21.232.224",
       "server_port": 443,
       "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl-1.ardesnode.ru",
+        "server_name": "pl-4.ardesnode.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
@@ -109,7 +112,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "169.40.42.52",
+      "server": "169.40.42.184",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
@@ -118,7 +121,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -142,7 +145,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "45.8.201.83",
+      "server": "45.8.201.119",
       "server_port": 443,
       "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
@@ -166,7 +169,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "45.8.201.121",
+      "server": "45.8.201.83",
       "server_port": 443,
       "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
       "tls": {
