@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "130.17.25.67",
-          "port": 443,
+          "address": "89.169.53.176",
+          "port": 4443,
           "users": [
             {
-              "id": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
+              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "github.com",
-        "publicKey": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
-        "shortId": "9e4eced6e98ed4d4",
-        "fingerprint": "random"
+        "serverName": "de.wvpn.one",
+        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -94,7 +94,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.218.63",
+          "address": "185.252.177.216",
           "port": 443,
           "users": [
             {
@@ -110,7 +110,7 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est-4.ardesnode.ru",
+        "serverName": "est-1.ardesnode.ru",
         "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
         "shortId": "9ea74b83f4993ca9",
         "fingerprint": "random"
@@ -123,7 +123,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "213.21.232.224",
+          "address": "213.21.232.26",
           "port": 443,
           "users": [
             {
@@ -136,10 +136,10 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl-4.ardesnode.ru",
+        "serverName": "pl-3.ardesnode.ru",
         "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
         "shortId": "9ea74b83f4993ca9",
         "fingerprint": "random"
@@ -177,19 +177,63 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "shadowsocks",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "82.110.60.9",
-          "port": 19999,
-          "method": "aes-256-gcm",
-          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+          "address": "cdn-88cd25.at.mediacrate.net",
+          "port": 50443,
+          "users": [
+            {
+              "id": "95949ed7-bb7b-4d10-aa10-85f67ca82495",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "cdn-110487.at.mediacrate.net",
+        "publicKey": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.144.198",
+          "port": 443,
+          "users": [
+            {
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fd42d43c58.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fd42d43c58.workers.dev"
+        }
+      }
     }
   },
   {
@@ -344,28 +388,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "72.244.6.140",
-          "port": 443,
+          "address": "cdn-90f57c.fr.clearpeak-media.net",
+          "port": 40443,
           "users": [
             {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
-              "encryption": "none"
+              "id": "95949ed7-bb7b-4d10-aa10-85f67ca82495",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fr.bbobr.win",
-        "publicKey": "kIxGJoOFRJiQ49CCJHO8gDRzZ-k1G-Sz8FxmTQApdnE",
-        "shortId": "9f3a7c1e5b8d2a40",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "api.v2.e976e6ede3"
+        "serverName": "cdn-ce1ea6.fr.clearpeak-media.net",
+        "publicKey": "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
