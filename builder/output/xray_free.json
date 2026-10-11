@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "64.188.83.186",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "de-2.ardesnode.ru",
+        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+        "shortId": "9ea74b83f4993ca9",
+        "fingerprint": "random"
       }
     }
   },
@@ -147,16 +147,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇳🇱 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.83",
-          "port": 443,
+          "address": "185.86.13.248",
+          "port": 8443,
           "users": [
             {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "id": "1c6bd728-c4bb-11f1-9b37-ae74803e1191",
               "encryption": "none"
             }
           ]
@@ -167,13 +167,13 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us7.bbobr.win",
-        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
-        "shortId": "a59ba372400e4779",
-        "fingerprint": "chrome"
+        "serverName": "nl01-gos.everycom.store",
+        "publicKey": "ULkeAC-sya96NLLkoSptqmwyc__sfpV7qWKXqQjn-Wk",
+        "shortId": "",
+        "fingerprint": "random"
       },
       "grpcSettings": {
-        "serviceName": "api.v2.us7f28b1d6"
+        "serviceName": ""
       }
     }
   },

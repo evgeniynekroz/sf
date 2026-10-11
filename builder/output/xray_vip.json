@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "64.188.83.186",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "de-2.ardesnode.ru",
+        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+        "shortId": "9ea74b83f4993ca9",
+        "fingerprint": "random"
       }
     }
   },
@@ -94,11 +94,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.252.177.216",
+          "address": "185.31.242.61",
           "port": 443,
           "users": [
             {
-              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -110,9 +110,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "est-1.ardesnode.ru",
-        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-        "shortId": "9ea74b83f4993ca9",
+        "serverName": "est.nztvpn.com",
+        "publicKey": "7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0",
+        "shortId": "0da7e14db353e7d0",
         "fingerprint": "random"
       }
     }
@@ -181,7 +181,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "cdn-88cd25.at.mediacrate.net",
+          "address": "45.131.215.238",
           "port": 50443,
           "users": [
             {
@@ -200,7 +200,7 @@
         "serverName": "cdn-110487.at.mediacrate.net",
         "publicKey": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "random"
       }
     }
   },
@@ -242,11 +242,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "23.81.36.65",
-          "port": 443,
+          "address": "82.165.230.128",
+          "port": 40443,
           "users": [
             {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "id": "95949ed7-bb7b-4d10-aa10-85f67ca82495",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -258,10 +258,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "uk.nztvpn.com",
-        "publicKey": "UcFVpzbYTy8Iym6ZnCAtLQK-MeRg6wZuyni4xEOKG18",
-        "shortId": "0da7e14db353e7d0",
-        "fingerprint": "firefox"
+        "serverName": "cdn-dbba99.gb.clearpeak-media.net",
+        "publicKey": "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY",
+        "shortId": "",
+        "fingerprint": "random"
       }
     }
   },
@@ -271,7 +271,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.83",
+          "address": "45.8.201.121",
           "port": 443,
           "users": [
             {
@@ -388,11 +388,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "cdn-90f57c.fr.clearpeak-media.net",
-          "port": 40443,
+          "address": "fr4.sodahub.online",
+          "port": 443,
           "users": [
             {
-              "id": "95949ed7-bb7b-4d10-aa10-85f67ca82495",
+              "id": "c6db98c5-9959-425e-9340-300779fc4e4b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -404,24 +404,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cdn-ce1ea6.fr.clearpeak-media.net",
-        "publicKey": "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "fr4.cyphervpn.pro",
+        "publicKey": "8_v9Eq0VarPDLDLElqECI0ZrqFpL3lMVuluuPXB-DAo",
+        "shortId": "662fdf1f4412b654",
+        "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇳🇱 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "45.8.201.121",
-          "port": 443,
+          "address": "185.86.13.248",
+          "port": 8443,
           "users": [
             {
-              "id": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+              "id": "1c6bd728-c4bb-11f1-9b37-ae74803e1191",
               "encryption": "none"
             }
           ]
@@ -432,13 +432,13 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us7.bbobr.win",
-        "publicKey": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
-        "shortId": "a59ba372400e4779",
-        "fingerprint": "chrome"
+        "serverName": "nl01-gos.everycom.store",
+        "publicKey": "ULkeAC-sya96NLLkoSptqmwyc__sfpV7qWKXqQjn-Wk",
+        "shortId": "",
+        "fingerprint": "random"
       },
       "grpcSettings": {
-        "serviceName": "api.v2.us7f28b1d6"
+        "serviceName": ""
       }
     }
   }

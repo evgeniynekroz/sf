@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "89.169.53.176",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
+      "server": "64.188.83.186",
+      "server_port": 443,
+      "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de.wvpn.one",
+        "server_name": "de-2.ardesnode.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-          "short_id": ""
+          "public_key": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+          "short_id": "9ea74b83f4993ca9"
         }
       }
     },
@@ -131,39 +131,27 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "spainspeedboostjbl88.qcloud.surf",
-      "server_port": 27313,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "spainspeedboostjbl88.qcloud.surf",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "45.8.201.83",
-      "server_port": 443,
-      "uuid": "267b3a79-81f2-42ac-a409-c23b05b6329d",
+      "tag": "🇳🇱 Резерв #1 — FREE",
+      "server": "185.86.13.248",
+      "server_port": 8443,
+      "uuid": "1c6bd728-c4bb-11f1-9b37-ae74803e1191",
       "tls": {
         "enabled": true,
-        "server_name": "us7.bbobr.win",
+        "server_name": "nl01-gos.everycom.store",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE",
-          "short_id": "a59ba372400e4779"
+          "public_key": "ULkeAC-sya96NLLkoSptqmwyc__sfpV7qWKXqQjn-Wk",
+          "short_id": ""
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "api.v2.us7f28b1d6"
+        "service_name": ""
       }
     },
     {
@@ -207,8 +195,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇳🇱 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -225,8 +212,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇳🇱 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
