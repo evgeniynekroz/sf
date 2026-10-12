@@ -5,13 +5,41 @@
     "settings": {
       "vnext": [
         {
-          "address": "87.121.47.114",
+          "address": "193.58.122.4",
           "port": 443,
           "users": [
             {
-              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "ge-s-1.pythonmakemigreat.wiki",
+        "publicKey": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
+        "shortId": "2c9a2790ad5900b2",
+        "fingerprint": "random"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "95.216.27.15",
+          "port": 2053,
+          "users": [
+            {
+              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "encryption": "none"
             }
           ]
         }
@@ -21,20 +49,20 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de-5.ardesnode.ru",
-        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-        "shortId": "9ea74b83f4993ca9",
-        "fingerprint": "random"
+        "serverName": "www.google.com",
+        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+        "shortId": "d368b94e275ab080",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇳🇱 Нидерланды — FREE",
+    "tag": "🇵🇱 Польша — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.56.186.115",
+          "address": "31.59.143.154",
           "port": 443,
           "users": [
             {
@@ -50,67 +78,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-s-1.pythonmakemigreat.wiki",
-        "publicKey": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
-        "shortId": "78f97d82e16aaad6",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "65.108.3.59",
-          "port": 443,
-          "users": [
-            {
-              "id": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "web.eitaa.com",
-        "publicKey": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-        "shortId": "90ec9bba2019",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "213.21.232.224",
-          "port": 443,
-          "users": [
-            {
-              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl-4.ardesnode.ru",
-        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-        "shortId": "9ea74b83f4993ca9",
+        "serverName": "pl.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "f8b695e5c59d028c",
         "fingerprint": "random"
       }
     }
@@ -121,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.232",
+          "address": "169.40.42.95",
           "port": 443,
           "users": [
             {
@@ -140,7 +110,36 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇪🇪 Эстония — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.252.177.216",
+          "port": 443,
+          "users": [
+            {
+              "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "est-1.ardesnode.ru",
+        "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+        "shortId": "9ea74b83f4993ca9",
+        "fingerprint": "random"
       }
     }
   },
@@ -179,25 +178,24 @@
     "settings": {
       "vnext": [
         {
-          "address": "23.237.193.202",
-          "port": 8443,
+          "address": "216.9.226.22",
+          "port": 443,
           "users": [
             {
-              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "us-1-1.unturned-rust-dead.lol",
+        "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
