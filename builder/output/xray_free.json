@@ -63,24 +63,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "fi.pythonsetupbib.online",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "fi.pythonsetupbib.online",
+        "publicKey": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+        "shortId": "bdf5852d1423e694",
         "fingerprint": "chrome"
       }
     }
@@ -120,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.231",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {

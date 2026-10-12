@@ -63,24 +63,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "fi.pythonsetupbib.online",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "fi.pythonsetupbib.online",
+        "publicKey": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+        "shortId": "bdf5852d1423e694",
         "fingerprint": "chrome"
       }
     }
@@ -149,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.231",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {
@@ -306,37 +307,6 @@
     }
   },
   {
-    "tag": "🇳🇴 Норвегия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "87.242.95.164",
-          "port": 9443,
-          "users": [
-            {
-              "id": "49d3350e-9888-45c4-8193-f8e0b5604264",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "passport.yandex.ru",
-        "publicKey": "9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ",
-        "shortId": "8375b32501373f41",
-        "fingerprint": "qq"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
-      }
-    }
-  },
-  {
     "tag": "🇮🇹 Италия — Premium",
     "protocol": "vless",
     "settings": {
@@ -371,11 +341,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "178.214.107.4",
+          "address": "50.7.87.122",
           "port": 443,
           "users": [
             {
-              "id": "2acc3742-c568-11f1-9902-a337233c6cda",
+              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -387,10 +357,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fr5.wizard.select",
-        "publicKey": "uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU",
-        "shortId": "984f",
-        "fingerprint": "random"
+        "serverName": "edge-fr.extazy.net",
+        "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY",
+        "shortId": "ba4b2afa9e7193ea",
+        "fingerprint": "qq"
       }
     }
   },

@@ -79,32 +79,33 @@
     {
       "type": "vless",
       "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "fi.pythonsetupbib.online",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "fi.pythonsetupbib.online",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+          "public_key": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+          "short_id": "bdf5852d1423e694"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
+        "server_name": "185.174.137.172",
         "insecure": true
       }
     },
@@ -153,7 +154,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 ⚡️ Швеция — Premium",
-      "server": "169.40.42.231",
+      "server": "169.40.42.232",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
@@ -277,30 +278,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 Норвегия — Premium",
-      "server": "87.242.95.164",
-      "server_port": 9443,
-      "uuid": "49d3350e-9888-45c4-8193-f8e0b5604264",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ",
-          "short_id": "8375b32501373f41"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇹 Италия — Premium",
       "server": "205.237.110.254",
       "server_port": 443,
@@ -323,21 +300,21 @@
     {
       "type": "vless",
       "tag": "🇫🇷 Франция — Premium",
-      "server": "178.214.107.4",
+      "server": "50.7.87.122",
       "server_port": 443,
-      "uuid": "2acc3742-c568-11f1-9902-a337233c6cda",
+      "uuid": "9c104116-b231-4626-94cb-6d8fc4d2b000",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fr5.wizard.select",
+        "server_name": "edge-fr.extazy.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU",
-          "short_id": "984f"
+          "public_key": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY",
+          "short_id": "ba4b2afa9e7193ea"
         }
       }
     },
@@ -368,7 +345,7 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #3 — Premium",
-      "server": "142.249.37.90",
+      "server": "hy2.561891.xyz",
       "server_port": 44356,
       "password": "dongtaiwang.com",
       "tls": {
@@ -380,24 +357,24 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #4 — Premium",
-      "server": "23.170.40.39",
-      "server_port": 19512,
-      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
+      "server": "142.249.37.90",
+      "server_port": 44356,
+      "password": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "us1.xiaoliyu.us",
+        "server_name": "hy2.561891.xyz",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇺🇸 Резерв #5 — Premium",
-      "server": "hy2.561891.xyz",
-      "server_port": 44356,
-      "password": "dongtaiwang.com",
+      "server": "23.170.40.39",
+      "server_port": 19512,
+      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.561891.xyz",
+        "server_name": "us1.xiaoliyu.us",
         "insecure": false
       }
     },
@@ -418,7 +395,7 @@
       "tag": "🇷🇺 LTE #2 — Premium",
       "server": "qcloudge1.exitvpn.shop",
       "server_port": 20270,
-      "password": "6656cc0a-5908-4d04-a436-64f5843c0c7a",
+      "password": "f83ce3c4-07d9-4895-bd14-cb74abbcab37",
       "tls": {
         "enabled": true,
         "server_name": "qcloudge1.exitvpn.shop",
@@ -484,7 +461,6 @@
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇯🇵 Япония — Premium",
-        "🇳🇴 Норвегия — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
         "🇺🇸 Резерв #1 — Premium",
@@ -520,7 +496,6 @@
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
         "🇯🇵 Япония — Premium",
-        "🇳🇴 Норвегия — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
         "🇺🇸 Резерв #1 — Premium",
