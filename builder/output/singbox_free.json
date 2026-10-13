@@ -45,6 +45,69 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 Финляндия — FREE",
+      "server": "87.58.149.117",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "freefl.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
+          "short_id": "ff0ddf949624ef2a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша — FREE",
+      "server": "pl.golangwikito.cfd",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+          "short_id": "f8b695e5c59d028c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция — FREE",
+      "server": "169.40.42.15",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
       "server": "nl.srv.vbuste-bot.com",
       "server_port": 444,
@@ -68,105 +131,45 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 Финляндия — FREE",
-      "server": "31.76.240.161",
-      "server_port": 443,
-      "uuid": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nh-fi-01.farmerly.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IFcpTexcx1kUU-3bWMQ9fjHnVQ09nptatySMnan9slM",
-          "short_id": "25c22fb95f188b5c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 Польша — FREE",
-      "server": "94.249.180.197",
-      "server_port": 443,
-      "uuid": "f2a41585-0718-4925-8d3f-8abd2914f864",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl5.esimpson.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JZ4DZDOeFRR7EBYA9eyX4t9v31nkK8eU0sJFAOSUCHw",
-          "short_id": "2cd07e8b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 Швеция — FREE",
-      "server": "169.40.42.224",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "finkawwwbroy5.qcloud.surf",
-      "server_port": 20326,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "server": "94.249.241.154",
+      "server_port": 3409,
+      "password": "fafc7c16-f890-45ee-a856-02df225172dd",
       "tls": {
         "enabled": true,
-        "server_name": "finkawwwbroy5.qcloud.surf",
+        "server_name": "de3.vpvr4ib84nuv6hdkt.ru",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "23.237.193.202",
-      "server_port": 8443,
-      "uuid": "9c104116-b231-4626-94cb-6d8fc4d2b000",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇺 Резерв #1 — FREE",
+      "server": "2.26.49.222",
+      "server_port": 8444,
+      "uuid": "fafc7c16-f890-45ee-a856-02df225172dd",
       "tls": {
         "enabled": true,
-        "server_name": "usa-nf.reddotcorp.org",
+        "server_name": "api-cdn.sendmsg.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-          "short_id": "9db6b6d13d17987e"
+          "public_key": "brEK42sn0wu_b6ARacQ2KnID5Zo8RG6l20f-XNWuOAo",
+          "short_id": "93e8e95772209632"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-sync"
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "193.233.202.250",
+      "server": "213.165.50.45",
       "server_port": 9443,
       "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
       "flow": "xtls-rprx-vision",
@@ -197,12 +200,12 @@
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
         "🇩🇪 Германия — FREE",
-        "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇳🇱 Нидерланды — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -215,12 +218,12 @@
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
         "🇩🇪 Германия — FREE",
-        "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇳🇱 Нидерланды — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],

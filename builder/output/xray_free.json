@@ -29,6 +29,93 @@
     }
   },
   {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "87.58.149.117",
+          "port": 443,
+          "users": [
+            {
+              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "freefl.aiage.work",
+        "publicKey": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
+        "shortId": "ff0ddf949624ef2a",
+        "fingerprint": "random"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "pl.golangwikito.cfd",
+          "port": 443,
+          "users": [
+            {
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "f8b695e5c59d028c",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Швеция — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.15",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
+      }
+    }
+  },
+  {
     "tag": "🇳🇱 Нидерланды — FREE",
     "protocol": "vless",
     "settings": {
@@ -60,118 +147,33 @@
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — FREE",
+    "tag": "🇷🇺 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.240.161",
-          "port": 443,
+          "address": "2.26.49.222",
+          "port": 8444,
           "users": [
             {
-              "id": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "fafc7c16-f890-45ee-a856-02df225172dd",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nh-fi-01.farmerly.cc",
-        "publicKey": "IFcpTexcx1kUU-3bWMQ9fjHnVQ09nptatySMnan9slM",
-        "shortId": "25c22fb95f188b5c",
-        "fingerprint": "random"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "94.249.180.197",
-          "port": 443,
-          "users": [
-            {
-              "id": "f2a41585-0718-4925-8d3f-8abd2914f864",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl5.esimpson.org",
-        "publicKey": "JZ4DZDOeFRR7EBYA9eyX4t9v31nkK8eU0sJFAOSUCHw",
-        "shortId": "2cd07e8b",
-        "fingerprint": "qq"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 Швеция — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "169.40.42.224",
-          "port": 443,
-          "users": [
-            {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "ios"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "23.237.193.202",
-          "port": 8443,
-          "users": [
-            {
-              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "api-cdn.sendmsg.ru",
+        "publicKey": "brEK42sn0wu_b6ARacQ2KnID5Zo8RG6l20f-XNWuOAo",
+        "shortId": "93e8e95772209632",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-sync"
       }
     }
   },
@@ -181,7 +183,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.233.202.250",
+          "address": "213.165.50.45",
           "port": 9443,
           "users": [
             {
