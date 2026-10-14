@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "157.228.155.238",
+          "address": "179.61.145.245",
           "port": 443,
           "users": [
             {
-              "id": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
+              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "addons.mozilla.org",
-        "publicKey": "5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I",
-        "shortId": "6f76ad09",
+        "serverName": "de2.srv.vbuste.ru",
+        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+        "shortId": "4be4110078ebed4a",
         "fingerprint": "randomized"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.140.188",
+          "address": "89.125.100.16",
           "port": 443,
           "users": [
             {
-              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+              "id": "e0fc659b-892c-4bca-a9f3-61da1bd360c5",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl1.aiage.work",
-        "publicKey": "vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk",
-        "shortId": "adcbde41b1cf27ba",
+        "serverName": "nl1.vntof.com",
+        "publicKey": "NBvh_bhE-o8ahxt3MbARqNhjdVg8GTqTJK6GtwI1iEQ",
+        "shortId": "1aa77c9a886e72e4",
         "fingerprint": "firefox"
       }
     }
@@ -92,7 +92,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.87.196",
+          "address": "94.183.157.44",
           "port": 443,
           "users": [
             {
@@ -105,12 +105,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nh-pl-01.farmerly.cc",
-        "publicKey": "cp947CBxZl6dHGM5epfaXvKyj7Gh3CVBnprViDFL6Rk",
-        "shortId": "2174c487a4c9664b",
+        "serverName": "hs-pl-01.farmerly.cc",
+        "publicKey": "AavAYn4G7W6vngeo-TytWKd3gMQyaZvNVuwuvq7rYQE",
+        "shortId": "3387bf0c89b4a945",
         "fingerprint": "random"
       }
     }
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.16",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -140,41 +140,12 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "so-us-01.farmerly.cc",
-          "port": 443,
-          "users": [
-            {
-              "id": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "so-us-01.farmerly.cc",
-        "publicKey": "Dec-i9bT62Vlig1Qct1q_hEG6zHj-fvkHvtyR9DCXjk",
-        "shortId": "106b1cb4088eb926",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -199,6 +170,34 @@
         "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "us-1-1.unturned-rust-dead.lol",
+          "port": 443,
+          "users": [
+            {
+              "id": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us-1-1.unturned-rust-dead.lol",
+        "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+        "shortId": "",
+        "fingerprint": "random"
       }
     }
   }
