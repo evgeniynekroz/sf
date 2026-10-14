@@ -63,35 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "94.183.157.44",
+          "address": "31.76.240.161",
           "port": 443,
           "users": [
             {
@@ -107,10 +79,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "hs-pl-01.farmerly.cc",
-        "publicKey": "AavAYn4G7W6vngeo-TytWKd3gMQyaZvNVuwuvq7rYQE",
-        "shortId": "3387bf0c89b4a945",
+        "serverName": "nh-fi-01.farmerly.cc",
+        "publicKey": "IFcpTexcx1kUU-3bWMQ9fjHnVQ09nptatySMnan9slM",
+        "shortId": "25c22fb95f188b5c",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "150.241.87.196",
+          "port": 443,
+          "users": [
+            {
+              "id": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "nh-pl-01.farmerly.cc",
+        "publicKey": "cp947CBxZl6dHGM5epfaXvKyj7Gh3CVBnprViDFL6Rk",
+        "shortId": "2174c487a4c9664b",
+        "fingerprint": "random"
       }
     }
   },
@@ -120,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.16",
           "port": 443,
           "users": [
             {
@@ -149,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "23.237.193.202",
-          "port": 8443,
+          "address": "so-us-01.farmerly.cc",
+          "port": 443,
           "users": [
             {
-              "id": "9c104116-b231-4626-94cb-6d8fc4d2b000",
+              "id": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -162,12 +163,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "usa-nf.reddotcorp.org",
-        "publicKey": "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo",
-        "shortId": "9db6b6d13d17987e",
+        "serverName": "so-us-01.farmerly.cc",
+        "publicKey": "Dec-i9bT62Vlig1Qct1q_hEG6zHj-fvkHvtyR9DCXjk",
+        "shortId": "106b1cb4088eb926",
         "fingerprint": "firefox"
       }
     }
