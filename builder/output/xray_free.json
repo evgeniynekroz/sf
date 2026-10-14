@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "179.61.145.245",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "de2.srv.vbuste.ru",
+        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+        "shortId": "4be4110078ebed4a",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "94.183.157.44",
+          "address": "pl.golangwikito.cfd",
           "port": 443,
           "users": [
             {
-              "id": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,10 +107,10 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "hs-pl-01.farmerly.cc",
-        "publicKey": "AavAYn4G7W6vngeo-TytWKd3gMQyaZvNVuwuvq7rYQE",
-        "shortId": "3387bf0c89b4a945",
-        "fingerprint": "random"
+        "serverName": "pl.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "f8b695e5c59d028c",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -144,36 +144,7 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "47.253.226.114",
-          "port": 443,
-          "users": [
-            {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Резерв #2 — FREE",
+    "tag": "🇷🇺 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -200,6 +171,35 @@
       },
       "grpcSettings": {
         "serviceName": "ozone"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "213.165.50.45",
+          "port": 9443,
+          "users": [
+            {
+              "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "usa.edgeses.org",
+        "publicKey": "ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g",
+        "shortId": "649ab61e575fdbc9",
+        "fingerprint": "chrome"
       }
     }
   }
