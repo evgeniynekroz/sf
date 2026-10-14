@@ -5,26 +5,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.61.145.245",
+          "address": "31.58.95.11",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.srv.vbuste.ru",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
-        "fingerprint": "randomized"
+        "serverName": "de-gdd-1.unturned-rust-dead.lol",
+        "publicKey": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
+        "shortId": "",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "gdd-grpc"
       }
     }
   },
@@ -34,11 +36,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.100.16",
+          "address": "31.59.140.188",
           "port": 443,
           "users": [
             {
-              "id": "e0fc659b-892c-4bca-a9f3-61da1bd360c5",
+              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +52,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl1.vntof.com",
-        "publicKey": "NBvh_bhE-o8ahxt3MbARqNhjdVg8GTqTJK6GtwI1iEQ",
-        "shortId": "1aa77c9a886e72e4",
-        "fingerprint": "firefox"
+        "serverName": "nl1.aiage.work",
+        "publicKey": "vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk",
+        "shortId": "adcbde41b1cf27ba",
+        "fingerprint": "random"
       }
     }
   },
@@ -92,7 +94,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "13.143.239.81",
+          "address": "ee-1-1.unturned-rust-dead.lol",
           "port": 443,
           "users": [
             {
@@ -110,7 +112,7 @@
         "serverName": "ee-1-1.unturned-rust-dead.lol",
         "publicKey": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "random"
       },
       "grpcSettings": {
         "serviceName": "ee-grpc"
@@ -152,7 +154,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.95",
           "port": 443,
           "users": [
             {
@@ -171,7 +173,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -227,11 +229,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
-          "port": 443,
+          "address": "193.233.202.250",
+          "port": 9443,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -243,38 +245,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "201.34.148.44",
-          "port": 443,
-          "users": [
-            {
-              "id": "93996a55-febe-4183-9366-df6cb11a34dd",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "sun9-38.userapi.com",
-        "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
-        "shortId": "abbcd128",
+        "serverName": "usa.edgeses.org",
+        "publicKey": "ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g",
+        "shortId": "649ab61e575fdbc9",
         "fingerprint": "firefox"
       }
     }
@@ -367,12 +340,12 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇩🇪 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "us-1-1.unturned-rust-dead.lol",
+          "address": "31.58.95.10",
           "port": 443,
           "users": [
             {
@@ -384,13 +357,47 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-1-1.unturned-rust-dead.lol",
-        "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+        "serverName": "de-gdd-1.unturned-rust-dead.lol",
+        "publicKey": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
         "shortId": "",
-        "fingerprint": "random"
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "gdd-grpc"
+      }
+    }
+  },
+  {
+    "tag": "🇩🇪 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "de-gdd-1.unturned-rust-dead.lol",
+          "port": 443,
+          "users": [
+            {
+              "id": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "de-gdd-1.unturned-rust-dead.lol",
+        "publicKey": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
+        "shortId": "",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "gdd-grpc"
       }
     }
   }
