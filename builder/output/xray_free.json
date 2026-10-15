@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "ragnarok-vpn.ru",
-          "port": 8443,
+          "address": "179.61.145.245",
+          "port": 443,
           "users": [
             {
-              "id": "b7df9363-087b-48f7-a4ca-6e988ebf7f35",
+              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,24 +21,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "amd.com",
-        "publicKey": "aV7fW5RmH-i6HzOiqnFlMwV_ZgfuutMpeWWfEaJBsTM",
-        "shortId": "5bfa1416",
-        "fingerprint": "edge"
+        "serverName": "de2.srv.vbuste.ru",
+        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+        "shortId": "4be4110078ebed4a",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — FREE",
+    "tag": "🇳🇱 Нидерланды — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "62.60.159.81",
-          "port": 2053,
+          "address": "185.115.34.209",
+          "port": 8444,
           "users": [
             {
-              "id": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
+              "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
               "encryption": "none"
             }
           ]
@@ -49,13 +49,42 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.samsung.com",
-        "publicKey": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-        "shortId": "d0ea1847066af5a6",
-        "fingerprint": "safari"
+        "serverName": "github.com",
+        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+        "shortId": "",
+        "fingerprint": "chrome"
       },
       "grpcSettings": {
-        "serviceName": "grpce5bb9e71"
+        "serviceName": "GunService"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "152.233.71.81",
+          "port": 443,
+          "users": [
+            {
+              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "brointelengence.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -118,41 +147,12 @@
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "195.123.213.28",
-          "port": 443,
-          "users": [
-            {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇸🇪 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.95",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -171,21 +171,21 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   },
   {
-    "tag": "🇸🇪 Резерв #2 — FREE",
+    "tag": "🇫🇷 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.232",
+          "address": "194.113.235.121",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "388ccac9-2adf-47ca-998c-15ca6899416c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -197,10 +197,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "serverName": "fr1-4v.zvcorp24.com",
+        "publicKey": "f2a5R8ubMtjmFDxUt1VtikDOmgPgVWBPzcZjOOJpYlc",
+        "shortId": "12f319370b60ec2f",
+        "fingerprint": "firefox"
       }
     }
   }
