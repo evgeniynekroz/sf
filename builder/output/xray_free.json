@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.61.145.245",
+          "address": "144.31.125.60",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+              "id": "9015f0bc-2053-4ca1-9b9b-a018b97b32d2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.srv.vbuste.ru",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
-        "fingerprint": "chrome"
+        "serverName": "www.intel.com",
+        "publicKey": "SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8",
+        "shortId": "85c86a9863",
+        "fingerprint": "random"
       }
     }
   },
@@ -34,28 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.115.34.209",
-          "port": 8444,
+          "address": "144.31.4.234",
+          "port": 443,
           "users": [
             {
-              "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-              "encryption": "none"
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "github.com",
-        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
         "shortId": "",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "GunService"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -123,7 +121,38 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "188.225.77.254",
+          "port": 8443,
+          "users": [
+            {
+              "id": "9cfb9099-439f-4bd2-87d3-54e67269fdc3",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "io.ozone.ru",
+        "publicKey": "rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s",
+        "shortId": "4951a2313524dd8f",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "ozone"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.212",
           "port": 443,
           "users": [
             {
@@ -147,18 +176,17 @@
     }
   },
   {
-    "tag": "🇸🇪 Резерв #1 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "43.167.232.174",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "0fd46529-707f-4d33-899b-598f5f4acffa",
+              "encryption": "none"
             }
           ]
         }
@@ -168,39 +196,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
+        "serverName": "www.microsoft.com",
+        "publicKey": "hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI",
+        "shortId": "b51e057820d3e14c",
         "fingerprint": "ios"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇷 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "194.113.235.121",
-          "port": 443,
-          "users": [
-            {
-              "id": "388ccac9-2adf-47ca-998c-15ca6899416c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "fr1-4v.zvcorp24.com",
-        "publicKey": "f2a5R8ubMtjmFDxUt1VtikDOmgPgVWBPzcZjOOJpYlc",
-        "shortId": "12f319370b60ec2f",
-        "fingerprint": "firefox"
       }
     }
   }
