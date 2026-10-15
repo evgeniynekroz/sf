@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.61.145.245",
+          "address": "37.46.199.138",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+              "id": "741809be-e44e-0004-b411-bf66f0ae3860",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.srv.vbuste.ru",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
-        "fingerprint": "chrome"
+        "serverName": "key-master-saver.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "",
+        "fingerprint": "random"
       }
     }
   },
@@ -34,40 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.59.140.188",
-          "port": 443,
+          "address": "185.115.34.209",
+          "port": 8444,
           "users": [
             {
-              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nl1.aiage.work",
-        "publicKey": "vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk",
-        "shortId": "adcbde41b1cf27ba",
-        "fingerprint": "random"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "85.209.129.113",
-          "port": 2443,
-          "users": [
-            {
-              "id": "c635b5f6-b5ea-4e57-927f-75860b0cb984",
+              "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
               "encryption": "none"
             }
           ]
@@ -78,13 +49,42 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fonts.google.com",
-        "publicKey": "cnmFHIiPbBDSOiui-ZJw8JIWSa4UARyNrHhBp3p7sBc",
-        "shortId": "f1b2c3d4",
-        "fingerprint": "firefox"
+        "serverName": "github.com",
+        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+        "shortId": "",
+        "fingerprint": "chrome"
       },
       "grpcSettings": {
-        "serviceName": "grpc-tunnel"
+        "serviceName": "GunService"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "152.233.71.81",
+          "port": 443,
+          "users": [
+            {
+              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "brointelengence.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -123,7 +123,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.182",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -142,7 +142,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -181,7 +181,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.233.202.250",
+          "address": "95.181.173.68",
           "port": 9443,
           "users": [
             {
@@ -194,7 +194,7 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
         "serverName": "usa.edgeses.org",
