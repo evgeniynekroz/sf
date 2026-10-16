@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "37.46.199.138",
+      "server": "31.76.11.243",
       "server_port": 443,
-      "uuid": "741809be-e44e-0004-b411-bf66f0ae3860",
+      "uuid": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "key-master-saver.com",
+        "server_name": "seal-de1.bypassme.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-          "short_id": ""
+          "public_key": "jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk",
+          "short_id": "6b69118a7847c4c3"
         }
       }
     },
@@ -88,21 +88,20 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl.golangwikito.cfd",
+      "server": "201.10.90.201",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
+      "uuid": "0011d187-d066-48f6-957c-a6983dd63a77",
       "tls": {
         "enabled": true,
-        "server_name": "pl.golangwikito.cfd",
+        "server_name": "pl3.netvora.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-          "short_id": "acccaaaa9f72147d"
+          "public_key": "OI_evgGMslAhEETUTUEBo4isr_0XWE8Yd72MScxtdVc",
+          "short_id": "b5bf71e3c3bd4f21"
         }
       }
     },
@@ -130,12 +129,12 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "95.140.147.245",
-      "server_port": 443,
-      "password": "9yOIR2_QAChKs26rYaiX_aoNnOALd0aU",
+      "server": "23.170.40.39",
+      "server_port": 19512,
+      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
       "tls": {
         "enabled": true,
-        "server_name": "nl1server.rabstvo.shop",
+        "server_name": "us1.xiaoliyu.us",
         "insecure": false
       }
     },
@@ -163,7 +162,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Резерв #2 — FREE",
-      "server": "169.40.42.235",
+      "server": "169.40.42.173",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
@@ -172,7 +171,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "37.46.199.138",
+          "address": "31.76.11.243",
           "port": 443,
           "users": [
             {
-              "id": "741809be-e44e-0004-b411-bf66f0ae3860",
+              "id": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "key-master-saver.com",
-        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-        "shortId": "",
-        "fingerprint": "random"
+        "serverName": "seal-de1.bypassme.online",
+        "publicKey": "jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk",
+        "shortId": "6b69118a7847c4c3",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,13 +92,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "pl.golangwikito.cfd",
+          "address": "201.10.90.201",
           "port": 443,
           "users": [
             {
-              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "0011d187-d066-48f6-957c-a6983dd63a77",
+              "encryption": "none"
             }
           ]
         }
@@ -108,10 +107,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.golangwikito.cfd",
-        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-        "shortId": "acccaaaa9f72147d",
-        "fingerprint": "edge"
+        "serverName": "pl3.netvora.space",
+        "publicKey": "OI_evgGMslAhEETUTUEBo4isr_0XWE8Yd72MScxtdVc",
+        "shortId": "b5bf71e3c3bd4f21",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -179,7 +178,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.235",
+          "address": "169.40.42.173",
           "port": 443,
           "users": [
             {
@@ -198,7 +197,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   }
