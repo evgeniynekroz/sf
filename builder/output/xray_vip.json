@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.61.118",
+          "address": "144.31.4.234",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,12 +47,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.balancer.vbuste-bot.com",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "revers.bachidze.com",
+          "address": "pl.golangwikito.cfd",
           "port": 443,
           "users": [
             {
-              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.travel",
-        "publicKey": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
-        "shortId": "",
-        "fingerprint": "random"
+        "serverName": "pl.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "acccaaaa9f72147d",
+        "fingerprint": "edge"
       }
     }
   },
@@ -150,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.95",
+          "address": "169.40.42.212",
           "port": 443,
           "users": [
             {
@@ -175,17 +175,61 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
+    "protocol": "shadowsocks",
+    "settings": {
+      "servers": [
+        {
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp"
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "189.74.115.14",
-          "port": 443,
+          "address": "95.128.71.79",
+          "port": 14430,
           "users": [
             {
-              "id": "082f5694-9019-4110-b67b-8125dbb9bab8",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/vless",
+        "headers": {
+          "Host": "95.128.71.79"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Великобритания — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "51.89.194.151",
+          "port": 2053,
+          "users": [
+            {
+              "id": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+              "encryption": "none"
             }
           ]
         }
@@ -195,10 +239,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "api.mediapereval.cc",
-        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-        "shortId": "a8",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+        "shortId": "d051f678212f9d54",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -208,11 +252,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.75",
+          "address": "freeus.aiage.work",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -224,10 +268,36 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "firefox"
+        "serverName": "freeus.aiage.work",
+        "publicKey": "pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0",
+        "shortId": "ccaf7283610c6fa8",
+        "fingerprint": "qq"
+      }
+    }
+  },
+  {
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "3h-kazakhstan1.09vpn.com",
+          "port": 80,
+          "users": [
+            {
+              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/vmess/"
       }
     }
   },
@@ -294,11 +364,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "api.videopereval.cc",
+          "address": "137.74.16.237",
           "port": 443,
           "users": [
             {
-              "id": "082f5694-9019-4110-b67b-8125dbb9bab8",
+              "id": "aaec4e42-a095-44b6-a239-f16d234a0798",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -310,20 +380,20 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "api.videopereval.cc",
-        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-        "shortId": "a8",
+        "serverName": "www.icloud.com",
+        "publicKey": "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I",
+        "shortId": "b390e0a721d242b0",
         "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.202",
+          "address": "169.40.42.235",
           "port": 443,
           "users": [
             {
@@ -342,7 +412,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "firefox"
+        "fingerprint": "ios"
       }
     }
   }

@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "194.93.61.118",
+          "address": "144.31.4.234",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,12 +47,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.balancer.vbuste-bot.com",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "revers.bachidze.com",
+          "address": "pl.golangwikito.cfd",
           "port": 443,
           "users": [
             {
-              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.travel",
-        "publicKey": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
-        "shortId": "",
-        "fingerprint": "random"
+        "serverName": "pl.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "acccaaaa9f72147d",
+        "fingerprint": "edge"
       }
     }
   },
@@ -121,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.95",
+          "address": "169.40.42.212",
           "port": 443,
           "users": [
             {
@@ -150,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.75",
+          "address": "freeus.aiage.work",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,20 +166,20 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "firefox"
+        "serverName": "freeus.aiage.work",
+        "publicKey": "pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0",
+        "shortId": "ccaf7283610c6fa8",
+        "fingerprint": "qq"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.202",
+          "address": "169.40.42.235",
           "port": 443,
           "users": [
             {
@@ -198,7 +198,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "firefox"
+        "fingerprint": "ios"
       }
     }
   }
