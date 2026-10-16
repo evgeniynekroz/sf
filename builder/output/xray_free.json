@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "37.46.199.138",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "741809be-e44e-0004-b411-bf66f0ae3860",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "key-master-saver.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "",
+        "fingerprint": "random"
       }
     }
   },
@@ -34,7 +34,65 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.4.234",
+          "address": "194.93.61.118",
+          "port": 443,
+          "users": [
+            {
+              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "nl2.balancer.vbuste-bot.com",
+        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+        "shortId": "4be4110078ebed4a",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "152.233.71.81",
+          "port": 443,
+          "users": [
+            {
+              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "brointelengence.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "revers.bachidze.com",
           "port": 443,
           "users": [
             {
@@ -47,70 +105,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "direct-nl.bachidze.com",
-        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "serverName": "poland.travel",
+        "publicKey": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
         "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "2.59.253.251",
-          "port": 443,
-          "users": [
-            {
-              "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nvidia.com",
-        "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-        "shortId": "db04ce8bdb8900f1",
-        "fingerprint": "firefox"
+        "fingerprint": "random"
       }
     }
   },
@@ -149,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.202",
+          "address": "169.40.42.75",
           "port": 443,
           "users": [
             {
@@ -173,12 +174,12 @@
     }
   },
   {
-    "tag": "🇸🇪 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.182",
+          "address": "169.40.42.202",
           "port": 443,
           "users": [
             {
@@ -197,7 +198,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "firefox"
       }
     }
   }
