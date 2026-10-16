@@ -5,13 +5,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.61.145.245",
+          "address": "84.32.100.149",
           "port": 443,
           "users": [
             {
-              "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "244d9eab-3311-40c7-b47f-4968dc3088a6",
+              "encryption": "none"
             }
           ]
         }
@@ -21,10 +20,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de2.srv.vbuste.ru",
-        "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-        "shortId": "4be4110078ebed4a",
-        "fingerprint": "randomized"
+        "serverName": "tcpde7.figurapn.ru",
+        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+        "shortId": "868419504747f6de",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -34,11 +33,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.233.82.201",
+          "address": "50.7.176.123",
           "port": 443,
           "users": [
             {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +49,9 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl4.nztvpn.com",
-        "publicKey": "fsEatg3Hi0O3NPHIg1xQYjmcYRmEgvnSW-i_ZwaL7XI",
-        "shortId": "b054ade250673c91",
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -121,7 +120,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.95",
           "port": 443,
           "users": [
             {
@@ -174,12 +173,12 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.232",
+          "address": "169.40.42.15",
           "port": 443,
           "users": [
             {
@@ -198,7 +197,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   }
