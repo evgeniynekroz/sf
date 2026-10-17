@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "139.162.187.56",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "12be745f-0de5-4909-ac5e-604ac2b8af30",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "df3aff719526dc5a",
-        "fingerprint": "firefox"
+        "serverName": "amp-api-edge.apps.apple.com",
+        "publicKey": "JGsmGevFuMeQignXVLFIUmM2tpei4GtXKEQFMEIR_3U",
+        "shortId": "12954892dc8d4acc",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,39 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "pl.golangwikito.cfd",
+          "address": "152.233.71.81",
           "port": 443,
           "users": [
             {
-              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,10 +79,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.golangwikito.cfd",
-        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-        "shortId": "acccaaaa9f72147d",
+        "serverName": "brointelengence.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "191.217.244.13",
+          "port": 443,
+          "users": [
+            {
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "poland.travel",
+        "publicKey": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -120,7 +121,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.224",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -139,7 +140,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -178,7 +179,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {
@@ -197,7 +198,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   }

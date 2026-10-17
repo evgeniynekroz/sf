@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.169.53.176",
-          "port": 4443,
+          "address": "139.162.187.56",
+          "port": 443,
           "users": [
             {
-              "id": "20dd9433-389e-4573-ba7b-689619cf13da",
+              "id": "12be745f-0de5-4909-ac5e-604ac2b8af30",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de.wvpn.one",
-        "publicKey": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-        "shortId": "df3aff719526dc5a",
-        "fingerprint": "firefox"
+        "serverName": "amp-api-edge.apps.apple.com",
+        "publicKey": "JGsmGevFuMeQignXVLFIUmM2tpei4GtXKEQFMEIR_3U",
+        "shortId": "12954892dc8d4acc",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,12 +63,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "152.233.71.81",
+          "port": 443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-              "encryption": "none"
+              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -78,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "brointelengence.com",
+        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+        "shortId": "1c3e8241a8743df9",
         "fingerprint": "chrome"
       }
     }
@@ -120,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "pl.golangwikito.cfd",
+          "address": "191.217.244.13",
           "port": 443,
           "users": [
             {
-              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.golangwikito.cfd",
-        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-        "shortId": "acccaaaa9f72147d",
-        "fingerprint": "chrome"
+        "serverName": "poland.travel",
+        "publicKey": "TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -149,7 +150,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.224",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -168,7 +169,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -259,34 +260,12 @@
     }
   },
   {
-    "tag": "🇹🇷 Турция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "bot.powerpanel.space",
-          "port": 8080,
-          "users": [
-            {
-              "id": "d17452f7-eabb-4b6a-9a9c-bfe5c3803b3b",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "none"
-    }
-  },
-  {
     "tag": "🇰🇿 Казахстан — Premium",
     "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "3h-kazakhstan1.09vpn.com",
+          "address": "38.107.234.57",
           "port": 80,
           "users": [
             {
@@ -302,7 +281,10 @@
       "network": "ws",
       "security": "none",
       "wsSettings": {
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
+        }
       }
     }
   },
@@ -312,11 +294,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "142.91.108.25",
-          "port": 443,
+          "address": "154.31.114.248",
+          "port": 50159,
           "users": [
             {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "id": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -328,9 +310,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "jp3.nztvpn.com",
-        "publicKey": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
-        "shortId": "ea36c03d86f91287",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+        "shortId": "091e1c5db8451757",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇴 Норвегия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "81.94.148.162",
+          "port": 9446,
+          "users": [
+            {
+              "id": "8571b13c-96ae-480a-8b0d-8969ceda21f8",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "no.roskomnadzor.space",
+        "publicKey": "kUxaKv4LfQZyhZgBSFVfVK1zSFCyn5zkQXDSipad1jM",
+        "shortId": "",
         "fingerprint": "random"
       }
     }
@@ -399,7 +410,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.15",
+          "address": "169.40.42.232",
           "port": 443,
           "users": [
             {
@@ -418,7 +429,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   }
