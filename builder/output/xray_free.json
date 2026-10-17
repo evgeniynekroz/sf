@@ -34,40 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.4.234",
+          "address": "31.59.217.164",
           "port": 443,
           "users": [
             {
-              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "direct-nl.bachidze.com",
-        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
-        "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "152.233.71.81",
-          "port": 443,
-          "users": [
-            {
-              "id": "741809be-e44e-000b-b411-bf66f0ae3860",
+              "id": "4b09d40d-e36a-47c3-baa4-e6bf551b3183",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +50,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "brointelengence.com",
-        "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-        "shortId": "1c3e8241a8743df9",
+        "serverName": "www.adobe.com",
+        "publicKey": "kOkILS7UXUQDNPLYn4SQ65kMIWKXNOttV5Kddw4ZqTo",
+        "shortId": "1625a2a79d01328f",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "freefl.aiage.work",
+          "port": 443,
+          "users": [
+            {
+              "id": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "freefl.aiage.work",
+        "publicKey": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
+        "shortId": "ff0ddf949624ef2a",
         "fingerprint": "chrome"
       }
     }
@@ -120,7 +120,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.212",
+          "address": "169.40.42.74",
           "port": 443,
           "users": [
             {
@@ -149,6 +149,35 @@
     "settings": {
       "vnext": [
         {
+          "address": "47.253.226.114",
+          "port": 443,
+          "users": [
+            {
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
           "address": "freeus.aiage.work",
           "port": 443,
           "users": [
@@ -169,35 +198,6 @@
         "publicKey": "pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0",
         "shortId": "ccaf7283610c6fa8",
         "fingerprint": "qq"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "169.40.42.173",
-          "port": 443,
-          "users": [
-            {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
       }
     }
   }
