@@ -46,7 +46,7 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "144.31.4.234",
+      "server": "50.7.176.123",
       "server_port": 443,
       "uuid": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
       "flow": "xtls-rprx-vision",
@@ -87,7 +87,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl.golangwikito.cfd",
+      "server": "45.194.66.191",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -96,7 +96,7 @@
         "server_name": "pl.golangwikito.cfd",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -128,43 +128,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 Резерв #1 — FREE",
-      "server": "156.246.88.125",
-      "server_port": 26518,
-      "uuid": "e01fcb68-3112-49da-b85d-dffb799cfc9b",
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "us.ny.api.nurcloud.org",
+      "server_port": 443,
+      "uuid": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "us.ny.api.nurcloud.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk",
-          "short_id": "6caead99"
+          "public_key": "_2Hn4fC42NrlyR586ZjUfdRMRfasJB8-Cp0JjhqxgTk",
+          "short_id": "84ceb0f037cc8858"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 Резерв #2 — FREE",
-      "server": "142.91.108.25",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "server": "154.31.114.248",
+      "server_port": 50159,
+      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.nztvpn.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
-          "short_id": "ea36c03d86f91287"
+          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+          "short_id": "091e1c5db8451757"
         }
       }
     },
@@ -185,7 +185,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇯🇵 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -202,7 +202,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇯🇵 Резерв #1 — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇯🇵 Резерв #2 — FREE",
         "direct"
       ],

@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "144.31.4.234",
+          "address": "50.7.176.123",
           "port": 443,
           "users": [
             {
@@ -91,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "pl.golangwikito.cfd",
+          "address": "45.194.66.191",
           "port": 443,
           "users": [
             {
@@ -110,7 +110,7 @@
         "serverName": "pl.golangwikito.cfd",
         "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
         "shortId": "acccaaaa9f72147d",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -144,16 +144,16 @@
     }
   },
   {
-    "tag": "🇯🇵 Резерв #1 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "156.246.88.125",
-          "port": 26518,
+          "address": "us.ny.api.nurcloud.org",
+          "port": 443,
           "users": [
             {
-              "id": "e01fcb68-3112-49da-b85d-dffb799cfc9b",
+              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,10 +165,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "github.com",
-        "publicKey": "1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk",
-        "shortId": "6caead99",
-        "fingerprint": "chrome"
+        "serverName": "us.ny.api.nurcloud.org",
+        "publicKey": "_2Hn4fC42NrlyR586ZjUfdRMRfasJB8-Cp0JjhqxgTk",
+        "shortId": "84ceb0f037cc8858",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -178,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "142.91.108.25",
-          "port": 443,
+          "address": "154.31.114.248",
+          "port": 50159,
           "users": [
             {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "id": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,9 +194,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "jp3.nztvpn.com",
-        "publicKey": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
-        "shortId": "ea36c03d86f91287",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+        "shortId": "091e1c5db8451757",
         "fingerprint": "chrome"
       }
     }
