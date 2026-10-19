@@ -34,28 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.192.22.159",
-          "port": 8444,
+          "address": "50.7.176.123",
+          "port": 443,
           "users": [
             {
-              "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-              "encryption": "none"
+              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "github.com",
-        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-        "shortId": "457fab2ac885dbe0",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "GunService"
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -122,25 +120,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.178.109.174",
-          "port": 14430,
+          "address": "77.110.121.185",
+          "port": 8443,
           "users": [
             {
-              "id": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-              "encryption": "none"
+              "id": "7710373d-abbb-4d6e-88cc-12702fb70aee",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "se.ataloqe.com",
+        "publicKey": "SCdM-SIhOQOCMN0Mq1tomLtD4jwYTB3Wk7ByeApjcgU",
+        "shortId": "9f3a7c2d4e1b8a6c",
+        "fingerprint": "firefox"
       }
     }
   },
