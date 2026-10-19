@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "fi.api.nurcloud.org",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "29d5b0b0-0417-46cc-948f-8f3077ded709",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "encryption": "none"
             }
           ]
         }
@@ -79,9 +78,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi.api.nurcloud.org",
-        "publicKey": "DYai8uLOumyG7Gh3H8ADSmRMZpfw-t98uU4D6ean_Gw",
-        "shortId": "b289dd8ac05d4594",
+        "serverName": "www.google.com",
+        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+        "shortId": "d368b94e275ab080",
         "fingerprint": "firefox"
       }
     }
@@ -116,31 +115,33 @@
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "84.32.106.243",
-          "port": 443,
+          "address": "94.228.112.60",
+          "port": 27443,
           "users": [
             {
-              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "92e135b9-4c04-4e7e-8b28-d8074a202cf8",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se.nurcloud.org",
-        "publicKey": "AepHS1WcdKNVjau3-RYZ4PefoPAw-i07pqrl66RPD2s",
-        "shortId": "b09535a0ea97b4ed",
+        "serverName": "static.polina.mom",
+        "publicKey": "zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8",
+        "shortId": "",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   },
@@ -150,40 +151,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "96.62.218.92",
+          "address": "169.40.42.74",
           "port": 443,
           "users": [
             {
-              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us.ny.api.nurcloud.org",
-        "publicKey": "_2Hn4fC42NrlyR586ZjUfdRMRfasJB8-Cp0JjhqxgTk",
-        "shortId": "84ceb0f037cc8858",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "us.ny.api.nurcloud.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,10 +167,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us.ny.api.nurcloud.org",
-        "publicKey": "_2Hn4fC42NrlyR586ZjUfdRMRfasJB8-Cp0JjhqxgTk",
-        "shortId": "84ceb0f037cc8858",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇮🇹 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.59.180.155",
+          "port": 443,
+          "users": [
+            {
+              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "italynew.nztvpn.com",
+        "publicKey": "_0bRaAOYHd4ccDCmnlIq9I13WLRuT4LzlXfV_GGHKE0",
+        "shortId": "5aab0b0401044801",
+        "fingerprint": "chrome"
       }
     }
   }
