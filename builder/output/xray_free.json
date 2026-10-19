@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "82.118.19.153",
+          "address": "130.17.25.67",
           "port": 443,
           "users": [
             {
-              "id": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+              "id": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-        "shortId": "670ed9f350bd8ee0",
-        "fingerprint": "chrome"
+        "serverName": "github.com",
+        "publicKey": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+        "shortId": "9e4eced6e98ed4d4",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,28 +63,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "36a466g.fi1.h1clayd.click",
+          "address": "fi.api.nurcloud.org",
           "port": 443,
           "users": [
             {
-              "id": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-              "encryption": "none"
+              "id": "29d5b0b0-0417-46cc-948f-8f3077ded709",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "36a466g.fi1.h1clayd.click",
-        "publicKey": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-        "shortId": "b3c9d0c6bdd114a6",
-        "fingerprint": "random"
-      },
-      "grpcSettings": {
-        "serviceName": "0adb9638509b"
+        "serverName": "fi.api.nurcloud.org",
+        "publicKey": "DYai8uLOumyG7Gh3H8ADSmRMZpfw-t98uU4D6ean_Gw",
+        "shortId": "b289dd8ac05d4594",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -123,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.182",
+          "address": "84.32.106.243",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -139,10 +137,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "serverName": "se.nurcloud.org",
+        "publicKey": "AepHS1WcdKNVjau3-RYZ4PefoPAw-i07pqrl66RPD2s",
+        "shortId": "b09535a0ea97b4ed",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -152,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
+          "address": "96.62.218.92",
           "port": 443,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,13 +163,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "us.ny.api.nurcloud.org",
+        "publicKey": "_2Hn4fC42NrlyR586ZjUfdRMRfasJB8-Cp0JjhqxgTk",
+        "shortId": "84ceb0f037cc8858",
+        "fingerprint": "firefox"
       }
     }
   },
