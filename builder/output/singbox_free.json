@@ -67,21 +67,25 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "72.56.241.75",
+      "server_port": 7443,
+      "uuid": "92e135b9-4c04-4e7e-8b28-d8074a202cf8",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "cdn.suzuki.lol",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+          "public_key": "36VgwCvCzW3ST22DrfRU7y8mVfm0PM7JpkXQnN9yLiE",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -107,22 +111,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 Беларусь — FREE",
-      "server": "9.247.24.137",
+      "tag": "🇦🇹 Австрия — FREE",
+      "server": "94.228.162.222",
       "server_port": 443,
-      "uuid": "0dbd877c-0246-4402-850a-140e60875c95",
+      "uuid": "0c7d0b50-245c-436e-9414-05cf19a73658",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.prizradar.by",
+        "server_name": "vena.solomon-planet.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "RsKkbNbhdvmf6VtNZslU_3yNrUcHFBLJSuJZNAZO6VE",
-          "short_id": "2d"
+          "public_key": "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U",
+          "short_id": ""
         }
       }
     },
@@ -144,28 +148,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "104.243.44.241",
-      "server_port": 443,
-      "uuid": "8007dda2-aed2-4514-8299-6e3edbdb015b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us2.findreplayfoals.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg",
-          "short_id": "8718c58d3d51db59"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 Резерв #2 — FREE",
+      "tag": "🇷🇺 Резерв #1 — FREE",
       "server": "147.45.187.188",
       "server_port": 8443,
       "uuid": "fe8e2ffb-8796-408c-af5b-0d4774215e00",
@@ -188,6 +171,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 Резерв #2 — FREE",
+      "server": "188.225.77.254",
+      "server_port": 8443,
+      "uuid": "5473d93b-3cb2-4a10-9fd5-2b98459d9c53",
+      "tls": {
+        "enabled": true,
+        "server_name": "io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s",
+          "short_id": "4951a2313524dd8f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ozone"
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -203,9 +210,9 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇧🇾 Беларусь — FREE",
+        "🇦🇹 Австрия — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇷🇺 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -221,9 +228,9 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇧🇾 Беларусь — FREE",
+        "🇦🇹 Австрия — FREE",
         "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇷🇺 Резерв #2 — FREE",
         "direct"
       ],

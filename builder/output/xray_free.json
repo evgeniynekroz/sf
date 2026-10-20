@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "72.56.241.75",
+          "port": 7443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "id": "92e135b9-4c04-4e7e-8b28-d8074a202cf8",
               "encryption": "none"
             }
           ]
@@ -75,13 +75,16 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "cdn.suzuki.lol",
+        "publicKey": "36VgwCvCzW3ST22DrfRU7y8mVfm0PM7JpkXQnN9yLiE",
+        "shortId": "",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   },
@@ -115,16 +118,16 @@
     }
   },
   {
-    "tag": "🇧🇾 Беларусь — FREE",
+    "tag": "🇦🇹 Австрия — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "9.247.24.137",
+          "address": "94.228.162.222",
           "port": 443,
           "users": [
             {
-              "id": "0dbd877c-0246-4402-850a-140e60875c95",
+              "id": "0c7d0b50-245c-436e-9414-05cf19a73658",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,9 +139,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.prizradar.by",
-        "publicKey": "RsKkbNbhdvmf6VtNZslU_3yNrUcHFBLJSuJZNAZO6VE",
-        "shortId": "2d",
+        "serverName": "vena.solomon-planet.ru",
+        "publicKey": "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -173,36 +176,7 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "104.243.44.241",
-          "port": 443,
-          "users": [
-            {
-              "id": "8007dda2-aed2-4514-8299-6e3edbdb015b",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us2.findreplayfoals.com",
-        "publicKey": "jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg",
-        "shortId": "8718c58d3d51db59",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Резерв #2 — FREE",
+    "tag": "🇷🇺 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -229,6 +203,37 @@
       },
       "grpcSettings": {
         "serviceName": "grpc"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "188.225.77.254",
+          "port": 8443,
+          "users": [
+            {
+              "id": "5473d93b-3cb2-4a10-9fd5-2b98459d9c53",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "io.ozone.ru",
+        "publicKey": "rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s",
+        "shortId": "4951a2313524dd8f",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "ozone"
       }
     }
   }
