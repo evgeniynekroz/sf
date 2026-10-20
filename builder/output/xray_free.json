@@ -34,26 +34,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "50.7.176.123",
-          "port": 443,
+          "address": "109.120.150.245",
+          "port": 8443,
           "users": [
             {
-              "id": "8a9c586c-4b2c-49e5-9e78-97408bf58500",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b1097a54-29de-4014-962c-c835d96e8409",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "direct-nl.bachidze.com",
-        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.rutube.ru",
+        "publicKey": "jMBABUVbMNQbil2pkU_bYTFoGKAM6NaTTjCqtme_0CA",
+        "shortId": "60e1354574cf8cd8",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "api.v1.Sync"
       }
     }
   },
@@ -63,11 +65,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
+          "address": "94.228.112.36",
+          "port": 3443,
           "users": [
             {
-              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "id": "92e135b9-4c04-4e7e-8b28-d8074a202cf8",
               "encryption": "none"
             }
           ]
@@ -75,13 +77,16 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-        "shortId": "d368b94e275ab080",
+        "serverName": "cdn.polina.lol",
+        "publicKey": "B2hPRdH13moEXzVXSINTdTHCYkgaNO53lgCIhDx7cmg",
+        "shortId": "",
         "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   },
@@ -120,11 +125,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "77.110.121.185",
-          "port": 8443,
+          "address": "201.58.177.153",
+          "port": 21221,
           "users": [
             {
-              "id": "7710373d-abbb-4d6e-88cc-12702fb70aee",
+              "id": "408c51e8-9246-483d-ba73-34ab4e202eb9",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,44 +141,44 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se.ataloqe.com",
-        "publicKey": "SCdM-SIhOQOCMN0Mq1tomLtD4jwYTB3Wk7ByeApjcgU",
-        "shortId": "9f3a7c2d4e1b8a6c",
+        "serverName": "metrika.yandex.ru",
+        "publicKey": "RtxGqCtQJeOyUwSe7k6oZOrQWV1hPbC-TMqqgxl9fn4",
+        "shortId": "c430045c",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.74",
-          "port": 443,
+          "address": "217.60.183.95",
+          "port": 33744,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+              "alterId": 0,
+              "security": "auto"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/ShamanVMESS2026",
+        "headers": {
+          "Host": "de-d21e56c13c.shamanapp.online:33744"
+        }
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -196,6 +201,35 @@
       "realitySettings": {
         "serverName": "usa.nodelife.ru",
         "publicKey": "Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "47.253.226.114",
+          "port": 443,
+          "users": [
+            {
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
       }
