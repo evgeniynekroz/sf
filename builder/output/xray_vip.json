@@ -34,39 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "138.16.141.59",
-          "port": 7443,
-          "users": [
-            {
-              "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ibm.com",
-        "publicKey": "RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k",
-        "shortId": "a09ff9f8",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "83.219.97.18",
+          "address": "147.45.61.213",
           "port": 443,
           "users": [
             {
-              "id": "fe551942-d6e5-4361-ae5c-1f2e9077cd79",
+              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi5.silalink.sbs",
-        "publicKey": "32XFmS-ifqooBFY89KNP3ZrqgSBOd3vel9GlNinL6yw",
-        "shortId": "03",
-        "fingerprint": "chrome"
+        "serverName": "nl4.nztvpn.com",
+        "publicKey": "fiH8cNK7JlHGz6hHHjmsspRdnjpemaq1Q_xmP8a5FHo",
+        "shortId": "a47d71c75bb8be07",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -91,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.159.250.214",
+          "address": "176.112.152.147",
           "port": 443,
           "users": [
             {
-              "id": "4054fdc2-ee80-4419-8a8e-d937df4719e2",
+              "id": "a11213e8-a42f-4492-beaa-14084f6ae28a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "qq.utiltools.site",
-        "publicKey": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
-        "shortId": "00000000",
+        "serverName": "www.coop.ee",
+        "publicKey": "805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM",
+        "shortId": "74e50da3c1769379",
         "fingerprint": "firefox"
       }
     }
@@ -153,7 +125,7 @@
           "port": 21221,
           "users": [
             {
-              "id": "408c51e8-9246-483d-ba73-34ab4e202eb9",
+              "id": "8bd04756-3beb-4348-82c9-d35453df50ce",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -174,30 +146,50 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
+    "protocol": "shadowsocks",
+    "settings": {
+      "servers": [
+        {
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp"
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "94.228.162.222",
+          "address": "172.64.147.91",
           "port": 443,
           "users": [
             {
-              "id": "0c7d0b50-245c-436e-9414-05cf19a73658",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "vena.solomon-planet.ru",
-        "publicKey": "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U",
-        "shortId": "",
-        "fingerprint": "firefox"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "powered-by-surena.configfarsi695fce27aa549.workers.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/?ed",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fce27aa549.workers.dev"
+        }
       }
     }
   },
@@ -236,11 +228,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.95.231.156",
+          "address": "47.253.226.114",
           "port": 443,
           "users": [
             {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -249,42 +241,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "3h-kazakhstan1.09vpn.com",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
       }
     }
   },
@@ -323,26 +286,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "205.237.110.254",
-          "port": 443,
+          "address": "162.251.0.5",
+          "port": 22796,
           "users": [
             {
-              "id": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "d917fa44-c27f-4e75-b380-2100d12dc1ac",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "zsit.eu-cdn294.com",
-        "publicKey": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
-        "shortId": "cd2d53510b4df2a8",
-        "fingerprint": "firefox"
+        "serverName": "it.nvidia.com",
+        "publicKey": "p8IKY8IL2qQRc3Ae8bhle4a59D1N_iUaIPex4rriUB4",
+        "shortId": "2c887bc3404d3d45",
+        "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": ""
       }
     }
   },
@@ -352,11 +317,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "137.74.16.237",
+          "address": "50.7.157.237",
           "port": 443,
           "users": [
             {
-              "id": "aaec4e42-a095-44b6-a239-f16d234a0798",
+              "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -368,39 +333,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.icloud.com",
-        "publicKey": "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I",
-        "shortId": "b390e0a721d242b0",
-        "fingerprint": "chrome"
+        "serverName": "edge-fr.extazy.net",
+        "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
   {
     "tag": "🇷🇺 LTE — Premium",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "szadi-production.up.railway.app",
-          "port": 443,
-          "password": "1f724219-b3d"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "szadi-production.up.railway.app",
-        "fingerprint": "firefox"
-      },
-      "wsSettings": {
-        "path": "/milijon-tr"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #2 — Premium",
     "protocol": "vmess",
     "settings": {
       "vnext": [

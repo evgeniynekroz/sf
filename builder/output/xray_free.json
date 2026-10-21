@@ -34,39 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "138.16.141.59",
-          "port": 7443,
-          "users": [
-            {
-              "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ibm.com",
-        "publicKey": "RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k",
-        "shortId": "a09ff9f8",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "83.219.97.18",
+          "address": "147.45.61.213",
           "port": 443,
           "users": [
             {
-              "id": "fe551942-d6e5-4361-ae5c-1f2e9077cd79",
+              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi5.silalink.sbs",
-        "publicKey": "32XFmS-ifqooBFY89KNP3ZrqgSBOd3vel9GlNinL6yw",
-        "shortId": "03",
-        "fingerprint": "chrome"
+        "serverName": "nl4.nztvpn.com",
+        "publicKey": "fiH8cNK7JlHGz6hHHjmsspRdnjpemaq1Q_xmP8a5FHo",
+        "shortId": "a47d71c75bb8be07",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -124,7 +96,7 @@
           "port": 21221,
           "users": [
             {
-              "id": "408c51e8-9246-483d-ba73-34ab4e202eb9",
+              "id": "8bd04756-3beb-4348-82c9-d35453df50ce",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -144,26 +116,60 @@
     }
   },
   {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "trojan",
+    "tag": "🇪🇪 Эстония — FREE",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "szadi-production.up.railway.app",
+          "address": "176.112.152.147",
           "port": 443,
-          "password": "1f724219-b3d"
+          "users": [
+            {
+              "id": "a11213e8-a42f-4492-beaa-14084f6ae28a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.coop.ee",
+        "publicKey": "805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM",
+        "shortId": "74e50da3c1769379",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "217.60.183.95",
+          "port": 33744,
+          "users": [
+            {
+              "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
       "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "szadi-production.up.railway.app",
-        "fingerprint": "firefox"
-      },
+      "security": "none",
       "wsSettings": {
-        "path": "/milijon-tr"
+        "path": "/ShamanVMESS2026",
+        "headers": {
+          "Host": "de-d21e56c13c.shamanapp.online:33744"
+        }
       }
     }
   },
@@ -204,11 +210,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.95.231.156",
+          "address": "47.253.226.114",
           "port": 443,
           "users": [
             {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -217,12 +223,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
         "fingerprint": "chrome"
       }
     }
