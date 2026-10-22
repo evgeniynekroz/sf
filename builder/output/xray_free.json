@@ -86,6 +86,35 @@
     }
   },
   {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "pl3.himoy.space",
+          "port": 443,
+          "users": [
+            {
+              "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl3.himoy.space",
+        "publicKey": "Smu2KKOBtbIEX1mL4t6_-aRTM-bAnjxTuMtWI_hwdBo",
+        "shortId": "9f986e5d07683c45",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
     "tag": "🇸🇪 Швеция — FREE",
     "protocol": "vless",
     "settings": {
@@ -115,65 +144,7 @@
     }
   },
   {
-    "tag": "🇦🇹 Австрия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.104.63.173",
-          "port": 443,
-          "users": [
-            {
-              "id": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "zsat.eu-cdn294.com",
-        "publicKey": "Dj1TD7Sy_TciG915ffXFpMu_pYHnrpGo_ypyyDw44Uc",
-        "shortId": "8fbdc8d37cc76852",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.95.231.156",
-          "port": 443,
-          "users": [
-            {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -197,6 +168,35 @@
         "serverName": "subscribe.betust.net",
         "publicKey": "6qbnUXper_wImNs0YVUh93oCcnAojWAnLBRW7hxvslw",
         "shortId": "9a264653",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.95.231.156",
+          "port": 443,
+          "users": [
+            {
+              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+        "shortId": "a3a578ab",
         "fingerprint": "chrome"
       }
     }
