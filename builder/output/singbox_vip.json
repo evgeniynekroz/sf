@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 ⚡️ Германия — Premium",
-      "server": "5.252.179.15",
+      "server": "31.70.111.146",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
         }
       }
     },
@@ -58,21 +58,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "server": "sw.golangwikito.cfd",
-      "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "server": "109.120.150.245",
+      "server_port": 2053,
+      "uuid": "b1097a54-29de-4014-962c-c835d96e8409",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
+        "server_name": "www.rutube.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
+          "public_key": "iywsgYk8P1mWMu9xBjwpJQnBNGSH43RKSaaRVVv75S0",
+          "short_id": "c342eb1745bbaefd"
         }
       }
     },
@@ -172,25 +172,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 ⚡️ Австрия — Premium",
-      "server": "185.104.63.173",
-      "server_port": 443,
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zsat.eu-cdn294.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dj1TD7Sy_TciG915ffXFpMu_pYHnrpGo_ypyyDw44Uc",
-          "short_id": "8fbdc8d37cc76852"
-        }
-      }
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
@@ -215,21 +202,42 @@
     {
       "type": "vless",
       "tag": "🇺🇸 США — Premium",
-      "server": "185.95.231.156",
+      "server": "47.253.226.114",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция — Premium",
+      "server": "81.177.215.156",
+      "server_port": 443,
+      "uuid": "7ab86f1f-871e-4de6-9dae-7addf6dc976c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr-4vps.yourzloy.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ",
+          "short_id": "fd5b0def0660cdb1"
         }
       }
     },
@@ -314,31 +322,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 ⚡️ Резерв #1 — Premium",
-      "server": "178.17.58.55",
-      "server_port": 443,
-      "password": "M2NbFywBXjS9Ova8SgqRrQkp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de-tg.fastlanehosting.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #2 — Premium",
-      "server": "hy2.123266.xyz",
-      "server_port": 33333,
-      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.123266.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #3 — Premium",
+      "tag": "🇺🇸 Резерв #1 — Premium",
       "server": "155.248.209.237",
       "server_port": 33333,
       "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
@@ -350,31 +334,55 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 Резерв #4 — Premium",
-      "server": "51.44.167.227",
+      "tag": "🇩🇪 ⚡️ Резерв #2 — Premium",
+      "server": "178.17.58.55",
+      "server_port": 443,
+      "password": "M2NbFywBXjS9Ova8SgqRrQkp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de-tg.fastlanehosting.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 Резерв #3 — Premium",
+      "server": "hy2.123266.xyz",
+      "server_port": 33333,
+      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.123266.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 Резерв #4 — Premium",
+      "server": "vpn-us-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-fr-001.fastervpn.world",
+        "server_name": "vpn-us-001.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 Резерв #5 — Premium",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
+      "tag": "🇯🇵 Резерв #5 — Premium",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "8.211.175.236",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Резерв #2 — FREE",
+      "tag": "🇷🇺 Резерв #1 — FREE",
       "server": "86.109.75.183",
       "server_port": 443,
       "uuid": "07104d25-afc5-4b3b-a871-c729c57de047",
@@ -416,16 +424,17 @@
         "🇦🇹 ⚡️ Австрия — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
+        "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
-        "🇩🇪 ⚡️ Резерв #1 — Premium",
-        "🇺🇸 Резерв #2 — Premium",
+        "🇺🇸 Резерв #1 — Premium",
+        "🇩🇪 ⚡️ Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
-        "🇫🇷 Резерв #4 — Premium",
-        "🇨🇭 Резерв #5 — Premium",
-        "🇷🇺 Резерв #2 — FREE"
+        "🇺🇸 Резерв #4 — Premium",
+        "🇯🇵 Резерв #5 — Premium",
+        "🇷🇺 Резерв #1 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -447,16 +456,17 @@
         "🇦🇹 ⚡️ Австрия — Premium",
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
+        "🇹🇷 Турция — Premium",
         "🇰🇿 Казахстан — Premium",
         "🇯🇵 Япония — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
-        "🇩🇪 ⚡️ Резерв #1 — Premium",
-        "🇺🇸 Резерв #2 — Premium",
+        "🇺🇸 Резерв #1 — Premium",
+        "🇩🇪 ⚡️ Резерв #2 — Premium",
         "🇺🇸 Резерв #3 — Premium",
-        "🇫🇷 Резерв #4 — Premium",
-        "🇨🇭 Резерв #5 — Premium",
-        "🇷🇺 Резерв #2 — FREE",
+        "🇺🇸 Резерв #4 — Premium",
+        "🇯🇵 Резерв #5 — Premium",
+        "🇷🇺 Резерв #1 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
