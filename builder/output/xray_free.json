@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "b1027bt.de22.h1clayd.click",
+          "address": "5.252.179.15",
           "port": 443,
           "users": [
             {
-              "id": "8c9a6b30-52d0-41f2-9490-408a06d3aaac",
+              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "b1027bt.de22.h1clayd.click",
-        "publicKey": "prf2ERE-PUqb89LHf8EY8_f8T55k9eiL17jZz5E5-Fs",
-        "shortId": "b385d9eb3283046e",
-        "fingerprint": "firefox"
+        "serverName": "www.bing.com",
+        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+        "shortId": "296f27de82dad7ff",
+        "fingerprint": "qq"
       }
     }
   },
@@ -144,16 +144,48 @@
     }
   },
   {
-    "tag": "🇷🇺 Резерв #1 — FREE",
+    "tag": "🇷🇺 Россия LTE — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "86.109.75.183",
+          "address": "47.253.251.184",
           "port": 443,
           "users": [
             {
-              "id": "07104d25-afc5-4b3b-a871-c729c57de047",
+              "id": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "edg-2oo.pages.dev",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/article/pages/archive?ed=2560",
+        "headers": {
+          "Host": "edg-2oo.pages.dev"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "47.253.226.114",
+          "port": 443,
+          "users": [
+            {
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,8 +197,8 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ww.remnahoysry.ru",
-        "publicKey": "Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4",
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
       }

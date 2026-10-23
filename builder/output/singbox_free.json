@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "b1027bt.de22.h1clayd.click",
+      "server": "5.252.179.15",
       "server_port": 443,
-      "uuid": "8c9a6b30-52d0-41f2-9490-408a06d3aaac",
+      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "b1027bt.de22.h1clayd.click",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "prf2ERE-PUqb89LHf8EY8_f8T55k9eiL17jZz5E5-Fs",
-          "short_id": "b385d9eb3283046e"
+          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+          "short_id": "296f27de82dad7ff"
         }
       }
     },
@@ -128,21 +128,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Резерв #1 — FREE",
-      "server": "86.109.75.183",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "47.253.251.184",
       "server_port": 443,
-      "uuid": "07104d25-afc5-4b3b-a871-c729c57de047",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "edg-2oo.pages.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/article/pages/archive?ed=2560",
+        "headers": {
+          "Host": "edg-2oo.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "47.253.226.114",
+      "server_port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ww.remnahoysry.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4",
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
           "short_id": ""
         }
       }
@@ -185,7 +203,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Резерв #1 — FREE",
+        "🇷🇺 Россия LTE — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -202,7 +221,8 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Резерв #1 — FREE",
+        "🇷🇺 Россия LTE — FREE",
+        "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
