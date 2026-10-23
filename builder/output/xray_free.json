@@ -5,26 +5,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
-          "port": 443,
+          "address": "31.77.161.183",
+          "port": 8443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "5a96c1fc-f167-44b9-9020-8f6867537d14",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "germany01.azotvpn.xyz",
+        "publicKey": "7hHoROf3WLDWI8SQ4B82O00j29Bpwxd49hWe5EMBsgI",
+        "shortId": "8bbb9ef51f37aad7",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": ""
       }
     }
   },
@@ -115,77 +117,16 @@
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "185.58.115.62",
+          "address": "195.123.213.28",
           "port": 443,
           "users": [
             {
-              "id": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "se2.gderevievsvideos.fyi",
-        "publicKey": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-        "shortId": "7271129440ade8fa",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "47.253.251.184",
-          "port": 443,
-          "users": [
-            {
-              "id": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "edg-2oo.pages.dev",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/article/pages/archive?ed=2560",
-        "headers": {
-          "Host": "edg-2oo.pages.dev"
-        }
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "47.253.226.114",
-          "port": 443,
-          "users": [
-            {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -198,7 +139,36 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+        "shortId": "5c256336e3b673fa",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "86.109.75.183",
+          "port": 443,
+          "users": [
+            {
+              "id": "07104d25-afc5-4b3b-a871-c729c57de047",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "ww.remnahoysry.ru",
+        "publicKey": "Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4",
         "shortId": "",
         "fingerprint": "chrome"
       }

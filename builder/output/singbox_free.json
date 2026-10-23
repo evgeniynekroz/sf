@@ -25,22 +25,25 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "5.252.179.15",
-      "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
+      "server": "31.77.161.183",
+      "server_port": 8443,
+      "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "germany01.azotvpn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "7hHoROf3WLDWI8SQ4B82O00j29Bpwxd49hWe5EMBsgI",
+          "short_id": "8bbb9ef51f37aad7"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
       }
     },
     {
@@ -107,49 +110,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Швеция — FREE",
-      "server": "185.58.115.62",
+      "tag": "🇪🇪 Эстония — FREE",
+      "server": "195.123.213.28",
       "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se2.gderevievsvideos.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "47.253.251.184",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "edg-2oo.pages.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/article/pages/archive?ed=2560",
-        "headers": {
-          "Host": "edg-2oo.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "47.253.226.114",
-      "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -160,7 +124,28 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Резерв #1 — FREE",
+      "server": "86.109.75.183",
+      "server_port": 443,
+      "uuid": "07104d25-afc5-4b3b-a871-c729c57de047",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ww.remnahoysry.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Abp__UEbRjj_fRvYa_u-B-I8XoHVUkGmc1ofMBMqHT4",
           "short_id": ""
         }
       }
@@ -202,9 +187,8 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇪🇪 Эстония — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
@@ -220,9 +204,8 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
-        "🇺🇸 Резерв #1 — FREE",
+        "🇪🇪 Эстония — FREE",
+        "🇷🇺 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
       ],
