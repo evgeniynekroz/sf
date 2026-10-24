@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "nl2.jzxc.digital",
-      "server_port": 8443,
-      "uuid": "3d87029f-b55b-487d-aea6-6049c8668ff1",
+      "server": "72.56.88.181",
+      "server_port": 443,
+      "uuid": "7ce594b9-918b-441d-922c-230341838abd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bmw.com",
+        "server_name": "nl2.xshoponline.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "a5fyDdAxG-lU54h4F5KPPa-CuCswv9EBAuXYKdmcnjE",
-          "short_id": "f7a5b6b3bb04abb6"
+          "public_key": "EkBRN12aZMx4Q_FCOcxB9KuzMkgLSBswmkDycnaTZWM",
+          "short_id": "1a917cfae106f7dd"
         }
       }
     },
@@ -87,80 +87,48 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "2.56.126.64",
+      "server": "95.85.227.79",
       "server_port": 443,
-      "uuid": "35da102e-536b-4103-9632-58c7c4c6303b",
+      "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl3.originmesh.online",
+        "server_name": "pl2.himoy.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
-          "short_id": "eecfe76af97a6132"
+          "public_key": "eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0",
+          "short_id": "7f9831bb156cc9e2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "91.242.228.29",
+      "server": "88.216.214.255",
       "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+      "uuid": "44734f63-dc12-408e-9a5b-63ef5f12127a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "se1.mycloud1.org",
+        "server_name": "se.zainet.tech",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
+          "public_key": "C7c9W3COhLMvGQ8WzGwqvULK1ua_K17nDzTDWbE-xGE",
+          "short_id": "54a55c80ed16f17b"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "84.32.129.182",
-      "server_port": 443,
-      "password": "94c2b91777f8de3a5bc12d2a91b732c2",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo3.betust.net",
-        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "173.249.210.179",
-      "server_port": 61000,
-      "uuid": "12f4c3f6-ecce-4586-b39d-987757ea9b3b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c7XtbOUOg19bgo2N-ufXbZHaGHuSB7jAdvmj1zchRn4",
-          "short_id": "ecf5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -176,6 +144,27 @@
           "enabled": true,
           "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
           "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "us.zainet.tech",
+      "server_port": 443,
+      "uuid": "44734f63-dc12-408e-9a5b-63ef5f12127a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.zainet.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s-IGW0bZTveh89h2dm1gyTgCBaWp_UXoI9hA9vgObXE",
+          "short_id": "54a55c80ed16f17b"
         }
       }
     },
@@ -196,7 +185,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -214,7 +202,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "nl2.jzxc.digital",
-          "port": 8443,
+          "address": "72.56.88.181",
+          "port": 443,
           "users": [
             {
-              "id": "3d87029f-b55b-487d-aea6-6049c8668ff1",
+              "id": "7ce594b9-918b-441d-922c-230341838abd",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bmw.com",
-        "publicKey": "a5fyDdAxG-lU54h4F5KPPa-CuCswv9EBAuXYKdmcnjE",
-        "shortId": "f7a5b6b3bb04abb6",
+        "serverName": "nl2.xshoponline.ru",
+        "publicKey": "EkBRN12aZMx4Q_FCOcxB9KuzMkgLSBswmkDycnaTZWM",
+        "shortId": "1a917cfae106f7dd",
         "fingerprint": "firefox"
       }
     }
@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.56.126.64",
+          "address": "95.85.227.79",
           "port": 443,
           "users": [
             {
-              "id": "35da102e-536b-4103-9632-58c7c4c6303b",
+              "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,9 +107,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl3.originmesh.online",
-        "publicKey": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
-        "shortId": "eecfe76af97a6132",
+        "serverName": "pl2.himoy.space",
+        "publicKey": "eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0",
+        "shortId": "7f9831bb156cc9e2",
         "fingerprint": "firefox"
       }
     }
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.242.228.29",
+          "address": "88.216.214.255",
           "port": 443,
           "users": [
             {
-              "id": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+              "id": "44734f63-dc12-408e-9a5b-63ef5f12127a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,43 +136,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se1.mycloud1.org",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
+        "serverName": "se.zainet.tech",
+        "publicKey": "C7c9W3COhLMvGQ8WzGwqvULK1ua_K17nDzTDWbE-xGE",
+        "shortId": "54a55c80ed16f17b",
         "fingerprint": "firefox"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "173.249.210.179",
-          "port": 61000,
-          "users": [
-            {
-              "id": "12f4c3f6-ecce-4586-b39d-987757ea9b3b",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.amd.com",
-        "publicKey": "c7XtbOUOg19bgo2N-ufXbZHaGHuSB7jAdvmj1zchRn4",
-        "shortId": "ecf5",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -197,6 +169,35 @@
         "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
         "shortId": "a3a578ab",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "us.zainet.tech",
+          "port": 443,
+          "users": [
+            {
+              "id": "44734f63-dc12-408e-9a5b-63ef5f12127a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us.zainet.tech",
+        "publicKey": "s-IGW0bZTveh89h2dm1gyTgCBaWp_UXoI9hA9vgObXE",
+        "shortId": "54a55c80ed16f17b",
+        "fingerprint": "firefox"
       }
     }
   }
