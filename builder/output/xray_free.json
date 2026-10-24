@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "5.175.161.249",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "3d87029f-b55b-487d-aea6-6049c8668ff1",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "wifi6.jzxc.digital",
+        "publicKey": "_hvd47UytqRrbVTiFFe2vwvWgeg4visStJQpj9xcGjM",
+        "shortId": "681c5f389bb35191",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "147.45.61.213",
-          "port": 443,
+          "address": "nl2.jzxc.digital",
+          "port": 8443,
           "users": [
             {
-              "id": "ee18d188-14cc-417e-beb1-70e4add6d023",
+              "id": "3d87029f-b55b-487d-aea6-6049c8668ff1",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl4.nztvpn.com",
-        "publicKey": "fiH8cNK7JlHGz6hHHjmsspRdnjpemaq1Q_xmP8a5FHo",
-        "shortId": "a47d71c75bb8be07",
-        "fingerprint": "chrome"
+        "serverName": "www.bmw.com",
+        "publicKey": "a5fyDdAxG-lU54h4F5KPPa-CuCswv9EBAuXYKdmcnjE",
+        "shortId": "f7a5b6b3bb04abb6",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.85.227.79",
-          "port": 443,
+          "address": "2.26.224.177",
+          "port": 1443,
           "users": [
             {
-              "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
+              "id": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,9 +107,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl2.himoy.space",
-        "publicKey": "eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0",
-        "shortId": "7f9831bb156cc9e2",
+        "serverName": "pl.peregrine-sub.net",
+        "publicKey": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
+        "shortId": "7b6803a79bba5c52",
         "fingerprint": "firefox"
       }
     }
@@ -149,13 +149,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.57.148",
-          "port": 443,
+          "address": "173.249.210.179",
+          "port": 61000,
           "users": [
             {
-              "id": "caf3d607-95c9-4ea0-98b5-864027056ba0",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "12f4c3f6-ecce-4586-b39d-987757ea9b3b",
+              "encryption": "none"
             }
           ]
         }
@@ -165,10 +164,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us2.accessboy.com",
-        "publicKey": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
-        "shortId": "1c5869a95671bcb0",
-        "fingerprint": "firefox"
+        "serverName": "www.amd.com",
+        "publicKey": "c7XtbOUOg19bgo2N-ufXbZHaGHuSB7jAdvmj1zchRn4",
+        "shortId": "ecf5",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -178,11 +177,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
+          "address": "185.95.231.156",
           "port": 443,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -191,12 +190,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
+        "serverName": "www.apple.com",
+        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+        "shortId": "a3a578ab",
         "fingerprint": "chrome"
       }
     }
