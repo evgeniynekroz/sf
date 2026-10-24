@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.77.161.183",
+          "address": "5.252.179.15",
           "port": 443,
           "users": [
             {
-              "id": "5a96c1fc-f167-44b9-9020-8f6867537d14",
+              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "germany01.azotvpn.xyz",
-        "publicKey": "4goy1hsfLyeu1POy0fjyH7qIrc1CK4p3nAZQVMTdPFY",
-        "shortId": "af3292b33826ae94",
-        "fingerprint": "random"
+        "serverName": "www.bing.com",
+        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+        "shortId": "296f27de82dad7ff",
+        "fingerprint": "qq"
       }
     }
   },
@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.85.253.155",
+          "address": "95.85.227.79",
           "port": 443,
           "users": [
             {
-              "id": "15397019-2fda-406a-9012-4b219a27bc88",
+              "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,9 +107,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl07.launch.tel",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
+        "serverName": "pl2.himoy.space",
+        "publicKey": "eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0",
+        "shortId": "7f9831bb156cc9e2",
         "fingerprint": "firefox"
       }
     }
@@ -149,11 +149,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "96.62.71.242",
+          "address": "88.216.57.148",
           "port": 443,
           "users": [
             {
-              "id": "15397019-2fda-406a-9012-4b219a27bc88",
+              "id": "caf3d607-95c9-4ea0-98b5-864027056ba0",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,9 +165,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us.launch.tel",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
+        "serverName": "us2.accessboy.com",
+        "publicKey": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
+        "shortId": "1c5869a95671bcb0",
         "fingerprint": "firefox"
       }
     }
@@ -178,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "96.62.71.250",
+          "address": "47.253.226.114",
           "port": 443,
           "users": [
             {
-              "id": "15397019-2fda-406a-9012-4b219a27bc88",
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -194,10 +194,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us2.launch.tel",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   }
