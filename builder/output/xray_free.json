@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "64.188.67.182",
+          "address": "5.252.179.15",
           "port": 443,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "germanylanzrestik.site",
-        "publicKey": "aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.bing.com",
+        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+        "shortId": "296f27de82dad7ff",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,25 +63,24 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.27.203.251",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "edge-fi2.lovely.my",
-        "publicKey": "QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY",
-        "shortId": "",
+        "serverName": "www.google.com",
+        "publicKey": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+        "shortId": "d368b94e275ab080",
         "fingerprint": "firefox"
       }
     }
@@ -92,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "80.47.13.138",
+          "address": "2.56.126.64",
           "port": 443,
           "users": [
             {
-              "id": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+              "id": "35da102e-536b-4103-9632-58c7c4c6303b",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +107,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl1.mycloud1.org",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
+        "serverName": "pl3.originmesh.online",
+        "publicKey": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
+        "shortId": "eecfe76af97a6132",
         "fingerprint": "firefox"
       }
     }
@@ -121,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.242.228.29",
+          "address": "201.58.177.237",
           "port": 443,
           "users": [
             {
-              "id": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -134,12 +133,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se1.mycloud1.org",
-        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-        "shortId": "afee962d",
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -174,18 +173,17 @@
     }
   },
   {
-    "tag": "🇷🇺 Резерв #2 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "51.89.225.90",
+          "address": "172.238.22.18",
           "port": 8443,
           "users": [
             {
-              "id": "680e92ac-1688-49e0-af96-7327fbc30ce8",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "54b4be46-b8d4-463c-8e25-a8477a91a87e",
+              "encryption": "none"
             }
           ]
         }
@@ -195,10 +193,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ozon.ru",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.microsoft.com",
+        "publicKey": "zaiXrav1DCiGLHdLbrKYz7NhHsBb9AT5SF8yqfdIbG4",
+        "shortId": "e8989f1faf103280",
+        "fingerprint": "chrome"
       }
     }
   }
