@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "94.228.161.123",
+          "address": "sw.golangwikito.cfd",
           "port": 443,
           "users": [
             {
-              "id": "35da102e-536b-4103-9632-58c7c4c6303b",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl2.originmesh.online",
-        "publicKey": "1C9KA3E5JNdBQy3NMmH8GBEeJp_Etpw9HopV6RNOHXM",
-        "shortId": "eecfe76af97a6132",
-        "fingerprint": "firefox"
+        "serverName": "sw.golangwikito.cfd",
+        "publicKey": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+        "shortId": "a1037b25dcef6aa7",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -91,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.56.126.64",
+          "address": "2.56.126.63",
           "port": 443,
           "users": [
             {
@@ -107,8 +107,8 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl3.originmesh.online",
-        "publicKey": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
+        "serverName": "pl2.originmesh.online",
+        "publicKey": "CJQVTbsNkeY_C4POmWXcTSCsiTdysjxnXyTmFQdfKmE",
         "shortId": "eecfe76af97a6132",
         "fingerprint": "firefox"
       }
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "se14-node.rumedia-cdn.com",
-          "port": 8443,
+          "address": "201.58.177.108",
+          "port": 443,
           "users": [
             {
-              "id": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,44 +136,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.wikipedia.org",
-        "publicKey": "WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY",
-        "shortId": "9d48935b2c2b8011",
-        "fingerprint": "chrome"
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
+        "shortId": "",
+        "fingerprint": "ios"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.95.231.156",
-          "port": 443,
-          "users": [
-            {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -198,6 +169,35 @@
         "publicKey": "LPxsw0pGD7kfIEF0RJlSVYA37S6KKxoy9G0rmtmJqUA",
         "shortId": "df0037688b5b6984",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.95.231.156",
+          "port": 443,
+          "users": [
+            {
+              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+        "shortId": "a3a578ab",
+        "fingerprint": "chrome"
       }
     }
   }
