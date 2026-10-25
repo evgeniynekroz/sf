@@ -127,6 +127,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "ru1server.rabstvo.shop",
+      "server_port": 443,
+      "password": "MA3RrlRHTFNFZG_D0jeSLbGxRHH4HkUO",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1server.rabstvo.shop",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
       "server": "82.39.213.125",
@@ -185,6 +197,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -202,6 +215,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

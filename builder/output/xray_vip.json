@@ -178,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "ss.ll0ll.vip",
-          "port": 2096,
+          "address": "62.83.19.127",
+          "port": 8443,
           "users": [
             {
-              "id": "e436321f-24a9-4c38-b935-7d7dee0c3f68",
+              "id": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
               "encryption": "none"
             }
           ]
@@ -190,16 +190,17 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "id.vk.com",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
-        "fingerprint": "chrome"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "au5.pad-sservice.lat",
+        "fingerprint": "firefox"
       },
-      "grpcSettings": {
-        "serviceName": "vless-grpc-reality"
+      "wsSettings": {
+        "path": "/AU5W",
+        "headers": {
+          "Host": "au5.pad-sservice.lat"
+        }
       }
     }
   },
@@ -209,11 +210,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.128.71.79",
+          "address": "178.172.227.124",
           "port": 10444,
           "users": [
             {
-              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+              "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -228,7 +229,7 @@
         "serverName": "ads.x5.ru",
         "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
         "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -238,11 +239,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.160.140.160",
+          "address": "167.104.223.215",
           "port": 443,
           "users": [
             {
-              "id": "04edf721-b2b7-4a80-9fbd-c949438c58c9",
+              "id": "afbd410e-1663-4f40-9d3b-df5117aa23ca",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -254,9 +255,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "gb.ozon.ru",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
+        "serverName": "gb2.murainternet.network",
+        "publicKey": "fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo",
+        "shortId": "fc36b4a584871aa5",
         "fingerprint": "firefox"
       }
     }
@@ -320,35 +321,6 @@
     }
   },
   {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "38.107.234.57",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
@@ -383,11 +355,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "it.song69.fun",
+          "address": "205.237.110.254",
           "port": 443,
           "users": [
             {
-              "id": "408c51e8-9246-483d-ba73-34ab4e202eb9",
+              "id": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -399,10 +371,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "metrika.yandex.ru",
-        "publicKey": "HbK-TTnL1Dog-wKCowjLrKsx5ECIt2uxBsdGfeWG6kQ",
-        "shortId": "7bbf811a",
-        "fingerprint": "firefox"
+        "serverName": "zsit.eu-cdn294.com",
+        "publicKey": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
+        "shortId": "cd2d53510b4df2a8",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -412,26 +384,52 @@
     "settings": {
       "vnext": [
         {
-          "address": "103.91.147.207",
-          "port": 443,
+          "address": "140.225.199.133",
+          "port": 8443,
           "users": [
             {
-              "id": "04edf721-b2b7-4a80-9fbd-c949438c58c9",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "6c713691-3ca2-002b-ad25-113d1bed6b03",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ozon.ru",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
+        "serverName": "strm.yandex.net",
+        "publicKey": "86EUYgrS7mazQ-GsiMnStyHSx9AlG8B_-KgXluNdWXI",
+        "shortId": "d3ab13e9c496c399",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "google.storage.v2.Storage"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 LTE #2 — Premium",
+    "protocol": "trojan",
+    "settings": {
+      "servers": [
+        {
+          "address": "162.159.253.41",
+          "port": 443,
+          "password": "humanity"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "www.calmlunch.com",
         "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/assignment"
       }
     }
   },
