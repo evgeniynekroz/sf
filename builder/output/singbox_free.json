@@ -46,62 +46,62 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "72.56.88.181",
+      "server": "191.217.216.24",
       "server_port": 443,
-      "uuid": "7ce594b9-918b-441d-922c-230341838abd",
-      "flow": "xtls-rprx-vision",
+      "uuid": "846cedee-2a52-0002-a0b9-11850ead6a8b",
       "tls": {
         "enabled": true,
-        "server_name": "nl2.xshoponline.ru",
+        "server_name": "nl-central.v8x2b.lol",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EkBRN12aZMx4Q_FCOcxB9KuzMkgLSBswmkDycnaTZWM",
-          "short_id": "1a917cfae106f7dd"
+          "public_key": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 Польша — FREE",
-      "server": "80.47.13.138",
+      "server": "177.3.214.156",
       "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl1.mycloud1.org",
+        "server_name": "finlandlanzarotte.live",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
+          "public_key": "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша — FREE",
+      "server": "95.85.227.79",
+      "server_port": 443,
+      "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.himoy.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eq1GsjxpRmENTkUfjk_QPWUUqGNHwESqoJ7yFs-WpF0",
+          "short_id": "7f9831bb156cc9e2"
         }
       }
     },
