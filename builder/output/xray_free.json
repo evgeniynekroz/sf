@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.58.182.250",
+          "address": "hollandlanzerotte.xyz",
           "port": 443,
           "users": [
             {
@@ -53,7 +53,7 @@
         "serverName": "hollandlanzerotte.xyz",
         "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "qq"
       }
     }
   },
@@ -115,16 +115,16 @@
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇧🇾 Беларусь — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "201.58.177.237",
-          "port": 443,
+          "address": "178.172.227.124",
+          "port": 10444,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -133,12 +133,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "swedenafteraventura.space",
-        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-        "shortId": "",
+        "serverName": "ads.x5.ru",
+        "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+        "shortId": "8debcf36f1cc69ff",
         "fingerprint": "firefox"
       }
     }
