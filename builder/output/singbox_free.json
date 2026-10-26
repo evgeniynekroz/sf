@@ -46,21 +46,21 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "179.254.111.86",
+      "server": "201.58.182.250",
       "server_port": 443,
-      "uuid": "55c98c63-8e67-4750-a574-5f586782c1ab",
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl3.superpuper.cfd",
+        "server_name": "hollandlanzerotte.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EneZn6zFvvLllLp0qi2E3pZcuy6r3w9nqXquqgocZwI",
-          "short_id": "4fb97d1ee1d1af4e"
+          "public_key": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+          "short_id": ""
         }
       }
     },
@@ -87,75 +87,79 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "2.27.244.217",
+      "server": "2.56.126.63",
       "server_port": 443,
-      "uuid": "a045fc16-df85-4714-b781-537f13c18ee3",
+      "uuid": "35da102e-536b-4103-9632-58c7c4c6303b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl11111.bearbeer.digital",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gHGAfaFz5S9tb4qmDPWJ-4VzawoFZX3M6KAfANEKaCk",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 Швеция — FREE",
-      "server": "2.26.55.145",
-      "server_port": 1443,
-      "uuid": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.peregrine-sub.net",
+        "server_name": "pl2.originmesh.online",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
-          "short_id": "7b6803a79bba5c52"
+          "public_key": "CJQVTbsNkeY_C4POmWXcTSCsiTdysjxnXyTmFQdfKmE",
+          "short_id": "eecfe76af97a6132"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "193.23.216.156",
-      "server_port": 443,
-      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
-      "tls": {
-        "enabled": true,
-        "server_name": "crt.onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "47.253.226.114",
+      "tag": "🇸🇪 Швеция — FREE",
+      "server": "201.58.177.108",
       "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "swedenafteraventura.space",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "public_key": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
           "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "162.159.244.91",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #1 — FREE",
+      "server": "82.39.213.125",
+      "server_port": 443,
+      "uuid": "821249fc-d4e8-4e4f-895f-53bd0f1227c8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us1.xshoponline.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LPxsw0pGD7kfIEF0RJlSVYA37S6KKxoy9G0rmtmJqUA",
+          "short_id": "df0037688b5b6984"
         }
       }
     },
