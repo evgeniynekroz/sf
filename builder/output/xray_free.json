@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "191.217.216.24",
+          "address": "198.202.146.51",
           "port": 443,
           "users": [
             {
-              "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
-              "encryption": "none"
+              "id": "afbd410e-1663-4f40-9d3b-df5117aa23ca",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -20,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-central.v8x2b.lol",
-        "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
-        "shortId": "",
-        "fingerprint": "edge"
+        "serverName": "198.202.146.51.sslip.io",
+        "publicKey": "B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY",
+        "shortId": "6fe2994a0e208408",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -90,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.56.126.64",
+          "address": "2.27.244.217",
           "port": 443,
           "users": [
             {
-              "id": "35da102e-536b-4103-9632-58c7c4c6303b",
+              "id": "a045fc16-df85-4714-b781-537f13c18ee3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -106,10 +107,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl3.originmesh.online",
-        "publicKey": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
-        "shortId": "eecfe76af97a6132",
-        "fingerprint": "firefox"
+        "serverName": "pl11111.bearbeer.digital",
+        "publicKey": "gHGAfaFz5S9tb4qmDPWJ-4VzawoFZX3M6KAfANEKaCk",
+        "shortId": "",
+        "fingerprint": "qq"
       }
     }
   },
@@ -119,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.58.177.108",
-          "port": 443,
+          "address": "2.26.55.145",
+          "port": 1443,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "id": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -135,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "swedenafteraventura.space",
-        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-        "shortId": "",
-        "fingerprint": "ios"
+        "serverName": "se.peregrine-sub.net",
+        "publicKey": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
+        "shortId": "7b6803a79bba5c52",
+        "fingerprint": "firefox"
       }
     }
   },

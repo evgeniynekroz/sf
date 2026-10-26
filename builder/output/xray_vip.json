@@ -5,12 +5,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "191.217.216.24",
+          "address": "198.202.146.51",
           "port": 443,
           "users": [
             {
-              "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
-              "encryption": "none"
+              "id": "afbd410e-1663-4f40-9d3b-df5117aa23ca",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -20,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-central.v8x2b.lol",
-        "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
-        "shortId": "",
-        "fingerprint": "edge"
+        "serverName": "198.202.146.51.sslip.io",
+        "publicKey": "B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY",
+        "shortId": "6fe2994a0e208408",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -119,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.56.126.64",
+          "address": "2.27.244.217",
           "port": 443,
           "users": [
             {
-              "id": "35da102e-536b-4103-9632-58c7c4c6303b",
+              "id": "a045fc16-df85-4714-b781-537f13c18ee3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -135,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl3.originmesh.online",
-        "publicKey": "ltQ7842eBLUE37uQ_g5BVxtyzr6o1xr1bfs0roiHOGI",
-        "shortId": "eecfe76af97a6132",
-        "fingerprint": "firefox"
+        "serverName": "pl11111.bearbeer.digital",
+        "publicKey": "gHGAfaFz5S9tb4qmDPWJ-4VzawoFZX3M6KAfANEKaCk",
+        "shortId": "",
+        "fingerprint": "qq"
       }
     }
   },
@@ -148,11 +149,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.58.177.108",
-          "port": 443,
+          "address": "2.26.55.145",
+          "port": 1443,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "id": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -164,10 +165,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "swedenafteraventura.space",
-        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-        "shortId": "",
-        "fingerprint": "ios"
+        "serverName": "se.peregrine-sub.net",
+        "publicKey": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
+        "shortId": "7b6803a79bba5c52",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -177,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "ss.ll0ll.vip",
-          "port": 2096,
+          "address": "152.53.1.40",
+          "port": 8443,
           "users": [
             {
-              "id": "e436321f-24a9-4c38-b935-7d7dee0c3f68",
+              "id": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
               "encryption": "none"
             }
           ]
@@ -189,16 +190,17 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "id.vk.com",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "au4.pad-sservice.lat",
         "fingerprint": "firefox"
       },
-      "grpcSettings": {
-        "serviceName": "vless-grpc-reality"
+      "wsSettings": {
+        "path": "/A14U",
+        "headers": {
+          "Host": "au4.pad-service.com"
+        }
       }
     }
   },
@@ -208,11 +210,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "178.172.227.124",
+          "address": "178.172.227.228",
           "port": 10444,
           "users": [
             {
-              "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+              "id": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -227,7 +229,7 @@
         "serverName": "ads.x5.ru",
         "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
         "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "chrome"
+        "fingerprint": "qq"
       }
     }
   },
@@ -319,6 +321,32 @@
     }
   },
   {
+    "tag": "🇰🇿 Казахстан — Premium",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "3h-kazakhstan1.09vpn.com",
+          "port": 80,
+          "users": [
+            {
+              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/vmess/"
+      }
+    }
+  },
+  {
     "tag": "🇯🇵 Япония — Premium",
     "protocol": "vless",
     "settings": {
@@ -377,65 +405,12 @@
     }
   },
   {
-    "tag": "🇫🇷 Франция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "145.223.68.58",
-          "port": 443,
-          "users": [
-            {
-              "id": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg",
-        "shortId": "a44ff7d2e80213c2",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #2 — Premium",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "162.159.244.91",
-          "port": 443,
-          "password": "humanity"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "www.calmlunch.com",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/assignment"
-      }
-    }
-  },
-  {
     "tag": "🇷🇺 LTE #3 — Premium",
     "protocol": "trojan",
     "settings": {
       "servers": [
         {
-          "address": "141.101.115.104",
+          "address": "162.159.244.91",
           "port": 443,
           "password": "humanity"
         }
