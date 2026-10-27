@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-27T10:53:37.594182+00:00",
+  "updated_at": "2026-10-27T16:21:04.336017+00:00",
   "vip": [
     {
       "label": "🇩🇪 ⚡️ Германия — Premium",
-      "uri": "vless://0ab273e4-cea6-41d0-bbab-41071d2fc455@5.252.179.15:443?flow=xtls-rprx-vision&fp=chrome&pbk=XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY&security=reality&sid=296f27de82dad7ff&sni=www.bing.com&type=raw#vless-1860508884"
+      "uri": "vless://d0c8aa8d-a535-432a-b521-21f0e561f643@157.173.7.17:443?flow=xtls-rprx-vision&fp=firefox&pbk=8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU&security=reality&sid=88d9dc52ef39c8bd&sni=node-fra03.rkitman.ru&type=tcp#vless-1930538321"
     },
     {
       "label": "🇩🇪 ⚡️ Германия (Hysteria 2) — Premium",
@@ -11,7 +11,7 @@
     },
     {
       "label": "🇳🇱 ⚡️ Нидерланды — Premium",
-      "uri": "vless://047466dd-05aa-4331-abf7-322c5aaecf97@31.76.110.65:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s&security=reality&sid=a1b2c3d4b5&sni=nl-1.viralforge.ru&type=tcp#Бесплатный"
+      "uri": "vless://047466dd-05aa-4331-abf7-322c5aaecf97@nl-1.viralforge.ru:443?flow=xtls-rprx-vision&security=reality&sni=nl-1.viralforge.ru&fp=firefox&pbk=HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s&sid=a1b2c3d4b5&type=raw#Бесплатный"
     },
     {
       "label": "🇫🇮 ⚡️ Финляндия — Premium",
@@ -19,7 +19,7 @@
     },
     {
       "label": "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
-      "uri": "hy2://10be1dad-9952-4c5e-aa30-db435f69b727@144.31.239.226:4444?sni=fl2.nexfile.net#hysteria2-1930493524"
+      "uri": "hy2://10be1dad-9952-4c5e-aa30-db435f69b727@144.31.239.181:4444?sni=fl2.nexfile.net#hysteria2-1932642654"
     },
     {
       "label": "🇪🇪 ⚡️ Эстония — Premium",
@@ -27,11 +27,11 @@
     },
     {
       "label": "🇵🇱 ⚡️ Польша — Premium",
-      "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@ru1.radiolumens.uk:8445?sni=ru1.radiolumens.uk&alpn=h2%2Chttp%2F1.1&type=grpc&serviceName=beru-pl&fp=chrome&security=tls#%F0%9F%87%B5%F0%9F%87%B1%20AetrisVPN"
+      "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@77.232.135.141:8445?encryption=none&security=tls&serviceName=beru-pl&sni=ru1.radiolumens.uk&type=grpc&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20AetrisVPN"
     },
     {
       "label": "🇸🇪 ⚡️ Швеция — Premium",
-      "uri": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@201.58.177.137:443?encryption=none&flow=xtls-rprx-vision&pbk=TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY&security=reality&sni=swedenafteraventura.space&type=tcp&fp=chrome#Бесплатный"
+      "uri": "vless://4b1be712-774c-4b65-8491-a3339e124a70@136.148.211.243:443?type=grpc&security=reality&fp=firefox&pbk=qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo&sid=11d37dd92940329e&sni=se1-cl3.vless-fiberstasis.top&serviceName=grpc-se-3#Бесплатный"
     },
     {
       "label": "🇸🇪 ⚡️ Швеция (Hysteria 2) — Premium",
@@ -47,27 +47,15 @@
     },
     {
       "label": "🇬🇧 Великобритания — Premium",
-      "uri": "vless://54d1afe5-f5aa-47e6-a02f-6c41a6f886b3@193.160.140.154:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=gb.ozon.ru&encryption=none#AetrisVPN"
+      "uri": "vless://d6b6461a-59b1-4aaf-89a0-6e051e7f215c@62.233.33.44:443?encryption=none&fp=firefox&pbk=Jlu3ZYGtXSuj-Q-RhwifmGmRajmdcxSmX5qoS9U3AFA&security=reality&serviceName=community.events.v1&sid=d1bf27e64c82aad2&sni=uk-room08.filesnap.tech&type=grpc#Бесплатный"
     },
     {
       "label": "🇺🇸 США — Premium",
-      "uri": "vless://14c80e0e-f7ce-4991-94fc-99a1db4a9b1e@159.89.87.21:28190?flow=xtls-rprx-vision&security=reality&encryption=none&sni=aws.amazon.com&fp=chrome&pbk=ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno&type=tcp&headerType=none&host=/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&path=/#🇺🇸"
+      "uri": "vless://1f8cf47a-b66a-4916-979f-26edfcf44eea@185.95.231.156:443?type=raw&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To&sid=a3a578ab&sni=www.apple.com&encryption=none#🇺🇸"
     },
     {
       "label": "🇹🇷 Турция — Premium",
-      "uri": "vless://6845a59f-970b-4e1e-8e26-06a34ee663d6@185.98.63.6:8443?type=raw&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=apple.com&encryption=none#🇹🇷"
-    },
-    {
-      "label": "🇰🇿 Казахстан — Premium",
-      "uri": "vless://c9c219dc-50da-4135-8e5b-67020291f0ec@201.34.136.78:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA&security=reality&sni=umzn0mwquio.dynarix-node41.sbs&type=tcp#🇰🇿"
-    },
-    {
-      "label": "🇯🇵 Япония — Premium",
-      "uri": "vless://4e4f1f70-5e56-4a76-bb9d-db087f4690c4@43.170.8.95:443?path=/tyxyws&security=tls&encryption=none&insecure=0&host=jp3.yohototo.top&fp=chrome&type=ws&allowInsecure=0&sni=jp3.yohototo.top#EPODONIOS"
-    },
-    {
-      "label": "🇳🇴 Норвегия — Premium",
-      "uri": "vless://c9c219dc-50da-4135-8e5b-67020291f0ec@72.56.239.218:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA&security=reality&sni=v54bb8lv06.edgecache.click&type=tcp#🇳🇴"
+      "uri": "vless://4b1be712-774c-4b65-8491-a3339e124a70@78.135.73.168:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw&sid=f4b2a12c&sni=tr2.tv-quoralyx.top#Бесплатный"
     },
     {
       "label": "🇮🇹 Италия — Premium",
@@ -86,42 +74,42 @@
       "uri": "hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-us-001.fastervpn.world:443?insecure=1&sni=vpn-us-001.fastervpn.world#hysteria2-1853341811"
     },
     {
-      "label": "🇷🇺 Резерв #3 — Premium",
-      "uri": "hysteria2://41edb44c8e@103.88.243.142:11592?sni=srv-17e124.21freedom.net#🇷🇺"
+      "label": "🇫🇷 Резерв #3 — Premium",
+      "uri": "hy2://1953e43b-605c-4262-83eb-41a80646b801@31.185.105.12:443?sni=fr.song69.fun#hysteria2-1925771726"
     },
     {
       "label": "🇺🇸 Резерв #4 — Premium",
       "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333?insecure=1&sni=155.248.209.237#🇺🇸"
     },
     {
-      "label": "🇺🇸 Резерв #5 — Premium",
-      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333?sni=hy2.123266.xyz#🇺🇸"
+      "label": "🇫🇷 Резерв #5 — Premium",
+      "uri": "hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@13.36.234.11:443?insecure=1&sni=vpn-fr-001.fastervpn.world#hysteria2-1827145246"
     },
     {
       "label": "🇷🇺 LTE — Premium",
-      "uri": "hysteria2://2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5@89.105.219.106:8443?sni=speedtestmark.com#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%2C%20Prague%20%7C%20%5BBL%5D"
-    },
-    {
-      "label": "🇷🇺 LTE #2 — Premium",
       "uri": "hysteria2://146d567c-6335-4e63-a8aa-7ec068642440@150.251.141.186:4443?sni=nl1.obxodvpn.us#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D"
     },
     {
-      "label": "🇷🇺 LTE #3 — Premium",
+      "label": "🇷🇺 LTE #2 — Premium",
       "uri": "hysteria2://146d567c-6335-4e63-a8aa-7ec068642440@nl1.obxodvpn.us:4443?security=tls&alpn=h3&insecure=0&sni=nl1.obxodvpn.us#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D"
     },
     {
+      "label": "🇷🇺 LTE #3 — Premium",
+      "uri": "hysteria2://8d18449d-e60d-40e1-b100-0468f1c2035b@media.embrofree.org:443/?hop_interval=10&sni=media.embrofree.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D"
+    },
+    {
       "label": "🇺🇸 Резерв #2 — FREE",
-      "uri": "vless://1f8cf47a-b66a-4916-979f-26edfcf44eea@185.95.231.156:443?type=raw&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To&sid=a3a578ab&sni=www.apple.com&encryption=none#🇺🇸"
+      "uri": "vless://4b1be712-774c-4b65-8491-a3339e124a70@us5.pc-peervax.top:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=us5.pc-peervax.top&fp=qq&security=reality&pbk=v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk&sid=a9c3f7e2#Бесплатный"
     }
   ],
   "free": [
     {
       "label": "🇩🇪 Германия — FREE",
-      "uri": "vless://0ab273e4-cea6-41d0-bbab-41071d2fc455@5.252.179.15:443?flow=xtls-rprx-vision&fp=chrome&pbk=XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY&security=reality&sid=296f27de82dad7ff&sni=www.bing.com&type=raw#vless-1860508884"
+      "uri": "vless://d0c8aa8d-a535-432a-b521-21f0e561f643@157.173.7.17:443?flow=xtls-rprx-vision&fp=firefox&pbk=8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU&security=reality&sid=88d9dc52ef39c8bd&sni=node-fra03.rkitman.ru&type=tcp#vless-1930538321"
     },
     {
       "label": "🇳🇱 Нидерланды — FREE",
-      "uri": "vless://047466dd-05aa-4331-abf7-322c5aaecf97@31.76.110.65:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s&security=reality&sid=a1b2c3d4b5&sni=nl-1.viralforge.ru&type=tcp#Бесплатный"
+      "uri": "vless://047466dd-05aa-4331-abf7-322c5aaecf97@nl-1.viralforge.ru:443?flow=xtls-rprx-vision&security=reality&sni=nl-1.viralforge.ru&fp=firefox&pbk=HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s&sid=a1b2c3d4b5&type=raw#Бесплатный"
     },
     {
       "label": "🇫🇮 Финляндия — FREE",
@@ -129,23 +117,23 @@
     },
     {
       "label": "🇵🇱 Польша — FREE",
-      "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@ru1.radiolumens.uk:8445?sni=ru1.radiolumens.uk&alpn=h2%2Chttp%2F1.1&type=grpc&serviceName=beru-pl&fp=chrome&security=tls#%F0%9F%87%B5%F0%9F%87%B1%20AetrisVPN"
+      "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@77.232.135.141:8445?encryption=none&security=tls&serviceName=beru-pl&sni=ru1.radiolumens.uk&type=grpc&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20AetrisVPN"
     },
     {
       "label": "🇸🇪 Швеция — FREE",
-      "uri": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@201.58.177.137:443?encryption=none&flow=xtls-rprx-vision&pbk=TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY&security=reality&sni=swedenafteraventura.space&type=tcp&fp=chrome#Бесплатный"
+      "uri": "vless://4b1be712-774c-4b65-8491-a3339e124a70@136.148.211.243:443?type=grpc&security=reality&fp=firefox&pbk=qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo&sid=11d37dd92940329e&sni=se1-cl3.vless-fiberstasis.top&serviceName=grpc-se-3#Бесплатный"
     },
     {
       "label": "🇷🇺 Россия LTE — FREE",
-      "uri": "hysteria2://2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5@89.105.219.106:8443?sni=speedtestmark.com#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%2C%20Prague%20%7C%20%5BBL%5D"
+      "uri": "hysteria2://146d567c-6335-4e63-a8aa-7ec068642440@150.251.141.186:4443?sni=nl1.obxodvpn.us#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D"
     },
     {
       "label": "🇺🇸 Резерв #1 — FREE",
-      "uri": "vless://14c80e0e-f7ce-4991-94fc-99a1db4a9b1e@159.89.87.21:28190?flow=xtls-rprx-vision&security=reality&encryption=none&sni=aws.amazon.com&fp=chrome&pbk=ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno&type=tcp&headerType=none&host=/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&path=/#🇺🇸"
+      "uri": "vless://1f8cf47a-b66a-4916-979f-26edfcf44eea@185.95.231.156:443?type=raw&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To&sid=a3a578ab&sni=www.apple.com&encryption=none#🇺🇸"
     },
     {
       "label": "🇺🇸 Резерв #2 — FREE",
-      "uri": "vless://1f8cf47a-b66a-4916-979f-26edfcf44eea@185.95.231.156:443?type=raw&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To&sid=a3a578ab&sni=www.apple.com&encryption=none#🇺🇸"
+      "uri": "vless://4b1be712-774c-4b65-8491-a3339e124a70@us5.pc-peervax.top:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=us5.pc-peervax.top&fp=qq&security=reality&pbk=v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk&sid=a9c3f7e2#Бесплатный"
     }
   ]
 }

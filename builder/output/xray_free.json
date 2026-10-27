@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "157.173.7.17",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "d0c8aa8d-a535-432a-b521-21f0e561f643",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "chrome"
+        "serverName": "node-fra03.rkitman.ru",
+        "publicKey": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
+        "shortId": "88d9dc52ef39c8bd",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.110.65",
+          "address": "nl-1.viralforge.ru",
           "port": 443,
           "users": [
             {
@@ -47,7 +47,7 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
         "serverName": "nl-1.viralforge.ru",
@@ -91,7 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "ru1.radiolumens.uk",
+          "address": "77.232.135.141",
           "port": 8445,
           "users": [
             {
@@ -107,7 +107,7 @@
       "security": "tls",
       "tlsSettings": {
         "serverName": "ru1.radiolumens.uk",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       },
       "grpcSettings": {
         "serviceName": "beru-pl"
@@ -120,60 +120,33 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.58.177.137",
+          "address": "136.148.211.243",
           "port": 443,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "4b1be712-774c-4b65-8491-a3339e124a70",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "swedenafteraventura.space",
-        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "se1-cl3.vless-fiberstasis.top",
+        "publicKey": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
+        "shortId": "11d37dd92940329e",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc-se-3"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "159.89.87.21",
-          "port": 28190,
-          "users": [
-            {
-              "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "aws.amazon.com",
-        "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -198,6 +171,35 @@
         "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
         "shortId": "a3a578ab",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "us5.pc-peervax.top",
+          "port": 443,
+          "users": [
+            {
+              "id": "4b1be712-774c-4b65-8491-a3339e124a70",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us5.pc-peervax.top",
+        "publicKey": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
+        "shortId": "a9c3f7e2",
+        "fingerprint": "qq"
       }
     }
   }
