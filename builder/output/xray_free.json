@@ -34,12 +34,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.27.118.10",
+          "address": "31.76.110.65",
           "port": 443,
           "users": [
             {
-              "id": "d9fe2431-8351-41eb-b956-75d96dec5d4a",
-              "encryption": "none"
+              "id": "047466dd-05aa-4331-abf7-322c5aaecf97",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -49,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ph-nl-s3784.cybercat.network",
-        "publicKey": "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc",
-        "shortId": "ecf1d9f7caa6ba67",
+        "serverName": "nl-1.viralforge.ru",
+        "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+        "shortId": "a1b2c3d4b5",
         "fingerprint": "firefox"
       }
     }
@@ -62,7 +63,36 @@
     "settings": {
       "vnext": [
         {
-          "address": "177.3.214.156",
+          "address": "96.62.103.24",
+          "port": 443,
+          "users": [
+            {
+              "id": "047466dd-05aa-4331-abf7-322c5aaecf97",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "fi.viralforge.ru",
+        "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+        "shortId": "a1b2c3d4b5",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Швеция — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "201.58.177.137",
           "port": 443,
           "users": [
             {
@@ -75,27 +105,27 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finlandlanzarotte.live",
-        "publicKey": "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo",
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇵🇱 Польша — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "168.222.193.184",
+          "address": "130.78.190.163",
           "port": 443,
           "users": [
             {
-              "id": "afbd410e-1663-4f40-9d3b-df5117aa23ca",
+              "id": "047466dd-05aa-4331-abf7-322c5aaecf97",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -104,28 +134,29 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "168.222.193.184.sslip.io",
-        "publicKey": "lvq2jh6X7yT88vvcV9GUriwtWL0HeqaLHr773Vgb5ks",
-        "shortId": "b8307998cdaf0d55",
+        "serverName": "ee.viralforge.ru",
+        "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+        "shortId": "a1b2c3d4b5",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "se3.h1cloud.net",
-          "port": 25387,
+          "address": "47.253.226.114",
+          "port": 443,
           "users": [
             {
-              "id": "5a519754-a673-4462-83f6-5eb25d2af141",
-              "encryption": "none"
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -136,36 +167,7 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.cloudflare.com",
-        "publicKey": "_nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc",
-        "shortId": "9608a9c65d315d52",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "159.89.87.21",
-          "port": 28190,
-          "users": [
-            {
-              "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "aws.amazon.com",
-        "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
       }
