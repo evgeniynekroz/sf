@@ -25,28 +25,28 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "157.173.7.17",
+      "server": "5.252.179.15",
       "server_port": 443,
-      "uuid": "d0c8aa8d-a535-432a-b521-21f0e561f643",
+      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "node-fra03.rkitman.ru",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
-          "short_id": "88d9dc52ef39c8bd"
+          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+          "short_id": "296f27de82dad7ff"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "nl-1.viralforge.ru",
+      "server": "31.76.110.65",
       "server_port": 443,
       "uuid": "047466dd-05aa-4331-abf7-322c5aaecf97",
       "flow": "xtls-rprx-vision",
@@ -67,36 +67,43 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "fi1-cl3.core-mirvante.top",
+      "server_port": 443,
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "fi1-cl3.core-mirvante.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+          "public_key": "sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk",
+          "short_id": "bb413f2d089a9654"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "server": "pl.viralforge.ru",
+      "server_port": 443,
+      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.radiolumens.uk"
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
+        "server_name": "pl.viralforge.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+          "short_id": "a1b2c3d4b5"
+        }
       }
     },
     {
@@ -126,40 +133,40 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "150.251.141.186",
-      "server_port": 4443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "server": "media.embrofree.org",
+      "server_port": 443,
+      "password": "8d18449d-e60d-40e1-b100-0468f1c2035b",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
+        "server_name": "media.embrofree.org",
         "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "185.95.231.156",
+      "server": "155.117.232.61",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "node-usa.blok-signalon.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms",
+          "short_id": "336c2cff6e3717c4"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "us5.pc-peervax.top",
+      "server": "93.152.214.248",
       "server_port": 443,
       "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
@@ -168,7 +175,7 @@
         "server_name": "us5.pc-peervax.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
