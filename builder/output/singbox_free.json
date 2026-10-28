@@ -46,13 +46,34 @@
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "31.76.110.65",
+      "server": "87.121.221.103",
+      "server_port": 443,
+      "uuid": "3f044365-9592-4301-8291-f2d93fcc2570",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl004.launch.tel",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — FREE",
+      "server": "fi.viralforge.ru",
       "server_port": 443,
       "uuid": "047466dd-05aa-4331-abf7-322c5aaecf97",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl-1.viralforge.ru",
+        "server_name": "fi.viralforge.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -66,29 +87,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 Финляндия — FREE",
-      "server": "fi1-cl3.core-mirvante.top",
-      "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1-cl3.core-mirvante.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk",
-          "short_id": "bb413f2d089a9654"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl.viralforge.ru",
+      "server": "82.118.23.10",
       "server_port": 443,
       "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
       "flow": "xtls-rprx-vision",
@@ -109,57 +109,54 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "136.148.211.243",
+      "server": "201.58.187.145",
       "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "se1-cl3.vless-fiberstasis.top",
+        "server_name": "swedenafteraventura.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
-          "short_id": "11d37dd92940329e"
+          "public_key": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
+          "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-se-3"
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "media.embrofree.org",
-      "server_port": 443,
-      "password": "8d18449d-e60d-40e1-b100-0468f1c2035b",
+      "server": "bl2.nexfile.net",
+      "server_port": 4444,
+      "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
       "tls": {
         "enabled": true,
-        "server_name": "media.embrofree.org",
+        "server_name": "bl2.nexfile.net",
         "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "155.117.232.61",
+      "server": "152.234.163.28",
       "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "node-usa.blok-signalon.top",
+        "server_name": "usa.viralforge.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms",
-          "short_id": "336c2cff6e3717c4"
+          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+          "short_id": "a1b2c3d4b5"
         }
       }
     },

@@ -34,7 +34,36 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.110.65",
+          "address": "87.121.221.103",
+          "port": 443,
+          "users": [
+            {
+              "id": "3f044365-9592-4301-8291-f2d93fcc2570",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "nl004.launch.tel",
+        "publicKey": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+        "shortId": "afee962d",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "fi.viralforge.ru",
           "port": 443,
           "users": [
             {
@@ -50,38 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-1.viralforge.ru",
+        "serverName": "fi.viralforge.ru",
         "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
         "shortId": "a1b2c3d4b5",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "fi1-cl3.core-mirvante.top",
-          "port": 443,
-          "users": [
-            {
-              "id": "4b1be712-774c-4b65-8491-a3339e124a70",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "fi1-cl3.core-mirvante.top",
-        "publicKey": "sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk",
-        "shortId": "bb413f2d089a9654",
         "fingerprint": "firefox"
       }
     }
@@ -92,7 +92,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "pl.viralforge.ru",
+          "address": "82.118.23.10",
           "port": 443,
           "users": [
             {
@@ -121,28 +121,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.148.211.243",
+          "address": "201.58.187.145",
           "port": 443,
           "users": [
             {
-              "id": "4b1be712-774c-4b65-8491-a3339e124a70",
-              "encryption": "none"
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "se1-cl3.vless-fiberstasis.top",
-        "publicKey": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
-        "shortId": "11d37dd92940329e",
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
+        "shortId": "",
         "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc-se-3"
       }
     }
   },
@@ -152,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "155.117.232.61",
+          "address": "152.234.163.28",
           "port": 443,
           "users": [
             {
-              "id": "4b1be712-774c-4b65-8491-a3339e124a70",
+              "id": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -168,9 +166,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "node-usa.blok-signalon.top",
-        "publicKey": "aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms",
-        "shortId": "336c2cff6e3717c4",
+        "serverName": "usa.viralforge.ru",
+        "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+        "shortId": "a1b2c3d4b5",
         "fingerprint": "firefox"
       }
     }
