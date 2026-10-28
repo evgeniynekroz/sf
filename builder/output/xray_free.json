@@ -62,11 +62,97 @@
     "settings": {
       "vnext": [
         {
-          "address": "36a466g.fi1.h1clayd.click",
+          "address": "191.44.114.154",
+          "port": 8443,
+          "users": [
+            {
+              "id": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.wikipedia.org",
+        "publicKey": "ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY",
+        "shortId": "c4359f3827231250",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "54.37.136.194",
+          "port": 2053,
+          "users": [
+            {
+              "id": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
+        "shortId": "50ba05992b05c1c3",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 Швеция — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "swedenafteraventura.space",
           "port": 443,
           "users": [
             {
-              "id": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "188.225.77.254",
+          "port": 8443,
+          "users": [
+            {
+              "id": "d1f0c6cb-0d8b-4f13-8104-b7c8e8c57110",
               "encryption": "none"
             }
           ]
@@ -77,27 +163,27 @@
       "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "36a466g.fi1.h1clayd.click",
-        "publicKey": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-        "shortId": "b3c9d0c6bdd114a6",
-        "fingerprint": "qq"
+        "serverName": "io.ozone.ru",
+        "publicKey": "rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s",
+        "shortId": "4951a2313524dd8f",
+        "fingerprint": "firefox"
       },
       "grpcSettings": {
-        "serviceName": "0adb9638509b"
+        "serviceName": "ozone"
       }
     }
   },
   {
-    "tag": "🇵🇱 Польша — FREE",
+    "tag": "🇫🇷 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "45.148.119.127",
+          "address": "154.86.119.152",
           "port": 443,
           "users": [
             {
-              "id": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
+              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -109,96 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cloudflare.com",
-        "publicKey": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
-        "shortId": "50",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 Швеция — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "se.peregrine-sub.net",
-          "port": 1443,
-          "users": [
-            {
-              "id": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "se.peregrine-sub.net",
-        "publicKey": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
-        "shortId": "7b6803a79bba5c52",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "152.234.163.28",
-          "port": 443,
-          "users": [
-            {
-              "id": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "usa.viralforge.ru",
-        "publicKey": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-        "shortId": "a1b2c3d4b5",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇹🇷 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "193.160.140.159",
-          "port": 8443,
-          "users": [
-            {
-              "id": "d4353076-3ec7-47dc-88b0-f21eb59fbfb8",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "apple.com",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
+        "serverName": "fr.golangwikito.cfd",
+        "publicKey": "isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA",
+        "shortId": "e6d589857d1cec5e",
         "fingerprint": "chrome"
       }
     }
