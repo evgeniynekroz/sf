@@ -67,21 +67,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "fi.viralforge.ru",
+      "server": "fi1-cl3.core-mirvante.top",
       "server_port": 443,
-      "uuid": "047466dd-05aa-4331-abf7-322c5aaecf97",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fi.viralforge.ru",
+        "server_name": "fi1-cl3.core-mirvante.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
+          "public_key": "sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk",
+          "short_id": "bb413f2d089a9654"
         }
       }
     },
@@ -109,60 +109,39 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "201.58.187.145",
-      "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "server": "se.peregrine-sub.net",
+      "server_port": 1443,
+      "uuid": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "swedenafteraventura.space",
+        "server_name": "se.peregrine-sub.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-          "short_id": ""
+          "public_key": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
+          "short_id": "7b6803a79bba5c52"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "bl2.nexfile.net",
+      "server": "13.143.189.71",
       "server_port": 4444,
       "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
       "tls": {
         "enabled": true,
-        "server_name": "bl2.nexfile.net",
+        "server_name": "pl3.nexfile.net",
         "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "152.234.163.28",
-      "server_port": 443,
-      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.viralforge.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "93.152.214.248",
       "server_port": 443,
       "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
@@ -178,6 +157,27 @@
           "enabled": true,
           "public_key": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
           "short_id": "a9c3f7e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "152.234.163.28",
+      "server_port": 443,
+      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.viralforge.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+          "short_id": "a1b2c3d4b5"
         }
       }
     },

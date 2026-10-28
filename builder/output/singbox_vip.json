@@ -79,28 +79,28 @@
     {
       "type": "vless",
       "tag": "🇫🇮 ⚡️ Финляндия — Premium",
-      "server": "fi.viralforge.ru",
+      "server": "fi1-cl3.core-mirvante.top",
       "server_port": 443,
-      "uuid": "047466dd-05aa-4331-abf7-322c5aaecf97",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fi.viralforge.ru",
+        "server_name": "fi1-cl3.core-mirvante.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
+          "public_key": "sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk",
+          "short_id": "bb413f2d089a9654"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇫🇮 ⚡️ Финляндия (Hysteria 2) — Premium",
-      "server": "144.31.239.226",
+      "server": "144.31.239.181",
       "server_port": 4444,
       "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
       "tls": {
@@ -112,21 +112,21 @@
     {
       "type": "vless",
       "tag": "🇪🇪 ⚡️ Эстония — Premium",
-      "server": "31.41.249.50",
+      "server": "31.58.46.154",
       "server_port": 443,
-      "uuid": "47171e1c-ee62-4f39-99bb-b77fe876095b",
+      "uuid": "e0216964-ffa1-4d39-82c4-0e40879a470d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nlv1.refprov.online",
+        "server_name": "ee.lamibeauty.site",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AK6JtzO1bj1HM5YuKtCq0-xLWmxapYUXvKR2NKO-rkY",
-          "short_id": "8fbefc33"
+          "public_key": "vxYWiWJ0B-IrAyUGMwS8agSnEzvuDX0q1BplBdaiDBs",
+          "short_id": "70a92a6138856c55"
         }
       }
     },
@@ -154,21 +154,21 @@
     {
       "type": "vless",
       "tag": "🇸🇪 ⚡️ Швеция — Premium",
-      "server": "201.58.187.145",
-      "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "server": "se.peregrine-sub.net",
+      "server_port": 1443,
+      "uuid": "42a64b9a-ab79-4094-8656-30366a7c2ea3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "swedenafteraventura.space",
+        "server_name": "se.peregrine-sub.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-          "short_id": ""
+          "public_key": "PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI",
+          "short_id": "7b6803a79bba5c52"
         }
       }
     },
@@ -250,21 +250,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 США — Premium",
-      "server": "152.234.163.28",
+      "server": "93.152.214.248",
       "server_port": 443,
-      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "usa.viralforge.ru",
+        "server_name": "us5.pc-peervax.top",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
+          "public_key": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
+          "short_id": "a9c3f7e2"
         }
       }
     },
@@ -286,26 +286,6 @@
           "enabled": true,
           "public_key": "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw",
           "short_id": "f4b2a12c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 Казахстан — Premium",
-      "server": "46.8.43.125",
-      "server_port": 443,
-      "uuid": "846cedee-2a52-4a62-a0b9-11850ead6a8b",
-      "tls": {
-        "enabled": true,
-        "server_name": "kz-central.v8x2b.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w",
-          "short_id": ""
         }
       }
     },
@@ -377,31 +357,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Резерв #3 — Premium",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Резерв #4 — Premium",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 Резерв #5 — Premium",
+      "tag": "🇺🇸 Резерв #3 — Premium",
       "server": "hy2.123266.xyz",
       "server_port": 33333,
       "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
@@ -413,8 +369,44 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇷🇺 Резерв #4 — Premium",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 Резерв #5 — Premium",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇷🇺 LTE — Premium",
-      "server": "bl2.nexfile.net",
+      "server": "13.143.189.71",
+      "server_port": 4444,
+      "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl3.nexfile.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 LTE #2 — Premium",
+      "server": "13.143.188.154",
       "server_port": 4444,
       "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
       "tls": {
@@ -425,50 +417,34 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 LTE #2 — Premium",
-      "server": "jap2.nexfile.net",
+      "tag": "🇷🇺 LTE #3 — Premium",
+      "server": "bl2.nexfile.net",
       "server_port": 4444,
       "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
       "tls": {
         "enabled": true,
-        "server_name": "jap2.nexfile.net",
+        "server_name": "bl2.nexfile.net",
         "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇷🇺 LTE #3 — Premium",
-      "server": "83.217.222.170",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {}
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "93.152.214.248",
+      "server": "152.234.163.28",
       "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "uuid": "d96d3d65-91e8-4b9a-bed6-ad36b019c4e9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us5.pc-peervax.top",
+        "server_name": "usa.viralforge.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
-          "short_id": "a9c3f7e2"
+          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+          "short_id": "a1b2c3d4b5"
         }
       }
     },
@@ -498,14 +474,13 @@
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
-        "🇰🇿 Казахстан — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
         "🇩🇪 ⚡️ Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
-        "🇷🇺 Резерв #3 — Premium",
+        "🇺🇸 Резерв #3 — Premium",
         "🇷🇺 Резерв #4 — Premium",
-        "🇺🇸 Резерв #5 — Premium",
+        "🇷🇺 Резерв #5 — Premium",
         "🇷🇺 LTE — Premium",
         "🇷🇺 LTE #2 — Premium",
         "🇷🇺 LTE #3 — Premium",
@@ -534,14 +509,13 @@
         "🇬🇧 Великобритания — Premium",
         "🇺🇸 США — Premium",
         "🇹🇷 Турция — Premium",
-        "🇰🇿 Казахстан — Premium",
         "🇮🇹 Италия — Premium",
         "🇫🇷 Франция — Premium",
         "🇩🇪 ⚡️ Резерв #1 — Premium",
         "🇺🇸 Резерв #2 — Premium",
-        "🇷🇺 Резерв #3 — Premium",
+        "🇺🇸 Резерв #3 — Premium",
         "🇷🇺 Резерв #4 — Premium",
-        "🇺🇸 Резерв #5 — Premium",
+        "🇷🇺 Резерв #5 — Premium",
         "🇷🇺 LTE — Premium",
         "🇷🇺 LTE #2 — Premium",
         "🇷🇺 LTE #3 — Premium",
