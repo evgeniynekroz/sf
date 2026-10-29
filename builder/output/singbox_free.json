@@ -25,54 +25,54 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "5.252.179.15",
+      "server": "89.125.11.57",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "uuid": "ddbabbeb-fe47-45ef-b581-cac345ecf132",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "de-room10.filesnap.tech",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "ikLQ5dfCqs8QkJM7HJBhO9II6blBL9etrPx8-jD1MRc",
+          "short_id": "6684cb92eab730e6"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "185.81.115.198",
-      "server_port": 443,
-      "uuid": "8bab5583-04b1-4b83-96e8-4ed46062eeb7",
+      "server": "187.52.44.20",
+      "server_port": 47443,
+      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl-a1.netfix.app",
+        "server_name": "nl4.waspnest.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HNC4xdL0kgaIcgnPtMyc21hxY6dk0zl_vAclmQZHigw",
-          "short_id": "5108255f"
+          "public_key": "g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE",
+          "short_id": "ae97223a8f799872"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "hw6.divarkhaghazi.com",
+      "server": "65.109.211.81",
       "server_port": 465,
       "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
       "tls": {
         "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com."
+        "server_name": "hw6.divarkhaghazi.com"
       },
       "transport": {
         "type": "ws",
@@ -106,38 +106,34 @@
     {
       "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
-      "server": "46.29.255.123",
-      "server_port": 59539,
-      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "server": "201.58.187.54",
+      "server_port": 443,
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cloudflare-dns.com",
+        "server_name": "swedenafteraventura.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+          "public_key": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
           "short_id": ""
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "194.147.149.54",
-      "server_port": 443,
-      "password": "humanity",
+      "server": "153.76.194.118",
+      "server_port": 8443,
+      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {}
+        "server_name": "finland.biznes.lol",
+        "insecure": false
       }
     },
     {

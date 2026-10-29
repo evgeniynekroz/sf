@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "89.125.11.57",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "ddbabbeb-fe47-45ef-b581-cac345ecf132",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
+        "serverName": "de-room10.filesnap.tech",
+        "publicKey": "ikLQ5dfCqs8QkJM7HJBhO9II6blBL9etrPx8-jD1MRc",
+        "shortId": "6684cb92eab730e6",
         "fingerprint": "chrome"
       }
     }
@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.81.115.198",
-          "port": 443,
+          "address": "187.52.44.20",
+          "port": 47443,
           "users": [
             {
-              "id": "8bab5583-04b1-4b83-96e8-4ed46062eeb7",
+              "id": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-a1.netfix.app",
-        "publicKey": "HNC4xdL0kgaIcgnPtMyc21hxY6dk0zl_vAclmQZHigw",
-        "shortId": "5108255f",
-        "fingerprint": "chrome"
+        "serverName": "nl4.waspnest.space",
+        "publicKey": "g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE",
+        "shortId": "ae97223a8f799872",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,7 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "hw6.divarkhaghazi.com",
+          "address": "65.109.211.81",
           "port": 465,
           "users": [
             {
@@ -78,8 +78,8 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "hw6.divarkhaghazi.com.",
-        "fingerprint": "chrome"
+        "serverName": "hw6.divarkhaghazi.com",
+        "fingerprint": "firefox"
       },
       "wsSettings": {
         "path": "/",
@@ -124,11 +124,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "46.29.255.123",
-          "port": 59539,
+          "address": "201.58.187.54",
+          "port": 443,
           "users": [
             {
-              "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,37 +137,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cloudflare-dns.com",
-        "publicKey": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+        "serverName": "swedenafteraventura.space",
+        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
         "shortId": "",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "194.147.149.54",
-          "port": 443,
-          "password": "humanity"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "www.calmlunch.com",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/assignment"
       }
     }
   },
