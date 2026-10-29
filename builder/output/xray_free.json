@@ -34,12 +34,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.17.53.142",
-          "port": 8443,
+          "address": "185.81.115.198",
+          "port": 443,
           "users": [
             {
-              "id": "6b566898-8416-4ac3-8b8f-66db059c462b",
-              "encryption": "none"
+              "id": "8bab5583-04b1-4b83-96e8-4ed46062eeb7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -49,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.ru.nl",
-        "publicKey": "drwJd-KiNSQHhp1yHQBknycbzWEzR2K9_R9ZdfPra3U",
-        "shortId": "",
+        "serverName": "nl-a1.netfix.app",
+        "publicKey": "HNC4xdL0kgaIcgnPtMyc21hxY6dk0zl_vAclmQZHigw",
+        "shortId": "5108255f",
         "fingerprint": "chrome"
       }
     }
@@ -62,7 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "65.109.211.81",
+          "address": "hw6.divarkhaghazi.com",
           "port": 465,
           "users": [
             {
@@ -77,8 +78,8 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "hw6.divarkhaghazi.com",
-        "fingerprint": "firefox"
+        "serverName": "hw6.divarkhaghazi.com.",
+        "fingerprint": "chrome"
       },
       "wsSettings": {
         "path": "/",
@@ -94,12 +95,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "54.37.136.194",
-          "port": 2053,
+          "address": "2.56.126.184",
+          "port": 443,
           "users": [
             {
-              "id": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
-              "encryption": "none"
+              "id": "5f53b921-2874-482a-b530-d3ee1d66cbc5",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -109,10 +111,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
-        "shortId": "50ba05992b05c1c3",
-        "fingerprint": "chrome"
+        "serverName": "pl3.originmesh.online",
+        "publicKey": "J3b34EpnsIoqiUXL9B4KX7uxcPJ4WXu4a5byt7tanTQ",
+        "shortId": "eecfe76af97a6132",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -142,6 +144,30 @@
         "publicKey": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
         "shortId": "",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "trojan",
+    "settings": {
+      "servers": [
+        {
+          "address": "194.147.149.54",
+          "port": 443,
+          "password": "humanity"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "www.calmlunch.com",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/assignment"
       }
     }
   },
