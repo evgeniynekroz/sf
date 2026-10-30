@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "72.56.23.254",
-          "port": 41827,
+          "address": "45.84.222.21",
+          "port": 443,
           "users": [
             {
-              "id": "e769c1c2-f2b8-4006-bc84-0672c8368578",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.nl",
-        "publicKey": "cpKcsAG-_0k5q8envXiiOoBzt53gxwVWEqg6uVKMNDk",
-        "shortId": "fba996d8e3568d0d",
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -63,39 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.17.27.137",
-          "port": 8443,
-          "users": [
-            {
-              "id": "48d9a277-776b-4ab8-a357-88a1958beed8",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.aalto.fi",
-        "publicKey": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
-        "shortId": "a05ccbf2edb5ebd1",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "222.167.245.16",
+          "address": "109.196.102.102",
           "port": 443,
           "users": [
             {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
+              "id": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,9 +79,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-        "shortId": "",
+        "serverName": "cache-41.topp-con.xyz",
+        "publicKey": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
+        "shortId": "b9120cd53ffd7bba",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.59.211.78",
+          "port": 443,
+          "users": [
+            {
+              "id": "3de59cd0-f92c-40bf-829c-db7bf6043d1d",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl.reus.lol",
+        "publicKey": "jVNJH18MECOqhciQLa-w7Y7yp3N9IdseIDpgCEu2LhU",
+        "shortId": "81785a5f59d66d7d",
         "fingerprint": "firefox"
       }
     }
@@ -149,11 +150,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.168.208.190",
-          "port": 47443,
+          "address": "23.94.252.67",
+          "port": 443,
           "users": [
             {
-              "id": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+              "id": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -162,12 +163,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us-1.waspguard.ru",
-        "publicKey": "hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY",
-        "shortId": "ae97246a8f799854",
+        "serverName": "us.bsh-net.ru",
+        "publicKey": "LEb-1eNb7yzDYJ7rBs8k7VNWcfw6FnuTIIYeCBjHRkM",
+        "shortId": "da8e9fff883c5950",
         "fingerprint": "firefox"
       }
     }
