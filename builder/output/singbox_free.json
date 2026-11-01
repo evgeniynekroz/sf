@@ -25,16 +25,16 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "89.125.11.149",
+      "server": "89.125.11.238",
       "server_port": 8443,
-      "uuid": "67e6ca81-da3f-4613-9aab-96ab28a76e78",
+      "uuid": "208eb5d5-4985-452e-9f9c-b42f303602b0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "de-room06.filesnap.tech",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

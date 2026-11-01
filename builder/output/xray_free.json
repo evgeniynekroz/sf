@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.11.149",
+          "address": "89.125.11.238",
           "port": 8443,
           "users": [
             {
-              "id": "67e6ca81-da3f-4613-9aab-96ab28a76e78",
+              "id": "208eb5d5-4985-452e-9f9c-b42f303602b0",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -24,7 +24,7 @@
         "serverName": "de-room06.filesnap.tech",
         "publicKey": "AXyqlgs8AhvDqUBIma2x_7wlWNPx814dS-6kFGQGWl8",
         "shortId": "088ce7f4377e5972",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
