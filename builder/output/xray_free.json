@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "50.7.176.123",
+          "address": "nl-modx-prime.storagedirectguide.com",
           "port": 443,
           "users": [
             {
-              "id": "3bb97d46-789b-4229-88f6-9beb222a4137",
+              "id": "5254c281-3bc1-40ee-ba89-1aaf8c251402",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,13 +47,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "direct-nl.bachidze.com",
-        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
+        "serverName": "nl-modx-prime.storagedirectguide.com",
+        "publicKey": "node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.198.0.88",
+          "address": "191.217.245.227",
           "port": 443,
           "users": [
             {
-              "id": "8263aa5b-601d-4e05-b61d-a70e15d97869",
+              "id": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl1.edge.rbullet.net",
-        "publicKey": "GG5vpbtQpYpZkAa3qQfLe3f9kzym3EU5t8_MYUkX_z0",
-        "shortId": "458374ae",
+        "serverName": "pl.lenvex.cc",
+        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -121,40 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.214.255",
-          "port": 443,
+          "address": "46.29.255.123",
+          "port": 59539,
           "users": [
             {
-              "id": "667e2929-5d3d-492f-bb03-aacda4aa2372",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "se.zainet.tech",
-        "publicKey": "C7c9W3COhLMvGQ8WzGwqvULK1ua_K17nDzTDWbE-xGE",
-        "shortId": "54a55c80ed16f17b",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "47.253.226.114",
-          "port": 443,
-          "users": [
-            {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,10 +137,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "serverName": "cloudflare-dns.com",
+        "publicKey": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #1 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.168.208.190",
+          "port": 47443,
+          "users": [
+            {
+              "id": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "us-1.waspguard.ru",
+        "publicKey": "hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY",
+        "shortId": "ae97246a8f799854",
+        "fingerprint": "firefox"
       }
     }
   },
