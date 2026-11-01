@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "nl-modx-prime.storagedirectguide.com",
+          "address": "88.216.70.92",
           "port": 443,
           "users": [
             {
@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "177.202.65.30",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b79d736d-0f10-4169-b626-362059d18204",
+              "encryption": "none"
             }
           ]
         }
@@ -79,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finlandlanzarotte.live",
-        "publicKey": "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+        "shortId": "10351b07c712d2a2",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "191.217.245.227",
+          "address": "222.167.245.16",
           "port": 443,
           "users": [
             {
-              "id": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
+              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +107,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.lenvex.cc",
-        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+        "serverName": "poland.biznes.lol",
+        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
         "shortId": "",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -150,35 +149,6 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.168.208.190",
-          "port": 47443,
-          "users": [
-            {
-              "id": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "us-1.waspguard.ru",
-        "publicKey": "hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY",
-        "shortId": "ae97246a8f799854",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
           "address": "195.211.98.43",
           "port": 443,
           "users": [
@@ -198,6 +168,35 @@
         "serverName": "www.cloudflare.com",
         "publicKey": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
         "shortId": "9c56fddf237e8eaf",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "47.253.226.114",
+          "port": 443,
+          "users": [
+            {
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
         "fingerprint": "chrome"
       }
     }
