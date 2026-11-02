@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.11.238",
-          "port": 8443,
+          "address": "5.252.179.15",
+          "port": 443,
           "users": [
             {
-              "id": "208eb5d5-4985-452e-9f9c-b42f303602b0",
+              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "de-room06.filesnap.tech",
-        "publicKey": "AXyqlgs8AhvDqUBIma2x_7wlWNPx814dS-6kFGQGWl8",
-        "shortId": "088ce7f4377e5972",
-        "fingerprint": "chrome"
+        "serverName": "www.bing.com",
+        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+        "shortId": "296f27de82dad7ff",
+        "fingerprint": "qq"
       }
     }
   },
@@ -91,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "222.167.245.16",
+          "address": "191.217.245.227",
           "port": 443,
           "users": [
             {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
+              "id": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -107,10 +107,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
+        "serverName": "pl.lenvex.cc",
+        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -120,11 +120,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "46.29.255.123",
-          "port": 59539,
+          "address": "169.40.42.235",
+          "port": 443,
           "users": [
             {
-              "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cloudflare-dns.com",
-        "publicKey": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "ios"
       }
     }
   },
