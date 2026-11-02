@@ -34,13 +34,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "188.116.27.6",
-          "port": 443,
+          "address": "78.17.53.142",
+          "port": 8443,
           "users": [
             {
-              "id": "441caaf2-aae6-4883-8af9-1e5770395ae8",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "6b566898-8416-4ac3-8b8f-66db059c462b",
+              "encryption": "none"
             }
           ]
         }
@@ -50,10 +49,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.co.uk",
-        "publicKey": "mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc",
-        "shortId": "1174",
-        "fingerprint": "firefox"
+        "serverName": "www.ru.nl",
+        "publicKey": "drwJd-KiNSQHhp1yHQBknycbzWEzR2K9_R9ZdfPra3U",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -149,40 +148,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.251.25.74",
+          "address": "47.253.226.114",
           "port": 443,
           "users": [
             {
-              "id": "18805ff3-b420-45de-af18-93be14024ae8",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.amazon.com",
-        "publicKey": "H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8",
-        "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "195.211.98.43",
-          "port": 443,
-          "users": [
-            {
-              "id": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,8 +165,37 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.cloudflare.com",
-        "publicKey": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
-        "shortId": "9c56fddf237e8eaf",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "212.69.135.70",
+          "port": 8443,
+          "users": [
+            {
+              "id": "e2cfbfd7-462b-40ca-bb17-d07f0265558d",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "uk-room05.filesnap.tech",
+        "publicKey": "FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8",
+        "shortId": "7da3ba09a037e956",
         "fingerprint": "chrome"
       }
     }
