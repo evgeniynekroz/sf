@@ -34,25 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "78.17.53.142",
-          "port": 8443,
+          "address": "177.3.219.120",
+          "port": 443,
           "users": [
             {
-              "id": "6b566898-8416-4ac3-8b8f-66db059c462b",
-              "encryption": "none"
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.ru.nl",
-        "publicKey": "drwJd-KiNSQHhp1yHQBknycbzWEzR2K9_R9ZdfPra3U",
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -62,39 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "b79d736d-0f10-4169-b626-362059d18204",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
-        "shortId": "10351b07c712d2a2",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "191.217.245.227",
+          "address": "170.168.4.102",
           "port": 443,
           "users": [
             {
-              "id": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
+              "id": "6b2b1bda-572f-4ccd-8358-9db258691f41",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -106,9 +79,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.lenvex.cc",
-        "publicKey": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
-        "shortId": "",
+        "serverName": "finlanddobrhost.stinpuls.com",
+        "publicKey": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
+        "shortId": "940dbf5b",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "191.217.211.161",
+          "port": 443,
+          "users": [
+            {
+              "id": "0806e6e2-e01d-482c-b530-be3b57d486d4",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl1.song69.fun",
+        "publicKey": "5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM",
+        "shortId": "0c774b50",
         "fingerprint": "firefox"
       }
     }
@@ -172,16 +174,16 @@
     }
   },
   {
-    "tag": "🇬🇧 Резерв #2 — FREE",
+    "tag": "🇸🇪 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "212.69.135.70",
-          "port": 8443,
+          "address": "169.40.42.104",
+          "port": 443,
           "users": [
             {
-              "id": "e2cfbfd7-462b-40ca-bb17-d07f0265558d",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -193,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "uk-room05.filesnap.tech",
-        "publicKey": "FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8",
-        "shortId": "7da3ba09a037e956",
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
         "fingerprint": "chrome"
       }
     }
