@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "170.168.4.102",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "6b2b1bda-572f-4ccd-8358-9db258691f41",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b79d736d-0f10-4169-b626-362059d18204",
+              "encryption": "none"
             }
           ]
         }
@@ -79,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "finlanddobrhost.stinpuls.com",
-        "publicKey": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
-        "shortId": "940dbf5b",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+        "shortId": "10351b07c712d2a2",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -121,7 +120,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.235",
+          "address": "169.40.42.104",
           "port": 443,
           "users": [
             {
@@ -140,7 +139,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "ios"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -179,7 +178,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.104",
+          "address": "169.40.42.235",
           "port": 443,
           "users": [
             {
@@ -198,7 +197,7 @@
         "serverName": "yahoo.com",
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "fingerprint": "ios"
       }
     }
   }
