@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "177.3.219.120",
+          "address": "direct-nl.bachidze.com",
           "port": 443,
           "users": [
             {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "id": "3bb97d46-789b-4229-88f6-9beb222a4137",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -47,11 +47,11 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "hollandlanzerotte.xyz",
-        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "serverName": "direct-nl.bachidze.com",
+        "publicKey": "E12wXXagR8xuql7KlWCLTgMaXj74JcU__lg66yz6iTw",
         "shortId": "",
         "fingerprint": "firefox"
       }
@@ -145,16 +145,16 @@
     }
   },
   {
-    "tag": "🇯🇵 Резерв #1 — FREE",
+    "tag": "🇷🇺 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.91.70",
+          "address": "78.17.93.30",
           "port": 443,
           "users": [
             {
-              "id": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
+              "id": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -163,27 +163,27 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fuji.etherhub.cc",
-        "publicKey": "ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg",
-        "shortId": "bd6f67b6b2152b45",
+        "serverName": "ca1.fox-lisa.ru",
+        "publicKey": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
+        "shortId": "027af64166562b09",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇯🇵 Резерв #2 — FREE",
+    "tag": "🇬🇧 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.76.91.98",
-          "port": 443,
+          "address": "5.104.74.25",
+          "port": 8443,
           "users": [
             {
-              "id": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
+              "id": "c1f87d4d-3ea2-4378-925a-b4942e930a7d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -195,9 +195,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fuji.etherhub.cc",
-        "publicKey": "ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg",
-        "shortId": "bd6f67b6b2152b45",
+        "serverName": "uk-room07.filesnap.tech",
+        "publicKey": "48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM",
+        "shortId": "dbef98744832b751",
         "fingerprint": "firefox"
       }
     }
