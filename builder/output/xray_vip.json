@@ -34,11 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "89.125.8.88",
+          "address": "177.202.70.215",
           "port": 443,
           "users": [
             {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,10 +50,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl5.japancase.site",
-        "publicKey": "Yw0T7qr5Wk3HCqV8h6V9N5wcInMxQ0XsxUuLV62_bEM",
-        "shortId": "c498d5e4a069592c",
-        "fingerprint": "ios"
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -91,94 +91,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "163.245.52.17",
-          "port": 443,
-          "users": [
-            {
-              "id": "43a26f1a-99b7-4b17-98c7-b836fb466999",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ee.frgcdn.xyz",
-        "publicKey": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
-        "shortId": "7a3f9e2b1c8d4f6a",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "191.217.211.161",
-          "port": 443,
-          "users": [
-            {
-              "id": "0806e6e2-e01d-482c-b530-be3b57d486d4",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl1.song69.fun",
-        "publicKey": "5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM",
-        "shortId": "0c774b50",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 ⚡️ Швеция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "177.202.72.50",
-          "port": 443,
-          "users": [
-            {
-              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "swedenafteraventura.space",
-        "publicKey": "TyuIIquHoesD9YwMQJHda0YZ3Hy9Dh123dQ00iGK0QY",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "178.22.31.72",
+          "address": "45.86.60.190",
           "port": 443,
           "users": [
             {
@@ -191,13 +104,100 @@
       ]
     },
     "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "ee2.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 ⚡️ Польша — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "89.125.234.79",
+          "port": 443,
+          "users": [
+            {
+              "id": "3d7813c8-fbfb-47a3-95a6-d491db4eda93",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "at1.japancase.site",
-        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
-        "shortId": "41ae8e266bc3346f",
+        "serverName": "pl79.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
         "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 ⚡️ Швеция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.89",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇦🇹 ⚡️ Австрия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "201.10.90.113",
+          "port": 443,
+          "users": [
+            {
+              "id": "610ac982-04eb-34c0-80b1-5dd3c2ca131e",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "undef-aut-0.undef.network",
+        "publicKey": "6z3VlbF2v0C3FTWQQemYDxX-MIzwaz_k8_B-xyc0Xyg",
+        "shortId": "",
+        "fingerprint": "safari"
       }
     }
   },
@@ -265,11 +265,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
+          "address": "136.148.77.248",
           "port": 443,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -281,10 +281,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "us2.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -294,7 +294,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "81.177.215.220",
+          "address": "198.105.123.224",
           "port": 443,
           "users": [
             {
@@ -310,38 +310,9 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tr3.japancase.site",
-        "publicKey": "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM",
-        "shortId": "071c3bd86b0c3c73",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.57.50.87",
-          "port": 443,
-          "users": [
-            {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "kz1.japancase.site",
-        "publicKey": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
-        "shortId": "4000cdda6278d236",
+        "serverName": "tr1.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
         "fingerprint": "firefox"
       }
     }
@@ -352,7 +323,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.148.103.120",
+          "address": "81.19.140.181",
           "port": 443,
           "users": [
             {
@@ -371,64 +342,6 @@
         "serverName": "ca1.japancase.site",
         "publicKey": "zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc",
         "shortId": "dbd6b473c7038dd5",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇳🇴 Норвегия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.90.61.65",
-          "port": 443,
-          "users": [
-            {
-              "id": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "no1.fox-lisa.ru",
-        "publicKey": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
-        "shortId": "027af64166562b09",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇮🇹 Италия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "85.234.100.207",
-          "port": 443,
-          "users": [
-            {
-              "id": "71e095f8-29e8-4ac3-ad6c-cc888b08d540",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "preview.redd.it",
-        "publicKey": "Xbd0JeKM6WsUITbELeeCEmQLl-4Sw_A-JQuzDBEco2M",
-        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -463,12 +376,12 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "136.148.77.135",
+          "address": "ca1.japancase.site",
           "port": 443,
           "users": [
             {
@@ -484,10 +397,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us2.japancase.site",
-        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
-        "shortId": "41ae8e266bc3346f",
-        "fingerprint": "ios"
+        "serverName": "ca1.japancase.site",
+        "publicKey": "zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc",
+        "shortId": "dbd6b473c7038dd5",
+        "fingerprint": "edge"
       }
     }
   }
