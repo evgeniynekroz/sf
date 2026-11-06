@@ -91,69 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.86.60.190",
+          "address": "163.245.52.17",
           "port": 443,
           "users": [
             {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ee2.japancase.site",
-        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
-        "shortId": "41ae8e266bc3346f",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "89.125.234.79",
-          "port": 443,
-          "users": [
-            {
-              "id": "3d7813c8-fbfb-47a3-95a6-d491db4eda93",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "pl79.mech-pro.online",
-        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-        "shortId": "16e0f049",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇸🇪 ⚡️ Швеция — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "88.216.223.100",
-          "port": 443,
-          "users": [
-            {
-              "id": "3bb97d46-789b-4229-88f6-9beb222a4137",
+              "id": "43a26f1a-99b7-4b17-98c7-b836fb466999",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -165,20 +107,20 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "smart.bachidze.com",
-        "publicKey": "vzRgIP8Mvd9V6krwKxw5EwwzvC4uiaW3wo0Y2ri2_Wc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "ee.frgcdn.xyz",
+        "publicKey": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
+        "shortId": "7a3f9e2b1c8d4f6a",
+        "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇦🇹 ⚡️ Австрия — Premium",
+    "tag": "🇵🇱 ⚡️ Польша — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "178.22.31.72",
+          "address": "147.45.126.97",
           "port": 443,
           "users": [
             {
@@ -194,9 +136,67 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "at1.japancase.site",
-        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
-        "shortId": "41ae8e266bc3346f",
+        "serverName": "pl3.japancase.site",
+        "publicKey": "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc",
+        "shortId": "5037f0423dc4e4ff",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 ⚡️ Швеция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "169.40.42.229",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇦🇹 ⚡️ Австрия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "82.148.251.245",
+          "port": 443,
+          "users": [
+            {
+              "id": "5fa16fdf-5b3c-4f57-988d-b24c6722c91a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "at-86-10.cdn-lab.online",
+        "publicKey": "grOuLMf8qYwwB0EFvBDmoVKsM4LSaovUKOIk8Whe-14",
+        "shortId": "7311e59b009bbed5",
         "fingerprint": "firefox"
       }
     }
@@ -207,11 +207,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "178.172.227.228",
+          "address": "95.128.71.79",
           "port": 10444,
           "users": [
             {
-              "id": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -226,7 +226,7 @@
         "serverName": "ads.x5.ru",
         "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
         "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "edge"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -265,11 +265,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
+          "address": "136.148.77.248",
           "port": 443,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -281,10 +281,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "us2.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "ios"
       }
     }
   },
@@ -294,40 +294,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "81.177.215.220",
+          "address": "198.105.123.224",
           "port": 443,
           "users": [
             {
               "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tr3.japancase.site",
-        "publicKey": "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM",
-        "shortId": "071c3bd86b0c3c73",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "kz.globalhost.pro",
-          "port": 443,
-          "users": [
-            {
-              "id": "8dddc313-e588-478b-9175-8702da3235bf",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -339,10 +310,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "kz.globalhost.pro",
-        "publicKey": "6PLDNk_MGDboyRKSOPB9Wf2OpxaDq-hg2Fg5o7FEumA",
-        "shortId": "e8670a141b31d45f",
-        "fingerprint": "firefox"
+        "serverName": "tr1.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -352,7 +323,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "ca1.japancase.site",
+          "address": "45.92.218.79",
           "port": 443,
           "users": [
             {
@@ -365,13 +336,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ca1.japancase.site",
-        "publicKey": "zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc",
-        "shortId": "dbd6b473c7038dd5",
-        "fingerprint": "edge"
+        "serverName": "fr2.japancase.site",
+        "publicKey": "WVSxXflVqhlA-ZkZud3hP_fiN05CZhJWFjfN0liqIFM",
+        "shortId": "fc19a7aa77517cf8",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -406,13 +377,19 @@
   },
   {
     "tag": "🇷🇺 LTE #2 — Premium",
-    "protocol": "trojan",
+    "protocol": "vmess",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "www.wto.org",
-          "port": 8443,
-          "password": "ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f"
+          "address": "wwww.speedtest.org",
+          "port": 443,
+          "users": [
+            {
+              "id": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
         }
       ]
     },
@@ -420,11 +397,14 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "jiangjc.pages.dev",
+        "serverName": "www.windowsmsidownloads.com",
         "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/"
+        "path": "/truth",
+        "headers": {
+          "Host": "www.windowsmsidownloads.com"
+        }
       }
     }
   },
