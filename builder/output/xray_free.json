@@ -63,35 +63,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "b79d736d-0f10-4169-b626-362059d18204",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
-        "shortId": "10351b07c712d2a2",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "179.253.99.12",
+          "address": "193.233.199.84",
           "port": 443,
           "users": [
             {
@@ -107,9 +79,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl4.japancase.site",
-        "publicKey": "pTHOOfOiPcrSO2zkyCu6ezTV0-ppCC2JGVXhH1UEkSo",
-        "shortId": "6b360314a8d57342",
+        "serverName": "fi3game.japancase.site",
+        "publicKey": "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g",
+        "shortId": "38559e47f5536913",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "191.217.211.161",
+          "port": 443,
+          "users": [
+            {
+              "id": "0806e6e2-e01d-482c-b530-be3b57d486d4",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "pl1.song69.fun",
+        "publicKey": "5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM",
+        "shortId": "0c774b50",
         "fingerprint": "firefox"
       }
     }
