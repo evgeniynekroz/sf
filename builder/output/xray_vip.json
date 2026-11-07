@@ -5,13 +5,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "345739t.de15.h1clayd.click",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "55458d10-24ab-4ea6-a522-13741b546f2a",
+              "encryption": "none"
             }
           ]
         }
@@ -21,10 +20,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "345739t.de15.h1clayd.click",
+        "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+        "shortId": "23732d14a527990d",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -91,40 +90,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "132.243.74.104",
-          "port": 2087,
-          "users": [
-            {
-              "id": "92b79c22-f68b-4713-8b21-52f264cb92f5",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ee.song69.fun",
-        "publicKey": "HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww",
-        "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "191.217.211.161",
+          "address": "45.86.60.190",
           "port": 443,
           "users": [
             {
-              "id": "0806e6e2-e01d-482c-b530-be3b57d486d4",
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -136,10 +106,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl1.song69.fun",
-        "publicKey": "5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM",
-        "shortId": "0c774b50",
-        "fingerprint": "firefox"
+        "serverName": "ee2.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 ⚡️ Польша — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "2.26.255.215",
+          "port": 443,
+          "users": [
+            {
+              "id": "69e41e64-a832-471a-b740-94577ca85520",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "cloudflare.com",
+        "publicKey": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
+        "shortId": "50",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -294,40 +293,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "81.177.215.220",
+          "address": "153.56.210.61",
           "port": 443,
           "users": [
             {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "tr3.japancase.site",
-        "publicKey": "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM",
-        "shortId": "071c3bd86b0c3c73",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.57.50.87",
-          "port": 443,
-          "users": [
-            {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+              "id": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -339,10 +309,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "kz1.japancase.site",
-        "publicKey": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
-        "shortId": "4000cdda6278d236",
-        "fingerprint": "firefox"
+        "serverName": "amd.com",
+        "publicKey": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+        "shortId": "a696de84963656de",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -410,9 +380,9 @@
     "settings": {
       "servers": [
         {
-          "address": "singapore.com",
+          "address": "floral-grass-aa1e.dianawpewpek1.workers.dev",
           "port": 443,
-          "password": "bpb-trojan"
+          "password": "uFepQ5r4JSusbY"
         }
       ]
     },
@@ -420,29 +390,23 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "kargar001.pages.dev",
-        "fingerprint": "randomized"
+        "serverName": "floral-grass-aa1e.dianawpewpek1.workers.dev",
+        "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/tr?ed=2560"
+        "path": "/?ed=2048"
       }
     }
   },
   {
     "tag": "🇷🇺 LTE #3 — Premium",
-    "protocol": "vmess",
+    "protocol": "trojan",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "wwww.speedtest.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
+          "address": "www.wto.org",
+          "port": 8443,
+          "password": "ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f"
         }
       ]
     },
@@ -450,14 +414,11 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "www.windowsmsidownloads.com",
+        "serverName": "jiangjc.pages.dev",
         "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/truth",
-        "headers": {
-          "Host": "www.windowsmsidownloads.com"
-        }
+        "path": "/"
       }
     }
   },
