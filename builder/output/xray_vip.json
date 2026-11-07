@@ -175,19 +175,59 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "shadowsocks",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "82.110.60.9",
-          "port": 19999,
-          "method": "aes-256-gcm",
-          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+          "address": "178.22.31.171",
+          "port": 443,
+          "users": [
+            {
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "at1.japancase.site",
+        "publicKey": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "shortId": "41ae8e266bc3346f",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "164.37.224.244",
+          "port": 443,
+          "users": [
+            {
+              "id": "b7b8ee80-db83-4276-8c68-87dc88b0b0b5",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "15d7fft.nl11.h1clayd.click",
+        "publicKey": "xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4",
+        "shortId": "c71118d9399fb8c2",
+        "fingerprint": "firefox"
+      }
     }
   },
   {
@@ -196,11 +236,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "212.69.135.26",
+          "address": "5.104.74.173",
           "port": 8443,
           "users": [
             {
-              "id": "e1b32562-91ba-404f-946e-d4c41293a67b",
+              "id": "829d7add-9bc3-4680-8aab-0fe690af600d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -254,25 +294,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.226.201",
-          "port": 2053,
+          "address": "147.45.66.62",
+          "port": 443,
           "users": [
             {
-              "id": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-              "encryption": "none"
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-        "shortId": "9e419c0759b54d6f",
-        "fingerprint": "random"
+        "serverName": "tr3.japancase.site",
+        "publicKey": "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM",
+        "shortId": "071c3bd86b0c3c73",
+        "fingerprint": "chrome"
       }
     }
   },
