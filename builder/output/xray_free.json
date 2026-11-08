@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "191.44.108.31",
+          "address": "5.252.179.15",
           "port": 443,
           "users": [
             {
-              "id": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
+              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU",
-        "shortId": "3ba10d9ce34380c9",
-        "fingerprint": "ios"
+        "serverName": "www.bing.com",
+        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+        "shortId": "296f27de82dad7ff",
+        "fingerprint": "qq"
       }
     }
   },
@@ -34,56 +34,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "15b171g.nl7.h1clayd.click",
+          "address": "hollandlanzerotte.xyz",
           "port": 443,
           "users": [
             {
-              "id": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
-              "encryption": "none"
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "15b171g.nl7.h1clayd.click",
-        "publicKey": "zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE",
-        "shortId": "50a749f0eccb628c",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": "5b79e8a94241"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.216.27.15",
-          "port": 2053,
-          "users": [
-            {
-              "id": "b79d736d-0f10-4169-b626-362059d18204",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
-        "shortId": "10351b07c712d2a2",
-        "fingerprint": "chrome"
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -146,16 +116,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "148.135.86.162",
-          "port": 10000,
+          "address": "185.189.45.195",
+          "port": 443,
           "users": [
             {
-              "id": "327b1113-049e-4256-8d72-8815643dbb65",
+              "id": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -167,15 +137,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "addons.mozilla.org",
-        "publicKey": "DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU",
-        "shortId": "a1b2c3d4",
+        "serverName": "get.jarbook.net",
+        "publicKey": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+        "shortId": "c6f97313",
         "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -200,6 +170,35 @@
         "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
         "shortId": "",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "148.135.86.162",
+          "port": 10000,
+          "users": [
+            {
+              "id": "327b1113-049e-4256-8d72-8815643dbb65",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "addons.mozilla.org",
+        "publicKey": "DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU",
+        "shortId": "a1b2c3d4",
+        "fingerprint": "firefox"
       }
     }
   }
