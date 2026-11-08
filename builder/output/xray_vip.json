@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "hollandlanzerotte.xyz",
+          "address": "48.102.160.212",
           "port": 443,
           "users": [
             {
@@ -47,12 +47,41 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
         "serverName": "hollandlanzerotte.xyz",
         "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
+        "fingerprint": "qq"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 ⚡️ Финляндия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "72.35.246.39",
+          "port": 2053,
+          "users": [
+            {
+              "id": "b6c29ae7-4748-4049-b642-b695c0d2c776",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "vk.ru",
+        "publicKey": "TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg",
+        "shortId": "5e39e518bfac6392",
         "fingerprint": "firefox"
       }
     }
@@ -146,31 +175,19 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "66.90.106.28",
-          "port": 443,
-          "users": [
-            {
-              "id": "90157e25-cee1-4217-921e-91f300bc1a24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "banket-restoran.su",
-        "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-        "shortId": "428ef87fd47a3a32",
-        "fingerprint": "ios"
-      }
+      "network": "tcp"
     }
   },
   {
@@ -267,12 +284,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.226.201",
-          "port": 2053,
+          "address": "tr.gacvpn.site",
+          "port": 443,
           "users": [
             {
-              "id": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-              "encryption": "none"
+              "id": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -282,36 +300,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-        "shortId": "9e419c0759b54d6f",
-        "fingerprint": "random"
-      }
-    }
-  },
-  {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "3h-kazakhstan1.09vpn.com",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/"
+        "serverName": "tr-edge.gacvpn.site",
+        "publicKey": "58OdCgSElaaOVj6XfrFwYqZoP4soDzY7MvRaaR5pCXk",
+        "shortId": "ab7cbe5f",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -340,6 +332,64 @@
         "serverName": "www.apple.com",
         "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
         "shortId": "48050fab",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇴 Норвегия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "no.gacvpn.site",
+          "port": 443,
+          "users": [
+            {
+              "id": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "no.gacvpn.site",
+        "publicKey": "mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk",
+        "shortId": "08d12dce",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇮🇹 Италия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "129.101.102.137",
+          "port": 443,
+          "users": [
+            {
+              "id": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "it-edge.gacvpn.site",
+        "publicKey": "8POqoppCCmjPFqoCsXzaH-kEdYTDXczdTUXxoGfKO0k",
+        "shortId": "44e85040332f54",
         "fingerprint": "firefox"
       }
     }
