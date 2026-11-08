@@ -67,21 +67,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "193.233.199.84",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "b79d736d-0f10-4169-b626-362059d18204",
       "tls": {
         "enabled": true,
-        "server_name": "fi3game.japancase.site",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g",
-          "short_id": "38559e47f5536913"
+          "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+          "short_id": "10351b07c712d2a2"
         }
       }
     },
@@ -162,22 +161,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "148.135.86.162",
-      "server_port": 10000,
-      "uuid": "327b1113-049e-4256-8d72-8815643dbb65",
+      "tag": "🇯🇵 Резерв #2 — FREE",
+      "server": "81.19.140.181",
+      "server_port": 443,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "ca1.japancase.site",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU",
-          "short_id": "a1b2c3d4"
+          "public_key": "zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc",
+          "short_id": "dbd6b473c7038dd5"
         }
       }
     },
@@ -200,7 +199,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇺🇸 Резерв #2 — FREE"
+        "🇯🇵 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -218,7 +217,7 @@
         "🇸🇪 Швеция — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
-        "🇺🇸 Резерв #2 — FREE",
+        "🇯🇵 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"

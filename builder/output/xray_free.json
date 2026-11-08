@@ -63,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "193.233.199.84",
-          "port": 443,
+          "address": "95.216.27.15",
+          "port": 2053,
           "users": [
             {
-              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "b79d736d-0f10-4169-b626-362059d18204",
+              "encryption": "none"
             }
           ]
         }
@@ -79,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "fi3game.japancase.site",
-        "publicKey": "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g",
-        "shortId": "38559e47f5536913",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+        "shortId": "10351b07c712d2a2",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -174,16 +173,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "148.135.86.162",
-          "port": 10000,
+          "address": "81.19.140.181",
+          "port": 443,
           "users": [
             {
-              "id": "327b1113-049e-4256-8d72-8815643dbb65",
+              "id": "db80088c-32a1-4cb8-a907-0f3cb7844152",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -192,12 +191,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "addons.mozilla.org",
-        "publicKey": "DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU",
-        "shortId": "a1b2c3d4",
+        "serverName": "ca1.japancase.site",
+        "publicKey": "zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc",
+        "shortId": "dbd6b473c7038dd5",
         "fingerprint": "firefox"
       }
     }
