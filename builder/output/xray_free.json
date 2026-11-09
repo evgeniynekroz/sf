@@ -34,7 +34,65 @@
     "settings": {
       "vnext": [
         {
-          "address": "48.102.160.27",
+          "address": "hollandlanzerotte.xyz",
+          "port": 443,
+          "users": [
+            {
+              "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "217.144.188.185",
+          "port": 443,
+          "users": [
+            {
+              "id": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.nordea.fi",
+        "publicKey": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "177.202.68.217",
           "port": 443,
           "users": [
             {
@@ -50,39 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nl-s-2-b1.pythonmakemigreat.wiki",
-        "publicKey": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
-        "shortId": "a3565610aa574a6e",
+        "serverName": "pl-b1.golangwikito.cfd",
+        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+        "shortId": "986ede37bf6925ae",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "222.167.245.16",
-          "port": 443,
-          "users": [
-            {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-        "shortId": "",
-        "fingerprint": "chrome"
       }
     }
   },
@@ -116,35 +145,6 @@
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "185.215.184.49",
-          "port": 443,
-          "users": [
-            {
-              "id": "90157e25-cee1-4217-921e-91f300bc1a24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "dvizhok.su",
-        "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-        "shortId": "428ef87fd47a3a32",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
@@ -174,16 +174,16 @@
     }
   },
   {
-    "tag": "🇷🇺 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "ca1.fox-lisa.ru",
+          "address": "136.176.65.251",
           "port": 443,
           "users": [
             {
-              "id": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
+              "id": "39826f32-f5ca-42a5-ab33-188f7d199478",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -192,12 +192,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ca1.fox-lisa.ru",
-        "publicKey": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
-        "shortId": "027af64166562b09",
+        "serverName": "www.apple.com",
+        "publicKey": "O5NcKiTtNcJZiLMJhxT5d0Pn8KjVBvXGmztGd4_D-RI",
+        "shortId": "cdac1a856b81390f",
         "fingerprint": "chrome"
       }
     }
