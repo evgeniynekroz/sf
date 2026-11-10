@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.251.143.253",
+          "address": "187.7.206.49",
           "port": 443,
           "users": [
             {
-              "id": "4201786b-d99b-4147-a5f0-20d47acddb81",
+              "id": "976f82d9-0e6b-40ed-9c09-cafd06c4bc98",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "4935e4t.de25.h1clayd.click",
-        "publicKey": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
-        "shortId": "6976d670818644cc",
-        "fingerprint": "ios"
+        "serverName": "de166.mech-pro.online",
+        "publicKey": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+        "shortId": "16e0f049",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "48.102.167.37",
+          "address": "hollandlanzerotte.xyz",
           "port": 443,
           "users": [
             {
@@ -53,35 +53,7 @@
         "serverName": "hollandlanzerotte.xyz",
         "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇫🇮 Финляндия — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "finland3.banovano.space",
-          "port": 8443,
-          "users": [
-            {
-              "id": "38e0294f-862a-45c4-b3da-32a04f1ebf09",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "xhttp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "finland3.banovano.space",
-        "publicKey": "2VlrtDpnPd8YgeOtg-E0crPcXHoqkUIJIBkXYMdLN3k",
-        "shortId": "7c5843fc969ed9",
-        "fingerprint": "firefox"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -91,13 +63,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.26.187.83",
-          "port": 9443,
+          "address": "93594at.pl7.h1clayd.click",
+          "port": 443,
           "users": [
             {
-              "id": "1c22e56f-d64c-4cdb-bf2f-acf447ade473",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "74610801-c200-4b13-a10b-7076f879e293",
+              "encryption": "none"
             }
           ]
         }
@@ -107,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland3.banovano.space",
-        "publicKey": "SqmP5dBWuifwFDus3lGcmmukfBCnteYmne45RhxLaHQ",
-        "shortId": "f9",
-        "fingerprint": "firefox"
+        "serverName": "93594at.pl7.h1clayd.click",
+        "publicKey": "9gFDg7JnLoWPWy5_53PA8Mr3OgemFuCGWer5rnctRQQ",
+        "shortId": "157df8dd7130ad40",
+        "fingerprint": "edge"
       }
     }
   },
@@ -140,6 +111,35 @@
         "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
         "shortId": "c39cc7310a",
         "fingerprint": "ios"
+      }
+    }
+  },
+  {
+    "tag": "🇪🇪 Эстония — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.215.184.53",
+          "port": 443,
+          "users": [
+            {
+              "id": "90157e25-cee1-4217-921e-91f300bc1a24",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "dvizhok.su",
+        "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+        "shortId": "428ef87fd47a3a32",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -178,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.211.98.43",
+          "address": "136.176.65.251",
           "port": 443,
           "users": [
             {
-              "id": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
+              "id": "39826f32-f5ca-42a5-ab33-188f7d199478",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -191,13 +191,13 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
-        "shortId": "9c56fddf237e8eaf",
-        "fingerprint": "firefox"
+        "serverName": "www.apple.com",
+        "publicKey": "O5NcKiTtNcJZiLMJhxT5d0Pn8KjVBvXGmztGd4_D-RI",
+        "shortId": "cdac1a856b81390f",
+        "fingerprint": "chrome"
       }
     }
   }
