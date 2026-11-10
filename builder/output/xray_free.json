@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "5.252.179.15",
+          "address": "150.251.143.253",
           "port": 443,
           "users": [
             {
-              "id": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+              "id": "4201786b-d99b-4147-a5f0-20d47acddb81",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,10 +21,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.bing.com",
-        "publicKey": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-        "shortId": "296f27de82dad7ff",
-        "fingerprint": "qq"
+        "serverName": "4935e4t.de25.h1clayd.click",
+        "publicKey": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+        "shortId": "6976d670818644cc",
+        "fingerprint": "ios"
       }
     }
   },
@@ -34,7 +34,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "hollandlanzerotte.xyz",
+          "address": "48.102.167.37",
           "port": 443,
           "users": [
             {
@@ -53,7 +53,7 @@
         "serverName": "hollandlanzerotte.xyz",
         "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -63,26 +63,25 @@
     "settings": {
       "vnext": [
         {
-          "address": "217.144.188.185",
-          "port": 443,
+          "address": "finland3.banovano.space",
+          "port": 8443,
           "users": [
             {
-              "id": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "38e0294f-862a-45c4-b3da-32a04f1ebf09",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "xhttp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.nordea.fi",
-        "publicKey": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "finland3.banovano.space",
+        "publicKey": "2VlrtDpnPd8YgeOtg-E0crPcXHoqkUIJIBkXYMdLN3k",
+        "shortId": "7c5843fc969ed9",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +91,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "177.202.68.217",
-          "port": 443,
+          "address": "2.26.187.83",
+          "port": 9443,
           "users": [
             {
-              "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+              "id": "1c22e56f-d64c-4cdb-bf2f-acf447ade473",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +107,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl-b1.golangwikito.cfd",
-        "publicKey": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-        "shortId": "986ede37bf6925ae",
+        "serverName": "poland3.banovano.space",
+        "publicKey": "SqmP5dBWuifwFDus3lGcmmukfBCnteYmne45RhxLaHQ",
+        "shortId": "f9",
         "fingerprint": "firefox"
       }
     }
@@ -179,11 +178,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "136.176.65.251",
+          "address": "195.211.98.43",
           "port": 443,
           "users": [
             {
-              "id": "39826f32-f5ca-42a5-ab33-188f7d199478",
+              "id": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -192,13 +191,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "O5NcKiTtNcJZiLMJhxT5d0Pn8KjVBvXGmztGd4_D-RI",
-        "shortId": "cdac1a856b81390f",
-        "fingerprint": "chrome"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
+        "shortId": "9c56fddf237e8eaf",
+        "fingerprint": "firefox"
       }
     }
   }
