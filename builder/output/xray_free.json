@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.107.179.0",
-          "port": 10105,
+          "address": "82.39.171.12",
+          "port": 443,
           "users": [
             {
-              "id": "ad3f4a0a-a89f-498e-9869-a93c8fa185b1",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "play.google.com",
-        "publicKey": "PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es",
-        "shortId": "12e321badd07906e",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "222.167.245.16",
+          "address": "213.21.232.4",
           "port": 443,
           "users": [
             {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
+              "id": "4d30ffc2-c917-407b-b71f-6a7ca09e939f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-        "shortId": "",
+        "serverName": "mytubeproxy10.duckdns.org",
+        "publicKey": "N3MUCErqyQmpQEwMzDPwz2mZERG0Q2dopPNX-3PpE2M",
+        "shortId": "455152c2797fea2b",
         "fingerprint": "chrome"
       }
     }
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.123.213.28",
+          "address": "get.jarbook.net",
           "port": 443,
           "users": [
             {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+              "id": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,40 +137,10 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "US032017.ssgreen.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "5b1da241-af37-4d40-8ad4-9115e6f251d4",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "US032017.ssgreen.org",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/wes"
+        "serverName": "get.jarbook.net",
+        "publicKey": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+        "shortId": "c6f97313",
+        "fingerprint": "firefox"
       }
     }
   },

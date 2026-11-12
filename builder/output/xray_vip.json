@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "91.107.179.0",
-          "port": 10105,
+          "address": "82.39.171.12",
+          "port": 443,
           "users": [
             {
-              "id": "ad3f4a0a-a89f-498e-9869-a93c8fa185b1",
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "play.google.com",
-        "publicKey": "PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es",
-        "shortId": "12e321badd07906e",
-        "fingerprint": "firefox"
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.123.213.28",
+          "address": "get.jarbook.net",
           "port": 443,
           "users": [
             {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+              "id": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
-        "fingerprint": "chrome"
+        "serverName": "get.jarbook.net",
+        "publicKey": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+        "shortId": "c6f97313",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "222.167.245.16",
+          "address": "213.21.232.4",
           "port": 443,
           "users": [
             {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
+              "id": "4d30ffc2-c917-407b-b71f-6a7ca09e939f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,9 +108,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-        "shortId": "",
+        "serverName": "mytubeproxy10.duckdns.org",
+        "publicKey": "N3MUCErqyQmpQEwMzDPwz2mZERG0Q2dopPNX-3PpE2M",
+        "shortId": "455152c2797fea2b",
         "fingerprint": "chrome"
       }
     }
@@ -159,35 +159,6 @@
     },
     "streamSettings": {
       "network": "tcp"
-    }
-  },
-  {
-    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.128.71.79",
-          "port": 10444,
-          "users": [
-            {
-              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ads.x5.ru",
-        "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-        "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "random"
-      }
     }
   },
   {
@@ -254,12 +225,13 @@
     "settings": {
       "vnext": [
         {
-          "address": "151.241.226.201",
-          "port": 2053,
+          "address": "185.246.155.91",
+          "port": 10103,
           "users": [
             {
-              "id": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-              "encryption": "none"
+              "id": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -270,9 +242,9 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.apple.com",
-        "publicKey": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-        "shortId": "9e419c0759b54d6f",
-        "fingerprint": "random"
+        "publicKey": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
+        "shortId": "6859f5b59e55aa30",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -282,8 +254,8 @@
     "settings": {
       "vnext": [
         {
-          "address": "103.75.118.228",
-          "port": 11452,
+          "address": "3.114.220.22",
+          "port": 19645,
           "users": [
             {
               "id": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -301,7 +273,7 @@
         "serverName": "www.apple.com",
         "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
         "shortId": "48050fab",
-        "fingerprint": "chrome"
+        "fingerprint": "random"
       }
     }
   },
@@ -330,96 +302,6 @@
         "publicKey": "R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc",
         "shortId": "086bf957",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "US032017.ssgreen.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "5b1da241-af37-4d40-8ad4-9115e6f251d4",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "US032017.ssgreen.org",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/wes"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #2 — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "US032024.ssgreen.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "34c974b2-168d-403a-a794-18976debfb95",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "US032024.ssgreen.org",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/wes"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE #3 — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "US032022.ssgreen.org",
-          "port": 443,
-          "users": [
-            {
-              "id": "4a80e9ff-ea58-4ac9-83c7-021190383d9a",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "US032022.ssgreen.org",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/wes"
       }
     }
   },
