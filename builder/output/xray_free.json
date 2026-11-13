@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "s19161.h1cloud.net",
-          "port": 25749,
+          "address": "87.121.89.160",
+          "port": 8443,
           "users": [
             {
-              "id": "e460e79d-5dd9-451d-8d1a-a84c8b70c9a7",
+              "id": "e50e6851-a29a-45a1-811d-1e9230c1512a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "80aa2br.fi4.h1clayd.click",
-        "publicKey": "nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE",
-        "shortId": "f6b3841eabafff9a",
+        "serverName": "fi1.slowframe.org",
+        "publicKey": "lQn0k9GCrG7Hh34b8ezAyVjc9KBCxQm3oP0xdxKGy0U",
+        "shortId": "35cb85e41b041622",
         "fingerprint": "firefox"
       }
     }
@@ -121,11 +121,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "169.40.42.163",
-          "port": 443,
+          "address": "62.182.193.228",
+          "port": 8443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "c0d58ed7-41f8-4cf4-b61b-8ba8f6be9a46",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -137,68 +137,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "ios"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "freedom.to",
-          "port": 2053,
-          "password": "IDgAbZbs8cZw"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "rAyan02-1d7cmk9v-t3.rayAn-02.worKers.dEV",
+        "serverName": "nekoboxo.isgood.host",
+        "publicKey": "G3ZzvlhhrESJFCm41agmCMitg14XGzIAaS5DpdxZxkI",
+        "shortId": "da5e9707",
         "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/?ed=2560"
       }
     }
   },
   {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "159.89.87.21",
-          "port": 28190,
-          "users": [
-            {
-              "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "aws.amazon.com",
-        "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
-        "shortId": "",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -220,6 +167,35 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "us5.sbcweb.net",
+        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+        "shortId": "868419504747f6de",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "94.177.253.26",
+          "port": 443,
+          "users": [
+            {
+              "id": "fa081e9f-7574-4e18-8928-31aa5ac923c7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "uk7.sbcweb.net",
         "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
         "shortId": "868419504747f6de",
         "fingerprint": "firefox"
