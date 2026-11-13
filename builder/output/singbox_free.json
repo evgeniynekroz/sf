@@ -25,84 +25,63 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "203.23.179.123",
-      "server_port": 443,
-      "uuid": "fa081e9f-7574-0002-8928-31aa5ac923c7",
+      "server": "91.107.179.0",
+      "server_port": 10105,
+      "uuid": "ad3f4a0a-a89f-498e-9869-a93c8fa185b1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de1-b.sbcweb.net",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "public_key": "PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es",
+          "short_id": "12e321badd07906e"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "hollandlanzerotte.xyz",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
       "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hollandlanzerotte.xyz",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
-          "short_id": ""
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "87.121.89.160",
-      "server_port": 8443,
-      "uuid": "e50e6851-a29a-45a1-811d-1e9230c1512a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1.slowframe.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lQn0k9GCrG7Hh34b8ezAyVjc9KBCxQm3oP0xdxKGy0U",
-          "short_id": "35cb85e41b041622"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 Польша — FREE",
-      "server": "80.47.11.123",
+      "server": "finland.freegate.win",
       "server_port": 443,
-      "uuid": "fa081e9f-7574-4e18-8928-31aa5ac923c7",
+      "uuid": "8f9c04c9-5c94-495e-9452-ab8b7a8af1bc",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl8.lazeroe.com",
+        "server_name": "finland.freegate.win",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "public_key": "Uzl_JRMLrzPaB_3IuRDwE6uTldkeSgJKpppY-xNjA0M",
+          "short_id": ""
         }
       }
     },
@@ -129,43 +108,64 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "84.32.61.133",
+      "tag": "🇪🇪 Эстония — FREE",
+      "server": "84.32.154.73",
       "server_port": 443,
-      "uuid": "fa081e9f-7574-4e18-8928-31aa5ac923c7",
+      "uuid": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us5.sbcweb.net",
+        "server_name": "get.jarbook.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "public_key": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+          "short_id": "c6f97313"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 Резерв #2 — FREE",
-      "server": "94.177.253.26",
-      "server_port": 443,
-      "uuid": "fa081e9f-7574-4e18-8928-31aa5ac923c7",
+      "tag": "🇯🇵 Резерв #1 — FREE",
+      "server": "103.75.118.228",
+      "server_port": 12683,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "uk7.sbcweb.net",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 Резерв #2 — FREE",
+      "server": "158.101.151.157",
+      "server_port": 443,
+      "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
+          "short_id": "684c7531e599dec0"
         }
       }
     },
@@ -184,10 +184,10 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇬🇧 Резерв #2 — FREE"
+        "🇪🇪 Эстония — FREE",
+        "🇯🇵 Резерв #1 — FREE",
+        "🇯🇵 Резерв #2 — FREE"
       ],
       "url": "http://cp.cloudflare.com/generate_204",
       "interval": "300s",
@@ -201,10 +201,10 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇺🇸 Резерв #1 — FREE",
-        "🇬🇧 Резерв #2 — FREE",
+        "🇪🇪 Эстония — FREE",
+        "🇯🇵 Резерв #1 — FREE",
+        "🇯🇵 Резерв #2 — FREE",
         "direct"
       ],
       "default": "⚡️ Авто-выбор (Лучший пинг)"
