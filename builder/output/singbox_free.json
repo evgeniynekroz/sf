@@ -24,22 +24,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 Германия — FREE",
-      "server": "82.39.171.12",
+      "tag": "🇳🇱 Нидерланды — FREE",
+      "server": "153.52.85.198",
       "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "8a2e72t.nl11.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+          "public_key": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
+          "short_id": "8d0d0679f42ffd98"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — FREE",
+      "server": "31.76.114.22",
+      "server_port": 443,
+      "uuid": "8f9c04c9-5c94-495e-9452-ab8b7a8af1bc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.freegate.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uzl_JRMLrzPaB_3IuRDwE6uTldkeSgJKpppY-xNjA0M",
+          "short_id": ""
         }
       }
     },
@@ -107,50 +128,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇾 Беларусь — FREE",
-      "server": "95.128.71.79",
-      "server_port": 10444,
-      "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "81.90.17.166",
+      "server_port": 443,
+      "password": "lCk4_xMXmmLQV45zGLuQ5BRmzKEHDU8Q",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
-        }
+        "server_name": "assets.stackbase-dev.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "216.152.155.189",
-      "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
-          "short_id": "fecf2b55bb11bb0d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -170,6 +161,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "216.152.155.189",
+      "server_port": 443,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
+          "short_id": "fecf2b55bb11bb0d"
+        }
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -181,11 +193,12 @@
       "type": "urltest",
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
-        "🇩🇪 Германия — FREE",
+        "🇳🇱 Нидерланды — FREE",
+        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
-        "🇧🇾 Беларусь — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -198,11 +211,12 @@
       "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
-        "🇩🇪 Германия — FREE",
+        "🇳🇱 Нидерланды — FREE",
+        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
-        "🇧🇾 Беларусь — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

@@ -1,15 +1,15 @@
 [
   {
-    "tag": "🇩🇪 Германия — FREE",
+    "tag": "🇳🇱 Нидерланды — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "82.39.171.12",
+          "address": "153.52.85.198",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "4201786b-d99b-4147-a5f0-20d47acddb81",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,13 +18,42 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
+        "serverName": "8a2e72t.nl11.h1clayd.click",
+        "publicKey": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
+        "shortId": "8d0d0679f42ffd98",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "31.76.114.22",
+          "port": 443,
+          "users": [
+            {
+              "id": "8f9c04c9-5c94-495e-9452-ab8b7a8af1bc",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "finland.freegate.win",
+        "publicKey": "Uzl_JRMLrzPaB_3IuRDwE6uTldkeSgJKpppY-xNjA0M",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -116,65 +145,7 @@
     }
   },
   {
-    "tag": "🇧🇾 Беларусь — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "95.128.71.79",
-          "port": 10444,
-          "users": [
-            {
-              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "ads.x5.ru",
-        "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-        "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "safari"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #1 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "216.152.155.189",
-          "port": 443,
-          "users": [
-            {
-              "id": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
-        "shortId": "fecf2b55bb11bb0d",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -198,6 +169,35 @@
         "serverName": "www.apple.com",
         "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
         "shortId": "a3a578ab",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "216.152.155.189",
+          "port": 443,
+          "users": [
+            {
+              "id": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
+        "shortId": "fecf2b55bb11bb0d",
         "fingerprint": "chrome"
       }
     }
