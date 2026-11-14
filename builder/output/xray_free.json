@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "153.52.85.198",
+          "address": "amsterdam.freegate.win",
           "port": 443,
           "users": [
             {
-              "id": "4201786b-d99b-4147-a5f0-20d47acddb81",
+              "id": "8f9c04c9-5c94-495e-9452-ab8b7a8af1bc",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -18,12 +18,12 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "8a2e72t.nl11.h1clayd.click",
-        "publicKey": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
-        "shortId": "8d0d0679f42ffd98",
+        "serverName": "amsterdam.freegate.win",
+        "publicKey": "K9fsQw4pSymGPsVxy2TDES6Lgl_1L8qcp0LhOZitflY",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "201.58.190.235",
+          "address": "poland.biznes.lol",
           "port": 443,
           "users": [
             {
-              "id": "247802ca-0fbb-428a-b807-91a6e571b5c7",
+              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "static-pl.snobvpn.online",
-        "publicKey": "iENUFfise6O4hYZVRinO4aye7XCr4Op7QzQuwTUsgR8",
-        "shortId": "93be3684474b67a8",
-        "fingerprint": "chrome"
+        "serverName": "poland.biznes.lol",
+        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
+        "shortId": "",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "46.29.255.123",
-          "port": 59539,
+          "address": "62.182.193.228",
+          "port": 8443,
           "users": [
             {
-              "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+              "id": "c0d58ed7-41f8-4cf4-b61b-8ba8f6be9a46",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cloudflare-dns.com",
-        "publicKey": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
-        "shortId": "",
-        "fingerprint": "firefox"
+        "serverName": "nekoboxo.isgood.host",
+        "publicKey": "G3ZzvlhhrESJFCm41agmCMitg14XGzIAaS5DpdxZxkI",
+        "shortId": "da5e9707",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -150,35 +150,6 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.95.231.156",
-          "port": 443,
-          "users": [
-            {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
           "address": "216.152.155.189",
           "port": 443,
           "users": [
@@ -198,6 +169,35 @@
         "serverName": "www.apple.com",
         "publicKey": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
         "shortId": "fecf2b55bb11bb0d",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "185.95.231.156",
+          "port": 443,
+          "users": [
+            {
+              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+        "shortId": "a3a578ab",
         "fingerprint": "chrome"
       }
     }
