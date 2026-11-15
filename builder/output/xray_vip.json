@@ -62,11 +62,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "84.32.154.73",
-          "port": 443,
+          "address": "185.155.55.2",
+          "port": 8443,
           "users": [
             {
-              "id": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
+              "id": "5c09e56b-f97f-4360-8f01-eb4d39202095",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +78,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "get.jarbook.net",
-        "publicKey": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
-        "shortId": "c6f97313",
-        "fingerprint": "ios"
+        "serverName": "ee-nf.reddotcorp.org",
+        "publicKey": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
+        "shortId": "661766b2bcef440a",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -248,42 +248,16 @@
     }
   },
   {
-    "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "38.107.234.57",
-          "port": 80,
-          "users": [
-            {
-              "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "none",
-      "wsSettings": {
-        "path": "/vmess/"
-      }
-    }
-  },
-  {
-    "tag": "🇯🇵 Япония — Premium",
+    "tag": "🇹🇷 Турция — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "158.101.151.157",
+          "address": "dearv.mobileemdad.top",
           "port": 443,
           "users": [
             {
-              "id": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
+              "id": "17930566-4faa-43bc-9ebb-ad63356abd10",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -295,9 +269,38 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.microsoft.com",
-        "publicKey": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
-        "shortId": "684c7531e599dec0",
+        "serverName": "play.google.com",
+        "publicKey": "dMBDL7ry94pavIxYmzimeyaCqor6fUNb0v3dzHif9xY",
+        "shortId": "e64e9f5eefbffc15",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇯🇵 Япония — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "103.75.118.228",
+          "port": 12683,
+          "users": [
+            {
+              "id": "814bd064-544d-4255-a070-5705c03f6da9",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.apple.com",
+        "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+        "shortId": "48050fab",
         "fingerprint": "chrome"
       }
     }
@@ -333,13 +336,19 @@
   },
   {
     "tag": "🇷🇺 LTE — Premium",
-    "protocol": "trojan",
+    "protocol": "vmess",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "singapore.com",
+          "address": "US122205.ssgreen.org",
           "port": 443,
-          "password": "bpb-trojan"
+          "users": [
+            {
+              "id": "a08272b5-d855-4d1e-ab2e-e3c02cf6b5af",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
         }
       ]
     },
@@ -347,16 +356,52 @@
       "network": "ws",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "kargar001.pages.dev",
-        "fingerprint": "randomized"
+        "serverName": "US122205.ssgreen.org",
+        "fingerprint": "chrome"
       },
       "wsSettings": {
-        "path": "/tr?ed=2560"
+        "path": "/wes",
+        "headers": {
+          "Host": "US122205.ssgreen.org"
+        }
       }
     }
   },
   {
     "tag": "🇷🇺 LTE #2 — Premium",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "US032022.ssgreen.org",
+          "port": 443,
+          "users": [
+            {
+              "id": "348e6eaa-f562-4f41-bf07-e4b26bfd2a46",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "US032022.ssgreen.org",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/wes",
+        "headers": {
+          "Host": "US032022.ssgreen.org"
+        }
+      }
+    }
+  },
+  {
+    "tag": "🇷🇺 LTE #3 — Premium",
     "protocol": "vmess",
     "settings": {
       "vnext": [
@@ -389,35 +434,31 @@
     }
   },
   {
-    "tag": "🇷🇺 LTE #3 — Premium",
-    "protocol": "vmess",
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "US032018.ssgreen.org",
+          "address": "45.144.112.55",
           "port": 443,
           "users": [
             {
-              "id": "5aa06e43-d249-462f-a620-7efdb348056e",
-              "alterId": 0,
-              "security": "auto"
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "US032018.ssgreen.org",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/wes",
-        "headers": {
-          "Host": "US032018.ssgreen.org"
-        }
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "firefox"
       }
     }
   }
