@@ -24,6 +24,27 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "🇩🇪 Германия — FREE",
+      "server": "217.60.30.59",
+      "server_port": 443,
+      "uuid": "a31b6d17-1c4a-44e3-9402-ce78f1fb7eb5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.absolute.beer",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4Rl6vHT376UaB_11fuBK1SozJnAT2cOfvWPv_ccj-D8",
+          "short_id": "9c63bcf1407f3737"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
       "server": "amsterdam.freegate.win",
       "server_port": 443,
@@ -46,7 +67,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "5.34.246.25",
+      "server": "196.240.181.30",
       "server_port": 443,
       "uuid": "537d8ade-134d-4ec2-905c-0187e7e1e22e",
       "tls": {
@@ -107,47 +128,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 Эстония — FREE",
-      "server": "185.155.55.2",
-      "server_port": 8443,
-      "uuid": "5c09e56b-f97f-4360-8f01-eb4d39202095",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-nf.reddotcorp.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
-          "short_id": "661766b2bcef440a"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "US122205.ssgreen.org",
-      "server_port": 443,
-      "uuid": "a08272b5-d855-4d1e-ab2e-e3c02cf6b5af",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "US122205.ssgreen.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wes",
-        "headers": {
-          "Host": "US122205.ssgreen.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
       "server": "216.152.155.189",
       "server_port": 443,
@@ -200,12 +180,11 @@
       "type": "urltest",
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
+        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇪🇪 Эстония — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -218,12 +197,11 @@
       "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
+        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇪🇪 Эстония — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
