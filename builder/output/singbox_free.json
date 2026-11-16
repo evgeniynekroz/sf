@@ -25,21 +25,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 Германия — FREE",
-      "server": "217.60.30.59",
+      "server": "82.39.171.12",
       "server_port": 443,
-      "uuid": "a31b6d17-1c4a-44e3-9402-ce78f1fb7eb5",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de1.absolute.beer",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4Rl6vHT376UaB_11fuBK1SozJnAT2cOfvWPv_ccj-D8",
-          "short_id": "9c63bcf1407f3737"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
@@ -67,41 +67,41 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "196.240.181.30",
+      "server": "85.192.49.126",
       "server_port": 443,
-      "uuid": "537d8ade-134d-4ec2-905c-0187e7e1e22e",
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "78ec29x.fi2.h1clayd.click",
+        "server_name": "fi3.gofizzin.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WCuIW5EhUUfvOtDeVO-M7NjwXaE20zinTv3rpQ9erxs",
-          "short_id": "6f2d8ece33a96159"
+          "public_key": "ATdIZVxBUo5bVQJtcoWBU1k8qlHdNniJ2gF1iDc8rEQ",
+          "short_id": "76efb045"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "pl3.fox-lisa.ru",
+      "server": "338817x.pl8.h1clayd.click",
       "server_port": 443,
-      "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
       "tls": {
         "enabled": true,
-        "server_name": "pl3.fox-lisa.ru",
+        "server_name": "338817x.pl8.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
-          "short_id": "027af64166562b09"
+          "public_key": "-P7rHFWtKuCHcvH-YxkTtR-9iRpOR8csAh7PsoBulyY",
+          "short_id": "91897e1e8a0373e2"
         }
       }
     },
