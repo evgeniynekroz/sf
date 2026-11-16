@@ -5,26 +5,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "82.39.171.12",
+          "address": "a566d1g.de18.h1clayd.click",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "4618cebd-e1e9-45c3-be98-d9d6e3ee8bef",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
+        "serverName": "a566d1g.de18.h1clayd.click",
+        "publicKey": "C_DlyXDDS4fWcAlxb-6O7LBKtq28fg2slCrH5tPaTQ4",
+        "shortId": "16cea10606a4e401",
         "fingerprint": "chrome"
+      },
+      "grpcSettings": {
+        "serviceName": "98b9c56e8ebb"
       }
     }
   },
@@ -92,26 +94,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.155.55.2",
-          "port": 8443,
+          "address": "ee146.own-homelab.cloud",
+          "port": 443,
           "users": [
             {
-              "id": "5c09e56b-f97f-4360-8f01-eb4d39202095",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "0ed9418b-e687-4c2d-8869-7e368c44887e",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "ee-nf.reddotcorp.org",
-        "publicKey": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
-        "shortId": "661766b2bcef440a",
-        "fingerprint": "firefox"
+        "serverName": "ee146.own-homelab.cloud",
+        "publicKey": "4XnNIGFrNW2uKqvNJly-X_J52O_SDOdWwejuGQU_IAs",
+        "shortId": "05c0787b9357f4a8",
+        "fingerprint": "ios"
+      },
+      "grpcSettings": {
+        "serviceName": "grpc"
       }
     }
   },
@@ -121,7 +125,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "338817x.pl8.h1clayd.click",
+          "address": "201.58.139.178",
           "port": 443,
           "users": [
             {
@@ -174,33 +178,19 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "at130.homelab-cdn.cloud",
-          "port": 8444,
-          "users": [
-            {
-              "id": "23886542-94e6-4d3a-bfed-bda65b503903",
-              "encryption": "none"
-            }
-          ]
+          "address": "82.110.60.9",
+          "port": 19999,
+          "method": "aes-256-gcm",
+          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "at130.homelab-cdn.cloud",
-        "publicKey": "lg1DFaHcYnLgPlSSAzt-7FyE9Ds0cLC8vJ5ZvjNGyB8",
-        "shortId": "8e1b8eeb8530cbfe",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
-      }
+      "network": "tcp"
     }
   },
   {
@@ -209,11 +199,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.128.71.79",
+          "address": "178.172.227.124",
           "port": 10444,
           "users": [
             {
-              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+              "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -228,7 +218,7 @@
         "serverName": "ads.x5.ru",
         "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
         "shortId": "8debcf36f1cc69ff",
-        "fingerprint": "safari"
+        "fingerprint": "firefox"
       }
     }
   },
@@ -267,11 +257,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "216.152.155.189",
+          "address": "69.176.84.172",
           "port": 443,
           "users": [
             {
-              "id": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+              "id": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -283,10 +273,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
-        "shortId": "fecf2b55bb11bb0d",
-        "fingerprint": "chrome"
+        "serverName": "us6.gofizzin.com",
+        "publicKey": "ccq4Wk9V2_8IBXou2URsapbdszbxNc7IWD6ExNuB7hU",
+        "shortId": "39be97366fac",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -300,7 +290,7 @@
           "port": 443,
           "users": [
             {
-              "id": "26843758-24de-4f76-b5d0-624038e353c4",
+              "id": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
               "encryption": "none"
             }
           ]
@@ -435,16 +425,49 @@
     }
   },
   {
+    "tag": "🇷🇺 LTE — Premium",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "US032012.westmgreen.com",
+          "port": 443,
+          "users": [
+            {
+              "id": "fbc990c5-c62e-4e31-a9a5-db3a4fe42741",
+              "alterId": 0,
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "US032012.westmgreen.com",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/wes",
+        "headers": {
+          "Host": "US032012.westmgreen.com"
+        }
+      }
+    }
+  },
+  {
     "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "45.144.112.55",
+          "address": "199.245.176.94",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -456,9 +479,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
+        "serverName": "us3.gofizz.in",
+        "publicKey": "Ti0m82YFaY2ngtx1D3jicy2K1HnOWEsCfYYQPqhXImg",
+        "shortId": "6117837d3efb",
         "fingerprint": "firefox"
       }
     }
