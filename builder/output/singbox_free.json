@@ -24,22 +24,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "195.206.235.34",
+      "tag": "🇩🇪 Германия — FREE",
+      "server": "82.39.171.12",
       "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "8a2e72t.nl11.h1clayd.click",
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды — FREE",
+      "server": "150.251.141.119",
+      "server_port": 443,
+      "uuid": "f3a227cb-8a8b-4ccb-b613-9143c4a1346c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.benzinvpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
-          "short_id": "8d0d0679f42ffd98"
+          "public_key": "u_5G4p7v2Qa02VBukuQ-fzcHRFnZeL44e9t9yRIEBRs",
+          "short_id": "8e8bfbcc5830b8fe"
         }
       }
     },
@@ -66,86 +87,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Швеция — FREE",
-      "server": "362c1eg.se2.h1clayd.click",
-      "server_port": 443,
-      "uuid": "2dfbcaf9-89fc-4fa2-9b41-962d8cb77aaf",
-      "tls": {
-        "enabled": true,
-        "server_name": "362c1eg.se2.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY",
-          "short_id": "bee802ae4ab66496"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 Австрия — FREE",
-      "server": "50.7.115.242",
-      "server_port": 443,
-      "uuid": "49db4ce7-ad48-41a3-9b6f-4c6dabd94504",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tarn.hazelmoor.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Mwczt2QjgQo3q8N10PVx8bWNubwiNhgka5GvxUy-GHQ",
-          "short_id": "7d1c7473"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "201.58.139.178",
+      "server": "80.47.10.106",
       "server_port": 443,
-      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "338817x.pl8.h1clayd.click",
+        "server_name": "pl8.galioncc.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-P7rHFWtKuCHcvH-YxkTtR-9iRpOR8csAh7PsoBulyY",
-          "short_id": "91897e1e8a0373e2"
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "wto.org",
-      "server_port": 2087,
-      "uuid": "82508138-bb0c-4d0c-9ab3-4a83959d19c2",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "tag": "🇸🇪 Швеция — FREE",
+      "server": "88.216.214.159",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "yx.kb1203.indevs.in"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/banana",
-        "headers": {
-          "Host": "yx.kb1203.indevs.in"
+        "server_name": "api-svc-mgr.galioncc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
         }
       }
     },
@@ -173,21 +149,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "199.245.176.94",
+      "server": "69.176.84.172",
       "server_port": 443,
       "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "us3.gofizz.in",
+        "server_name": "us6.gofizzin.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Ti0m82YFaY2ngtx1D3jicy2K1HnOWEsCfYYQPqhXImg",
-          "short_id": "6117837d3efb"
+          "public_key": "ccq4Wk9V2_8IBXou2URsapbdszbxNc7IWD6ExNuB7hU",
+          "short_id": "39be97366fac"
         }
       }
     },
@@ -203,12 +179,11 @@
       "type": "urltest",
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
+        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇸🇪 Швеция — FREE",
-        "🇦🇹 Австрия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇷🇺 Россия LTE — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -221,12 +196,11 @@
       "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
+        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇸🇪 Швеция — FREE",
-        "🇦🇹 Австрия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇷🇺 Россия LTE — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

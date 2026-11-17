@@ -1,15 +1,44 @@
 [
   {
+    "tag": "🇩🇪 ⚡️ Германия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "82.39.171.12",
+          "port": 443,
+          "users": [
+            {
+              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "yahoo.com",
+        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+        "shortId": "c39cc7310a",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
     "tag": "🇳🇱 ⚡️ Нидерланды — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "195.206.235.34",
+          "address": "150.251.141.119",
           "port": 443,
           "users": [
             {
-              "id": "4201786b-d99b-4147-a5f0-20d47acddb81",
+              "id": "f3a227cb-8a8b-4ccb-b613-9143c4a1346c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +50,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "8a2e72t.nl11.h1clayd.click",
-        "publicKey": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
-        "shortId": "8d0d0679f42ffd98",
+        "serverName": "nl1.benzinvpn.com",
+        "publicKey": "u_5G4p7v2Qa02VBukuQ-fzcHRFnZeL44e9t9yRIEBRs",
+        "shortId": "8e8bfbcc5830b8fe",
         "fingerprint": "firefox"
       }
     }
@@ -58,16 +87,45 @@
     }
   },
   {
-    "tag": "🇸🇪 ⚡️ Швеция — Premium",
+    "tag": "🇪🇪 ⚡️ Эстония — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "362c1eg.se2.h1clayd.click",
+          "address": "185.223.171.1",
           "port": 443,
           "users": [
             {
-              "id": "2dfbcaf9-89fc-4fa2-9b41-962d8cb77aaf",
+              "id": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "ee1.gofizzin.com",
+        "publicKey": "z46-GwLD2TvzK2o95okMP7IMNPUfwYHmqt2JV6nJ03I",
+        "shortId": "8c9f899dba63f6c7",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 ⚡️ Польша — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "80.47.10.106",
+          "port": 443,
+          "users": [
+            {
+              "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
               "encryption": "none"
             }
           ]
@@ -75,16 +133,41 @@
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "362c1eg.se2.h1clayd.click",
-        "publicKey": "BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY",
-        "shortId": "bee802ae4ab66496",
-        "fingerprint": "chrome"
-      },
-      "grpcSettings": {
-        "serviceName": ""
+        "serverName": "pl8.galioncc.com",
+        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+        "shortId": "a7c92e4b10d6f835",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇸🇪 ⚡️ Швеция — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "88.216.214.159",
+          "port": 443,
+          "users": [
+            {
+              "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "api-svc-mgr.galioncc.com",
+        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+        "shortId": "a7c92e4b10d6f835",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -118,17 +201,18 @@
     }
   },
   {
-    "tag": "🇬🇧 Великобритания — Premium",
+    "tag": "🇧🇾 ⚡️ Беларусь — Premium",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "51.89.194.151",
-          "port": 2053,
+          "address": "95.128.71.79",
+          "port": 10444,
           "users": [
             {
-              "id": "8e790f25-1d71-4601-9fb0-d503931dcfca",
-              "encryption": "none"
+              "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
@@ -138,10 +222,39 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-        "shortId": "d051f678212f9d54",
-        "fingerprint": "random"
+        "serverName": "ads.x5.ru",
+        "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+        "shortId": "8debcf36f1cc69ff",
+        "fingerprint": "safari"
+      }
+    }
+  },
+  {
+    "tag": "🇬🇧 Великобритания — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "94.183.179.212",
+          "port": 443,
+          "users": [
+            {
+              "id": "372931d3-91c5-4564-b79c-041302de9a17",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "gb1.soshelper.space",
+        "publicKey": "9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE",
+        "shortId": "e06e30590f288e0f",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -180,13 +293,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "212.98.224.35",
+          "address": "153.56.229.188",
           "port": 443,
           "users": [
             {
-              "id": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "55458d10-24ab-4ea6-a522-13741b546f2a",
+              "encryption": "none"
             }
           ]
         }
@@ -196,10 +308,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "tr1.gofizzin.com",
-        "publicKey": "9_UhwEt_9pf8WahM1K9O6-_0vAK6q0uiNGFoHBO7s3A",
-        "shortId": "0e3e4d96",
-        "fingerprint": "ios"
+        "serverName": "345739t.de15.h1clayd.click",
+        "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+        "shortId": "23732d14a527990d",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -229,6 +341,35 @@
         "publicKey": "ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg",
         "shortId": "bd6f67b6b2152b45",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇳🇴 Норвегия — Premium",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "193.243.189.64",
+          "port": 443,
+          "users": [
+            {
+              "id": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "no1.gofizz.in",
+        "publicKey": "631qtx5_iiR8HBYdp3duf2SMqdN0URE1AWVb85I_FFg",
+        "shortId": "b12c3119d219dc",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -291,133 +432,12 @@
     }
   },
   {
-    "tag": "🇷🇺 Россия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "48.102.160.14",
-          "port": 443,
-          "users": [
-            {
-              "id": "882b1d03-f43c-4adf-abe7-4ace93d7e37b",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "node1.vazza.ratcraft.ru",
-        "publicKey": "w8Rd8PWysfYdCgaSwlhJxedwn3xor_CD2cWv_lIRIDE",
-        "shortId": "acd68c16677b6967",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "grpc"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "201.58.139.178",
-          "port": 443,
-          "users": [
-            {
-              "id": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "xhttp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "338817x.pl8.h1clayd.click",
-        "publicKey": "-P7rHFWtKuCHcvH-YxkTtR-9iRpOR8csAh7PsoBulyY",
-        "shortId": "91897e1e8a0373e2",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇩🇪 ⚡️ Германия — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "82.39.171.12",
-          "port": 443,
-          "users": [
-            {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 LTE — Premium",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "wto.org",
-          "port": 2087,
-          "users": [
-            {
-              "id": "82508138-bb0c-4d0c-9ab3-4a83959d19c2",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "yx.kb1203.indevs.in",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/banana",
-        "headers": {
-          "Host": "yx.kb1203.indevs.in"
-        }
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "199.245.176.94",
+          "address": "69.176.84.172",
           "port": 443,
           "users": [
             {
@@ -433,9 +453,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "us3.gofizz.in",
-        "publicKey": "Ti0m82YFaY2ngtx1D3jicy2K1HnOWEsCfYYQPqhXImg",
-        "shortId": "6117837d3efb",
+        "serverName": "us6.gofizzin.com",
+        "publicKey": "ccq4Wk9V2_8IBXou2URsapbdszbxNc7IWD6ExNuB7hU",
+        "shortId": "39be97366fac",
         "fingerprint": "firefox"
       }
     }
