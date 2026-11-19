@@ -67,22 +67,25 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "222.167.245.16",
-      "server_port": 443,
-      "uuid": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "flow": "xtls-rprx-vision",
+      "server": "2.26.187.132",
+      "server_port": 8443,
+      "uuid": "ca60984f-b1f0-4073-bd33-4c75168f749a",
       "tls": {
         "enabled": true,
-        "server_name": "poland.biznes.lol",
+        "server_name": "kraw-pl-3.fantoff.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-          "short_id": ""
+          "public_key": "2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY",
+          "short_id": "7f2e9c4b1a8d6e55"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "kraw-pl-3_grpc"
       }
     },
     {
@@ -127,27 +130,11 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "8.6.112.0",
-      "server_port": 443,
-      "password": "XnjwEJbEbqBt8bjlrKZPwg",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf.lunex-vpn.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Lunex",
-        "headers": {}
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "185.95.231.156",
+      "server": "216.152.155.189",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -158,8 +145,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
+          "short_id": "fecf2b55bb11bb0d"
         }
       }
     },
@@ -201,7 +188,6 @@
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -219,7 +205,6 @@
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

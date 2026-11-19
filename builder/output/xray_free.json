@@ -63,26 +63,28 @@
     "settings": {
       "vnext": [
         {
-          "address": "222.167.245.16",
-          "port": 443,
+          "address": "2.26.187.132",
+          "port": 8443,
           "users": [
             {
-              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+              "encryption": "none"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "grpc",
       "security": "reality",
       "realitySettings": {
-        "serverName": "poland.biznes.lol",
-        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "kraw-pl-3.fantoff.online",
+        "publicKey": "2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY",
+        "shortId": "7f2e9c4b1a8d6e55",
+        "fingerprint": "firefox"
+      },
+      "grpcSettings": {
+        "serviceName": "kraw-pl-3_grpc"
       }
     }
   },
@@ -144,40 +146,16 @@
     }
   },
   {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "trojan",
-    "settings": {
-      "servers": [
-        {
-          "address": "8.6.112.0",
-          "port": 443,
-          "password": "XnjwEJbEbqBt8bjlrKZPwg"
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "cf.lunex-vpn.xyz",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/Lunex"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "185.95.231.156",
+          "address": "216.152.155.189",
           "port": 443,
           "users": [
             {
-              "id": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+              "id": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -190,8 +168,8 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.apple.com",
-        "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-        "shortId": "a3a578ab",
+        "publicKey": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
+        "shortId": "fecf2b55bb11bb0d",
         "fingerprint": "chrome"
       }
     }
