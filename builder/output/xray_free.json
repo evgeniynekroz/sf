@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.87.52",
+          "address": "222.167.245.16",
           "port": 443,
           "users": [
             {
-              "id": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+              "id": "7d43670b-6b08-45b9-8a24-8f3971abc132",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,10 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.galacticworld.online",
-        "publicKey": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+        "serverName": "poland.biznes.lol",
+        "publicKey": "j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk",
         "shortId": "",
-        "fingerprint": "qq"
+        "fingerprint": "chrome"
       }
     }
   },
@@ -92,11 +92,39 @@
     "settings": {
       "vnext": [
         {
-          "address": "88.216.189.192",
+          "address": "88.216.214.159",
           "port": 443,
           "users": [
             {
-              "id": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+              "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+              "encryption": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "api-svc-mgr.galioncc.com",
+        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+        "shortId": "a7c92e4b10d6f835",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇪🇪 Эстония — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "178.130.46.188",
+          "port": 443,
+          "users": [
+            {
+              "id": "a346c521-7a7f-452b-9356-a4893feb5982",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,39 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "modx.wey-land.net",
-        "publicKey": "1VhM5R3IlHPjzxEeTuik1lcUad-HI6C57MzXxppyXg4",
+        "serverName": "nl16-r.bankai.party",
+        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
         "shortId": "",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇪🇪 Эстония — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "195.123.213.28",
-          "port": 443,
-          "users": [
-            {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
-        "fingerprint": "chrome"
       }
     }
   },
