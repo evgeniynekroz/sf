@@ -24,27 +24,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 Германия — FREE",
-      "server": "78.17.215.141",
-      "server_port": 443,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de15-r.bankai.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 Нидерланды — FREE",
       "server": "51.170.191.10",
       "server_port": 63286,
@@ -88,22 +67,25 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "150.241.87.52",
-      "server_port": 443,
-      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
-      "flow": "xtls-rprx-vision",
+      "server": "2.26.187.226",
+      "server_port": 8443,
+      "uuid": "ca60984f-b1f0-4073-bd33-4c75168f749a",
       "tls": {
         "enabled": true,
-        "server_name": "pl.galacticworld.online",
+        "server_name": "kraw-pl-3.fantoff.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
-          "short_id": ""
+          "public_key": "2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY",
+          "short_id": "7f2e9c4b1a8d6e55"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "kraw-pl-3_grpc"
       }
     },
     {
@@ -123,6 +105,27 @@
           "enabled": true,
           "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
           "short_id": "a7c92e4b10d6f835"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония — FREE",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
         }
       }
     },
@@ -192,11 +195,11 @@
       "type": "urltest",
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
-        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
@@ -210,11 +213,11 @@
       "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
-        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
