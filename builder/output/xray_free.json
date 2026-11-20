@@ -1,5 +1,34 @@
 [
   {
+    "tag": "🇩🇪 Германия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "93.123.101.198",
+          "port": 443,
+          "users": [
+            {
+              "id": "a346c521-7a7f-452b-9356-a4893feb5982",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "de14-r.bankai.party",
+        "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+        "shortId": "",
+        "fingerprint": "qq"
+      }
+    }
+  },
+  {
     "tag": "🇳🇱 Нидерланды — FREE",
     "protocol": "vless",
     "settings": {
@@ -63,28 +92,26 @@
     "settings": {
       "vnext": [
         {
-          "address": "2.26.187.226",
-          "port": 8443,
+          "address": "150.241.87.52",
+          "port": 443,
           "users": [
             {
-              "id": "ca60984f-b1f0-4073-bd33-4c75168f749a",
-              "encryption": "none"
+              "id": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "grpc",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "kraw-pl-3.fantoff.online",
-        "publicKey": "2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY",
-        "shortId": "7f2e9c4b1a8d6e55",
-        "fingerprint": "edge"
-      },
-      "grpcSettings": {
-        "serviceName": "kraw-pl-3_grpc"
+        "serverName": "pl.galacticworld.online",
+        "publicKey": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -117,31 +144,35 @@
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
-    "protocol": "vless",
+    "tag": "🇷🇺 Россия LTE — FREE",
+    "protocol": "vmess",
     "settings": {
       "vnext": [
         {
-          "address": "195.123.213.28",
+          "address": "robertson-connectivity-amber-coaching.trycloudflare.com",
           "port": 443,
           "users": [
             {
-              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea",
+              "alterId": 0,
+              "security": "auto"
             }
           ]
         }
       ]
     },
     "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-        "shortId": "5c256336e3b673fa",
-        "fingerprint": "firefox"
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "robertson-connectivity-amber-coaching.trycloudflare.com",
+        "fingerprint": "chrome"
+      },
+      "wsSettings": {
+        "path": "/2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm",
+        "headers": {
+          "Host": "robertson-connectivity-amber-coaching.trycloudflare.com"
+        }
       }
     }
   },
@@ -180,11 +211,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "45.144.112.55",
+          "address": "167.17.69.171",
           "port": 443,
           "users": [
             {
-              "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
+              "id": "00144519-7e0d-476b-8d28-435576af9262",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -193,13 +224,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "yahoo.com",
-        "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-        "shortId": "c39cc7310a",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
+        "shortId": "0990d22f",
+        "fingerprint": "chrome"
       }
     }
   }
