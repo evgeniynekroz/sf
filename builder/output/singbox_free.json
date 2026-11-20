@@ -24,68 +24,65 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 Германия — FREE",
-      "server": "78.17.215.136",
-      "server_port": 443,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tag": "🇳🇱 Нидерланды — FREE",
+      "server": "51.170.191.10",
+      "server_port": 63286,
+      "uuid": "478d6288-3745-4558-bf38-47ab9bf16462",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de9-r.bankai.party",
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия — FREE",
+      "server": "196.196.204.148",
+      "server_port": 443,
+      "uuid": "63aa95e5-3b36-4e53-a86f-7df59652e994",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "4c980ft.fi15.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 Нидерланды — FREE",
-      "server": "185.112.59.157",
-      "server_port": 443,
-      "uuid": "03786aa4-21a5-4e7c-83d6-873aafc41217",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-06.neverspy.tech",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZXAejndrxL9cgna_fPXmbSB28y8yAJ9Ln6hRzy5TV0",
-          "short_id": "86af85a72387ef02"
+          "public_key": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
+          "short_id": "597e1c279d224774"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "2.26.187.132",
-      "server_port": 8443,
-      "uuid": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+      "server": "212.127.91.79",
+      "server_port": 443,
+      "uuid": "7af8ad56-33ce-4f3d-ad15-ef32a71d67f7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kraw-pl-3.fantoff.online",
+        "server_name": "storage.yandex.net",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY",
-          "short_id": "7f2e9c4b1a8d6e55"
+          "public_key": "lCCvbwGOEkx6IuK3eFd4RtmBi6UInWoMyt0QtfsOjwk",
+          "short_id": "99fe1ec015fde70c"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "kraw-pl-3_grpc"
       }
     },
     {
@@ -130,11 +127,23 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "82.40.63.138",
+      "server_port": 443,
+      "password": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kraw-pl-4.fantoff.online",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "216.152.155.189",
+      "server": "185.95.231.156",
       "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -145,8 +154,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
-          "short_id": "fecf2b55bb11bb0d"
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
         }
       }
     },
@@ -183,11 +192,12 @@
       "type": "urltest",
       "tag": "⚡️ Авто-выбор (Лучший пинг)",
       "outbounds": [
-        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
+        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -200,11 +210,12 @@
       "tag": "💎 HQRay VPN",
       "outbounds": [
         "⚡️ Авто-выбор (Лучший пинг)",
-        "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
+        "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
         "🇪🇪 Эстония — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
