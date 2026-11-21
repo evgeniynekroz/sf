@@ -67,62 +67,62 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "23.172.217.23",
-      "server_port": 443,
-      "uuid": "1ab3c7c3-e1cf-4a20-bd19-ea9041e5518b",
+      "server": "185.242.247.177",
+      "server_port": 8443,
+      "uuid": "5dbcb261-a48b-4fc5-8173-32bc0b6cfa6d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.fi",
+        "server_name": "cedar-lantern.justext.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2dhlb69O7SFVKy9U3waY8qcErDJAIv-wqgT0Iz8JHyA",
-          "short_id": "99"
+          "public_key": "Lvm9eec5bpjeqEnwG_9Q0_W0Imp7xS6JUftXhEYCOjw",
+          "short_id": "4480a7bbaeac077d"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "95.85.227.171",
+      "server": "45.192.12.92",
       "server_port": 443,
-      "uuid": "216e225a-b196-49b4-a326-1e685d2dad89",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl88.sonicservice.digital",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QlwK16_5B3wm71oTXG5uJNgPiHt5ANHJzaLQMawLJTY",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 Швеция — FREE",
-      "server": "88.216.214.159",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-svc-mgr.galioncc.com",
+        "server_name": "nltimes.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
+          "public_key": "aUOP5gJGQ1QFhdZuREZ8yosfPavFiJ6f_EySIBZ2WCE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония — FREE",
+      "server": "95.85.243.72",
+      "server_port": 443,
+      "uuid": "13cca0fd-bb3e-44e4-9ced-1c6efcabbb03",
+      "tls": {
+        "enabled": true,
+        "server_name": "212.192.156.15",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "m3opvubdy_gjBiBkXnAw3eDUP4alVeVWxKkvZHIINjs",
+          "short_id": "426165a0badade80"
         }
       }
     },
@@ -184,7 +184,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -201,7 +201,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"

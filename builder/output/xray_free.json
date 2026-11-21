@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "23.172.217.23",
-          "port": 443,
+          "address": "185.242.247.177",
+          "port": 8443,
           "users": [
             {
-              "id": "1ab3c7c3-e1cf-4a20-bd19-ea9041e5518b",
+              "id": "5dbcb261-a48b-4fc5-8173-32bc0b6cfa6d",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -76,12 +76,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.sony.fi",
-        "publicKey": "2dhlb69O7SFVKy9U3waY8qcErDJAIv-wqgT0Iz8JHyA",
-        "shortId": "99",
+        "serverName": "cedar-lantern.justext.space",
+        "publicKey": "Lvm9eec5bpjeqEnwG_9Q0_W0Imp7xS6JUftXhEYCOjw",
+        "shortId": "4480a7bbaeac077d",
         "fingerprint": "firefox"
       }
     }
@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "95.85.227.171",
+          "address": "45.192.12.92",
           "port": 443,
           "users": [
             {
-              "id": "216e225a-b196-49b4-a326-1e685d2dad89",
+              "id": "352a250d-080b-47b5-b7db-f9f8fa31c551",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,24 +108,24 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl88.sonicservice.digital",
-        "publicKey": "QlwK16_5B3wm71oTXG5uJNgPiHt5ANHJzaLQMawLJTY",
+        "serverName": "nltimes.nl",
+        "publicKey": "aUOP5gJGQ1QFhdZuREZ8yosfPavFiJ6f_EySIBZ2WCE",
         "shortId": "",
-        "fingerprint": "edge"
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇸🇪 Швеция — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "88.216.214.159",
+          "address": "95.85.243.72",
           "port": 443,
           "users": [
             {
-              "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+              "id": "13cca0fd-bb3e-44e4-9ced-1c6efcabbb03",
               "encryption": "none"
             }
           ]
@@ -136,9 +136,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "api-svc-mgr.galioncc.com",
-        "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-        "shortId": "a7c92e4b10d6f835",
+        "serverName": "212.192.156.15",
+        "publicKey": "m3opvubdy_gjBiBkXnAw3eDUP4alVeVWxKkvZHIINjs",
+        "shortId": "426165a0badade80",
         "fingerprint": "chrome"
       }
     }
