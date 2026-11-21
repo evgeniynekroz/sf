@@ -92,11 +92,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "150.241.87.52",
+          "address": "95.85.227.171",
           "port": 443,
           "users": [
             {
-              "id": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+              "id": "216e225a-b196-49b4-a326-1e685d2dad89",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -108,10 +108,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.galacticworld.online",
-        "publicKey": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+        "serverName": "pl88.sonicservice.digital",
+        "publicKey": "QlwK16_5B3wm71oTXG5uJNgPiHt5ANHJzaLQMawLJTY",
         "shortId": "",
-        "fingerprint": "chrome"
+        "fingerprint": "edge"
       }
     }
   },
@@ -140,39 +140,6 @@
         "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
         "shortId": "a7c92e4b10d6f835",
         "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇷🇺 Россия LTE — FREE",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "robertson-connectivity-amber-coaching.trycloudflare.com",
-          "port": 443,
-          "users": [
-            {
-              "id": "2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea",
-              "alterId": 0,
-              "security": "auto"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "serverName": "robertson-connectivity-amber-coaching.trycloudflare.com",
-        "fingerprint": "chrome"
-      },
-      "wsSettings": {
-        "path": "/2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm",
-        "headers": {
-          "Host": "robertson-connectivity-amber-coaching.trycloudflare.com"
-        }
       }
     }
   },

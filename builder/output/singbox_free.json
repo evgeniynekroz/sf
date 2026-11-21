@@ -88,20 +88,20 @@
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "150.241.87.52",
+      "server": "95.85.227.171",
       "server_port": 443,
-      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+      "uuid": "216e225a-b196-49b4-a326-1e685d2dad89",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.galacticworld.online",
+        "server_name": "pl88.sonicservice.digital",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+          "public_key": "QlwK16_5B3wm71oTXG5uJNgPiHt5ANHJzaLQMawLJTY",
           "short_id": ""
         }
       }
@@ -123,26 +123,6 @@
           "enabled": true,
           "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
           "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇷🇺 Россия LTE — FREE",
-      "server": "robertson-connectivity-amber-coaching.trycloudflare.com",
-      "server_port": 443,
-      "uuid": "2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "robertson-connectivity-amber-coaching.trycloudflare.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm",
-        "headers": {
-          "Host": "robertson-connectivity-amber-coaching.trycloudflare.com"
         }
       }
     },
@@ -205,7 +185,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -223,7 +202,6 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
-        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
