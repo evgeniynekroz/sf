@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "185.242.247.177",
-          "port": 8443,
+          "address": "196.196.204.147",
+          "port": 443,
           "users": [
             {
-              "id": "5dbcb261-a48b-4fc5-8173-32bc0b6cfa6d",
+              "id": "f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "cedar-lantern.justext.space",
-        "publicKey": "Lvm9eec5bpjeqEnwG_9Q0_W0Imp7xS6JUftXhEYCOjw",
-        "shortId": "4480a7bbaeac077d",
+        "serverName": "4c980ft.fi15.h1clayd.click",
+        "publicKey": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
+        "shortId": "597e1c279d224774",
         "fingerprint": "firefox"
       }
     }
@@ -116,16 +116,16 @@
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
+    "tag": "🇸🇪 Швеция — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "95.85.243.72",
-          "port": 443,
+          "address": "70.34.211.236",
+          "port": 40118,
           "users": [
             {
-              "id": "13cca0fd-bb3e-44e4-9ced-1c6efcabbb03",
+              "id": "29872718-970b-493e-abc9-524fa266d16b",
               "encryption": "none"
             }
           ]
@@ -136,10 +136,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "212.192.156.15",
-        "publicKey": "m3opvubdy_gjBiBkXnAw3eDUP4alVeVWxKkvZHIINjs",
-        "shortId": "426165a0badade80",
-        "fingerprint": "chrome"
+        "serverName": "delivery.mp.microsoft.com",
+        "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+        "shortId": "9e3f5e25c17d2615",
+        "fingerprint": "firefox"
       }
     }
   },

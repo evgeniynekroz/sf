@@ -67,21 +67,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "185.242.247.177",
-      "server_port": 8443,
-      "uuid": "5dbcb261-a48b-4fc5-8173-32bc0b6cfa6d",
+      "server": "196.196.204.147",
+      "server_port": 443,
+      "uuid": "f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cedar-lantern.justext.space",
+        "server_name": "4c980ft.fi15.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Lvm9eec5bpjeqEnwG_9Q0_W0Imp7xS6JUftXhEYCOjw",
-          "short_id": "4480a7bbaeac077d"
+          "public_key": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
+          "short_id": "597e1c279d224774"
         }
       }
     },
@@ -108,21 +108,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 Эстония — FREE",
-      "server": "95.85.243.72",
-      "server_port": 443,
-      "uuid": "13cca0fd-bb3e-44e4-9ced-1c6efcabbb03",
+      "tag": "🇸🇪 Швеция — FREE",
+      "server": "70.34.211.236",
+      "server_port": 40118,
+      "uuid": "29872718-970b-493e-abc9-524fa266d16b",
       "tls": {
         "enabled": true,
-        "server_name": "212.192.156.15",
+        "server_name": "delivery.mp.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "m3opvubdy_gjBiBkXnAw3eDUP4alVeVWxKkvZHIINjs",
-          "short_id": "426165a0badade80"
+          "public_key": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+          "short_id": "9e3f5e25c17d2615"
         }
       }
     },
@@ -184,7 +184,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇪🇪 Эстония — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -201,7 +201,7 @@
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
-        "🇪🇪 Эстония — FREE",
+        "🇸🇪 Швеция — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
