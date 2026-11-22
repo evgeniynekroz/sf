@@ -63,11 +63,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "196.196.204.147",
+          "address": "45.144.52.205",
           "port": 443,
           "users": [
             {
-              "id": "f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb",
+              "id": "78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -79,9 +79,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "4c980ft.fi15.h1clayd.click",
-        "publicKey": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
-        "shortId": "597e1c279d224774",
+        "serverName": "fi.convert-cloud.guru",
+        "publicKey": "9kQGK7IuVFWU9xCb4g9ygL1CEv87QmVZJzWLz74pTSc",
+        "shortId": "",
         "fingerprint": "firefox"
       }
     }
@@ -149,6 +149,35 @@
     "settings": {
       "vnext": [
         {
+          "address": "47.253.226.114",
+          "port": 443,
+          "users": [
+            {
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
+        "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
           "address": "185.95.231.156",
           "port": 443,
           "users": [
@@ -168,35 +197,6 @@
         "serverName": "www.apple.com",
         "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
         "shortId": "a3a578ab",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇺🇸 Резерв #2 — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "167.17.69.171",
-          "port": 443,
-          "users": [
-            {
-              "id": "00144519-7e0d-476b-8d28-435576af9262",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "raw",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-        "shortId": "0990d22f",
         "fingerprint": "chrome"
       }
     }
