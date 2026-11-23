@@ -67,42 +67,46 @@
     {
       "type": "vless",
       "tag": "🇫🇮 Финляндия — FREE",
-      "server": "178.17.53.154",
-      "server_port": 48982,
-      "uuid": "ea1bee20-9217-42c0-acee-d12bf0c42602",
+      "server": "196.196.208.22",
+      "server_port": 443,
+      "uuid": "cae99415-10a6-4317-81bd-19a4586b5d76",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn6-91.yahoo.com",
+        "server_name": "8a0f3at.fi-p1b.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "A1ygNS8bIvKp7ZlUnjjHX_Z2AS_e4suvSs_IkWICvGE",
-          "short_id": ""
+          "public_key": "3Ya7Erk_G6wlvuy6ekUzCW7zxnaDivdUzkkJXTFXcWs",
+          "short_id": "96f94f6200195aae"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 Польша — FREE",
-      "server": "150.241.87.52",
+      "server": "9030b9g.pl10.h1clayd.shop",
       "server_port": 443,
-      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d92038b6-b470-4267-9c69-2c649bf3f4a4",
       "tls": {
         "enabled": true,
-        "server_name": "pl.galacticworld.online",
+        "server_name": "9030b9g.pl10.h1clayd.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
-          "short_id": ""
+          "public_key": "oE6MuoxfZqB5fkSnx_XWL28kNoBGODAQk58pRNS3qXY",
+          "short_id": "d28c89350a91e479"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "8b45c3fd2e05"
       }
     },
     {
@@ -127,11 +131,23 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 Россия LTE — FREE",
+      "server": "91.196.32.63",
+      "server_port": 443,
+      "password": "d283bbfe-d5cd-4576-bc1a-630a7a5ad829",
+      "tls": {
+        "enabled": true,
+        "server_name": "remotebuild.lucheeebezlimitnoekino.stream",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "172.233.197.105",
-      "server_port": 62867,
-      "uuid": "1ad82982-f3e1-4b6b-99bf-a9cfdf186b96",
+      "server": "38.244.5.231",
+      "server_port": 443,
+      "uuid": "1bd6c8a2-01db-4a3d-8b2c-0b2f2c3e8b5a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -142,29 +158,29 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
-          "short_id": "1f2519bb96e5589c"
+          "public_key": "DUpNPvLjiL1GzeF7DfKWba-LYLz1KPuQXewhgNGPiDM",
+          "short_id": "ab0a5b56"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #2 — FREE",
-      "server": "185.95.231.156",
+      "server": "47.253.226.114",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
         }
       }
     },
@@ -185,6 +201,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
       ],
@@ -202,6 +219,7 @@
         "🇫🇮 Финляндия — FREE",
         "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
         "direct"
