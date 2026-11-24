@@ -5,11 +5,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "195.63.128.21",
-          "port": 20443,
+          "address": "route-fi-de-waicore.unrealvpn.xyz",
+          "port": 443,
           "users": [
             {
-              "id": "fa937345-6d3e-4ff4-8127-1a836987a0db",
+              "id": "97daeafa-0744-38a0-9441-74d6cdb63e80",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -21,9 +21,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "germany.cloudhouse1.ru",
-        "publicKey": "00n0EAgpY0J966ZIr6LzA4bBhezLRoowNmCXjELfy0I",
-        "shortId": "73ca8049b875fe8d",
+        "serverName": "lg.hel.play2go.cloud",
+        "publicKey": "r7gK1xDtZl5wDL59Teyw--KXacW1EjOT2mm0MdwY7gM",
+        "shortId": "39b7084197ed8260",
         "fingerprint": "firefox"
       }
     }
@@ -34,39 +34,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "179.254.126.86",
-          "port": 25135,
-          "users": [
-            {
-              "id": "e89a2a0e-7803-447e-b050-3ba67962ed95",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "s-25452.nl18.h1clayd.click",
-        "publicKey": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4",
-        "shortId": "fe51f413b9646e97",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "150.241.87.52",
+          "address": "48.102.175.147",
           "port": 443,
           "users": [
             {
-              "id": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+              "id": "fdbd8fb8-7d27-4bd8-9da1-1e42c4876835",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -78,10 +50,68 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "pl.galacticworld.online",
-        "publicKey": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+        "serverName": "hollandlanzerotte.xyz",
+        "publicKey": "EEL-yDPBfol_fiEEM8Pd0zue7SSz5MtZlXEePVak2jc",
         "shortId": "",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
+    "tag": "🇫🇮 Финляндия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "157.180.98.124",
+          "port": 49659,
+          "users": [
+            {
+              "id": "88a558b1-9645-42f3-89e5-341570d8486d",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "apple.com",
+        "publicKey": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
+        "shortId": "81959fce",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇵🇱 Польша — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "212.127.91.79",
+          "port": 443,
+          "users": [
+            {
+              "id": "7af8ad56-33ce-4f3d-ad15-ef32a71d67f7",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "storage.yandex.net",
+        "publicKey": "lCCvbwGOEkx6IuK3eFd4RtmBi6UInWoMyt0QtfsOjwk",
+        "shortId": "99fe1ec015fde70c",
+        "fingerprint": "firefox"
       }
     }
   },
@@ -115,45 +145,16 @@
     }
   },
   {
-    "tag": "🇪🇪 Эстония — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "217.60.182.96",
-          "port": 443,
-          "users": [
-            {
-              "id": "dc91568b-4f12-4ce1-a483-f04dd4913ab9",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "edge.mult-universe.ru",
-        "publicKey": "5qVucogFLYlZOsG8DdX3dZRTr_2llj6_1OtZ9YfoilM",
-        "shortId": "b12ebda62333a16a",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "38.244.5.231",
+          "address": "47.253.226.114",
           "port": 443,
           "users": [
             {
-              "id": "1bd6c8a2-01db-4a3d-8b2c-0b2f2c3e8b5a",
+              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -166,8 +167,8 @@
       "security": "reality",
       "realitySettings": {
         "serverName": "www.cloudflare.com",
-        "publicKey": "DUpNPvLjiL1GzeF7DfKWba-LYLz1KPuQXewhgNGPiDM",
-        "shortId": "ab0a5b56",
+        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "shortId": "",
         "fingerprint": "chrome"
       }
     }
@@ -178,11 +179,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "167.17.69.171",
-          "port": 443,
+          "address": "148.135.86.162",
+          "port": 10000,
           "users": [
             {
-              "id": "00144519-7e0d-476b-8d28-435576af9262",
+              "id": "327b1113-049e-4256-8d72-8815643dbb65",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -191,12 +192,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-        "shortId": "0990d22f",
+        "serverName": "addons.mozilla.org",
+        "publicKey": "DCbnS4mIPc1W2-wI0MGHhykwzf2nVuZvBadErSE6MxU",
+        "shortId": "a1b2c3d4",
         "fingerprint": "chrome"
       }
     }
