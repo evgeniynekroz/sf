@@ -87,37 +87,6 @@
     }
   },
   {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "201.58.139.106",
-          "port": 443,
-          "users": [
-            {
-              "id": "ca5b2bab-e5f7-4dd4-a4b7-ebd4a34a02ca",
-              "encryption": "none"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "astra-vps-pl.zalupa231313.shop",
-        "publicKey": "EoeKDsLFEs6F6XMnkQZgvHJ4FfB4s5g0hSP5JE2RCl0",
-        "shortId": "a1b2c3d4",
-        "fingerprint": "firefox"
-      },
-      "grpcSettings": {
-        "serviceName": "vless-grpc"
-      }
-    }
-  },
-  {
     "tag": "🇸🇪 Швеция — FREE",
     "protocol": "vless",
     "settings": {
@@ -147,16 +116,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #1 — FREE",
+    "tag": "🇪🇪 Эстония — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "47.253.226.114",
-          "port": 443,
+          "address": "81.26.179.105",
+          "port": 42450,
           "users": [
             {
-              "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+              "id": "46c37a32-df6b-4357-a6d2-28f85a3865d2",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -168,15 +137,15 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-        "shortId": "",
-        "fingerprint": "chrome"
+        "serverName": "vk.com",
+        "publicKey": "sLpIIcLEMXC-8ZGzQqoOpj4uuW2YfK-CeMlWqOY0mDg",
+        "shortId": "bc247d77b6b44a31",
+        "fingerprint": "firefox"
       }
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
@@ -201,6 +170,35 @@
         "publicKey": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
         "shortId": "a3a578ab",
         "fingerprint": "chrome"
+      }
+    }
+  },
+  {
+    "tag": "🇺🇸 Резерв #2 — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "23.94.145.26",
+          "port": 443,
+          "users": [
+            {
+              "id": "53a44f0c-a480-4042-802c-92e796ed77c9",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "usa.peregrine-sub.net",
+        "publicKey": "sqkHr6otz_eqPlNpx1P876tdV90R8RsxR2v4M5lCDVc",
+        "shortId": "e4fd5a2809fa0337",
+        "fingerprint": "firefox"
       }
     }
   }

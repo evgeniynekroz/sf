@@ -87,30 +87,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 Польша — FREE",
-      "server": "201.58.139.106",
-      "server_port": 443,
-      "uuid": "ca5b2bab-e5f7-4dd4-a4b7-ebd4a34a02ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "astra-vps-pl.zalupa231313.shop",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EoeKDsLFEs6F6XMnkQZgvHJ4FfB4s5g0hSP5JE2RCl0",
-          "short_id": "a1b2c3d4"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless-grpc"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇸🇪 Швеция — FREE",
       "server": "169.40.42.89",
       "server_port": 443,
@@ -131,6 +107,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония — FREE",
+      "server": "81.26.179.105",
+      "server_port": 42450,
+      "uuid": "46c37a32-df6b-4357-a6d2-28f85a3865d2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sLpIIcLEMXC-8ZGzQqoOpj4uuW2YfK-CeMlWqOY0mDg",
+          "short_id": "bc247d77b6b44a31"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇷🇺 Россия LTE — FREE",
       "server": "91.211.27.231",
@@ -145,27 +142,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 Резерв #1 — FREE",
-      "server": "47.253.226.114",
-      "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 Резерв #2 — FREE",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -185,6 +161,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 Резерв #2 — FREE",
+      "server": "23.94.145.26",
+      "server_port": 443,
+      "uuid": "53a44f0c-a480-4042-802c-92e796ed77c9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.peregrine-sub.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sqkHr6otz_eqPlNpx1P876tdV90R8RsxR2v4M5lCDVc",
+          "short_id": "e4fd5a2809fa0337"
+        }
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -199,8 +196,8 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE"
@@ -217,8 +214,8 @@
         "🇩🇪 Германия — FREE",
         "🇳🇱 Нидерланды — FREE",
         "🇫🇮 Финляндия — FREE",
-        "🇵🇱 Польша — FREE",
         "🇸🇪 Швеция — FREE",
+        "🇪🇪 Эстония — FREE",
         "🇷🇺 Россия LTE — FREE",
         "🇺🇸 Резерв #1 — FREE",
         "🇺🇸 Резерв #2 — FREE",
