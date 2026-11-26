@@ -34,13 +34,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "free-amsterdam-node-1.cloudwidecdn.com",
-          "port": 443,
+          "address": "179.254.126.86",
+          "port": 25135,
           "users": [
             {
-              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "e89a2a0e-7803-447e-b050-3ba67962ed95",
+              "encryption": "none"
             }
           ]
         }
@@ -50,9 +49,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-        "shortId": "1d86d17709852910",
+        "serverName": "s-25452.nl18.h1clayd.click",
+        "publicKey": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4",
+        "shortId": "fe51f413b9646e97",
         "fingerprint": "firefox"
       }
     }
@@ -63,13 +62,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.77.231",
+          "address": "13.141.36.15",
           "port": 443,
           "users": [
             {
-              "id": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df",
+              "encryption": "none"
             }
           ]
         }
@@ -79,9 +77,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4",
-        "shortId": "cc85fc7134024405",
+        "serverName": "a80b5386.fi2.h1clayd.click",
+        "publicKey": "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc",
+        "shortId": "cc678f10161992a9",
         "fingerprint": "firefox"
       }
     }
@@ -111,35 +109,6 @@
         "serverName": "www.cloudflare.com",
         "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
         "shortId": "5c256336e3b673fa",
-        "fingerprint": "chrome"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 ⚡️ Польша — Premium",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "82.118.22.161",
-          "port": 443,
-          "users": [
-            {
-              "id": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-        "shortId": "fa3ea655619a3e78",
         "fingerprint": "chrome"
       }
     }
@@ -175,19 +144,31 @@
   },
   {
     "tag": "🇦🇹 ⚡️ Австрия — Premium",
-    "protocol": "shadowsocks",
+    "protocol": "vless",
     "settings": {
-      "servers": [
+      "vnext": [
         {
-          "address": "82.110.60.9",
-          "port": 19999,
-          "method": "aes-256-gcm",
-          "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+          "address": "189.74.115.5",
+          "port": 443,
+          "users": [
+            {
+              "id": "dc155964-d93b-4d7c-bcd0-b13ab0f0f24b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "api.mediaroshcha.cc",
+        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+        "shortId": "a8",
+        "fingerprint": "firefox"
+      }
     }
   },
   {
@@ -254,11 +235,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "153.56.229.218",
-          "port": 443,
+          "address": "turkey-ip1.mmdaqaorg.xyz",
+          "port": 50738,
           "users": [
             {
-              "id": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
+              "id": "56665684-5ac0-4ba9-9d49-8b258fb57974",
               "encryption": "none"
             }
           ]
@@ -267,42 +248,28 @@
     },
     "streamSettings": {
       "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "71b840t.de7.h1clayd.click",
-        "publicKey": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
-        "shortId": "e572b6579ea525d4",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "turkey-ip1.mmdaqaorg.xyz",
         "fingerprint": "chrome"
       }
     }
   },
   {
     "tag": "🇰🇿 Казахстан — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "5.180.27.134",
-          "port": 443,
-          "users": [
-            {
-              "id": "fa906181-5d9b-4ff6-8a81-e6148ce4ece7",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "address": "38.180.38.19",
+          "port": 15231,
+          "method": "aes-128-gcm",
+          "password": "5126ccc78eea4c643cbed4e6c21465e8"
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "kz.koteika3528.dev",
-        "publicKey": "qljbddkyGqBkkOnPdvgw4s6HX_iyEUB2qesNM1qiFg0",
-        "shortId": "36f3c7",
-        "fingerprint": "firefox"
-      }
+      "network": "tcp"
     }
   },
   {
@@ -336,31 +303,19 @@
   },
   {
     "tag": "🇮🇹 Италия — Premium",
-    "protocol": "vless",
+    "protocol": "shadowsocks",
     "settings": {
-      "vnext": [
+      "servers": [
         {
-          "address": "82.118.16.187",
-          "port": 443,
-          "users": [
-            {
-              "id": "dc2259c4-388e-4285-ba18-df619b6672b6",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
+          "address": "57.131.27.21",
+          "port": 8388,
+          "method": "aes-256-gcm",
+          "password": "itzvpn@321"
         }
       ]
     },
     "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
-        "shortId": "cd6065902eea7a02",
-        "fingerprint": "chrome"
-      }
+      "network": "tcp"
     }
   },
   {

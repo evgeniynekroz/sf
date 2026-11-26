@@ -34,13 +34,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "free-amsterdam-node-1.cloudwidecdn.com",
-          "port": 443,
+          "address": "179.254.126.86",
+          "port": 25135,
           "users": [
             {
-              "id": "44ae52b9-76fc-444d-8e43-186b4384b80a",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "e89a2a0e-7803-447e-b050-3ba67962ed95",
+              "encryption": "none"
             }
           ]
         }
@@ -50,9 +49,9 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.apple.com",
-        "publicKey": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-        "shortId": "1d86d17709852910",
+        "serverName": "s-25452.nl18.h1clayd.click",
+        "publicKey": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4",
+        "shortId": "fe51f413b9646e97",
         "fingerprint": "firefox"
       }
     }
@@ -63,13 +62,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "31.76.77.231",
+          "address": "13.141.36.15",
           "port": 443,
           "users": [
             {
-              "id": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
+              "id": "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df",
+              "encryption": "none"
             }
           ]
         }
@@ -79,39 +77,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "www.google.com",
-        "publicKey": "PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4",
-        "shortId": "cc85fc7134024405",
+        "serverName": "a80b5386.fi2.h1clayd.click",
+        "publicKey": "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc",
+        "shortId": "cc678f10161992a9",
         "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "82.118.22.161",
-          "port": 443,
-          "users": [
-            {
-              "id": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "www.cloudflare.com",
-        "publicKey": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-        "shortId": "fa3ea655619a3e78",
-        "fingerprint": "chrome"
       }
     }
   },
@@ -145,6 +114,35 @@
     }
   },
   {
+    "tag": "🇦🇹 Австрия — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "189.74.115.5",
+          "port": 443,
+          "users": [
+            {
+              "id": "dc155964-d93b-4d7c-bcd0-b13ab0f0f24b",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "api.mediaroshcha.cc",
+        "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+        "shortId": "a8",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
@@ -174,16 +172,16 @@
     }
   },
   {
-    "tag": "🇬🇧 Резерв #2 — FREE",
+    "tag": "🇯🇵 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "edge.bookmai.com",
+          "address": "158.101.151.157",
           "port": 443,
           "users": [
             {
-              "id": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
+              "id": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -192,12 +190,12 @@
       ]
     },
     "streamSettings": {
-      "network": "raw",
+      "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "mother-earth.fyi",
-        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-        "shortId": "",
+        "serverName": "www.microsoft.com",
+        "publicKey": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
+        "shortId": "684c7531e599dec0",
         "fingerprint": "chrome"
       }
     }
