@@ -29,16 +29,16 @@
     }
   },
   {
-    "tag": "🇳🇱 Нидерланды — FREE",
+    "tag": "🇫🇮 Финляндия — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "5.255.127.12",
+          "address": "95.216.182.174",
           "port": 443,
           "users": [
             {
-              "id": "ba373a70-295f-482d-a471-8bc17b54e23b",
+              "id": "dc8e0f03-beda-4101-84b4-1b6c84f6dbec",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -50,20 +50,20 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "nle.899themes.pro",
-        "publicKey": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
-        "shortId": "27350908de933e09",
-        "fingerprint": "firefox"
+        "serverName": "www.cloudflare.com",
+        "publicKey": "K5KIrQJZH83V1G9MUOYlNy24_4Ntg8U_ngt5p7_EMFc",
+        "shortId": "29b55f87",
+        "fingerprint": "chrome"
       }
     }
   },
   {
-    "tag": "🇫🇮 Финляндия — FREE",
+    "tag": "🇵🇱 Польша — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "31.77.17.137",
+          "address": "201.58.178.236",
           "port": 443,
           "users": [
             {
@@ -79,39 +79,10 @@
       "network": "tcp",
       "security": "reality",
       "realitySettings": {
-        "serverName": "lesson6.schoolpizorbz.xyz",
-        "publicKey": "kEtGermhVoTO4QWTy88C6Y52xDqOyR9f3bxR2oWqUA8",
-        "shortId": "32772060abd44e31",
-        "fingerprint": "firefox"
-      }
-    }
-  },
-  {
-    "tag": "🇵🇱 Польша — FREE",
-    "protocol": "vless",
-    "settings": {
-      "vnext": [
-        {
-          "address": "150.241.87.51",
-          "port": 443,
-          "users": [
-            {
-              "id": "0444647e-6388-4c4b-9847-1fcd5bc101ea",
-              "encryption": "none",
-              "flow": "xtls-rprx-vision"
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "serverName": "nh-pl-01-eis0cc2f.farmerly.cc",
-        "publicKey": "cp947CBxZl6dHGM5epfaXvKyj7Gh3CVBnprViDFL6Rk",
-        "shortId": "2174c487a4c9664b",
-        "fingerprint": "firefox"
+        "serverName": "lesson1.schoolpizorbz.xyz",
+        "publicKey": "AdOl7XVxVk4Yb_tBxjrG-FP5elV_V2MeI_6WVC4H41s",
+        "shortId": "d14566fcec627162",
+        "fingerprint": "chrome"
       }
     }
   },
@@ -145,6 +116,35 @@
     }
   },
   {
+    "tag": "🇪🇪 Эстония — FREE",
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "195.123.213.28",
+          "port": 443,
+          "users": [
+            {
+              "id": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+              "encryption": "none",
+              "flow": "xtls-rprx-vision"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "www.cloudflare.com",
+        "publicKey": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+        "shortId": "5c256336e3b673fa",
+        "fingerprint": "firefox"
+      }
+    }
+  },
+  {
     "tag": "🇺🇸 Резерв #1 — FREE",
     "protocol": "vless",
     "settings": {
@@ -174,16 +174,16 @@
     }
   },
   {
-    "tag": "🇺🇸 Резерв #2 — FREE",
+    "tag": "🇬🇧 Резерв #2 — FREE",
     "protocol": "vless",
     "settings": {
       "vnext": [
         {
-          "address": "82.148.229.76",
+          "address": "edge.bookmai.com",
           "port": 443,
           "users": [
             {
-              "id": "0444647e-6388-4c4b-9847-1fcd5bc101ea",
+              "id": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
               "encryption": "none",
               "flow": "xtls-rprx-vision"
             }
@@ -192,13 +192,13 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "raw",
       "security": "reality",
       "realitySettings": {
-        "serverName": "az-us-01-t22qgt3m.farmerly.cc",
-        "publicKey": "cEPUPPFVyoF3qqEJGqnj4fC4Sw9ywinHOlTOq24JYQc",
-        "shortId": "0487b0e69a6e3b74",
-        "fingerprint": "firefox"
+        "serverName": "mother-earth.fyi",
+        "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "shortId": "",
+        "fingerprint": "chrome"
       }
     }
   }
